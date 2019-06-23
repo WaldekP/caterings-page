@@ -1,0 +1,44 @@
+.link {
+  color: yellow;
+}
+
+.header {
+  padding: 1rem 0 3rem;
+  //position: fixed;
+  align-items: center;
+  justify-content: space-around;
+  top: 0;
+  left: 0;
+  display: flex;
+  height: auto;
+  width: 100%;
+  color: green;
+}
+
+.title {
+  color: #000000;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+
+.nav-item {
+  color: #102582;
+  font-size: 0.9rem;
+  margin-right: 1.3rem;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+}
+
+.active-nav.item {
+  color: pink;
+}
+
