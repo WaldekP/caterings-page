@@ -8,7 +8,7 @@ import offerStyles from '../styles/offer.module.scss'
 
 const Offer = ({ pageContext }) => (
   <div className={offerStyles.container}>
-    <Link to={`/${pageContext.slug ? pageContext.slug : ''}/dieta-paleo`}><img src={dietsImage}/></Link>
+    {/*<Link to={`/${pageContext.slug ? pageContext.slug : ''}/dieta-paleo`}><img src={dietsImage}/></Link>*/}
     <img src={dietsImage2}/>
     <img src={dietsImage3}/>
     <img src={dietsImage4}/>
