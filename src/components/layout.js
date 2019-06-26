@@ -6,15 +6,14 @@ import { cities } from "../data/cities"
 import { Link } from "gatsby"
 
 const Layout = ({title, children, pageContext }) => {
-  const city = sessionStorage.getItem("city")
-
-  const placeCityCookie = city => {
-    return window.sessionStorage.setItem("city", city)
-  }
+  // const city = sessionStorage.getItem("city")
+  //
+  // const placeCityCookie = city => {
+  //   return window.sessionStorage.setItem("city", city)
+  // }
 
   return (
     <Fragment>
-      {!city && (
         <div className={layoutStyles.overlay}>
           <div className={layoutStyles.overlayContent}>
             <h1>Wybierz miasto</h1>
@@ -27,7 +26,7 @@ const Layout = ({title, children, pageContext }) => {
                 })
                 .map(city => (
                   <li
-                    onClick={() => placeCityCookie(city.value)}
+                    // onClick={() => placeCityCookie(city.value)}
                     key={city.value}
                   >
                     <Link to={city.label === "lodz" ? "/" : `/${city.value}`}>
@@ -38,7 +37,6 @@ const Layout = ({title, children, pageContext }) => {
             </ul>
           </div>
         </div>
-      )}
       <div className={layoutStyles.container}>
         <div className={layoutStyles.content}>
           <Header pageContext={pageContext} title={title} />
