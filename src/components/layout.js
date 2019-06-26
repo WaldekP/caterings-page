@@ -1,20 +1,36 @@
-import React, { Fragment } from "react"
+import React, { Fragment, useEffect } from "react"
 import Header from "./header"
 import Footer from "./footer"
 import layoutStyles from "../styles/layout.module.scss"
 import { cities } from "../data/cities"
-import { Link } from "gatsby"
+import { Link, navigate } from "gatsby"
 
 const Layout = ({title, children, pageContext }) => {
-  // const city = sessionStorage.getItem("city")
-  //
-  // const placeCityCookie = city => {
-  //   return window.sessionStorage.setItem("city", city)
-  // }
+  const cityCookie = JSON.parse(sessionStorage.getItem("city"))
+  const citySlug = pageContext.city
+  const dietSlug = pageContext.diet
+  // redirect from main page when the cookie is set
+  useEffect(() => !citySlug && cityCookie && cityCookie !== 'lodz' && navigate(dietSlug ? `/${cityCookie}/${dietSlug}` :`/${cityCookie}`), [])
+  const getLinkUrl = (city) => {
+    if (city === 'lodz') {
+      if (dietSlug) {
+        return `/${dietSlug}`
+      }
+      return '/'
+    }
+    if (dietSlug) {
+      return `/${city}/${dietSlug}`
+    }
+    return `/${city}`
+  }
+
+  const placeCityCookie = city => {
+    return window.sessionStorage.setItem("city", JSON.stringify(city))
+  }
 
   return (
     <Fragment>
-        <div className={layoutStyles.overlay}>
+      {!cityCookie && !citySlug && <div className={layoutStyles.overlay}>
           <div className={layoutStyles.overlayContent}>
             <h1>Wybierz miasto</h1>
             <ul>
@@ -26,17 +42,17 @@ const Layout = ({title, children, pageContext }) => {
                 })
                 .map(city => (
                   <li
-                    // onClick={() => placeCityCookie(city.value)}
+                    onClick={() => placeCityCookie(city.value)}
                     key={city.value}
                   >
-                    <Link to={city.label === "lodz" ? "/" : `/${city.value}`}>
+                    <Link to={getLinkUrl(city.value)}>
                       {city.label}
                     </Link>
                   </li>
                 ))}
             </ul>
           </div>
-        </div>
+        </div>}
       <div className={layoutStyles.container}>
         <div className={layoutStyles.content}>
           <Header pageContext={pageContext} title={title} />

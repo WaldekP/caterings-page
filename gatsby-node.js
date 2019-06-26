@@ -57,7 +57,6 @@ module.exports.createPages = async ({ graphql, actions }) => {
       path: `/dieta-${diet}`,
       context: {
         diet: `dieta-${diet}`,
-        city: 'lodz',
       },
     })
   })
