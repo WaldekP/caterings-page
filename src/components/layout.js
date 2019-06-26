@@ -8,7 +8,9 @@ import { Link } from "gatsby"
 const Layout = ({title, children, pageContext }) => {
   const city = sessionStorage.getItem("city")
 
-  const placeCityCookie = city => sessionStorage.setItem("city", city)
+  const placeCityCookie = city => {
+    return window.sessionStorage.setItem("city", city)
+  }
 
   return (
     <Fragment>
