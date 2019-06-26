@@ -16,8 +16,31 @@ export const cities = [
     label: 'Warszawa'
   },
   {
-    value: 'lodz',
-    label: 'Lódź'
+    value: 'katowice',
+    label: 'Katowice'
   },
-
+  {
+    value: 'bydgoszcz',
+    label: 'Bydgoszcz'
+  },
+  {
+    value: 'torun',
+    label: 'Toruń'
+  },
+  {
+    value: 'gdynia',
+    label: 'Gdynia'
+  },
+  {
+    value: 'gdansk',
+    label: 'Gdańsk'
+  },
+  {
+    value: 'sopot',
+    label: 'Sopot'
+  },
+  {
+    value: 'poznan',
+    label: 'Poznań'
+  },
 ]

@@ -8,12 +8,25 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-source-contentful`,
+      resolve: `gatsby-source-wordpress`,
       options: {
-        spaceId: process.env.CONTENTFUL_SPACE_ID,
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        baseUrl: "afterfit-catering.pl",
+        // The protocol. This can be http or https.
+        protocol: "https",
+        hostingWPCOM: false,
+        // If useACF is true, then the source plugin will try to import the Wordpress ACF Plugin contents.
+        // This feature is untested for sites hosted on wordpress.com.
+        // Defaults to true.
+        useACF: false,
       }
     },
+    // {
+    //   resolve: `gatsby-source-contentful`,
+    //   options: {
+    //     spaceId: process.env.CONTENTFUL_SPACE_ID,
+    //     accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+    //   }
+    // },
     {
       resolve: `gatsby-transformer-remark`,
       options: {

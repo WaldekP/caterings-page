@@ -101,7 +101,7 @@ const Header = ({pageContext}) => {
         value={city}
         onChange={(option) => {
           changeCity(option)
-          sessionStorage.setItem('city', `${JSON.stringify(option)}`)
+          sessionStorage.setItem('city', `${JSON.stringify(option.value)}`)
         } }
       />
     </header>
