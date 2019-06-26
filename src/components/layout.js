@@ -5,9 +5,8 @@ import layoutStyles from "../styles/layout.module.scss"
 import { cities } from "../data/cities"
 import { Link } from "gatsby"
 
-const Layout = ({ title, children, pageContext }) => {
+const Layout = ({title, children, pageContext }) => {
   const city = sessionStorage.getItem("city")
-  console.log("pageContext", pageContext)
 
   const placeCityCookie = city => sessionStorage.setItem("city", city)
 
