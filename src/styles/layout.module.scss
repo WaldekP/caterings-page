@@ -1,7 +1,16 @@
+@import "variables";
+
+body {
+  font-family: $font;
+  color: $main-color;
+  h2 {
+    font-size: 30px;
+  }
+}
+
 .container {
-  margin: 0 auto;
-  padding: 1rem;
-  max-width: 750px;
+  //padding: 1rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -18,7 +27,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(191, 193, 223, 0.7); /* Black background with opacity */
+  background: rgba(191, 193, 223, 0.7) url("../images/backgrounds/img_city_1.svg");
   z-index: 1000; /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
 }

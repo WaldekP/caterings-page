@@ -5,3 +5,9 @@
  */
 
 // You can delete this file if you're not using it
+import React from "react"
+import { MenuProvider } from "./src/context/menuContext"
+
+export const wrapRootElement = ({ element }) => (
+  <MenuProvider>{element}</MenuProvider>
+)

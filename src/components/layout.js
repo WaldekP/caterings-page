@@ -11,6 +11,7 @@ const Layout = ({title, children, pageContext }) => {
   const dietSlug = pageContext.diet
   // redirect from main page when the cookie is set
   useEffect(() => !citySlug && cityCookie && cityCookie !== 'lodz' && navigate(dietSlug ? `/${cityCookie}/${dietSlug}` :`/${cityCookie}`), [])
+  useEffect(() => citySlug && sessionStorage.setItem('city', JSON.stringify(citySlug)), [])
   const getLinkUrl = (city) => {
     if (city === 'lodz') {
       if (dietSlug) {

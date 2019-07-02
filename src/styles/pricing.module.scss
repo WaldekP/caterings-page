@@ -1,0 +1,167 @@
+@import "./variables";
+.main-container {
+  margin: 0 auto;
+  min-width: 800px;
+  width: 75%;
+}
+.container {
+  display: flex;
+  border: 1px solid #e1e1e1;
+  justify-content: space-between;
+  height: 80%;
+}
+
+.leftSide {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 2;
+  margin: 45px 0 45px 30px;
+}
+
+.rightSide {
+  background-color: $main-color;
+  display: flex;
+  margin: 45px 30px 45px 0;
+  flex: 1;
+}
+
+.rightSideWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: white;
+}
+
+.leftSideWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: $main-color;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 30px;
+  p {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-size: 15px;
+    color: $main-color;
+    font-weight: 600;
+  }
+}
+
+.item {
+  background-color: $light-purple;
+  color: $main-color;
+  display: flex;
+  width: 165px;
+  height: 50px;
+  margin: 0 20px 20px 0;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: normal;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.mealItem {
+  background-color: $main-color;
+  color: white;
+  display: flex;
+  width: 165px;
+  height: 50px;
+  margin: 0 20px 20px 0;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: normal;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.daysSection {
+  display: flex;
+  align-self: flex-start;
+  position: relative;
+  margin-bottom: 30px;
+  p {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-size: 15px;
+    color: $main-color;
+    font-weight: 600;
+  }
+}
+
+.dayButton {
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  color: white;
+  background-color: $main-color;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 200;
+  border-radius: 4px;
+}
+
+.dayInput {
+  width: 260px;
+  height: 50px;
+  line-height: 50px;
+  border: solid 1px $light-purple;
+  text-align: center;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: normal;
+  color: $main-color;
+  background-color: $light-purple;
+  span {
+    display: inline;
+  }
+  input {
+    display: none;
+  }
+}
+
+.barSection {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  margin-bottom: 30px;
+}
+
+.barItem {
+  position: relative;
+  width: 360px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: $light-purple;
+  margin: 6px 0;
+  div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 20px;
+    border-radius: 4px;
+    background-color: $intense-yellow;
+  }
+}
+
+h2 {
+  text-align: center;
+}
