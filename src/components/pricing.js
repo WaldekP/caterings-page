@@ -3,7 +3,7 @@ import pricingStyles from "../styles/pricing.module.scss"
 
 const Pricing = React.forwardRef((props, ref) => {
   return (
-    <div ref={ref} className={pricingStyles.mainContainer}>
+    <div ref={ref}>
       <h2>Cennik naszych diet pudełkowych</h2>
       <div className={pricingStyles.container}>
         <div className={pricingStyles.leftSide}>
@@ -56,10 +56,10 @@ const Pricing = React.forwardRef((props, ref) => {
         </div>
         <div className={pricingStyles.rightSide}>
           <div className={pricingStyles.rightSideWrapper}>
-            <p>Cena diety</p>
-            <p>Cena diety</p>
-            <p>Cena diety</p>
-            <p>Cena diety</p>
+            <p>CENA DIETY</p>
+            <h2>43 PLN / DZIEN</h2>
+            <p className={pricingStyles.priceSummary}>RAZEM: 516 PLN za 12 dni</p>
+            <button>Zamów</button>
           </div>
         </div>
       </div>

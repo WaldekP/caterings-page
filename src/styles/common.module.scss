@@ -6,7 +6,6 @@
   border-radius: 20px;
   width: 130px;
   height: 40px;
-  align-self: center;
   font-size: 15px;
   font-weight: bold;
   cursor: pointer;
@@ -14,4 +13,13 @@
     background-color: white;
     color: $main-color;
   }
+}
+
+.common-button {
+  border-radius: 20px;
+  width: 130px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
 }

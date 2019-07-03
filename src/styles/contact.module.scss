@@ -1,0 +1,30 @@
+@import "variables";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 60px auto 0 auto;
+}
+
+.contactItem {
+  margin: 0 100px;
+  img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.map-container {
+  display: flex;
+  width: 75%;
+  justify-content: center;
+  margin: 0 auto;
+  color: red;
+}
+
+.right-map-conteiner {
+  background-color: $intense-yellow;
+  width: 50%;
+}

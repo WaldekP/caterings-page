@@ -8,7 +8,7 @@ const Chatbot = React.forwardRef((props, ref) => {
   return (
     <div className={chatbotStyles.container} ref={ref}>
       <h2>Dobierz idealną dietę pudełkową dla siebie</h2>
-      <h3>
+      <h3 className={chatbotStyles.insideText}>
         Zacznij jeść <br />
         zdrowo bez wysiłku
       </h3>
