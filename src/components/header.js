@@ -21,13 +21,19 @@ const Header = ({ pageContext }) => {
     }
   `)
 
-  const [yPosition, changePosition] = useState(window.scrollY)
+  const [yPosition, changePosition] = useState(typeof window !== 'undefined' && window.scrollY)
 
-  const handleScroll = () => changePosition(window.scrollY)
+  const handleScroll = () => {
+    if (typeof window !== 'undefined') {
+      return changePosition(window.scrollY)
+    }
+  }
   const { menuTab, changeMenuTab } = useContext(MenuContext)
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll)
+    if (typeof window !== 'undefined') {
+      window.addEventListener("scroll", handleScroll)
+    }
   }, [])
 
   const findCity = () => {
