@@ -8,7 +8,6 @@ import { Link, navigate } from "gatsby"
 const Layout = ({title, children, pageContext }) => {
   const cityCookie = typeof window !== 'undefined' && JSON.parse(window.sessionStorage.getItem("city"))
   const citySlug = pageContext && pageContext.city
-  console.log('to jest citySlug layout', citySlug)
   const dietSlug = pageContext && pageContext.diet
   // redirect from main page when the cookie is set
   useEffect(() => !citySlug && cityCookie && cityCookie !== 'lodz' && navigate(dietSlug ? `/${cityCookie}/${dietSlug}` :`/${cityCookie}`), [])

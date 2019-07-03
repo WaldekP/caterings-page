@@ -10,7 +10,6 @@ import MenuContext from "../context/menuContext"
 const Header = ({ pageContext }) => {
   console.log('pageContext', pageContext)
   const citySlug = pageContext && pageContext.city
-  console.log('to jest citySlug header', citySlug)
   const dietSlug = pageContext && pageContext.diet
 
   const data = useStaticQuery(graphql`
@@ -39,6 +38,7 @@ const Header = ({ pageContext }) => {
   }, [])
 
   const findCity = () => {
+    console.log('citySlug', citySlug)
     if (!citySlug) {
       return "lodz"
     }

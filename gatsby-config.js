@@ -28,6 +28,19 @@ module.exports = {
     //   }
     // },
     {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        headers: {
+          "/sw.js": [
+            "cache-control: public, max-age=0, must-revalidate",
+          ],
+          "/*.js": [
+            "cache-control: public, max-age=31536000,immutable",
+          ],
+        }, // option to add more headers. `Link` headers are transformed by the below criteria
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
