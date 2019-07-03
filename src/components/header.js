@@ -10,6 +10,7 @@ import MenuContext from "../context/menuContext"
 const Header = ({ pageContext }) => {
   console.log('pageContext', pageContext)
   const citySlug = pageContext && pageContext.city
+  console.log('to jest citySlug header', citySlug)
   const dietSlug = pageContext && pageContext.diet
 
   const data = useStaticQuery(graphql`
@@ -126,7 +127,7 @@ const Header = ({ pageContext }) => {
           <button className={headerStyles.panelButton}>Panel klienta</button>
           <select
             onChange={({ target: { value } }) => {
-              sessionStorage.setItem("city", `${JSON.stringify(value)}`)
+              typeof window !== 'undefined' && window.sessionStorage.setItem("city", `${JSON.stringify(value)}`)
               if (value === "lodz") {
                 return navigate(dietSlug ? `/${dietSlug}` : "/")
               }

@@ -6,12 +6,13 @@ import { cities } from "../data/cities"
 import { Link, navigate } from "gatsby"
 
 const Layout = ({title, children, pageContext }) => {
-  const cityCookie = typeof sessionStorage !== 'undefined' && JSON.parse(sessionStorage.getItem("city"))
+  const cityCookie = typeof window !== 'undefined' && JSON.parse(window.sessionStorage.getItem("city"))
   const citySlug = pageContext && pageContext.city
+  console.log('to jest citySlug layout', citySlug)
   const dietSlug = pageContext && pageContext.diet
   // redirect from main page when the cookie is set
   useEffect(() => !citySlug && cityCookie && cityCookie !== 'lodz' && navigate(dietSlug ? `/${cityCookie}/${dietSlug}` :`/${cityCookie}`), [])
-  useEffect(() => citySlug && typeof sessionStorage !== 'undefined' && sessionStorage.setItem('city', JSON.stringify(citySlug)), [])
+  useEffect(() => citySlug && typeof window !== 'undefined' && window.sessionStorage.setItem('city', JSON.stringify(citySlug)), [])
   const getLinkUrl = (city) => {
     if (city === 'lodz') {
       if (dietSlug) {
@@ -47,6 +48,7 @@ const Layout = ({title, children, pageContext }) => {
                     key={city.value}
                   >
                     <Link to={getLinkUrl(city.value)}>
+                      {console.log('dsdcewcwecw', getLinkUrl(city.value))}
                       {city.label}
                     </Link>
                   </li>
