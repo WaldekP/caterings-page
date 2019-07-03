@@ -8,8 +8,9 @@ import { diets } from "../data/diets"
 import MenuContext from "../context/menuContext"
 
 const Header = ({ pageContext }) => {
-  const citySlug = pageContext.city
-  const dietSlug = pageContext.diet
+  console.log('pageContext', pageContext)
+  const citySlug = pageContext && pageContext.city
+  const dietSlug = pageContext && pageContext.diet
 
   const data = useStaticQuery(graphql`
     query {
