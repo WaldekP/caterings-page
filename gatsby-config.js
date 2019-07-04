@@ -30,9 +30,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-netlify`,
       options: {
-        headers: {
           mergeLinkHeaders: true,
-        }, // option to add more headers. `Link` headers are transformed by the below criteria
       },
     },
     {
