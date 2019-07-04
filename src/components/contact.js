@@ -5,7 +5,7 @@ import contactStyles from '../styles/contact.module.scss'
 
 const Contact = React.forwardRef((props, ref) => {
   return (
-    <div ref={ref}>
+    <div ref={ref} className={contactStyles.wrapper}>
       <h2>Skontaktuj się z cateringiem dietetycznym AfterFit</h2>
       <div className={contactStyles.container}>
         <div className={contactStyles.contactItem}>
