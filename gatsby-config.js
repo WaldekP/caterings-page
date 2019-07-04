@@ -28,12 +28,6 @@ module.exports = {
     //   }
     // },
     {
-      resolve: `gatsby-plugin-netlify`,
-      options: {
-          mergeLinkHeaders: false,
-      },
-    },
-    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
