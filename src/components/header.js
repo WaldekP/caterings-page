@@ -120,6 +120,9 @@ const Header = ({ pageContext }) => {
                 Blog
               </Link>
             </li>
+            <Link to="contact">
+              Kontakt
+            </Link>
           </ul>
           <button className={commonStyles.button}>Zamów</button>
         </div>
