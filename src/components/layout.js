@@ -52,6 +52,9 @@ const Layout = ({title, children, pageContext }) => {
                     </Link>
                   </li>
                 ))}
+              <Link to="siemianowice">
+                Siemianowice
+              </Link>
             </ul>
           </div>
         </div>}
