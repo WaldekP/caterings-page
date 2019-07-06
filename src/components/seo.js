@@ -48,8 +48,8 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
-          property: `og:type`,
-          content: `website`,
+          property: `robots`,
+          content: `noindex,nofollow`,
         },
         {
           name: `twitter:card`,
