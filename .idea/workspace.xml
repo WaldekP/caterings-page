@@ -2,22 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57d3d639-63d7-48d6-be77-9e9e5309408c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/images/backgrounds/img_city_2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/question.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/mainPage/faq.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-browser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/chatbot.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/chatbot.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/diet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/diet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/offer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/offer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/testimonials.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/testimonials.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/menuContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/pageContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/diet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/diet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/faq.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/faq.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/chatbot.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/chatbot.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/contact.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/contact.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/header.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/hero.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/hero.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/testimonials.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/testimonials.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/faq.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/faq.module.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,6 +20,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/faq.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/question.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="56" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/styles/faq.module.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/header.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -51,14 +74,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/chatbot.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="403" column="45" lean-forward="true" selection-start-line="403" selection-start-column="45" selection-end-line="403" selection-end-column="45" />
+            <state relative-caret-position="468">
+              <caret line="397" column="74" lean-forward="true" selection-start-line="397" selection-start-column="74" selection-end-line="397" selection-end-column="74" />
               <folding>
                 <element signature="e#0#68#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data/mainPage/faq.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -82,19 +114,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/styles/chatbot.module.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="46" column="21" lean-forward="true" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="670">
-              <caret line="53" column="13" lean-forward="true" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+            <state relative-caret-position="723">
+              <caret line="58" column="10" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
               <folding>
                 <element signature="e#0#70#0" expanded="true" />
               </folding>
@@ -137,8 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/posts/gatsby.md" />
-        <option value="$PROJECT_DIR$/src/pages/warszawa.js" />
         <option value="$PROJECT_DIR$/src/data/mainPage/texts.js" />
         <option value="$PROJECT_DIR$/src/pages/dieta-paleo.js" />
         <option value="$PROJECT_DIR$/.env" />
@@ -161,8 +182,6 @@
         <option value="$PROJECT_DIR$/src/styles/pricing.module.scss" />
         <option value="$PROJECT_DIR$/src/styles/common.module.scss" />
         <option value="$PROJECT_DIR$/src/components/hero.js" />
-        <option value="$PROJECT_DIR$/src/styles/faq.module.scss" />
-        <option value="$PROJECT_DIR$/src/components/faq.js" />
         <option value="$PROJECT_DIR$/src/pages/siemianowice.js" />
         <option value="$PROJECT_DIR$/gatsby-config.js" />
         <option value="$PROJECT_DIR$/src/data/mainPage/testimonials.js" />
@@ -182,12 +201,16 @@
         <option value="$PROJECT_DIR$/src/styles/contact.module.scss" />
         <option value="$PROJECT_DIR$/src/components/testimonials.js" />
         <option value="$PROJECT_DIR$/src/styles/chatbot.module.scss" />
-        <option value="$PROJECT_DIR$/src/pages/index.js" />
         <option value="$PROJECT_DIR$/src/context/menuContext.js" />
         <option value="$PROJECT_DIR$/src/context/pageContext.js" />
         <option value="$PROJECT_DIR$/src/pages/diet.js" />
         <option value="$PROJECT_DIR$/src/components/diet.js" />
         <option value="$PROJECT_DIR$/src/components/chatbot.js" />
+        <option value="$PROJECT_DIR$/src/components/question.js" />
+        <option value="$PROJECT_DIR$/src/styles/faq.module.scss" />
+        <option value="$PROJECT_DIR$/src/pages/index.js" />
+        <option value="$PROJECT_DIR$/src/data/mainPage/faq.js" />
+        <option value="$PROJECT_DIR$/src/components/faq.js" />
       </list>
     </option>
   </component>
@@ -230,6 +253,13 @@
               <item name="gatsby5" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gatsby5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gatsby5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="mainPage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gatsby5" type="b2602c69:ProjectViewProjectNode" />
@@ -330,7 +360,7 @@
       <workItem from="1561809691745" duration="35530000" />
       <workItem from="1562000219215" duration="9765000" />
       <workItem from="1562086238686" duration="36071000" />
-      <workItem from="1562364522247" duration="17372000" />
+      <workItem from="1562364522247" duration="19530000" />
     </task>
     <task id="LOCAL-00001" summary="Offer fix">
       <created>1561322353633</created>
@@ -479,11 +509,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562410102141</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="chat logic finished">
+      <created>1562432682320</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1562432682320</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150670000" />
+    <option name="totallyTimeSpent" value="152828000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -563,26 +600,10 @@
     <MESSAGE value="yet another test" />
     <MESSAGE value="yet another another test" />
     <MESSAGE value="diets mapping implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="diets mapping implemented" />
+    <MESSAGE value="chat logic finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="chat logic finished" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/templates/blog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/cities.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -632,13 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/faq.module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -723,16 +737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/faq.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
@@ -869,33 +873,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="81" column="18" lean-forward="true" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#72#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/offer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="29" lean-forward="true" selection-start-line="1" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="670">
-          <caret line="53" column="13" lean-forward="true" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gatsby-node.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="870">
@@ -926,10 +903,71 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/chatbot.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="403" column="45" lean-forward="true" selection-start-line="403" selection-start-column="45" selection-end-line="403" selection-end-column="45" />
+        <state relative-caret-position="468">
+          <caret line="397" column="74" lean-forward="true" selection-start-line="397" selection-start-column="74" selection-end-line="397" selection-end-column="74" />
           <folding>
             <element signature="e#0#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1215">
+          <caret line="81" column="18" lean-forward="true" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/offer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="29" lean-forward="true" selection-start-line="1" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/faq.module.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="723">
+          <caret line="58" column="10" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/mainPage/faq.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/question.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="56" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/faq.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>

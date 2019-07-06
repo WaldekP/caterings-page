@@ -56,7 +56,7 @@ const IndexPage = ({ pageContext }) => {
         <CallToAction />
         <Pricing ref={pricingRef}/>
         <Testimonials ref={opinionsRef}/>
-        <Faq/>
+        <Faq pageContext={pageContext}/>
         <Contact ref={contactRef}/>
       </div>
     </Layout>

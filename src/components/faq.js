@@ -1,7 +1,19 @@
-import React from "react"
+import React, { useState } from "react"
 import faqStyles from "../styles/faq.module.scss"
+import { faq } from "../data/mainPage/faq"
+import Question from "./question"
 
-const Faq = () => {
+const Faq = ({ pageContext }) => {
+  const city = pageContext.city ? pageContext.city : "lodz"
+  const [section, chooseSection] = useState("general")
+
+  const getQuestions = () => {
+    const cityObject = faq[city]
+    if (!cityObject) {
+      return Object.values(faq["lodz"][section])
+    }
+    return Object.values(faq[city][section])
+  }
   return (
     <div className={faqStyles.wrapper}>
       <h2>Masz pytania odnośnie naszego cateringu? Zajrzyj tutaj.</h2>
@@ -9,39 +21,25 @@ const Faq = () => {
       <div className={faqStyles.container}>
         <div className={faqStyles.contentsContainer}>
           <p>SPIS TREŚCI</p>
-          <p>OGÓLNE</p>
-          <p>DOBÓR DIET</p>
+          <p
+            onClick={() => {
+              chooseSection("general")
+            }}
+          >
+            OGÓLNE
+          </p>
+          <p
+            onClick={() => {
+              chooseSection("dietSelection")
+            }}
+          >
+            DOBÓR DIET
+          </p>
         </div>
         <div className={faqStyles.questionsContainer}>
-          <div className={faqStyles.questionBox}>
-            <div className={faqStyles.questionActive}>
-              <p>Kiedy odbywają się dostawy cateringu dietetycznego AfterFit?</p>
-              <p className={faqStyles.sign}>-</p>
-            </div>
-            <div className={faqStyles.answer}>
-              Odpowiedz Odpowiedz Odpowiedz Odpowiedz Odpowiedz Odpowiedz
-              Odpowiedz Odpowiedz Odpowiedz Odpowiedz Odpowiedz Odpowiedz
-              Odpowiedz Odpowiedz Odpowiedz
-            </div>
-          </div>
-          <div className={faqStyles.questionBox}>
-            <div className={faqStyles.question}>
-              <p>Pytanie</p>
-              <p className={faqStyles.sign}>+</p>
-            </div>
-          </div>
-          <div className={faqStyles.questionBox}>
-            <div className={faqStyles.question}>
-              <p>Pytanie</p>
-              <p className={faqStyles.sign}>+</p>
-            </div>
-          </div>
-          <div className={faqStyles.questionBox}>
-            <div className={faqStyles.question}>
-              <p>Pytanie</p>
-              <p className={faqStyles.sign}>+</p>
-            </div>
-          </div>
+          {getQuestions().map((question, index) => (
+            <Question key={index} question={question} />
+          ))}
         </div>
       </div>
     </div>
