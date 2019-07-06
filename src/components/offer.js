@@ -40,14 +40,11 @@ const Offer = React.forwardRef(({ pageContext }, ref) => {
   }
   return (
     <div>
-      {console.log("dsddsds", pageContext)}
       <h2>Oferta naszej diety pudełkowej - wybierz jedną z 8 diet z dowozem</h2>
       <div className={offerStyles.container} ref={ref}>
-        {/*<Link to={`/${pageContext.slug ? pageContext.slug : ''}/dieta-paleo`}><img src={dietsImage}/></Link>*/}
         {diets.map(diet => (
-          <Link to={`/dieta-${diet.dietUrl}`}>
+          <Link to={pageContext.city ? `/${pageContext.city}/dieta-${diet.dietUrl}` : `/dieta-${diet.dietUrl}`}>
             <div key={diet.dietUrl} className={offerStyles.dietItem}>
-              {console.log("dddddddd", diet)}
               <img src={findDiet(diet.dietUrl)} />
               <p>{diet.fullName}</p>
               <p>Opis diety paleo jaka jest. Opis diety paleo jaka jest.</p>

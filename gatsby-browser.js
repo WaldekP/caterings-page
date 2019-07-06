@@ -6,8 +6,8 @@
 
 // You can delete this file if you're not using it
 import React from "react"
-import { MenuProvider } from "./src/context/menuContext"
+import { PageProvider } from "./src/context/pageContext"
 
 export const wrapRootElement = ({ element }) => (
-  <MenuProvider>{element}</MenuProvider>
+  <PageProvider>{element}</PageProvider>
 )

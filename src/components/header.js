@@ -5,7 +5,7 @@ import commonStyles from "../styles/common.module.scss"
 import { cities } from "../data/cities"
 import logo from "../images/logo/afterfit_img_logo.svg"
 
-import MenuContext from "../context/menuContext"
+import PageContext from "../context/pageContext"
 
 const Header = ({ pageContext }) => {
   const citySlug = pageContext && pageContext.city
@@ -30,7 +30,7 @@ const Header = ({ pageContext }) => {
       return changePosition(window.scrollY)
     }
   }
-  const { menuTab, changeMenuTab } = useContext(MenuContext)
+  const { changeMenuTab } = useContext(PageContext)
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -87,7 +87,7 @@ const Header = ({ pageContext }) => {
         // className={
         //   yPosition < 68 ? headerStyles.secondHeader : headerStyles.thirdHeader
         // }
-        className={`${headerStyles.secondHeader} ${yPosition < 68 ? headerStyles.headerColorUp : headerStyles.headerColorDown}`}
+        className={`${headerStyles.secondHeader} ${yPosition < 5 ? headerStyles.headerColorUp : headerStyles.headerColorDown}`}
       >
         <span>
           <Link className={headerStyles.title} to="/">
@@ -96,21 +96,18 @@ const Header = ({ pageContext }) => {
         </span>
         <div className={headerStyles.menu}>
           <ul className={headerStyles.navList}>
-            <li onClick={() => changeMenuTab({ menuTab: "valueProposition" })}>
+            <li onClick={() => changeMenuTab("valueProposition")}>
               Co nas wyróżnia
             </li>
-            <li onClick={() => changeMenuTab({ menuTab: "chatbot" })}>
+            <li onClick={() => changeMenuTab("chatbot")}>
               Dobierz dietę
             </li>
-            <li onClick={() => changeMenuTab({ menuTab: "offer" })}>Oferta</li>
-            <li onClick={() => changeMenuTab({ menuTab: "pricing" })}>
+            <li onClick={() => changeMenuTab("offer")}>Oferta</li>
+            <li onClick={() => changeMenuTab("pricing")}>
               Cennik
             </li>
-            <li onClick={() => changeMenuTab({ menuTab: "opinions" })}>
+            <li onClick={() => changeMenuTab("opinions")}>
               Opinie
-            </li>
-            <li onClick={() => changeMenuTab({ menuTab: "contact" })}>
-              Kontakt
             </li>
             <li>
               <Link

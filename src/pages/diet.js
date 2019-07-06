@@ -1,13 +1,14 @@
-import React, { useEffect } from "react"
+import React, { useContext } from "react"
 import Layout from "../components/layout"
-import { cities } from "../data/cities"
-import { navigate } from "gatsby";
+import PageContext from "../context/pageContext"
 
 
 const Diet = ({pageContext}) => {
+  const { calories } = useContext(PageContext)
   return (
     <Layout pageContext={pageContext}>
-      <h1>{pageContext.diet}</h1>
+      <h2>{pageContext.diet}</h2>
+      <p>Wybrana kalorycznosc to {calories}</p>
     </Layout>
   )
 }

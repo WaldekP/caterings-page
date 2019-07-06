@@ -1,3 +1,5 @@
+@import "common.module";
+
 .container {
   margin: auto 0;
   width: 70%;
@@ -32,6 +34,7 @@ h2 {
   background-color: #8186C0;
   min-height: 100px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   button {
@@ -57,7 +60,7 @@ h2 {
   margin: 20px 20px 0 0;
   display: flex;
   flex-direction: column;
-  max-width: 60%;
+  width: 60%;
 
 }
 
@@ -65,6 +68,7 @@ h2 {
   justify-content: flex-start;
   display: flex;
   align-items: center;
+  width: inherit;
   img {
     width: 50px;
     height: 50px;
@@ -80,7 +84,6 @@ h2 {
 }
 
 .answer {
-  justify-content: flex-end;
   margin-left: auto;
   display: flex;
   align-items: center;

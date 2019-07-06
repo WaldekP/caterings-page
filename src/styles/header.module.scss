@@ -15,6 +15,7 @@
   width: 100%;
   color: green;
   background-color: #FBDAE2;
+  z-index: 200;
 
 }
 .secondHeader {
@@ -82,6 +83,7 @@ li {
   font-size: 0.9rem;
   margin-right: 1.3rem;
   text-decoration: none;
+  z-index: 300;
 }
 
 li:hover {

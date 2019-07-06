@@ -6,21 +6,13 @@ import { testimonials } from "../data/mainPage/testimonials"
 
 const Testimonials = React.forwardRef((props, ref) => {
   const [testimonialNumber, changeTestimonial] = useState(1)
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     console.log('juz')
-  //     if (testimonialNumber === 4) {
-  //       changeTestimonial(1)
-  //     }
-  //     changeTestimonial(testimonialNumber + 1)
-  //   }, 1000)
-  // }, [testimonialNumber])
 
   useEffect(() => {
     setTimeout(() => {
       changeTestimonial(testimonialNumber === 4 ? 1 : testimonialNumber + 1)
     }, 2000)
   }, [testimonialNumber])
+
   return (
     <div ref={ref}>
       <h2 className={testimonialsStyles.title}>
@@ -32,7 +24,14 @@ const Testimonials = React.forwardRef((props, ref) => {
           <h4>{testimonials[testimonialNumber].testimonial}</h4>
           <p>{testimonials[testimonialNumber].person}</p>
           <div className={testimonialsStyles.circlesContainer}>
-            <span>
+            <span onClick={() => {
+              if (testimonialNumber === 1) {
+                console.log('a')
+                return null
+              }
+              console.log('b')
+              return changeTestimonial(1)
+            }}>
               <FontAwesomeIcon
                 className={`${testimonialsStyles.circle} ${testimonialNumber ===
                   1 && testimonialsStyles.active}`}

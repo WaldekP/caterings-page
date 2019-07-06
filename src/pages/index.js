@@ -11,10 +11,10 @@ import Testimonials from "../components/testimonials"
 import Faq from "../components/faq"
 import Contact from "../components/contact"
 import indexStyles from '../styles/index.module.scss'
-import MenuContext from "../context/menuContext"
+import PageContext from "../context/pageContext"
 
 const IndexPage = ({ pageContext }) => {
-  const { menuTab } = useContext(MenuContext)
+  const { menuTab } = useContext(PageContext)
   const valuePropositionRef = useRef(null);
   const chatbotRef = useRef(null);
   const offerRef = useRef(null);
@@ -22,22 +22,22 @@ const IndexPage = ({ pageContext }) => {
   const opinionsRef = useRef(null);
   const contactRef = useRef(null);
   useEffect(() => {
-    if(menuTab.menuTab === 'valueProposition') {
+    if(menuTab === 'valueProposition') {
       scrollToRef(valuePropositionRef)
     }
-    if(menuTab.menuTab === 'chatbot') {
+    if(menuTab === 'chatbot') {
       scrollToRef(chatbotRef)
     }
-    if(menuTab.menuTab === 'offer') {
+    if(menuTab === 'offer') {
       scrollToRef(offerRef)
     }
-    if(menuTab.menuTab === 'pricing') {
+    if(menuTab === 'pricing') {
       scrollToRef(pricingRef)
     }
-    if(menuTab.menuTab === 'opinions') {
+    if(menuTab === 'opinions') {
       scrollToRef(opinionsRef)
     }
-    if(menuTab.menuTab === 'contact') {
+    if(menuTab === 'contact') {
       scrollToRef(contactRef)
     }
   })
@@ -51,7 +51,7 @@ const IndexPage = ({ pageContext }) => {
       <div className={indexStyles.container}>
         <Hero/>
         <ValueProposition ref={valuePropositionRef}/>
-        <Chatbot ref={chatbotRef}/>
+        <Chatbot ref={chatbotRef} pageContext={pageContext}/>
         <Offer pageContext={pageContext} ref={offerRef}/>
         <CallToAction />
         <Pricing ref={pricingRef}/>
