@@ -1,74 +1,62 @@
 import React from "react"
 import { Link } from "gatsby"
-import dietsImage from "../images/diets/małe (1).jpg"
-import dietsImage2 from "../images/diets/małe (2).jpg"
-import dietsImage3 from "../images/diets/małe (3).jpg"
-import dietsImage4 from "../images/diets/małe (4).jpg"
 import offerStyles from "../styles/offer.module.scss"
+import { diets } from "../data/diets"
+import slimDiet from "../images/diets/dieta-odchudzajaca.jpg"
+import paleoDiet from "../images/diets/dieta-paleo.jpg"
+import standardDiet from "../images/diets/dieta-standard.jpg"
+import samurajDiet from "../images/diets/dieta-samuraja.jpg"
+import vegeDiet from "../images/diets/dieta-wegetarianska.jpg"
+import vegaDiet from "../images/diets/dieta-weganska.jpg"
+import reductionDiet from "../images/diets/dieta-na-redukcje.jpg"
+import massDiet from "../images/diets/dieta-na-mase.jpg"
 
-const Offer = React.forwardRef(({ pageContext }, ref) => (
-  <div>
-    <h2>Oferta naszej diety pudełkowej - wybierz jedną z 8 diet z dowozem</h2>
-    <div className={offerStyles.container} ref={ref}>
-      {/*<Link to={`/${pageContext.slug ? pageContext.slug : ''}/dieta-paleo`}><img src={dietsImage}/></Link>*/}
-      <div className={offerStyles.item1}>
-        <div className={offerStyles.dietItem}>
-          <img src={dietsImage2} />
-          <h2>Dieta Paleo</h2>
-          <p>Opis diety paleo jaka jest. Opis diety paleo jaka jest.</p>
-        </div>
-      </div>
-      <div className={offerStyles.item2}>
-        <div className={offerStyles.dietItem}>
-          <img src={dietsImage2} />
-          <h2>Dieta Paleo</h2>
-          <p>Opis diety paleo jaka jest. Opis diety paleo jaka jest.</p>
-        </div>
-      </div>
-      <div className={offerStyles.item3}>
-        <div className={offerStyles.dietItem}>
-          <img src={dietsImage2} />
-          <h2>Dieta Paleo</h2>
-          <p>Opis diety paleo jaka jest. Opis diety paleo jaka jest.</p>
-        </div>
-      </div>
-      <div className={offerStyles.item4}>
-        <div className={offerStyles.dietItem}>
-          <img src={dietsImage2} />
-          <h2>Dieta Paleo</h2>
-          <p>Opis diety paleo jaka jest. Opis diety paleo jaka jest.</p>
-        </div>
-      </div>
-      <div className={offerStyles.item5}>
-        <div className={offerStyles.dietItem}>
-          <img src={dietsImage2} />
-          <h2>Dieta Paleo</h2>
-          <p>Opis diety paleo jaka jest. Opis diety paleo jaka jest.</p>
-        </div>
-      </div>
-      <div className={offerStyles.item6}>
-        <div className={offerStyles.dietItem}>
-          <img src={dietsImage2} />
-          <h2>Dieta Paleo</h2>
-          <p>Opis diety paleo jaka jest. Opis diety paleo jaka jest.</p>
-        </div>
-      </div>
-      <div className={offerStyles.item7}>
-        <div className={offerStyles.dietItem}>
-          <img src={dietsImage2} />
-          <h2>Dieta Paleo</h2>
-          <p>Opis diety paleo jaka jest. Opis diety paleo jaka jest.</p>
-        </div>
-      </div>
-      <div className={offerStyles.item8}>
-        <div className={offerStyles.dietItem}>
-          <img src={dietsImage2} />
-          <h2>Dieta Paleo</h2>
-          <p>Opis diety paleo jaka jest. Opis diety paleo jaka jest.</p>
-        </div>
+const Offer = React.forwardRef(({ pageContext }, ref) => {
+  const findDiet = diet => {
+    if (diet === 'samuraja') {
+      return samurajDiet
+    }
+    if (diet === 'odchudzajaca') {
+      return slimDiet
+    }
+    if (diet === 'paleo') {
+      return paleoDiet
+    }
+    if (diet === 'sportowa-na-mase') {
+      return massDiet
+    }
+    if (diet === 'sportowa-na-redukcje') {
+      return reductionDiet
+    }
+    if (diet === 'weganska') {
+      return vegaDiet
+    }
+    if (diet === 'wegetarianska') {
+      return vegeDiet
+    }
+    if (diet === 'standard') {
+      return standardDiet
+    }
+  }
+  return (
+    <div>
+      {console.log("dsddsds", pageContext)}
+      <h2>Oferta naszej diety pudełkowej - wybierz jedną z 8 diet z dowozem</h2>
+      <div className={offerStyles.container} ref={ref}>
+        {/*<Link to={`/${pageContext.slug ? pageContext.slug : ''}/dieta-paleo`}><img src={dietsImage}/></Link>*/}
+        {diets.map(diet => (
+          <Link to={`/dieta-${diet.dietUrl}`}>
+            <div key={diet.dietUrl} className={offerStyles.dietItem}>
+              {console.log("dddddddd", diet)}
+              <img src={findDiet(diet.dietUrl)} />
+              <p>{diet.fullName}</p>
+              <p>Opis diety paleo jaka jest. Opis diety paleo jaka jest.</p>
+            </div>
+          </Link>
+        ))}
       </div>
     </div>
-  </div>
-))
+  )
+})
 
 export default Offer

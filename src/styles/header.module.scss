@@ -1,3 +1,4 @@
+@import "variables";
 .link {
   color: yellow;
 }
@@ -10,7 +11,6 @@
   justify-content: space-around;
   top: 0;
   left: 0;
-  display: flex;
   height: 20px;
   width: 100%;
   color: green;
@@ -20,21 +20,6 @@
 .secondHeader {
   padding: 20px 0;
   display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: space-around;
-  top: 0;
-  left: 0;
-  height: 20px;
-  width: 100%;
-  color: purple;
-  background-color: #FBDAE2;
-
-}
-
-.thirdHeader {
-  padding: 20px 0;
-  display: flex;
   position: fixed;
   align-items: center;
   justify-content: space-around;
@@ -42,11 +27,34 @@
   left: 0;
   height: 20px;
   width: 100%;
-  color: purple;
-  background-color: white;
-  opacity: 0.7;
+  color: $main-color;
 
 }
+
+.headerColorDown {
+  background-color: white;
+  opacity: 0.7;
+}
+
+.headerColorUp{
+  background-color: #FBDAE2;
+}
+
+//.thirdHeader {
+//  padding: 20px 0;
+//  display: flex;
+//  position: fixed;
+//  align-items: center;
+//  justify-content: space-around;
+//  top: 0;
+//  left: 0;
+//  height: 20px;
+//  width: 100%;
+//  color: purple;
+//  background-color: white;
+//  opacity: 0.7;
+//
+//}
 
 .topMenuRightPart {
   display: flex;
@@ -55,11 +63,13 @@
 
 
 
-.title {
-  color: #000000;
-  font-size: 3rem;
-  text-decoration: none;
-}
+//.title {
+//  color: #000000;
+//  font-size: 3rem;
+//  text-decoration: none;
+//  width: 20px;
+//  height: 5px;
+//}
 
 .nav-list {
   display: flex;

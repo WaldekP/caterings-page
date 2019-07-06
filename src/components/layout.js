@@ -4,6 +4,11 @@ import Footer from "./footer"
 import layoutStyles from "../styles/layout.module.scss"
 import { cities } from "../data/cities"
 import { Link, navigate } from "gatsby"
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faCheckSquare, faCoffee, faCircle } from '@fortawesome/free-solid-svg-icons'
+
+library.add(fab, faCheckSquare, faCircle)
 
 const Layout = ({title, children, pageContext }) => {
   const cityCookie = typeof window !== 'undefined' && JSON.parse(window.sessionStorage.getItem("city"))
@@ -34,7 +39,7 @@ const Layout = ({title, children, pageContext }) => {
       {!cityCookie && !citySlug && <div className={layoutStyles.overlay}>
           <div className={layoutStyles.overlayContent}>
             <h1>Wybierz miasto</h1>
-            <ul>
+            <ul className={layoutStyles.overlayList}>
               {[...cities, { value: "lodz", label: "Łódź" }]
                 .sort((prev, next) => {
                   const prevCity = prev.label
@@ -43,11 +48,11 @@ const Layout = ({title, children, pageContext }) => {
                 })
                 .map(city => (
                   <li
+                    className={layoutStyles.overlayItem}
                     onClick={() => placeCityCookie(city.value)}
                     key={city.value}
                   >
-                    <Link to={getLinkUrl(city.value)}>
-                      {console.log('dsdcewcwecw', getLinkUrl(city.value))}
+                    <Link className={layoutStyles.link} to={getLinkUrl(city.value)}>
                       {city.label}
                     </Link>
                   </li>

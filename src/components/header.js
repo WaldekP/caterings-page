@@ -3,12 +3,11 @@ import { Link, graphql, useStaticQuery, navigate } from "gatsby"
 import headerStyles from "../styles/header.module.scss"
 import commonStyles from "../styles/common.module.scss"
 import { cities } from "../data/cities"
-import { diets } from "../data/diets"
+import logo from "../images/logo/afterfit_img_logo.svg"
 
 import MenuContext from "../context/menuContext"
 
 const Header = ({ pageContext }) => {
-  console.log('pageContext', pageContext)
   const citySlug = pageContext && pageContext.city
   const dietSlug = pageContext && pageContext.diet
 
@@ -22,23 +21,24 @@ const Header = ({ pageContext }) => {
     }
   `)
 
-  const [yPosition, changePosition] = useState(typeof window !== 'undefined' && window.scrollY)
+  const [yPosition, changePosition] = useState(
+    typeof window !== "undefined" && window.scrollY
+  )
 
   const handleScroll = () => {
-    if (typeof window !== 'undefined') {
+    if (typeof window !== "undefined") {
       return changePosition(window.scrollY)
     }
   }
   const { menuTab, changeMenuTab } = useContext(MenuContext)
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
+    if (typeof window !== "undefined") {
       window.addEventListener("scroll", handleScroll)
     }
   }, [])
 
   const findCity = () => {
-    console.log('citySlug', citySlug)
     if (!citySlug) {
       return "lodz"
     }
@@ -84,13 +84,14 @@ const Header = ({ pageContext }) => {
       {/*  </div>*/}
       {/*</header>*/}
       <header
-        className={
-          yPosition < 68 ? headerStyles.secondHeader : headerStyles.thirdHeader
-        }
+        // className={
+        //   yPosition < 68 ? headerStyles.secondHeader : headerStyles.thirdHeader
+        // }
+        className={`${headerStyles.secondHeader} ${yPosition < 68 ? headerStyles.headerColorUp : headerStyles.headerColorDown}`}
       >
         <span>
           <Link className={headerStyles.title} to="/">
-            {data.site.siteMetadata.title}
+            <img src={logo} />
           </Link>
         </span>
         <div className={headerStyles.menu}>
@@ -120,9 +121,6 @@ const Header = ({ pageContext }) => {
                 Blog
               </Link>
             </li>
-            <Link to="contact">
-              Kontakt
-            </Link>
           </ul>
           <button className={commonStyles.button}>Zamów</button>
         </div>
@@ -130,7 +128,11 @@ const Header = ({ pageContext }) => {
           <button className={headerStyles.panelButton}>Panel klienta</button>
           <select
             onChange={({ target: { value } }) => {
-              typeof window !== 'undefined' && window.sessionStorage.setItem("city", `${JSON.stringify(value)}`)
+              typeof window !== "undefined" &&
+                window.sessionStorage.setItem(
+                  "city",
+                  `${JSON.stringify(value)}`
+                )
               if (value === "lodz") {
                 return navigate(dietSlug ? `/${dietSlug}` : "/")
               }
@@ -145,9 +147,7 @@ const Header = ({ pageContext }) => {
                 return prevCity.localeCompare(nextCity)
               })
               .map(city => (
-                <option
-                  value={city.value}
-                  key={city.value}>
+                <option value={city.value} key={city.value}>
                   {city.label}
                 </option>
               ))}

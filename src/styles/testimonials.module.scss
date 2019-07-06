@@ -1,6 +1,42 @@
+@import "variables";
 .container {
-  height: 400px;
   background-color: #FFE399;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 75px 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  img {
+    width: 50px;
+    height: auto;
+  }
+  h4 {
+    quotes: "„" "“";
+    font-size: 25px;
+    text-align: center;
+  }
+}
+
+.circlesContainer {
+  display: flex;
+  justify-content: center;
+  color: #BBBEA7;
+  margin-top: 20px;
+}
+
+.circle {
+  margin: 0 5px;
+}
+
+.active {
+  color: $main-color
 }
 
 .title {

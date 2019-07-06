@@ -6,14 +6,22 @@
 
 .container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 100%;
   margin: 60px auto 0 auto;
 }
 
 .contactItem {
   margin: 0 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .details {
+    white-space: nowrap;
+    font-size: 20px;
+  }
   img {
     width: 150px;
     height: 150px;
@@ -28,7 +36,17 @@
   color: red;
 }
 
-.right-map-conteiner {
+.right-map-container {
   background-color: $intense-yellow;
   width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  color: $main-color;
+  p {
+    margin-left: 50px;
+    font-weight: 600;
+
+  }
 }

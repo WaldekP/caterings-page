@@ -11,14 +11,17 @@ h2 {
 
 .insideText {
   position: absolute;
-  top: 90px;
-  left: 50px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  top: 120px;
+  left: 10%;
 }
 
 .questions-box {
   overflow: scroll;
-  height: 350px;
-  background-color: #FFFFFF;
+  height: 420px;
+  background: url("../images/chat/img_czat_bg.svg" ) no-repeat center center;
+  background-size: cover;
   border: 1px solid #E1E1E1;
   display: flex;
   flex-direction: column;
