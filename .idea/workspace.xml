@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="57d3d639-63d7-48d6-be77-9e9e5309408c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/diet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/diet.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,8 +42,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/diet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+            <state relative-caret-position="258">
+              <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -55,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/dietDescription.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="45">
+              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -67,8 +66,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/styles/dietDescription.module.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+            <state relative-caret-position="400">
+              <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -181,8 +180,8 @@
         <option value="$PROJECT_DIR$/src/components/footer.js" />
         <option value="$PROJECT_DIR$/src/styles/variables.scss" />
         <option value="$PROJECT_DIR$/src/styles/dietGallery.module.scss" />
-        <option value="$PROJECT_DIR$/src/styles/dietDescription.module.scss" />
         <option value="$PROJECT_DIR$/src/components/dietDescription.js" />
+        <option value="$PROJECT_DIR$/src/styles/dietDescription.module.scss" />
         <option value="$PROJECT_DIR$/src/pages/diet.js" />
       </list>
     </option>
@@ -327,7 +326,7 @@
       <workItem from="1562086238686" duration="36071000" />
       <workItem from="1562364522247" duration="19530000" />
       <workItem from="1562490533367" duration="5264000" />
-      <workItem from="1562502868741" duration="4460000" />
+      <workItem from="1562502868741" duration="4876000" />
     </task>
     <task id="LOCAL-00001" summary="Offer fix">
       <created>1561322353633</created>
@@ -497,11 +496,25 @@
       <option name="project" value="LOCAL" />
       <updated>1562509131407</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Another guard added">
+      <created>1562509292699</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1562509292699</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Another another guard added">
+      <created>1562509500343</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1562509500343</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162552000" />
+    <option name="totallyTimeSpent" value="162968000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -560,7 +573,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Offer fix" />
     <MESSAGE value="Dynamically created cities and diets pages." />
     <MESSAGE value="Some plugins config commented out" />
     <MESSAGE value="session storage fix" />
@@ -584,7 +596,9 @@
     <MESSAGE value="chat logic finished" />
     <MESSAGE value="Diets page some styling implemented" />
     <MESSAGE value="Some guard added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some guard added" />
+    <MESSAGE value="Another guard added" />
+    <MESSAGE value="Another another guard added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Another another guard added" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/components/valueProposition.js">
@@ -929,15 +943,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/dietDescription.module.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        <state relative-caret-position="400">
+          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/dietDescription.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        <state relative-caret-position="45">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
@@ -946,8 +960,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/diet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+        <state relative-caret-position="258">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
