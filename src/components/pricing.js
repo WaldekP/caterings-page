@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import pricingStyles from "../styles/pricing.module.scss"
 
 const Pricing = React.forwardRef((props, ref) => {

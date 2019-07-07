@@ -53,7 +53,7 @@ const IndexPage = ({ pageContext }) => {
         <ValueProposition ref={valuePropositionRef}/>
         <Chatbot ref={chatbotRef} pageContext={pageContext}/>
         <Offer pageContext={pageContext} ref={offerRef}/>
-        <CallToAction />
+        <CallToAction cta="catering"/>
         <Pricing ref={pricingRef}/>
         <Testimonials ref={opinionsRef}/>
         <Faq pageContext={pageContext}/>

@@ -13,28 +13,28 @@ import massDiet from "../images/diets/dieta-na-mase.jpg"
 
 const Offer = React.forwardRef(({ pageContext }, ref) => {
   const findDiet = diet => {
-    if (diet === 'samuraja') {
+    if (diet === 'dieta-samuraja') {
       return samurajDiet
     }
-    if (diet === 'odchudzajaca') {
+    if (diet === 'dieta-odchudzajaca') {
       return slimDiet
     }
-    if (diet === 'paleo') {
+    if (diet === 'dieta-paleo') {
       return paleoDiet
     }
-    if (diet === 'sportowa-na-mase') {
+    if (diet === 'dieta-sportowa-na-mase') {
       return massDiet
     }
-    if (diet === 'sportowa-na-redukcje') {
+    if (diet === 'dieta-sportowa-na-redukcje') {
       return reductionDiet
     }
-    if (diet === 'weganska') {
+    if (diet === 'dieta-weganska') {
       return vegaDiet
     }
-    if (diet === 'wegetarianska') {
+    if (diet === 'dieta-wegetarianska') {
       return vegeDiet
     }
-    if (diet === 'standard') {
+    if (diet === 'dieta-standard') {
       return standardDiet
     }
   }
@@ -43,7 +43,7 @@ const Offer = React.forwardRef(({ pageContext }, ref) => {
       <h2>Oferta naszej diety pudełkowej - wybierz jedną z 8 diet z dowozem</h2>
       <div className={offerStyles.container} ref={ref}>
         {diets.map(diet => (
-          <Link to={pageContext.city ? `/${pageContext.city}/dieta-${diet.dietUrl}` : `/dieta-${diet.dietUrl}`}>
+          <Link to={pageContext.city ? `/${pageContext.city}/${diet.dietUrl}` : `/${diet.dietUrl}`}>
             <div key={diet.dietUrl} className={offerStyles.dietItem}>
               <img src={findDiet(diet.dietUrl)} />
               <p>{diet.fullName}</p>

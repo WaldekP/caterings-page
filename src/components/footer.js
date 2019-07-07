@@ -19,6 +19,7 @@ const Footer = () => {
             </div>
             <p>Telefon: 692-432-102</p>
             <p>Email: zamowienia@afterfit-catering.pl</p>
+            <p>Godziny otwarcia bióra obsługi klienta tutaj będą</p>
             <p>Regulamin</p>
             <p>Polityka prewatności</p>
           </div>
