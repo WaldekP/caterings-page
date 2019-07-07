@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57d3d639-63d7-48d6-be77-9e9e5309408c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/dietDescription.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/dietGallery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/dietHero.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/dietPricing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/dietsFaq.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/dietsFaqData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/dietHeros/img_paleo_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/dietDescription.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/dietGallery.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/dietHero.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/callToAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/callToAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/offer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/offer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pricing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pricing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/diets.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/diets.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/diet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/diet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/variables.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -58,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/diet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+            <state relative-caret-position="322">
+              <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -70,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/dietDescription.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="20" column="65" lean-forward="true" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
+            <state>
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -192,7 +174,6 @@
         <option value="$PROJECT_DIR$/src/pages/index.js" />
         <option value="$PROJECT_DIR$/src/components/callToAction.js" />
         <option value="$PROJECT_DIR$/src/components/dietPricing.js" />
-        <option value="$PROJECT_DIR$/src/pages/diet.js" />
         <option value="$PROJECT_DIR$/src/styles/index.scss" />
         <option value="$PROJECT_DIR$/src/styles/header.module.scss" />
         <option value="$PROJECT_DIR$/src/styles/layout.module.scss" />
@@ -202,6 +183,7 @@
         <option value="$PROJECT_DIR$/src/styles/dietGallery.module.scss" />
         <option value="$PROJECT_DIR$/src/styles/dietDescription.module.scss" />
         <option value="$PROJECT_DIR$/src/components/dietDescription.js" />
+        <option value="$PROJECT_DIR$/src/pages/diet.js" />
       </list>
     </option>
   </component>
@@ -345,7 +327,7 @@
       <workItem from="1562086238686" duration="36071000" />
       <workItem from="1562364522247" duration="19530000" />
       <workItem from="1562490533367" duration="5264000" />
-      <workItem from="1562502868741" duration="3955000" />
+      <workItem from="1562502868741" duration="4460000" />
     </task>
     <task id="LOCAL-00001" summary="Offer fix">
       <created>1561322353633</created>
@@ -501,11 +483,25 @@
       <option name="project" value="LOCAL" />
       <updated>1562432682320</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Diets page some styling implemented">
+      <created>1562508932936</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1562508932936</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Some guard added">
+      <created>1562509131407</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1562509131407</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162047000" />
+    <option name="totallyTimeSpent" value="162552000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -586,7 +582,9 @@
     <MESSAGE value="yet another another test" />
     <MESSAGE value="diets mapping implemented" />
     <MESSAGE value="chat logic finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="chat logic finished" />
+    <MESSAGE value="Diets page some styling implemented" />
+    <MESSAGE value="Some guard added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some guard added" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/components/valueProposition.js">
@@ -873,16 +871,6 @@
     <entry file="file://$PROJECT_DIR$/src/styles/index.module.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/diet.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/faq.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -948,10 +936,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/dietDescription.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="20" column="65" lean-forward="true" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
+        <state>
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/diet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>

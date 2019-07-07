@@ -30,7 +30,7 @@ const Diet = ({pageContext}) => {
   const findDietDescription = () => {
     const diet = findDiet()
     const city = getCitySlug()
-    const descriptions =  diet.cityDescription[city] ? diet.cityDescription[city] : diet.cityDescription['lodz']
+    const descriptions = diet && diet.cityDescription[city] ? diet.cityDescription[city] : diet.cityDescription['lodz']
     return descriptions && descriptions.description
   }
   return (
