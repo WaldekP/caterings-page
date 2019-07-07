@@ -4,7 +4,7 @@ import dietDescriptionStyles from '../styles/dietDescription.module.scss'
 const DietDescription = ({ diet, city, dietDescription }) => {
   return (
     <div>
-      <h2>{diet} {city ? city : "Łódź"} - dla kogo?</h2>
+      <h1>{diet} {city ? city : "Łódź"} - dla kogo?</h1>
       <div className={dietDescriptionStyles.container}>
         <div className={dietDescriptionStyles.descriptionContainer}><p>{dietDescription}</p></div>
         <div className={dietDescriptionStyles.menuContainer}>
