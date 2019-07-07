@@ -1,7 +1,7 @@
 import React from "react"
 import dietDescriptionStyles from '../styles/dietDescription.module.scss'
 
-const DietDexcription = ({ diet, city, dietDescription }) => {
+const DietDescription = ({ diet, city, dietDescription }) => {
   return (
     <div>
       <h2>{diet} {city ? city : "Łódź"} - dla kogo?</h2>
@@ -35,4 +35,4 @@ const DietDexcription = ({ diet, city, dietDescription }) => {
     </div>
   )
 }
-export default DietDexcription
+export default DietDescription
