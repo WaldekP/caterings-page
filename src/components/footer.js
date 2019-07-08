@@ -1,6 +1,7 @@
 import React from "react"
 import footerStyles from '../styles/footer.module.scss'
 import logo from '../images/logo/afterfit_img_logo.svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Footer = () => {
 
@@ -12,10 +13,11 @@ const Footer = () => {
             <div><img src={logo}/></div>
             <div>® AFTERFIT-CATERING 2019</div>
             <div className={footerStyles.socialMediaContainer}>
-              <p>F</p>
-              <p>I</p>
-              <p>Y</p>
-              <p>P</p>
+              {/*<a href="http://afterfit-catering.pl" target="_blank" rel="noopener noreferrer"><span><FontAwesomeIcon icon={['fab', 'facebook']} /></span></a>*/}
+              <span><FontAwesomeIcon icon={['fab', 'facebook']} /></span>
+              <span><FontAwesomeIcon icon={['fab', 'instagram']} /></span>
+              <span><FontAwesomeIcon icon={['fab', 'youtube']} /></span>
+              <span><FontAwesomeIcon icon={['fab', 'pinterest']} /></span>
             </div>
             <p>Telefon: 692-432-102</p>
             <p>Email: zamowienia@afterfit-catering.pl</p>

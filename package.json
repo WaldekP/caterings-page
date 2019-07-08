@@ -14,6 +14,7 @@
     "env-cmd": "^9.0.3",
     "gatsby": "^2.9.11",
     "gatsby-image": "^2.1.4",
+    "gatsby-plugin-favicon": "^3.1.6",
     "gatsby-plugin-manifest": "^2.1.1",
     "gatsby-plugin-netlify": "^2.1.0",
     "gatsby-plugin-offline": "^2.1.3",

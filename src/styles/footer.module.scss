@@ -35,4 +35,9 @@
 
 .social-media-container {
   display: flex;
+  font-size: 30px;
+  margin: 5px 0;
+  span {
+    margin-right: 10px;
+  }
 }

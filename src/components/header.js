@@ -47,50 +47,11 @@ const Header = ({ pageContext }) => {
 
   return (
     <Fragment>
-      {/*<header className={headerStyles.header}>*/}
-      {/*  <h1>*/}
-      {/*    <Link className={headerStyles.title} to="/">*/}
-      {/*      {data.site.siteMetadata.title}*/}
-      {/*    </Link>*/}
-      {/*  </h1>*/}
-      {/*  <div className={headerStyles.topMenuRightPart}>*/}
-      {/*  <button>Panel klienta</button>*/}
-      {/*  <Select*/}
-      {/*    options={[...cities, { value: "lodz", label: "Łódź" }].sort(*/}
-      {/*      (prev, next) => {*/}
-      {/*        const prevCity = prev.label*/}
-      {/*        const nextCity = next.label*/}
-      {/*        return prevCity.localeCompare(nextCity)*/}
-      {/*      }*/}
-      {/*    )}*/}
-      {/*    value={cities.find(city => {*/}
-      {/*      if (!citySlug) {*/}
-      {/*        return city.value === "lodz"*/}
-      {/*      }*/}
-      {/*      return city.value === citySlug*/}
-      {/*    })}*/}
-      {/*    onChange={option => {*/}
-      {/*      sessionStorage.setItem("city", `${JSON.stringify(option.value)}`)*/}
-      {/*      if (option.value === "lodz") {*/}
-      {/*        console.log("aaaa", dietSlug)*/}
-      {/*        return navigate(dietSlug ? `/${dietSlug}` : "/")*/}
-      {/*      }*/}
-      {/*      console.log("bbbb")*/}
-      {/*      return navigate(*/}
-      {/*        dietSlug ? `/${option.value}/${dietSlug}` : `/${option.value}`*/}
-      {/*      )*/}
-      {/*    }}*/}
-      {/*  />*/}
-      {/*  </div>*/}
-      {/*</header>*/}
       <header
-        // className={
-        //   yPosition < 68 ? headerStyles.secondHeader : headerStyles.thirdHeader
-        // }
-        className={`${headerStyles.secondHeader} ${yPosition < 5 ? headerStyles.headerColorUp : headerStyles.headerColorDown}`}
+        className={`${yPosition < 60 ? headerStyles.header : headerStyles.secondHeader}`}
       >
         <span>
-          <Link className={headerStyles.title} to="/">
+          <Link to={citySlug ? `/${citySlug}` : "/"}>
             <img src={logo} />
           </Link>
         </span>
@@ -108,6 +69,9 @@ const Header = ({ pageContext }) => {
             </li>
             <li onClick={() => changeMenuTab("opinions")}>
               Opinie
+            </li>
+            <li onClick={() => changeMenuTab("contact")}>
+              Kontakt
             </li>
             <li>
               <Link

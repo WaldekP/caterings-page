@@ -3,7 +3,7 @@ import faqStyles from "../styles/faq.module.scss"
 import { faq } from "../data/mainPage/faq"
 import Question from "./question"
 
-const Faq = ({ pageContext }) => {
+const Faq = React.forwardRef (({ pageContext }, ref) => {
   const city = pageContext.city ? pageContext.city : "lodz"
   const [section, chooseSection] = useState("general")
 
@@ -15,7 +15,7 @@ const Faq = ({ pageContext }) => {
     return Object.values(faq[city][section])
   }
   return (
-    <div className={faqStyles.wrapper}>
+    <div className={faqStyles.wrapper} ref={ref}>
       <h2>Masz pytania odnośnie naszego cateringu? Zajrzyj tutaj.</h2>
       <p>Nie możesz znaleźć odpowiedzi na pytanie? Napisz do nas na czacie</p>
       <div className={faqStyles.container}>
@@ -44,6 +44,6 @@ const Faq = ({ pageContext }) => {
       </div>
     </div>
   )
-}
+})
 
 export default Faq

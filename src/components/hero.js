@@ -1,7 +1,23 @@
-import React from "react"
+import React, { useContext, useEffect, useState } from "react"
 import heroStyles from "../styles/hero.module.scss"
 
 const Hero = () => {
+  const [yPosition, changePosition] = useState(
+    typeof window !== "undefined" && window.scrollY
+  )
+
+  const handleScroll = () => {
+    if (typeof window !== "undefined") {
+      return changePosition(window.scrollY)
+    }
+  }
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", handleScroll)
+    }
+  }, [])
+
   return (
     <div className={heroStyles.container}>
       <div className={heroStyles.wrapper}>
