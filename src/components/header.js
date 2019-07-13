@@ -4,6 +4,7 @@ import headerStyles from "../styles/header.module.scss"
 import commonStyles from "../styles/common.module.scss"
 import { cities } from "../data/cities"
 import logo from "../images/logo/afterfit_img_logo.svg"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import PageContext from "../context/pageContext"
 
@@ -25,6 +26,8 @@ const Header = ({ pageContext }) => {
     typeof window !== "undefined" && window.scrollY
   )
 
+  const [menuOverlay, toggleMenu] = useState(false)
+
   const handleScroll = () => {
     if (typeof window !== "undefined") {
       return changePosition(window.scrollY)
@@ -39,43 +42,91 @@ const Header = ({ pageContext }) => {
   }, [])
 
   const findCity = () => {
-    console.log('citySlug', citySlug)
+    console.log("citySlug", citySlug)
     if (!citySlug) {
-      console.log('aaaaaa')
+      console.log("aaaaaa")
       return "lodz"
     }
-    console.log('bbbbb')
+    console.log("bbbbb")
     return citySlug
+  }
+  if (menuOverlay) {
+    return (
+      <div className={menuOverlay && headerStyles.overlay}>
+        <div className={headerStyles.mobileMenuHeader}>
+          <span>
+            <Link to={citySlug ? `/${citySlug}` : "/"}>
+              <img src={logo} />
+            </Link>
+          </span>{" "}
+          <span onClick={() => toggleMenu(false)}><FontAwesomeIcon icon="window-close" /></span>
+        </div>
+        <div className={headerStyles.mobileMenu}>
+          <button>Zamów</button>
+          <ul className={headerStyles.navListMobile}>
+            <li onClick={() => changeMenuTab("valueProposition")}>
+              Co nas wyróżnia
+            </li>
+            <li onClick={() => changeMenuTab("chatbot")}>Dobierz dietę</li>
+            <li
+              onClick={() => {
+                changeMenuTab("offer")
+              }}
+            >
+              Oferta
+            </li>
+            <li onClick={() => changeMenuTab("pricing")}>Cennik</li>
+            <li onClick={() => changeMenuTab("opinions")}>Opinie</li>
+            <li onClick={() => changeMenuTab("contact")}>Kontakt</li>
+            <li>
+              <Link
+                className={headerStyles.navItem}
+                activeClassName={headerStyles.activeNav}
+                to="/blog"
+              >
+                Blog
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    )
   }
 
   return (
     <Fragment>
       <header
-        className={`${yPosition < 60 ? headerStyles.header : headerStyles.secondHeader}`}
+        className={`${
+          yPosition < 60 ? headerStyles.header : headerStyles.secondHeader
+        }`}
       >
         <span>
           <Link to={citySlug ? `/${citySlug}` : "/"}>
             <img src={logo} />
           </Link>
         </span>
+        <div
+          className={headerStyles.hamburgerMenu}
+          onClick={() => toggleMenu(true)}
+        >
+          HAMBURGER
+        </div>
         <div className={headerStyles.menu}>
           <ul className={headerStyles.navList}>
             <li onClick={() => changeMenuTab("valueProposition")}>
               Co nas wyróżnia
             </li>
-            <li onClick={() => changeMenuTab("chatbot")}>
-              Dobierz dietę
+            <li onClick={() => changeMenuTab("chatbot")}>Dobierz dietę</li>
+            <li
+              onClick={() => {
+                changeMenuTab("offer")
+              }}
+            >
+              Oferta
             </li>
-            <li onClick={() => changeMenuTab("offer")}>Oferta</li>
-            <li onClick={() => changeMenuTab("pricing")}>
-              Cennik
-            </li>
-            <li onClick={() => changeMenuTab("opinions")}>
-              Opinie
-            </li>
-            <li onClick={() => changeMenuTab("contact")}>
-              Kontakt
-            </li>
+            <li onClick={() => changeMenuTab("pricing")}>Cennik</li>
+            <li onClick={() => changeMenuTab("opinions")}>Opinie</li>
+            <li onClick={() => changeMenuTab("contact")}>Kontakt</li>
             <li>
               <Link
                 className={headerStyles.navItem}

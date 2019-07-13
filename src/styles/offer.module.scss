@@ -1,7 +1,7 @@
 @import "variables";
 .container {
   display: flex;
-  width: 80%;
+  max-width: 1400px;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;

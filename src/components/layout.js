@@ -6,9 +6,9 @@ import { cities } from "../data/cities"
 import { Link, navigate } from "gatsby"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faCheckSquare, faCircle } from '@fortawesome/free-solid-svg-icons'
+import { faCheckSquare, faCircle, faWindowClose } from '@fortawesome/free-solid-svg-icons'
 
-library.add(fab, faCheckSquare, faCircle, fab)
+library.add(fab, faCheckSquare, faCircle, fab, faWindowClose)
 
 const Layout = ({title, children, pageContext }) => {
   const cityCookie = typeof window !== 'undefined' && JSON.parse(window.sessionStorage.getItem("city"))
