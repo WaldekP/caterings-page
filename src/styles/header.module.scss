@@ -177,6 +177,7 @@ button {
     flex-direction: column;
   }
 
+
   .mobile-menu-header {
     display: flex;
     justify-content: space-between;
@@ -205,6 +206,13 @@ button {
 
   button {
     align-self: center;
+  }
+
+  li {
+    list-style-type: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
   }
 }
 

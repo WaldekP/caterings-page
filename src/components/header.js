@@ -54,12 +54,12 @@ const Header = ({ pageContext }) => {
     return (
       <div className={menuOverlay && headerStyles.overlay}>
         <div className={headerStyles.mobileMenuHeader}>
+          <span onClick={() => toggleMenu(false)}><FontAwesomeIcon icon="window-close" /></span>
           <span>
             <Link to={citySlug ? `/${citySlug}` : "/"}>
               <img src={logo} />
             </Link>
           </span>{" "}
-          <span onClick={() => toggleMenu(false)}><FontAwesomeIcon icon="window-close" /></span>
         </div>
         <div className={headerStyles.mobileMenu}>
           <button>Zamów</button>
