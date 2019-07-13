@@ -90,5 +90,20 @@
 }
 
 @media (max-width: 799px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    //margin: 0 auto;
+    align-items: center;
+  }
 
+  .questionsContainer {
+    width: 80%;
+  }
+
+  .contentsContainer {
+    left: unset;
+  }
 }
