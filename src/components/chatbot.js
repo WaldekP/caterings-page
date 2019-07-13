@@ -3,9 +3,9 @@ import { Link } from "gatsby"
 import chatbotStyles from "../styles/chatbot.module.scss"
 import chatIcon from "../images/chat/ico_chat1.svg"
 import personIcon from "../images/chat/ico_chat2.svg"
-import PageContext from '../context/pageContext'
+import PageContext from "../context/pageContext"
 
-const Chatbot = React.forwardRef(({pageContext}, ref) => {
+const Chatbot = React.forwardRef(({ pageContext }, ref) => {
   const { changeCalories } = useContext(PageContext)
   const [questionNumber, changeQuestion] = useState(1)
   const [gender, changeGender] = useState()
@@ -186,8 +186,16 @@ const Chatbot = React.forwardRef(({pageContext}, ref) => {
     if (questionNumber === 8) {
       return (
         <Fragment>
-          <Link to={pageContext.city ? `/${pageContext.city}/${handleDietSuggestion().dietUrl}` : `/${handleDietSuggestion().dietUrl}`}>
-            <button onClick={() => changeCalories(suggestCaloriesFromOffer())}>Sprawdź dietę</button>
+          <Link
+            to={
+              pageContext.city
+                ? `/${pageContext.city}/${handleDietSuggestion().dietUrl}`
+                : `/${handleDietSuggestion().dietUrl}`
+            }
+          >
+            <button onClick={() => changeCalories(suggestCaloriesFromOffer())}>
+              Sprawdź dietę
+            </button>
           </Link>
         </Fragment>
       )
@@ -198,86 +206,85 @@ const Chatbot = React.forwardRef(({pageContext}, ref) => {
     if (purpose === "lose weight") {
       if (activity === 1.2 || activity === 1.4) {
         return {
-          dietName: 'Dieta odchudzająca',
-          dietUrl: 'dieta-odchudzajaca'
+          dietName: "Dieta odchudzająca",
+          dietUrl: "dieta-odchudzajaca",
         }
       }
       if (activity === 1.6 || activity === 1.75) {
         return {
-          dietName: 'Dieta sportowa na redukcję',
-          dietUrl: 'dieta-sportowa-na-redukcje'
+          dietName: "Dieta sportowa na redukcję",
+          dietUrl: "dieta-sportowa-na-redukcje",
         }
       }
     }
     if (purpose === "maintain weight") {
       if (activity === 1.2 || activity === 1.4) {
         return {
-          dietName: 'Dieta standard',
-          dietUrl: 'dieta-standard'
+          dietName: "Dieta standard",
+          dietUrl: "dieta-standard",
         }
       }
       if (activity === 1.6 || activity === 1.75) {
         return {
-          dietName: 'Dieta Samuraja',
-          dietUrl: 'dieta-samuraja'
+          dietName: "Dieta Samuraja",
+          dietUrl: "dieta-samuraja",
         }
       }
     }
     if (purpose === "get weight") {
       if (activity === 1.2 || activity === 1.4) {
         return {
-          dietName: 'Dieta standard',
-          dietUrl: 'dieta-standard'
+          dietName: "Dieta standard",
+          dietUrl: "dieta-standard",
         }
       }
       if (activity === 1.6 || activity === 1.75) {
         return {
-          dietName: 'Dieta sportowa na masę',
-          dietUrl: 'dieta-sportowa-na-mase'
+          dietName: "Dieta sportowa na masę",
+          dietUrl: "dieta-sportowa-na-mase",
         }
       }
     }
-  };
+  }
 
   const parseActivity = () => {
     if (activity === 1.2) {
-      return 'mała';
+      return "mała"
     } else if (activity === 1.4) {
-      return 'średnia';
+      return "średnia"
     } else if (activity === 1.6) {
-      return 'wysoka';
+      return "wysoka"
     } else if (activity === 1.75) {
-      return 'bardzo wysoka';
+      return "bardzo wysoka"
     }
-  };
+  }
 
   const parseGoal = () => {
-    if (purpose === 'lose weight') {
-      return -300;
-    } else if (purpose === 'maintain weight') {
-      return 0;
-    } else if (purpose === 'get weight') {
-      return 300;
+    if (purpose === "lose weight") {
+      return -300
+    } else if (purpose === "maintain weight") {
+      return 0
+    } else if (purpose === "get weight") {
+      return 300
     }
-  };
+  }
 
   const calculateCalories = () => {
-
-    let calories = 0;
-    if (gender === 'male')
+    let calories = 0
+    if (gender === "male")
       calories = Math.round(
         (66.47 + 13.75 * weight + 5 * height - 6.75 * age) * activity +
-        parseGoal()
-      );
-    else if (gender === 'female')
+          parseGoal()
+      )
+    else if (gender === "female")
       calories = Math.round(
         (665.09 + 9.56 * weight + 1.85 * height - 4.67 * age) *
-        parseActivity() +
-        parseGoal()
-      );
+          parseActivity() +
+          parseGoal()
+      )
 
-    return calories;
-  };
+    return calories
+  }
 
   const suggestCaloriesFromOffer = () => {
     const calories = calculateCalories()
@@ -288,130 +295,128 @@ const Chatbot = React.forwardRef(({pageContext}, ref) => {
   }
 
   return (
-    <div className={chatbotStyles.container} ref={ref}>
+    <div ref={ref}>
       <h2>Dobierz idealną dietę pudełkową dla siebie</h2>
-      <h3 className={chatbotStyles.insideText}>
-        Zacznij jeść <br />
-        zdrowo bez <br />
-        wysiłku
-      </h3>
-      <div className={chatbotStyles.questionsBox}>
-        <div className={chatbotStyles.questionAnswer}>
-          <div className={chatbotStyles.question}>
-            <img src={chatIcon} />
-            <p>
-              Cześć! Zadam Ci kilka pytań, które pomogą mi dobrać idealną dietę
-              dla Ciebie.
-            </p>
-          </div>
-          {questionNumber >= 2 && (
-            <div className={chatbotStyles.answer}>
-              <p>Zaczynajmy</p>
-              <img src={personIcon} />
-            </div>
-          )}
-        </div>
-        <div className={chatbotStyles.questionAnswer}>
-          {questionNumber >= 2 && (
+      <div className={chatbotStyles.container}>
+        <div className={chatbotStyles.questionsBox}>
+          <h3 className={chatbotStyles.insideText}>
+            Zacznij jeść <br />
+            zdrowo bez <br />
+            wysiłku
+          </h3>
+          <div className={chatbotStyles.questionAnswer}>
             <div className={chatbotStyles.question}>
               <img src={chatIcon} />
-              <p>Jesteś kobietą czy mężczyzną?</p>
+              <p>
+                Cześć! Zadam Ci kilka pytań, które pomogą mi dobrać idealną
+                dietę dla Ciebie.
+              </p>
             </div>
-          )}
-          {questionNumber >= 3 && (
-            <div className={chatbotStyles.answer}>
-              <p>Jestem {gender === "female" ? "kobietą" : "mężczyzną"}</p>
-              <img src={personIcon} />
-            </div>
-          )}
-        </div>
-        <div className={chatbotStyles.questionAnswer} ref={thirdQuestion}>
-          <Fragment>
+            {questionNumber >= 2 && (
+              <div className={chatbotStyles.answer}>
+                <p>Zaczynajmy</p>
+                <img src={personIcon} />
+              </div>
+            )}
+          </div>
+          <div className={chatbotStyles.questionAnswer}>
+            {questionNumber >= 2 && (
+              <div className={chatbotStyles.question}>
+                <img src={chatIcon} />
+                <p>Jesteś kobietą czy mężczyzną?</p>
+              </div>
+            )}
             {questionNumber >= 3 && (
-              <div className={chatbotStyles.question}>
-                <img src={chatIcon} />
-                <p>Proszę wpisz swój wzrost w centymetrach.</p>
-              </div>
-            )}
-            {questionNumber >= 4 && (
               <div className={chatbotStyles.answer}>
-                <p>Mój wzrost to {height} centymetrów.</p>
+                <p>Jestem {gender === "female" ? "kobietą" : "mężczyzną"}</p>
                 <img src={personIcon} />
               </div>
             )}
-          </Fragment>
-        </div>
-        <div className={chatbotStyles.questionAnswer} ref={thirdQuestion}>
-          <Fragment>
-            {questionNumber >= 4 && (
-              <div className={chatbotStyles.question}>
-                <img src={chatIcon} />
-                <p>
-                  Ile ważysz w kilogramch?
-                </p>
-              </div>
-            )}
-            {questionNumber >= 5 && (
-              <div className={chatbotStyles.answer}>
-                <p>Ważę {weight} kilogramów.</p>
-                <img src={personIcon} />
-              </div>
-            )}
-          </Fragment>
-        </div>
-        <div className={chatbotStyles.questionAnswer} ref={thirdQuestion}>
-          <Fragment>
-            {questionNumber >= 5 && (
-              <div className={chatbotStyles.question}>
-                <img src={chatIcon} />
-                <p>
-                  Ile masz lat?
-                </p>
-              </div>
-            )}
-            {questionNumber >= 6 && (
-              <div className={chatbotStyles.answer}>
-                <p>Mam {age} lat.</p>
-                <img src={personIcon} />
-              </div>
-            )}
-          </Fragment>
-        </div>
-        <div className={chatbotStyles.questionAnswer} ref={thirdQuestion}>
-          <Fragment>
-            {questionNumber >= 6 && (
-              <div className={chatbotStyles.question}>
-                <img src={chatIcon} />
-                <p>
-                  Jaka jest Twoja aktywność fizyczna?
-                </p>
-              </div>
-            )}
-            {questionNumber >= 7 && (
-              <div className={chatbotStyles.answer}>
-                <p>Moja aktywność fizyczna jest {parseActivity()}</p>
-                <img src={personIcon} />
-              </div>
-            )}
-          </Fragment>
-        </div>
-        <div className={chatbotStyles.questionAnswer} ref={thirdQuestion}>
-          <Fragment>
-            {questionNumber >= 7 && (
-              <div className={chatbotStyles.question}>
-                <img src={chatIcon} />
-                <p>
-                  Jaki jest cel Twojej diety?
-                </p>
-              </div>
-            )}
-            {questionNumber >= 8 && (
-              <div className={chatbotStyles.answer}>
-                <p>Dieta proponowana dla Ciebie to {handleDietSuggestion().dietName} {suggestCaloriesFromOffer()}</p>
-                <img src={personIcon} />
-              </div>
-            )}
-          </Fragment>
+          </div>
+          <div className={chatbotStyles.questionAnswer} ref={thirdQuestion}>
+            <Fragment>
+              {questionNumber >= 3 && (
+                <div className={chatbotStyles.question}>
+                  <img src={chatIcon} />
+                  <p>Proszę wpisz swój wzrost w centymetrach.</p>
+                </div>
+              )}
+              {questionNumber >= 4 && (
+                <div className={chatbotStyles.answer}>
+                  <p>Mój wzrost to {height} centymetrów.</p>
+                  <img src={personIcon} />
+                </div>
+              )}
+            </Fragment>
+          </div>
+          <div className={chatbotStyles.questionAnswer} ref={thirdQuestion}>
+            <Fragment>
+              {questionNumber >= 4 && (
+                <div className={chatbotStyles.question}>
+                  <img src={chatIcon} />
+                  <p>Ile ważysz w kilogramch?</p>
+                </div>
+              )}
+              {questionNumber >= 5 && (
+                <div className={chatbotStyles.answer}>
+                  <p>Ważę {weight} kilogramów.</p>
+                  <img src={personIcon} />
+                </div>
+              )}
+            </Fragment>
+          </div>
+          <div className={chatbotStyles.questionAnswer} ref={thirdQuestion}>
+            <Fragment>
+              {questionNumber >= 5 && (
+                <div className={chatbotStyles.question}>
+                  <img src={chatIcon} />
+                  <p>Ile masz lat?</p>
+                </div>
+              )}
+              {questionNumber >= 6 && (
+                <div className={chatbotStyles.answer}>
+                  <p>Mam {age} lat.</p>
+                  <img src={personIcon} />
+                </div>
+              )}
+            </Fragment>
+          </div>
+          <div className={chatbotStyles.questionAnswer} ref={thirdQuestion}>
+            <Fragment>
+              {questionNumber >= 6 && (
+                <div className={chatbotStyles.question}>
+                  <img src={chatIcon} />
+                  <p>Jaka jest Twoja aktywność fizyczna?</p>
+                </div>
+              )}
+              {questionNumber >= 7 && (
+                <div className={chatbotStyles.answer}>
+                  <p>Moja aktywność fizyczna jest {parseActivity()}</p>
+                  <img src={personIcon} />
+                </div>
+              )}
+            </Fragment>
+          </div>
+          <div className={chatbotStyles.questionAnswer} ref={thirdQuestion}>
+            <Fragment>
+              {questionNumber >= 7 && (
+                <div className={chatbotStyles.question}>
+                  <img src={chatIcon} />
+                  <p>Jaki jest cel Twojej diety?</p>
+                </div>
+              )}
+              {questionNumber >= 8 && (
+                <div className={chatbotStyles.answer}>
+                  <p>
+                    Dieta proponowana dla Ciebie to{" "}
+                    {handleDietSuggestion().dietName}{" "}
+                    {suggestCaloriesFromOffer()}
+                  </p>
+                  <img src={personIcon} />
+                </div>
+              )}
+            </Fragment>
+          </div>
         </div>
       </div>
       <div className={chatbotStyles.answerBox}>{renderAnswerButtons()}</div>

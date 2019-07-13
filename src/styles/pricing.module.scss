@@ -4,7 +4,7 @@
 .container {
   display: flex;
   border: 1px solid #e1e1e1;
-  width: 75%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -46,6 +46,10 @@
   h2 {
     margin-top: 100px;
   }
+}
+
+.mobile-wrapper {
+  display: none;
 }
 
 .leftSideWrapper {
@@ -178,4 +182,99 @@
 
 h2 {
   text-align: center;
+}
+
+
+@media (max-width: 799px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e1e1e1;
+    width: 100%;
+  }
+
+  .leftSide {
+    display: flex;
+    margin: 45px 0 0 0;
+  }
+
+  .leftSideWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: $main-color;
+  }
+  .section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    //margin-bottom: 30px;
+    p {
+      display: flex;
+      justify-content: center;
+      font-size: 15px;
+      color: $main-color;
+      font-weight: 600;
+      width: 100%;
+    }
+  }
+  .item {
+    width: 150px;
+    height: 45px;
+    margin: 0 10px 10px 0;
+    font-size: 15px;
+  }
+  .mealItem {
+    width: 150px;
+    height: 45px;
+    margin: 0 10px 10px 0;
+    font-size: 15px;
+  }
+  .daysSection {
+    display: flex;
+    align-self: flex-start;
+    position: relative;
+    width: 90%;
+    margin: 10px auto;
+    p {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      font-size: 15px;
+      color: $main-color;
+      font-weight: 600;
+    }
+  }
+  .barSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .barItem {
+    width: 90%;
+  }
+
+  .rightSide {
+    background-color: $main-color;
+    display: flex;
+    margin: 0 0 0 0;
+
+  }
+
+  .rightSideWrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding: 20px 0;
+    h2 {
+      margin: 0;
+    }
+  }
 }
