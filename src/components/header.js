@@ -66,17 +66,20 @@ const Header = ({ pageContext }) => {
             <li onClick={() => {
               toggleMenu(false)
               changeMenuTab("valueProposition")
+              dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
             }}>
               Co nas wyróżnia
             </li>
             <li onClick={() => {
               changeMenuTab("chatbot")
               toggleMenu(false)
+              dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
             }}>Dobierz dietę</li>
             <li
               onClick={() => {
                 changeMenuTab("offer")
                 toggleMenu(false)
+                dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
               }}
             >
               Oferta
@@ -84,14 +87,17 @@ const Header = ({ pageContext }) => {
             <li onClick={() => {
               toggleMenu(false)
               changeMenuTab("pricing")
+              dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
             }}>Cennik</li>
             <li onClick={() => {
               toggleMenu(false)
               changeMenuTab("opinions")
+              dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
             }}>Opinie</li>
             <li onClick={() => {
               toggleMenu(false)
               changeMenuTab("contact")
+              dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
             }}>Kontakt</li>
             <li>
               <Link
