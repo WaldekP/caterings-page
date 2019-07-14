@@ -15,7 +15,21 @@
   height: 20px;
   width: 100%;
   z-index: 200;
-  background-color: #FBDAE2;
+  background-color: #fbdae2;
+}
+
+.diet-header {
+  padding: 20px 0;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-around;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 100%;
+  z-index: 200;
+  background-color: transparent;
 }
 
 //.header-up-color {
@@ -39,7 +53,17 @@
   color: $main-color;
   background-color: white;
   opacity: 0.7;
+}
 
+.panel-button {
+  background-color: white;
+  color: #30387c;
+  @extend .button;
+
+  &:hover {
+    background-color: $main-color;
+    color: white;
+  }
 }
 
 .headerColorDown {
@@ -47,9 +71,10 @@
   opacity: 0.7;
 }
 
-.headerColorUp{
-  background-color: #FBDAE2;
+.headerColorUp {
+  background-color: #fbdae2;
 }
+
 
 //.thirdHeader {
 //  padding: 20px 0;
@@ -69,10 +94,24 @@
 
 .topMenuRightPart {
   display: flex;
+  align-items: center;
   //margin-right: 15%;
+  select {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.57;
+    letter-spacing: normal;
+    text-align-last: right;
+    text-align: right;
+    color: $main-color;
+    background-color: transparent;
+    border: none;
+    padding-right: 10px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+  }
 }
-
-
 
 //.title {
 //  color: #000000;
@@ -105,12 +144,12 @@ li:hover {
 }
 
 .menu {
-  display: flex ;
+  display: flex;
   z-index: 200;
 }
 
 .order-button {
-  background-color: #30387C;
+  background-color: #30387c;
   color: white;
   border-radius: 20px;
   width: 100px;
@@ -118,17 +157,8 @@ li:hover {
   align-self: center;
 }
 
-.panel-button {
-  background-color: white;
-  color: #30387C;
-  border-radius: 20px;
-  width: 100px;
-  height: 40px;
-  align-self: center;
-}
-
 .hamburger-menu {
-  display: none
+  display: none;
 }
 
 .overlay {
@@ -148,14 +178,29 @@ li:hover {
 }
 
 button {
-  @extend .button
+  @extend .button;
 }
 
-
 @media (max-width: 799px) {
-  .secondHeader {
-    position: relative;
+  .header {
+    justify-content: space-between;
   }
+
+  .secondHeader {
+    justify-content: space-between;
+  }
+
+  .diet-header {
+    justify-content: space-between;
+  }
+
+  img {
+    margin: 0 30px;
+  }
+
+  //.secondHeader {
+  //  position: relative;
+  //}
 
   .hamburger-menu {
     display: block;
@@ -193,14 +238,12 @@ button {
     width: 100%;
   }
 
-
   .mobile-menu-header {
     display: flex;
     justify-content: space-between;
     margin: 20px 30px;
     align-items: center;
   }
-
 
   .overlay {
     display: unset;
@@ -211,7 +254,7 @@ button {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #D9D5E8;
+    background: #d9d5e8;
     z-index: 1000; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
   }
@@ -245,8 +288,4 @@ button {
     background-position: 100%;
     background-repeat: no-repeat;
   }
-
 }
-
-
-

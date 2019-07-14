@@ -46,7 +46,7 @@ const Offer = React.forwardRef(({ pageContext }, ref) => {
           <Link to={pageContext.city ? `/${pageContext.city}/${diet.dietUrl}` : `/${diet.dietUrl}`}>
             <div key={diet.dietUrl} className={offerStyles.dietItem}>
               <img src={findDiet(diet.dietUrl)} />
-              <p>{diet.fullName}</p>
+              <h3>{diet.fullName}</h3>
               <p>Opis diety paleo jaka jest. Opis diety paleo jaka jest.</p>
             </div>
           </Link>

@@ -9,7 +9,7 @@ const Footer = () => {
     <footer>
       <div className={footerStyles.container}>
         <div className={footerStyles.wrapper}>
-          <div>
+          <div className={footerStyles.firstColumnContainer}>
             <div><img src={logo}/></div>
             <div>® AFTERFIT-CATERING 2019</div>
             <div className={footerStyles.socialMediaContainer}>
@@ -21,7 +21,6 @@ const Footer = () => {
             </div>
             <p>Telefon: 692-432-102</p>
             <p>Email: zamowienia@afterfit-catering.pl</p>
-            <p>Godziny otwarcia bióra obsługi klienta tutaj będą</p>
             <p>Regulamin</p>
             <p>Polityka prewatności</p>
           </div>

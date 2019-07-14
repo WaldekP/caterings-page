@@ -31,7 +31,7 @@
   color: white;
   button {
     margin-top: 30px;
-    @extend .common-button;
+    @extend .button;
     background-color: white;
     color: $main-color;
     &:hover {
@@ -184,6 +184,19 @@ h2 {
   text-align: center;
 }
 
+@media (max-width: 1186px) {
+  .leftSide {
+    flex: unset
+  }
+
+  .rightSide {
+    flex: unset;
+    width: 700px;
+
+    //min-width: 500px;
+  }
+}
+
 
 @media (max-width: 799px) {
   .container {
@@ -277,4 +290,5 @@ h2 {
       margin: 0;
     }
   }
+
 }

@@ -5,6 +5,7 @@ import commonStyles from "../styles/common.module.scss"
 import { cities } from "../data/cities"
 import logo from "../images/logo/afterfit_img_logo.svg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import hamburgerMenu from '../images/Hamurger menu.png';
 
 import PageContext from "../context/pageContext"
 
@@ -141,7 +142,7 @@ const Header = ({ pageContext }) => {
     <Fragment>
       <header
         className={`${
-          yPosition < 60 ? headerStyles.header : headerStyles.secondHeader
+          yPosition < 100 ? (dietSlug ? headerStyles.dietHeader : headerStyles.header) : (dietSlug ? headerStyles.dietHeader : headerStyles.secondHeader)
         }`}
       >
         <span>
@@ -153,24 +154,40 @@ const Header = ({ pageContext }) => {
           className={headerStyles.hamburgerMenu}
           onClick={() => toggleMenu(true)}
         >
-          HAMBURGER
+          <img src={hamburgerMenu}/>
         </div>
         <div className={headerStyles.menu}>
           <ul className={headerStyles.navList}>
-            <li onClick={() => changeMenuTab("valueProposition")}>
+            <li onClick={() => {
+              dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
+              changeMenuTab("valueProposition")
+            }}>
               Co nas wyróżnia
             </li>
-            <li onClick={() => changeMenuTab("chatbot")}>Dobierz dietę</li>
+            <li onClick={() => {
+              dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
+              changeMenuTab("chatbot")
+            }}>Dobierz dietę</li>
             <li
               onClick={() => {
+                dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
                 changeMenuTab("offer")
               }}
             >
               Oferta
             </li>
-            <li onClick={() => changeMenuTab("pricing")}>Cennik</li>
-            <li onClick={() => changeMenuTab("opinions")}>Opinie</li>
-            <li onClick={() => changeMenuTab("contact")}>Kontakt</li>
+            <li onClick={() => {
+              dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
+              changeMenuTab("pricing")
+            }}>Cennik</li>
+            <li onClick={() => {
+              dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
+              changeMenuTab("opinions")
+            }}>Opinie</li>
+            <li onClick={() => {
+              dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
+              changeMenuTab("contact")
+            }}>Kontakt</li>
             <li>
               <Link
                 className={headerStyles.navItem}
@@ -184,7 +201,7 @@ const Header = ({ pageContext }) => {
           <button className={commonStyles.button}>Zamów</button>
         </div>
         <div className={headerStyles.topMenuRightPart}>
-          <button className={headerStyles.panelButton}>Panel klienta</button>
+          <button className={headerStyles.panelButton}>Panel</button>
           <select
             onChange={({ target: { value } }) => {
               typeof window !== "undefined" &&
