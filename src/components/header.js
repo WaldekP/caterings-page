@@ -44,10 +44,8 @@ const Header = ({ pageContext }) => {
   const findCity = () => {
     console.log("citySlug", citySlug)
     if (!citySlug) {
-      console.log("aaaaaa")
       return "lodz"
     }
-    console.log("bbbbb")
     return citySlug
   }
   if (menuOverlay) {
@@ -88,6 +86,34 @@ const Header = ({ pageContext }) => {
               </Link>
             </li>
           </ul>
+          <div>
+            <select
+              onChange={({ target: { value } }) => {
+                typeof window !== "undefined" &&
+                window.sessionStorage.setItem(
+                  "city",
+                  `${JSON.stringify(value)}`
+                )
+                if (value === "lodz") {
+                  return navigate(dietSlug ? `/${dietSlug}` : "/")
+                }
+                return navigate(dietSlug ? `/${value}/${dietSlug}` : `/${value}`)
+              }}
+              value={findCity()}
+            >
+              {[...cities, { value: "lodz", label: "Łódź" }]
+                .sort((prev, next) => {
+                  const prevCity = prev.label
+                  const nextCity = next.label
+                  return prevCity.localeCompare(nextCity)
+                })
+                .map(city => (
+                  <option value={city.value} key={city.value}>
+                    {city.label}
+                  </option>
+                ))}
+            </select>
+          </div>
         </div>
       </div>
     )

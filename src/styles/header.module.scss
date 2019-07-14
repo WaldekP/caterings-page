@@ -171,10 +171,26 @@ button {
   .mobile-menu {
     display: flex;
     flex-direction: column;
+    li {
+      list-style-type: none;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 2.25;
+      text-transform: uppercase;
+      padding: 10px 0 10px 25px;
+      margin-left: -40px;
+      //display: block;
+      width: 100%;
+      &:hover {
+        background-color: $intense-yellow;
+      }
+    }
   }
   .nav-list-mobile {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
 
@@ -184,6 +200,7 @@ button {
     margin: 20px 30px;
     align-items: center;
   }
+
 
   .overlay {
     display: unset;
@@ -208,12 +225,27 @@ button {
     align-self: center;
   }
 
-  li {
-    list-style-type: none;
-    font-size: 16px;
-    text-transform: uppercase;
-    margin-bottom: 15px;
+  select {
+    margin: 25px;
+    width: calc(100% - 100px);
+    height: 50px;
+    border-radius: 8px;
+    background-color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    color: var(--royal);
+    padding: 0 10px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(https://afterfit-catering.pl/wp-content/uploads/2019/01/menu-mobile-arrow.png);
+    background-position: 100%;
+    background-repeat: no-repeat;
   }
+
 }
 
 
