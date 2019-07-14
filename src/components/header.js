@@ -62,20 +62,36 @@ const Header = ({ pageContext }) => {
         <div className={headerStyles.mobileMenu}>
           <button>Zamów</button>
           <ul className={headerStyles.navListMobile}>
-            <li onClick={() => changeMenuTab("valueProposition")}>
+            <li onClick={() => {
+              toggleMenu(false)
+              changeMenuTab("valueProposition")
+            }}>
               Co nas wyróżnia
             </li>
-            <li onClick={() => changeMenuTab("chatbot")}>Dobierz dietę</li>
+            <li onClick={() => {
+              changeMenuTab("chatbot")
+              toggleMenu(false)
+            }}>Dobierz dietę</li>
             <li
               onClick={() => {
                 changeMenuTab("offer")
+                toggleMenu(false)
               }}
             >
               Oferta
             </li>
-            <li onClick={() => changeMenuTab("pricing")}>Cennik</li>
-            <li onClick={() => changeMenuTab("opinions")}>Opinie</li>
-            <li onClick={() => changeMenuTab("contact")}>Kontakt</li>
+            <li onClick={() => {
+              toggleMenu(false)
+              changeMenuTab("pricing")
+            }}>Cennik</li>
+            <li onClick={() => {
+              toggleMenu(false)
+              changeMenuTab("opinions")
+            }}>Opinie</li>
+            <li onClick={() => {
+              toggleMenu(false)
+              changeMenuTab("contact")
+            }}>Kontakt</li>
             <li>
               <Link
                 className={headerStyles.navItem}
