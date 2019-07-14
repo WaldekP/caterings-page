@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57d3d639-63d7-48d6-be77-9e9e5309408c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/images/Hamurger menu.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/callToAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/callToAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/offer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/offer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pricing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pricing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/callToAction.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/callToAction.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/chatbot.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/chatbot.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/dietDescription.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/dietDescription.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/dietHero.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/dietHero.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/faq.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/faq.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/footer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/footer.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/header.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/hero.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/hero.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/offer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/offer.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/pricing.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/pricing.module.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -64,53 +49,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/offer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="46" column="37" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/header.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="610">
-              <caret line="157" column="14" lean-forward="true" selection-start-line="157" selection-start-column="14" selection-end-line="157" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#72#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/styles/header.module.scss">
+        <entry file="file://$PROJECT_DIR$/src/styles/pricing.module.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="193" column="35" selection-start-line="193" selection-start-column="35" selection-end-line="193" selection-end-column="35" />
+            <state relative-caret-position="287">
+              <caret line="281" column="3" lean-forward="true" selection-start-line="281" selection-start-column="3" selection-end-line="281" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/styles/offer.module.scss">
+        <entry file="file://$PROJECT_DIR$/src/components/pricing.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="33" column="14" lean-forward="true" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/callToAction.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+            <state relative-caret-position="215">
+              <caret line="60" column="8" lean-forward="true" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -200,15 +152,15 @@
         <option value="$PROJECT_DIR$/src/styles/footer.module.scss" />
         <option value="$PROJECT_DIR$/src/styles/faq.module.scss" />
         <option value="$PROJECT_DIR$/src/styles/hero.module.scss" />
-        <option value="$PROJECT_DIR$/src/styles/pricing.module.scss" />
         <option value="$PROJECT_DIR$/src/styles/dietHero.module.scss" />
         <option value="$PROJECT_DIR$/src/styles/dietDescription.module.scss" />
         <option value="$PROJECT_DIR$/src/components/offer.js" />
         <option value="$PROJECT_DIR$/src/styles/callToAction.module.scss" />
         <option value="$PROJECT_DIR$/src/components/callToAction.js" />
         <option value="$PROJECT_DIR$/src/styles/offer.module.scss" />
-        <option value="$PROJECT_DIR$/src/components/header.js" />
         <option value="$PROJECT_DIR$/src/styles/header.module.scss" />
+        <option value="$PROJECT_DIR$/src/components/header.js" />
+        <option value="$PROJECT_DIR$/src/styles/pricing.module.scss" />
       </list>
     </option>
   </component>
@@ -361,7 +313,7 @@
       <workItem from="1562785316506" duration="6844000" />
       <workItem from="1562872350972" duration="3241000" />
       <workItem from="1563028611344" duration="3858000" />
-      <workItem from="1563051034386" duration="24413000" />
+      <workItem from="1563051034386" duration="25591000" />
     </task>
     <task id="LOCAL-00001" summary="Offer fix">
       <created>1561322353633</created>
@@ -629,11 +581,25 @@
       <option name="project" value="LOCAL" />
       <updated>1563100992418</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Menu mobile styles added">
+      <created>1563137176634</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1563137176634</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Mobile navigation fix">
+      <created>1563137578706</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1563137578706</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="208003000" />
+    <option name="totallyTimeSpent" value="209181000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -693,8 +659,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="caching headers improved" />
-    <MESSAGE value="caching headers fix" />
     <MESSAGE value="caching headers another fix" />
     <MESSAGE value="creating separate city page test" />
     <MESSAGE value="contact page test2" />
@@ -718,7 +682,9 @@
     <MESSAGE value="Select in mobile menu fix" />
     <MESSAGE value="Scrolling added to mobile menu" />
     <MESSAGE value="Changing city in the mobile menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changing city in the mobile menu" />
+    <MESSAGE value="Menu mobile styles added" />
+    <MESSAGE value="Mobile navigation fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mobile navigation fix" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/data/diets.js">
@@ -968,20 +934,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/pricing.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="60" column="8" lean-forward="true" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/pricing.module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="35" column="23" lean-forward="true" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/dietHero.module.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1054,6 +1006,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/offer.module.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="33" column="14" lean-forward="true" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/header.module.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="193" column="35" lean-forward="true" selection-start-line="193" selection-start-column="35" selection-end-line="193" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="101" column="16" lean-forward="true" selection-start-line="101" selection-start-column="16" selection-end-line="101" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/offer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
@@ -1061,13 +1037,6 @@
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/offer.module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="33" column="14" lean-forward="true" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -1081,20 +1050,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/header.js">
+    <entry file="file://$PROJECT_DIR$/src/components/pricing.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="157" column="14" lean-forward="true" selection-start-line="157" selection-start-column="14" selection-end-line="157" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#72#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="215">
+          <caret line="60" column="8" lean-forward="true" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/header.module.scss">
+    <entry file="file://$PROJECT_DIR$/src/styles/pricing.module.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="193" column="35" selection-start-line="193" selection-start-column="35" selection-end-line="193" selection-end-column="35" />
+        <state relative-caret-position="287">
+          <caret line="281" column="3" lean-forward="true" selection-start-line="281" selection-start-column="3" selection-end-line="281" selection-end-column="3" />
         </state>
       </provider>
     </entry>
