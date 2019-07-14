@@ -111,8 +111,10 @@ const Header = ({ pageContext }) => {
                   `${JSON.stringify(value)}`
                 )
                 if (value === "lodz") {
+                  changeMenuTab("")
                   return navigate(dietSlug ? `/${dietSlug}` : "/")
                 }
+                changeMenuTab("")
                 return navigate(dietSlug ? `/${value}/${dietSlug}` : `/${value}`)
               }}
               value={findCity()}
