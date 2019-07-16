@@ -24,17 +24,17 @@ const Footer = () => {
             <p>Regulamin</p>
             <p>Polityka prewatności</p>
           </div>
-          <div>
-            <h4>Menu</h4>
-            <p>Co nas wyróżnia</p>
-            <p>Dobierz dietę</p>
-            <p>Oferta</p>
-            <p>Cennik</p>
-            <p>Opinie</p>
-            <p>Faq</p>
-            <p>Kontakt</p>
-            <p>Blog</p>
-          </div>
+          {/*<div>*/}
+          {/*  <h4>Menu</h4>*/}
+          {/*  <p>Co nas wyróżnia</p>*/}
+          {/*  <p>Dobierz dietę</p>*/}
+          {/*  <p>Oferta</p>*/}
+          {/*  <p>Cennik</p>*/}
+          {/*  <p>Opinie</p>*/}
+          {/*  <p>Faq</p>*/}
+          {/*  <p>Kontakt</p>*/}
+          {/*  <p>Blog</p>*/}
+          {/*</div>*/}
           <div>
             <h4>Diety</h4>
             <p>Dieta odchudzająca</p>

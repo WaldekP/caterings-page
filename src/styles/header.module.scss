@@ -16,6 +16,9 @@
   width: 100%;
   z-index: 200;
   background-color: #fbdae2;
+  button {
+    @extend .button;
+  }
 }
 
 .diet-header {
@@ -30,6 +33,9 @@
   width: 100%;
   z-index: 200;
   background-color: transparent;
+  button {
+    @extend .button;
+  }
 }
 
 //.header-up-color {
@@ -53,6 +59,9 @@
   color: $main-color;
   background-color: white;
   opacity: 0.7;
+  button {
+    @extend .button;
+  }
 }
 
 .panel-button {
@@ -177,9 +186,6 @@ li:hover {
   display: none;
 }
 
-button {
-  @extend .button;
-}
 
 @media (max-width: 799px) {
   .header {

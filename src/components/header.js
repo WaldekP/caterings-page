@@ -43,7 +43,6 @@ const Header = ({ pageContext }) => {
   }, [])
 
   const findCity = () => {
-    console.log("citySlug", citySlug)
     if (!citySlug) {
       return "lodz"
     }

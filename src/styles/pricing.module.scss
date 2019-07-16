@@ -93,6 +93,12 @@
   justify-content: center;
 }
 
+.active-item {
+  @extend .item;
+  background-color: $main-color;
+  color: white;
+}
+
 .mealItem {
   background-color: $main-color;
   color: white;

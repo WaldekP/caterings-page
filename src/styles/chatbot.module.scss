@@ -14,7 +14,8 @@ h2 {
 }
 
 .questions-box {
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
   height: 420px;
   background: url("../images/chat/img_czat_bg.svg" ) no-repeat center center;
   background-size: cover;

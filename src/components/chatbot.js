@@ -9,9 +9,9 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
   const { changeCalories } = useContext(PageContext)
   const [questionNumber, changeQuestion] = useState(1)
   const [gender, changeGender] = useState()
-  const [height, changeHeight] = useState()
-  const [weight, changeWeight] = useState()
-  const [age, changeAge] = useState()
+  const [height, changeHeight] = useState('')
+  const [weight, changeWeight] = useState('')
+  const [age, changeAge] = useState('')
   const [activity, changeActivity] = useState()
   const [purpose, changePurpose] = useState()
   const thirdQuestion = useRef(null)
@@ -21,11 +21,12 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
     return window.scroll({ top: ref.current.offsetTop, behavior: "smooth" })
   }
 
-  // useEffect(() => {
-  //   if(questionNumber === 3) {
-  //     scrollToRef(thirdQuestion)
-  //   }
-  // }, [questionNumber])
+  useEffect(() => {
+    if(questionNumber === 5) {
+      scrollToRef(thirdQuestion)
+    }
+    console.log('sdsdsdsd')
+  }, [questionNumber])
 
   const renderAnswerButtons = () => {
     if (questionNumber === 1) {
@@ -65,6 +66,7 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
       return (
         <Fragment>
           <input
+            name="height"
             value={height}
             type="number"
             onChange={({ target: { value } }) => changeHeight(value)}
@@ -83,9 +85,12 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
       return (
         <Fragment>
           <input
+            name="weight"
             value={weight}
             type="number"
-            onChange={({ target: { value } }) => changeWeight(value)}
+            onChange={({target: {value}}) => {
+              changeWeight(value)
+            }}
           />
           <button
             onClick={() => {
@@ -101,6 +106,7 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
       return (
         <Fragment>
           <input
+            name="age"
             value={age}
             type="number"
             onChange={({ target: { value } }) => changeAge(value)}
@@ -333,7 +339,7 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
               </div>
             )}
           </div>
-          <div className={chatbotStyles.questionAnswer} ref={thirdQuestion}>
+          <div className={chatbotStyles.questionAnswer} >
             <Fragment>
               {questionNumber >= 3 && (
                 <div className={chatbotStyles.question}>
