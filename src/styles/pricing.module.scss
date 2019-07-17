@@ -158,7 +158,15 @@
     display: inline;
   }
   input {
-    display: none;
+    width: 15%;
+    background-color: $light-purple;
+    border: none;
+    color: $main-color;
+    line-height: 30px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: normal;
   }
 }
 

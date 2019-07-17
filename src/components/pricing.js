@@ -4,10 +4,15 @@ import dietDetails from "../data/companyDetails/dietDetails"
 import cateringDetails from "../data/companyDetails/cateringDetails"
 
 const Pricing = React.forwardRef((props, ref) => {
+  const discounts = [
+    { minimumDays: 14, discount: 5, discountType: 'PERCENTAGE' },
+    { minimumDays: 30, discount: 10, discountType: 'PERCENTAGE' }
+  ]
   const initialState = {
     activeDiet: "",
     activeOption: "",
     activeCalories: "",
+    days: 10,
   }
   const [state, dispatch] = useReducer((state, action) => {
     switch (action.type) {
@@ -25,6 +30,16 @@ const Pricing = React.forwardRef((props, ref) => {
         return {
           ...state,
           activeCalories: action.activeCalories,
+        }
+      case "CHANGE_DAYS":
+        return {
+          ...state,
+          days: action.days,
+        }
+      case "CHANGE_DAY":
+        return {
+          ...state,
+          days: action.changeType === 'plus' ? state.days + 1 : state.days - 1,
         }
       default:
         return state
@@ -114,6 +129,41 @@ const Pricing = React.forwardRef((props, ref) => {
     )
   }
 
+  const getDiscountDetails = () => {
+    const {days } = state
+    if (!(days && discounts)) {
+      return null;
+    }
+    if (days === 0) {
+      return null;
+    }
+    const closestDiscount = discounts.reduce(
+      (acc, curr) => {
+        const accMinusDays = acc.minimumDays - days;
+        const currMinusDay = curr && curr.minimumDays - days;
+        if (accMinusDays <= 0) {
+          return curr;
+        }
+        if (currMinusDay <= 0) {
+          return acc;
+        }
+        if (accMinusDays < currMinusDay) {
+          return acc;
+        }
+        return curr;
+      },
+      { minimumDays: 0, discount: 0, discountType: 'PERCENTAGE' }
+    );
+    return {
+      ...closestDiscount,
+      barPercentage: (days * 100) / closestDiscount.minimumDays,
+      daysTillDiscount:
+        closestDiscount && closestDiscount.minimumDays - days,
+    };
+  };
+
+  console.log('getDiscountDetails', getDiscountDetails())
+
   return (
     <div ref={ref}>
       <h2>Cennik naszych diet pudełkowych</h2>
@@ -142,10 +192,12 @@ const Pricing = React.forwardRef((props, ref) => {
               <p>Kaloryczność</p>
               {getDietOptionCalories().map(item => (
                 <div
-                  onClick={() => dispatch({
-                    type: "STORE_CALORIES",
-                    activeCalories: item,
-                  })}
+                  onClick={() =>
+                    dispatch({
+                      type: "STORE_CALORIES",
+                      activeCalories: item,
+                    })
+                  }
                   key={item.dietCaloriesId}
                   className={
                     item.dietCaloriesId === state.activeCalories.dietCaloriesId
@@ -167,20 +219,25 @@ const Pricing = React.forwardRef((props, ref) => {
             </div>
             <div className={pricingStyles.daysSection}>
               <p>Okres zamówienia</p>
-              <div className={pricingStyles.dayButton}>-</div>
+              <div className={pricingStyles.dayButton} onClick={() => state.days > 1 && dispatch({type: "CHANGE_DAY", changeType: 'minus'})}>-</div>
               <div className={pricingStyles.dayInput}>
-                <span>2 </span>
-                <input />
+                <input
+                  onChange={({ target: { value } }) =>
+                    dispatch({ type: "CHANGE_DAYS", days: parseInt(value) })
+                  }
+                  value={state.days}
+                  type="number"
+                />
                 dni
               </div>
-              <div className={pricingStyles.dayButton}>+</div>
+              <div className={pricingStyles.dayButton} onClick={() => dispatch({type: "CHANGE_DAY", changeType: 'plus'})}>+</div>
             </div>
             <div className={pricingStyles.barSection}>
               <div>
-                <p>Dodaj 2 dni, aby uzyskać 5% rabatu</p>
+                <p>Dodaj {getDiscountDetails().daysTillDiscount} dni, aby uzyskać {getDiscountDetails().discount}% rabatu</p>
               </div>
               <div className={pricingStyles.barItem}>
-                <div style={{ width: "200px" }} />
+                <div style={{ width: `${getDiscountDetails().barPercentage * 360 / 100}px` }} />
               </div>
               <div>
                 <p>RABAT: 0</p>

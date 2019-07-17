@@ -1,284 +1,201 @@
 [
   {
-    "companyDietDetailId": "crmforpanel1_30",
-    "companyName": "crmforpanel1",
-    "dietId": 30,
-    "exampleDietCalories": null,
-    "customDietOptions": true,
-    "averageRate": 0.0000,
-    "dietDescription": "Dieta 2000 KCAL skierowana jest dla osób, którzy prowadzą zdrowy tryb życia. Jeśli nie masz czasu na gotowanie, nie chcesz stracić zbędnych kilogramów oraz chcesz poprawić swoją przemianę materii wybierz dietę 2000 kcal, a specjaliści Dietostrefy zapewnią Twojemu organizmowi pełnowartościowe dania.\nDieta składa się z pięciu zbilansowanych  lekkostrawnych posiłków, które dostarczą do Twojego organizmu wszystkich niezbędnych składników odżywczych. Dodatkowo w diecie 2000 kcal catering Dietostrefa oferuje wybór wersji lekkostrawnej wegetariańskiej.",
-    "dietImageUrl": "https://catering-diet-images.s3.eu-central-1.amazonaws.com/crmforpanel1-30.jpg",
-    "discounts": [
-      {
-        "dietId": 30,
-        "dietDiscountId": 37,
-        "minimumDays": 22,
-        "discount": 3,
-        "discountType": "TOTAL"
-      },
-      {
-        "dietId": 30,
-        "dietDiscountId": 38,
-        "minimumDays": 8,
-        "discount": 1,
-        "discountType": "TOTAL"
-      },
-      {
-        "dietId": 30,
-        "dietDiscountId": 39,
-        "minimumDays": 15,
-        "discount": 2,
-        "discountType": "TOTAL"
-      }
-    ]
-  },
-  {
-    "companyDietDetailId": "crmforpanel1_36",
-    "companyName": "crmforpanel1",
-    "dietId": 36,
-    "exampleDietCalories": null,
-    "customDietOptions": false,
-    "averageRate": 0.0000,
-    "dietDescription": null,
-    "dietImageUrl": "https://catering-diet-images.s3.eu-central-1.amazonaws.com/eatfit-36.jpg",
-    "discounts": [
-      {
-        "dietId": 36,
-        "dietDiscountId": 28,
-        "minimumDays": 8,
-        "discount": 1,
-        "discountType": "TOTAL"
-      },
-      {
-        "dietId": 36,
-        "dietDiscountId": 29,
-        "minimumDays": 22,
-        "discount": 3,
-        "discountType": "TOTAL"
-      },
-      {
-        "dietId": 36,
-        "dietDiscountId": 30,
-        "minimumDays": 15,
-        "discount": 2,
-        "discountType": "TOTAL"
-      }
-    ]
-  },
-  {
-    "companyDietDetailId": "crmforpanel1_37",
-    "companyName": "crmforpanel1",
-    "dietId": 37,
-    "exampleDietCalories": null,
-    "customDietOptions": false,
-    "averageRate": 0.0000,
-    "dietDescription": null,
-    "dietImageUrl": "https://catering-diet-images.s3.eu-central-1.amazonaws.com/eatfit-37.jpg",
-    "discounts": [
-      {
-        "dietId": 37,
-        "dietDiscountId": 31,
-        "minimumDays": 15,
-        "discount": 2,
-        "discountType": "TOTAL"
-      },
-      {
-        "dietId": 37,
-        "dietDiscountId": 32,
-        "minimumDays": 22,
-        "discount": 3,
-        "discountType": "TOTAL"
-      },
-      {
-        "dietId": 37,
-        "dietDiscountId": 33,
-        "minimumDays": 8,
-        "discount": 1,
-        "discountType": "TOTAL"
-      }
-    ]
-  },
-  {
-    "companyDietDetailId": "crmforpanel1_40",
-    "companyName": "crmforpanel1",
-    "dietId": 40,
-    "exampleDietCalories": null,
-    "customDietOptions": false,
-    "averageRate": 0.0000,
-    "dietDescription": null,
-    "dietImageUrl": "https://catering-diet-images.s3.eu-central-1.amazonaws.com/eatfit-40.jpg",
-    "discounts": [
-      {
-        "dietId": 40,
-        "dietDiscountId": 35,
-        "minimumDays": 4,
-        "discount": 3,
-        "discountType": "PERCENTAGE"
-      },
-      {
-        "dietId": 40,
-        "dietDiscountId": 57,
-        "minimumDays": 8,
-        "discount": 5,
-        "discountType": "PERCENTAGE"
-      }
-    ]
-  },
-  {
-    "companyDietDetailId": "crmforpanel1_42",
-    "companyName": "crmforpanel1",
-    "dietId": 42,
-    "exampleDietCalories": null,
+    "companyDietDetailId": "afterfit_94",
+    "companyName": "afterfit",
+    "dietId": 94,
+    "exampleDietCalories": 3,
     "customDietOptions": true,
     "averageRate": 0.0000,
     "dietDescription": null,
-    "dietImageUrl": "https://catering-diet-images.s3.eu-central-1.amazonaws.com/eatfit-42.jpg",
     "discounts": [
       {
-        "dietId": 42,
-        "dietDiscountId": 43,
-        "minimumDays": 4,
-        "discount": 2,
-        "discountType": "TOTAL"
-      },
-      {
-        "dietId": 42,
-        "dietDiscountId": 44,
-        "minimumDays": 6,
-        "discount": 3,
-        "discountType": "TOTAL"
-      },
-      {
-        "dietId": 42,
-        "dietDiscountId": 45,
-        "minimumDays": 2,
-        "discount": 1,
-        "discountType": "TOTAL"
-      }
-    ]
-  },
-  {
-    "companyDietDetailId": "crmforpanel1_43",
-    "companyName": "crmforpanel1",
-    "dietId": 43,
-    "exampleDietCalories": null,
-    "customDietOptions": true,
-    "averageRate": 0.0000,
-    "dietDescription": null,
-    "dietImageUrl": "https://catering-diet-images.s3.eu-central-1.amazonaws.com/eatfit-43.jpg",
-    "discounts": [
-      {
-        "dietId": 43,
-        "dietDiscountId": 52,
-        "minimumDays": 8,
-        "discount": 1,
-        "discountType": "TOTAL"
-      },
-      {
-        "dietId": 43,
-        "dietDiscountId": 53,
-        "minimumDays": 15,
-        "discount": 2,
-        "discountType": "TOTAL"
-      },
-      {
-        "dietId": 43,
-        "dietDiscountId": 54,
-        "minimumDays": 22,
-        "discount": 3,
-        "discountType": "TOTAL"
-      }
-    ]
-  },
-  {
-    "companyDietDetailId": "crmforpanel1_44",
-    "companyName": "crmforpanel1",
-    "dietId": 44,
-    "exampleDietCalories": null,
-    "customDietOptions": true,
-    "averageRate": 0.0000,
-    "dietDescription": null,
-    "dietImageUrl": "https://catering-diet-images.s3.eu-central-1.amazonaws.com/eatfit-44.jpg",
-    "discounts": [
-      {
-        "dietId": 44,
-        "dietDiscountId": 55,
-        "minimumDays": 5,
+        "dietId": 94,
+        "dietDiscountId": 135,
+        "minimumDays": 30,
         "discount": 10,
-        "discountType": "TOTAL"
+        "discountType": "PERCENTAGE"
       },
       {
-        "dietId": 44,
-        "dietDiscountId": 56,
-        "minimumDays": 3,
+        "dietId": 94,
+        "dietDiscountId": 140,
+        "minimumDays": 14,
         "discount": 5,
-        "discountType": "TOTAL"
+        "discountType": "PERCENTAGE"
       }
     ]
   },
   {
-    "companyDietDetailId": "crmforpanel1_45",
-    "companyName": "crmforpanel1",
-    "dietId": 45,
-    "exampleDietCalories": null,
-    "customDietOptions": false,
+    "companyDietDetailId": "afterfit_104",
+    "companyName": "afterfit",
+    "dietId": 104,
+    "exampleDietCalories": 12,
+    "customDietOptions": true,
     "averageRate": 0.0000,
     "dietDescription": null,
-    "dietImageUrl": "https://catering-diet-images.s3.eu-central-1.amazonaws.com/eatfit-45.jpg",
     "discounts": [
       {
-        "dietId": 45,
-        "dietDiscountId": 46,
-        "minimumDays": 8,
-        "discount": 1,
-        "discountType": "TOTAL"
+        "dietId": 104,
+        "dietDiscountId": 133,
+        "minimumDays": 14,
+        "discount": 5,
+        "discountType": "PERCENTAGE"
       },
       {
-        "dietId": 45,
-        "dietDiscountId": 47,
-        "minimumDays": 15,
-        "discount": 2,
-        "discountType": "TOTAL"
-      },
-      {
-        "dietId": 45,
-        "dietDiscountId": 48,
-        "minimumDays": 22,
-        "discount": 3,
-        "discountType": "TOTAL"
+        "dietId": 104,
+        "dietDiscountId": 141,
+        "minimumDays": 30,
+        "discount": 10,
+        "discountType": "PERCENTAGE"
       }
     ]
   },
   {
-    "companyDietDetailId": "crmforpanel1_46",
-    "companyName": "crmforpanel1",
-    "dietId": 46,
-    "exampleDietCalories": 182,
-    "customDietOptions": false,
+    "companyDietDetailId": "afterfit_114",
+    "companyName": "afterfit",
+    "dietId": 114,
+    "exampleDietCalories": 30,
+    "customDietOptions": true,
     "averageRate": 0.0000,
     "dietDescription": null,
-    "dietImageUrl": "https://catering-diet-images.s3.eu-central-1.amazonaws.com/eatfit-46.jpg",
     "discounts": [
       {
-        "dietId": 46,
-        "dietDiscountId": 49,
-        "minimumDays": 8,
-        "discount": 1,
-        "discountType": "TOTAL"
+        "dietId": 114,
+        "dietDiscountId": 132,
+        "minimumDays": 14,
+        "discount": 5,
+        "discountType": "PERCENTAGE"
       },
       {
-        "dietId": 46,
-        "dietDiscountId": 50,
-        "minimumDays": 22,
-        "discount": 3,
-        "discountType": "TOTAL"
+        "dietId": 114,
+        "dietDiscountId": 138,
+        "minimumDays": 30,
+        "discount": 10,
+        "discountType": "PERCENTAGE"
+      }
+    ]
+  },
+  {
+    "companyDietDetailId": "afterfit_124",
+    "companyName": "afterfit",
+    "dietId": 124,
+    "exampleDietCalories": 233,
+    "customDietOptions": true,
+    "averageRate": 0.0000,
+    "dietDescription": null,
+    "discounts": [
+      {
+        "dietId": 124,
+        "dietDiscountId": 134,
+        "minimumDays": 30,
+        "discount": 10,
+        "discountType": "PERCENTAGE"
       },
       {
-        "dietId": 46,
-        "dietDiscountId": 51,
-        "minimumDays": 15,
-        "discount": 2,
-        "discountType": "TOTAL"
+        "dietId": 124,
+        "dietDiscountId": 139,
+        "minimumDays": 14,
+        "discount": 5,
+        "discountType": "PERCENTAGE"
+      }
+    ]
+  },
+  {
+    "companyDietDetailId": "afterfit_134",
+    "companyName": "afterfit",
+    "dietId": 134,
+    "exampleDietCalories": 56,
+    "customDietOptions": true,
+    "averageRate": 0.0000,
+    "dietDescription": null,
+    "discounts": [
+      {
+        "dietId": 134,
+        "dietDiscountId": 136,
+        "minimumDays": 30,
+        "discount": 10,
+        "discountType": "PERCENTAGE"
+      },
+      {
+        "dietId": 134,
+        "dietDiscountId": 142,
+        "minimumDays": 14,
+        "discount": 5,
+        "discountType": "PERCENTAGE"
+      }
+    ]
+  },
+  {
+    "companyDietDetailId": "afterfit_576",
+    "companyName": "afterfit",
+    "dietId": 576,
+    "exampleDietCalories": 234,
+    "customDietOptions": true,
+    "averageRate": 0.0000,
+    "dietDescription": null,
+    "discounts": [
+      {
+        "dietId": 576,
+        "dietDiscountId": 144,
+        "minimumDays": 14,
+        "discount": 5,
+        "discountType": "PERCENTAGE"
+      },
+      {
+        "dietId": 576,
+        "dietDiscountId": 147,
+        "minimumDays": 30,
+        "discount": 10,
+        "discountType": "PERCENTAGE"
+      }
+    ]
+  },
+  {
+    "companyDietDetailId": "afterfit_577",
+    "companyName": "afterfit",
+    "dietId": 577,
+    "exampleDietCalories": 238,
+    "customDietOptions": true,
+    "averageRate": 0.0000,
+    "dietDescription": null,
+    "discounts": [
+      {
+        "dietId": 577,
+        "dietDiscountId": 146,
+        "minimumDays": 14,
+        "discount": 5,
+        "discountType": "PERCENTAGE"
+      },
+      {
+        "dietId": 577,
+        "dietDiscountId": 149,
+        "minimumDays": 30,
+        "discount": 10,
+        "discountType": "PERCENTAGE"
+      }
+    ]
+  },
+  {
+    "companyDietDetailId": "afterfit_578",
+    "companyName": "afterfit",
+    "dietId": 578,
+    "exampleDietCalories": 263,
+    "customDietOptions": true,
+    "averageRate": 0.0000,
+    "dietDescription": null,
+    "discounts": [
+      {
+        "dietId": 578,
+        "dietDiscountId": 145,
+        "minimumDays": 14,
+        "discount": 5,
+        "discountType": "PERCENTAGE"
+      },
+      {
+        "dietId": 578,
+        "dietDiscountId": 150,
+        "minimumDays": 30,
+        "discount": 10,
+        "discountType": "PERCENTAGE"
       }
     ]
   }
