@@ -38,7 +38,7 @@ const Layout = ({title, children, pageContext }) => {
     <Fragment>
       {!cityCookie && !citySlug && <div className={layoutStyles.overlay}>
           <div className={layoutStyles.overlayContent}>
-            <h1>Wybierz miasto</h1>
+            <h2>Wybierz miasto</h2>
             <ul className={layoutStyles.overlayList}>
               {[...cities, { value: "lodz", label: "Łódź" }]
                 .sort((prev, next) => {

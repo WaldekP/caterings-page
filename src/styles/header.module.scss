@@ -65,14 +65,7 @@
 }
 
 .panel-button {
-  background-color: white;
-  color: #30387c;
-  @extend .button;
-
-  &:hover {
-    background-color: $main-color;
-    color: white;
-  }
+  @extend .reverse-button;
 }
 
 .headerColorDown {

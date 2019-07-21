@@ -1,5 +1,6 @@
 import React, { Fragment, useEffect, useRef, useState, useContext } from "react"
 import { Link } from "gatsby"
+import ReactDOM from 'react-dom'
 import chatbotStyles from "../styles/chatbot.module.scss"
 import chatIcon from "../images/chat/ico_chat1.svg"
 import personIcon from "../images/chat/ico_chat2.svg"
@@ -15,17 +16,21 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
   const [activity, changeActivity] = useState()
   const [purpose, changePurpose] = useState()
   const thirdQuestion = useRef(null)
+  const chatBottomRef = useRef(null)
+  const chatRef = useRef(null)
   const caloriesFromOffer = [1200, 1500, 1800, 2000, 2500, 3000]
 
   const scrollToRef = ref => {
-    return window.scroll({ top: ref.current.offsetTop, behavior: "smooth" })
+    console.log('ref.current', ref.current.offsetTop)
+    return window.scroll({ top: 2000, behavior: "smooth" })
   }
 
+
   useEffect(() => {
-    if(questionNumber === 5) {
-      scrollToRef(thirdQuestion)
-    }
-    console.log('sdsdsdsd')
+
+      // scrollToRef(chatBottomRef)
+      chatRef.current.scrollIntoViewIfNeeded()
+
   }, [questionNumber])
 
   const renderAnswerButtons = () => {
@@ -333,13 +338,13 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
               </div>
             )}
             {questionNumber >= 3 && (
-              <div className={chatbotStyles.answer}>
+              <div className={chatbotStyles.answer} >
                 <p>Jestem {gender === "female" ? "kobietą" : "mężczyzną"}</p>
                 <img src={personIcon} />
               </div>
             )}
           </div>
-          <div className={chatbotStyles.questionAnswer} >
+          <div className={chatbotStyles.questionAnswer} ref={thirdQuestion}>
             <Fragment>
               {questionNumber >= 3 && (
                 <div className={chatbotStyles.question}>
@@ -355,7 +360,7 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
               )}
             </Fragment>
           </div>
-          <div className={chatbotStyles.questionAnswer} ref={thirdQuestion}>
+          <div className={chatbotStyles.questionAnswer}>
             <Fragment>
               {questionNumber >= 4 && (
                 <div className={chatbotStyles.question}>
@@ -371,7 +376,7 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
               )}
             </Fragment>
           </div>
-          <div className={chatbotStyles.questionAnswer} ref={thirdQuestion}>
+          <div className={chatbotStyles.questionAnswer}>
             <Fragment>
               {questionNumber >= 5 && (
                 <div className={chatbotStyles.question}>
@@ -387,7 +392,7 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
               )}
             </Fragment>
           </div>
-          <div className={chatbotStyles.questionAnswer} ref={thirdQuestion}>
+          <div className={chatbotStyles.questionAnswer}>
             <Fragment>
               {questionNumber >= 6 && (
                 <div className={chatbotStyles.question}>
@@ -403,7 +408,7 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
               )}
             </Fragment>
           </div>
-          <div className={chatbotStyles.questionAnswer} ref={thirdQuestion}>
+          <div className={chatbotStyles.questionAnswer}>
             <Fragment>
               {questionNumber >= 7 && (
                 <div className={chatbotStyles.question}>
@@ -423,6 +428,7 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
               )}
             </Fragment>
           </div>
+          <div ref={chatRef} />
         </div>
       </div>
       <div className={chatbotStyles.answerBox}>{renderAnswerButtons()}</div>
