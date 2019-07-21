@@ -4,8 +4,8 @@ import footerStyles from '../styles/footer.module.scss'
 import logo from '../images/logo/afterfit_img_logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const Footer = ({pageContext: { city }}) => {
-
+const Footer = ({pageContext}) => {
+  const city = pageContext && pageContext.city
   return (
     <footer>
       <div className={footerStyles.container}>
