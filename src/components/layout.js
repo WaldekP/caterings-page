@@ -65,7 +65,7 @@ const Layout = ({title, children, pageContext }) => {
           <Header pageContext={pageContext} title={title} />
           {children}
         </div>
-        <Footer />
+        <Footer pageContext={pageContext}/>
       </div>
     </Fragment>
   )

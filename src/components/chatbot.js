@@ -1,36 +1,30 @@
 import React, { Fragment, useEffect, useRef, useState, useContext } from "react"
 import { Link } from "gatsby"
-import ReactDOM from 'react-dom'
+import * as dietDetails from "../data/companyDetails/dietDetails"
 import chatbotStyles from "../styles/chatbot.module.scss"
 import chatIcon from "../images/chat/ico_chat1.svg"
 import personIcon from "../images/chat/ico_chat2.svg"
 import PageContext from "../context/pageContext"
 
+const { default: diets } = dietDetails
+
 const Chatbot = React.forwardRef(({ pageContext }, ref) => {
   const { changeCalories } = useContext(PageContext)
   const [questionNumber, changeQuestion] = useState(1)
   const [gender, changeGender] = useState()
-  const [height, changeHeight] = useState('')
-  const [weight, changeWeight] = useState('')
-  const [age, changeAge] = useState('')
+  const [height, changeHeight] = useState("")
+  const [weight, changeWeight] = useState("")
+  const [age, changeAge] = useState("")
   const [activity, changeActivity] = useState()
   const [purpose, changePurpose] = useState()
-  const thirdQuestion = useRef(null)
-  const chatBottomRef = useRef(null)
   const chatRef = useRef(null)
   const caloriesFromOffer = [1200, 1500, 1800, 2000, 2500, 3000]
 
-  const scrollToRef = ref => {
-    console.log('ref.current', ref.current.offsetTop)
-    return window.scroll({ top: 2000, behavior: "smooth" })
-  }
-
-
   useEffect(() => {
-
-      // scrollToRef(chatBottomRef)
+    // scrollToRef(chatBottomRef)
+    if (questionNumber > 1) {
       chatRef.current.scrollIntoViewIfNeeded()
-
+    }
   }, [questionNumber])
 
   const renderAnswerButtons = () => {
@@ -93,7 +87,7 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
             name="weight"
             value={weight}
             type="number"
-            onChange={({target: {value}}) => {
+            onChange={({ target: { value } }) => {
               changeWeight(value)
             }}
           />
@@ -258,6 +252,16 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
     }
   }
 
+  const handleAvailableCalories = () => {
+    const diet = handleDietSuggestion().dietUrl
+    if (diet === "dieta-odchudzajaca") {
+      return [1000, 1200, 1500, 1800, 2000, 2500]
+    }
+    if (diet === "dieta-sportowa-na-mase" || diet === "dieta-samuraja") {
+      return [1800, 2000, 2500, 3000]
+    }
+    return [1200, 1500, 1800, 2000, 2500]
+  }
   const parseActivity = () => {
     if (activity === 1.2) {
       return "mała"
@@ -272,11 +276,11 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
 
   const parseGoal = () => {
     if (purpose === "lose weight") {
-      return -300
+      return {value: -300, goal: 'schudnąć'}
     } else if (purpose === "maintain weight") {
-      return 0
+      return {value: 0, goal: 'utrzymać wagę'}
     } else if (purpose === "get weight") {
-      return 300
+      return {value: 300, goal: 'przytyć'}
     }
   }
 
@@ -285,13 +289,13 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
     if (gender === "male")
       calories = Math.round(
         (66.47 + 13.75 * weight + 5 * height - 6.75 * age) * activity +
-          parseGoal()
+          parseGoal().value
       )
     else if (gender === "female")
       calories = Math.round(
         (665.09 + 9.56 * weight + 1.85 * height - 4.67 * age) *
           parseActivity() +
-          parseGoal()
+          parseGoal().value
       )
 
     return calories
@@ -299,7 +303,7 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
 
   const suggestCaloriesFromOffer = () => {
     const calories = calculateCalories()
-    return caloriesFromOffer.reduce((acc, curr) => {
+    return handleAvailableCalories().reduce((acc, curr) => {
       acc = Math.abs(calories - acc) > Math.abs(calories - curr) ? curr : acc
       return acc
     })
@@ -338,13 +342,13 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
               </div>
             )}
             {questionNumber >= 3 && (
-              <div className={chatbotStyles.answer} >
+              <div className={chatbotStyles.answer}>
                 <p>Jestem {gender === "female" ? "kobietą" : "mężczyzną"}</p>
                 <img src={personIcon} />
               </div>
             )}
           </div>
-          <div className={chatbotStyles.questionAnswer} ref={thirdQuestion}>
+          <div className={chatbotStyles.questionAnswer}>
             <Fragment>
               {questionNumber >= 3 && (
                 <div className={chatbotStyles.question}>
@@ -418,12 +422,22 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
               )}
               {questionNumber >= 8 && (
                 <div className={chatbotStyles.answer}>
+                  <p>Cel Twojej diety to {parseGoal().goal}</p>
+                  <img src={personIcon} />
+                </div>
+              )}
+            </Fragment>
+          </div>
+          <div className={chatbotStyles.questionAnswer}>
+            <Fragment>
+              {questionNumber >= 8 && (
+                <div className={chatbotStyles.question}>
+                  <img src={chatIcon} />
                   <p>
                     Dieta proponowana dla Ciebie to{" "}
                     {handleDietSuggestion().dietName}{" "}
-                    {suggestCaloriesFromOffer()}
+                    {suggestCaloriesFromOffer()} kcal.
                   </p>
-                  <img src={personIcon} />
                 </div>
               )}
             </Fragment>
