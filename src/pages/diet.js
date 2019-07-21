@@ -42,7 +42,7 @@ const Diet = ({pageContext}) => {
       <DietDescription diet={findDiet() && findDiet().fullName} city={findCity()} dietDescription={findDietDescription()}/>
       <DietGallery/>
       <DietsFaq pageContext={pageContext}/>
-      <DietPricing/>
+      <DietPricing pageContext={pageContext}/>
       <CallToAction cta="diet" />
     </Layout>
   )

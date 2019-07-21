@@ -54,7 +54,7 @@ const IndexPage = ({ pageContext }) => {
         <Chatbot ref={chatbotRef} pageContext={pageContext}/>
         <Offer pageContext={pageContext} ref={offerRef}/>
         <CallToAction cta="catering"/>
-        <Pricing ref={pricingRef}/>
+        <Pricing pageContext={pageContext} ref={pricingRef}/>
         <Testimonials ref={opinionsRef}/>
         <Faq ref={contactRef} pageContext={pageContext}/>
         <Contact ref={contactRef}/>

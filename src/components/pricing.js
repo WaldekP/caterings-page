@@ -1,18 +1,25 @@
 import React, { useEffect, useReducer } from "react"
 import pricingStyles from "../styles/pricing.module.scss"
-import dietDetails from "../data/companyDetails/dietDetails"
 import cateringDetails from "../data/companyDetails/cateringDetails"
+import * as generalCityMeals from "../data/companyDetails/citiesPricing/city"
+import * as warsawCityMeals from "../data/companyDetails/citiesPricing/cityLodz"
+import * as lodzCityMeals from "../data/companyDetails/citiesPricing/cityWarsaw"
+const { default: mealsPricing } = generalCityMeals
+const { default: mealsPricingLodz } = lodzCityMeals
+const { default: mealsPricingWarsaw } = warsawCityMeals
 
 const Pricing = React.forwardRef((props, ref) => {
   const discounts = [
-    { minimumDays: 14, discount: 5, discountType: 'PERCENTAGE' },
-    { minimumDays: 30, discount: 10, discountType: 'PERCENTAGE' }
+    { minimumDays: 14, discount: 5, discountType: "PERCENTAGE" },
+    { minimumDays: 30, discount: 10, discountType: "PERCENTAGE" },
   ]
   const initialState = {
     activeDiet: "",
     activeOption: "",
     activeCalories: "",
+    activeMeals: "",
     days: 10,
+    mealsValidation: "",
   }
   const [state, dispatch] = useReducer((state, action) => {
     switch (action.type) {
@@ -34,13 +41,68 @@ const Pricing = React.forwardRef((props, ref) => {
       case "CHANGE_DAYS":
         return {
           ...state,
-          days: action.days,
+          days: action.days > 0 ? action.days : "",
         }
       case "CHANGE_DAY":
         return {
           ...state,
-          days: action.changeType === 'plus' ? state.days + 1 : state.days - 1,
+          days:
+            action.changeType === "plus"
+              ? parseInt(state.days + 1)
+              : state.days - 1,
         }
+      case "STORE_MEALS":
+        return {
+          ...state,
+          activeMeals: {
+            ...action.activeMeals,
+            dietCaloriesMeals: action.activeMeals.dietCaloriesMeals.map(
+              meal => ({
+                ...meal,
+                selected: true,
+              })
+            ),
+          },
+        }
+      case "DISPLAY_VALIDATION":
+        return {
+          ...state,
+          mealsValidation: "Minimalna liczba posiłków to 3",
+        }
+      case "RESET_VALIDATION":
+        return {
+          ...state,
+          mealsValidation: "",
+        }
+      case "TOGGLE_MEAL": {
+        const numberOfMealsSelected = state.activeMeals.dietCaloriesMeals.filter(
+          meal => meal.selected
+        ).length
+        return {
+          ...state,
+          activeMeals: {
+            ...state.activeMeals,
+            dietCaloriesMeals: state.activeMeals.dietCaloriesMeals.map(meal => {
+              if (action.meal === meal.dietCaloriesMealId) {
+                if (meal.selected && numberOfMealsSelected > 3) {
+                  return {
+                    ...meal,
+                    selected: false,
+                  }
+                }
+                if (!meal.selected) {
+                  return {
+                    ...meal,
+                    selected: true,
+                  }
+                }
+              }
+              return meal
+            }),
+          },
+        }
+      }
+
       default:
         return state
     }
@@ -59,6 +121,13 @@ const Pricing = React.forwardRef((props, ref) => {
         activeCalories: getDietOptionCalories()[0],
       })
   }, [state.activeOption])
+  useEffect(() => {
+    state.activeCalories &&
+      dispatch({
+        type: "STORE_MEALS",
+        activeMeals: handleCityMeals()[state.activeCalories.dietCaloriesId],
+      })
+  }, [state.activeCalories])
 
   const getDiets = () => {
     return cateringDetails.diets
@@ -67,10 +136,17 @@ const Pricing = React.forwardRef((props, ref) => {
           diet => diet.dietId === curr.dietId
         )
         if (dietAlreadyExists === -1) {
-          acc.push({
-            diet: curr.dietName,
-            dietId: curr.dietId,
-          })
+          if (handleDietPageDietId()) {
+            handleDietPageDietId() === curr.dietId && acc.push({
+              diet: curr.dietName,
+              dietId: curr.dietId,
+            })
+          } else {
+            acc.push({
+              diet: curr.dietName,
+              dietId: curr.dietId,
+            })
+          }
         }
         return acc
       }, [])
@@ -130,39 +206,130 @@ const Pricing = React.forwardRef((props, ref) => {
   }
 
   const getDiscountDetails = () => {
-    const {days } = state
+    const { days } = state
     if (!(days && discounts)) {
-      return null;
+      return null
     }
     if (days === 0) {
-      return null;
+      return null
     }
     const closestDiscount = discounts.reduce(
       (acc, curr) => {
-        const accMinusDays = acc.minimumDays - days;
-        const currMinusDay = curr && curr.minimumDays - days;
+        const accMinusDays = acc.minimumDays - days
+        const currMinusDay = curr && curr.minimumDays - days
         if (accMinusDays <= 0) {
-          return curr;
+          return curr
         }
         if (currMinusDay <= 0) {
-          return acc;
+          return acc
         }
         if (accMinusDays < currMinusDay) {
-          return acc;
+          return acc
         }
-        return curr;
+        return curr
       },
-      { minimumDays: 0, discount: 0, discountType: 'PERCENTAGE' }
-    );
+      { minimumDays: 0, discount: 0, discountType: "PERCENTAGE" }
+    )
     return {
       ...closestDiscount,
       barPercentage: (days * 100) / closestDiscount.minimumDays,
-      daysTillDiscount:
-        closestDiscount && closestDiscount.minimumDays - days,
-    };
-  };
+      daysTillDiscount: closestDiscount && closestDiscount.minimumDays - days,
+    }
+  }
 
-  console.log('getDiscountDetails', getDiscountDetails())
+  const calculateNumberOfSelectedMeals = () => {
+    return (
+      state.activeMeals &&
+      state.activeMeals.dietCaloriesMeals.filter(meal => meal.selected).length
+    )
+  }
+
+  const displayValidation = () => {
+    dispatch({
+      type: "DISPLAY_VALIDATION",
+    })
+    setTimeout(() => {
+      dispatch({ type: "RESET_VALIDATION" })
+    }, 1500)
+  }
+
+  const calculatePrice = () => {
+    const { activeMeals, days } = state
+    const price = activeMeals && activeMeals.sectorPriceSettings[0].fullPrice
+    const deductedPrice = parseFloat(price - calculatePriceOfUnCheckedMeals())
+    if (days > 13 && days < 30) {
+      return (deductedPrice * 0.95).toFixed(1)
+    }
+    if (days >= 30) {
+      return (deductedPrice * 0.9).toFixed(1)
+    }
+    return deductedPrice.toFixed(1)
+  }
+
+  const handleDiscount = () => {
+    const { days } = state
+
+    if (days > 13 && days < 30) {
+      return "5%"
+    }
+    if (days >= 30) {
+      return "10%"
+    }
+  }
+
+  const calculatePriceOfUnCheckedMeals = () => {
+    const { activeMeals } = state
+    return (
+      activeMeals &&
+      activeMeals.dietCaloriesMeals.reduce((acc, curr) => {
+        if (!curr.selected) {
+          acc = acc + curr.dietPrices[0].deductionPrice
+        }
+        return acc
+      }, 0)
+    )
+  }
+
+  const handleCityMeals = () => {
+    const { pageContext: { city} } = props
+    if (!city) {
+      return mealsPricingLodz
+    }
+    if (city === 'warszawa') {
+      return mealsPricingWarsaw
+    }
+    return mealsPricing
+  }
+
+  const handleDietPageDietId = () => {
+    const { pageContext: { diet} } = props
+    if (diet === 'dieta-odchudzajaca') {
+      return 124
+    }
+    if (diet === 'dieta-paleo') {
+      return 114
+    }
+    if (diet === 'dieta-samuraja') {
+      return 134
+    }
+    if (diet === 'dieta-sportowa-na-mase') {
+      return 94
+    }
+    if (diet === 'dieta-sportowa-na-redukcje') {
+      return 104
+    }
+    if (diet === 'dieta-standard') {
+      return 578
+    }
+    if (diet === 'dieta-weganska') {
+      return 577
+    }
+    if (diet === 'dieta-wegetarianska') {
+      return 576
+    }
+    return null
+  }
+
 
   return (
     <div ref={ref}>
@@ -170,24 +337,24 @@ const Pricing = React.forwardRef((props, ref) => {
       <div className={pricingStyles.container}>
         <div className={pricingStyles.leftSide}>
           <div className={pricingStyles.leftSideWrapper}>
-            <div className={pricingStyles.section}>
+            {!handleDietPageDietId() && <div className={pricingStyles.section}>
               <p>Dieta</p>
-              {getDiets().map(item => (
+              {getDiets().map(dietItem => (
                 <div
                   onClick={() =>
-                    dispatch({ type: "STORE_DIET", activeDiet: item })
+                    dispatch({ type: "STORE_DIET", activeDiet: dietItem })
                   }
-                  key={item.dietId}
+                  key={dietItem.dietId}
                   className={
-                    item.dietId === state.activeDiet.dietId
+                    dietItem.dietId === state.activeDiet.dietId
                       ? pricingStyles.activeItem
                       : pricingStyles.item
                   }
                 >
-                  {item.diet}
+                  {dietItem.diet}
                 </div>
               ))}
-            </div>
+            </div>}
             <div className={pricingStyles.section}>
               <p>Kaloryczność</p>
               {getDietOptionCalories().map(item => (
@@ -210,16 +377,47 @@ const Pricing = React.forwardRef((props, ref) => {
               ))}
             </div>
             <div className={pricingStyles.section}>
-              <p>Posiłki</p>
-              <div className={pricingStyles.mealItem}>Śniadanie</div>
-              <div className={pricingStyles.mealItem}>II Śniadanie</div>
-              <div className={pricingStyles.mealItem}>Obiad</div>
-              <div className={pricingStyles.mealItem}>Podwieczorek</div>
-              <div className={pricingStyles.mealItem}>Kolacja</div>
+              <p>
+                Posiłki{" "}
+                {state.mealsValidation && "(Minimalna licza posiłków to 3)"}
+              </p>
+              {state.activeMeals &&
+                state.activeMeals.dietCaloriesMeals.map(meal => (
+                  <div
+                    onClick={() => {
+                      calculateNumberOfSelectedMeals() === 3 &&
+                        meal.selected &&
+                        displayValidation()
+                      calculateNumberOfSelectedMeals() === 3 &&
+                        !meal.selected &&
+                        dispatch({ type: "RESET_VALIDATION" })
+                      dispatch({
+                        type: "TOGGLE_MEAL",
+                        meal: meal.dietCaloriesMealId,
+                      })
+                    }}
+                    className={pricingStyles.mealItem}
+                    style={
+                      meal.selected
+                        ? null
+                        : { backgroundColor: "#E7E7F3", color: "#102682" }
+                    }
+                  >
+                    Posilek {meal.dietCaloriesMealId}
+                  </div>
+                ))}
             </div>
             <div className={pricingStyles.daysSection}>
               <p>Okres zamówienia</p>
-              <div className={pricingStyles.dayButton} onClick={() => state.days > 1 && dispatch({type: "CHANGE_DAY", changeType: 'minus'})}>-</div>
+              <div
+                className={pricingStyles.dayButton}
+                onClick={() =>
+                  state.days > 1 &&
+                  dispatch({ type: "CHANGE_DAY", changeType: "minus" })
+                }
+              >
+                -
+              </div>
               <div className={pricingStyles.dayInput}>
                 <input
                   onChange={({ target: { value } }) =>
@@ -230,17 +428,36 @@ const Pricing = React.forwardRef((props, ref) => {
                 />
                 dni
               </div>
-              <div className={pricingStyles.dayButton} onClick={() => dispatch({type: "CHANGE_DAY", changeType: 'plus'})}>+</div>
+              <div
+                className={pricingStyles.dayButton}
+                onClick={() =>
+                  dispatch({ type: "CHANGE_DAY", changeType: "plus" })
+                }
+              >
+                +
+              </div>
             </div>
             <div className={pricingStyles.barSection}>
+              {state.days > 0 && getDiscountDetails().minimumDays > state.days && (
+                <div>
+                  <p>
+                    Dodaj {getDiscountDetails().daysTillDiscount} dni, aby
+                    uzyskać {getDiscountDetails().discount}% rabatu
+                  </p>
+                </div>
+              )}
+              {state.days > 0 && getDiscountDetails().minimumDays > state.days && (
+                <div className={pricingStyles.barItem}>
+                  <div
+                    style={{
+                      width: `${(getDiscountDetails().barPercentage * 360) /
+                        100}px`,
+                    }}
+                  />
+                </div>
+              )}
               <div>
-                <p>Dodaj {getDiscountDetails().daysTillDiscount} dni, aby uzyskać {getDiscountDetails().discount}% rabatu</p>
-              </div>
-              <div className={pricingStyles.barItem}>
-                <div style={{ width: `${getDiscountDetails().barPercentage * 360 / 100}px` }} />
-              </div>
-              <div>
-                <p>RABAT: 0</p>
+                <p>RABAT: {handleDiscount()}</p>
               </div>
             </div>
           </div>
@@ -248,9 +465,12 @@ const Pricing = React.forwardRef((props, ref) => {
         <div className={pricingStyles.rightSide}>
           <div className={pricingStyles.rightSideWrapper}>
             <p>CENA DIETY</p>
-            <h2>43 PLN / DZIEN</h2>
+            <h2>{state.days > 0 && calculatePrice()} PLN / DZIEN</h2>
             <p className={pricingStyles.priceSummary}>
-              RAZEM: 516 PLN za 12 dni
+              {`RAZEM: ${state.days > 0 &&
+                (calculatePrice() * state.days).toFixed(1)} PLN za ${
+                state.days
+              } dni`}
             </p>
             <button>Zamów</button>
           </div>
