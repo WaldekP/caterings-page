@@ -18,9 +18,11 @@ const CallToAction = ({cta}) => {
       <div className={callToActionStyles.container}>
         <img className={callToActionStyles.firstPattern} src={firstPattern} />
         <img className={callToActionStyles.secondPattern} src={secondPattern} />
-        <h2>{renderCtaMessage()}</h2>
-        <button>Zamów dietę</button>
-        <p>Zobacz wymarzone efekty w krótkim czasie </p>
+        <div className={callToActionStyles.textsContainer}>
+          <h2>{renderCtaMessage()}</h2>
+          <button>Zamów dietę</button>
+          <p>Zobacz wymarzone efekty w krótkim czasie </p>
+        </div>
       </div>
     </Fragment>
   )

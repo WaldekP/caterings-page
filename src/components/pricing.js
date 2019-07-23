@@ -4,6 +4,7 @@ import cateringDetails from "../data/companyDetails/cateringDetails"
 import * as generalCityMeals from "../data/companyDetails/citiesPricing/city"
 import * as warsawCityMeals from "../data/companyDetails/citiesPricing/cityLodz"
 import * as lodzCityMeals from "../data/companyDetails/citiesPricing/cityWarsaw"
+import * as lodzMeals from "../data/companyDetails/citiesPricing/lodzPrices"
 const { default: mealsPricing } = generalCityMeals
 const { default: mealsPricingLodz } = lodzCityMeals
 const { default: mealsPricingWarsaw } = warsawCityMeals
@@ -329,7 +330,6 @@ const Pricing = React.forwardRef((props, ref) => {
     }
     return null
   }
-
 
   return (
     <div ref={ref}>
