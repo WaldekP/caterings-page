@@ -13,6 +13,7 @@
   margin: 50px 0;
   width: 100%;
   padding: 75px 0;
+  z-index: 2;
   button {
     @extend .button;
   }
@@ -66,15 +67,11 @@
 
 @media (max-width: 799px) {
   .firstPattern {
-    left: -300px;
-    width: auto;
-    height: 110%;
+    display: none;
   }
 
   .secondPattern {
-    right: -300px;
-    width: auto;
-    height: 110%;
+    display: none;
   }
 }
 

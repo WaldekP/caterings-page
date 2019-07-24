@@ -4,8 +4,8 @@ import headerStyles from "../styles/header.module.scss"
 import commonStyles from "../styles/common.module.scss"
 import { cities } from "../data/cities"
 import logo from "../images/logo/afterfit_img_logo.svg"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import hamburgerMenu from '../images/Hamurger menu.png';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import hamburgerMenu from "../images/Hamurger menu.png"
 
 import PageContext from "../context/pageContext"
 
@@ -52,28 +52,37 @@ const Header = ({ pageContext }) => {
     return (
       <div className={menuOverlay && headerStyles.overlay}>
         <div className={headerStyles.mobileMenuHeader}>
-          <span onClick={() => toggleMenu(false)}><FontAwesomeIcon icon="window-close" /></span>
           <span>
             <Link to={citySlug ? `/${citySlug}` : "/"}>
               <img src={logo} />
             </Link>
-          </span>{" "}
+          </span>
+          <div
+            className={headerStyles.hamburgerMenuClose}
+            onClick={() => toggleMenu(false)}
+          />
         </div>
         <div className={headerStyles.mobileMenu}>
           <button>Zamów</button>
           <ul className={headerStyles.navListMobile}>
-            <li onClick={() => {
-              toggleMenu(false)
-              changeMenuTab("valueProposition")
-              dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
-            }}>
+            <li
+              onClick={() => {
+                toggleMenu(false)
+                changeMenuTab("valueProposition")
+                dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
+              }}
+            >
               Co nas wyróżnia
             </li>
-            <li onClick={() => {
-              changeMenuTab("chatbot")
-              toggleMenu(false)
-              dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
-            }}>Dobierz dietę</li>
+            <li
+              onClick={() => {
+                changeMenuTab("chatbot")
+                toggleMenu(false)
+                dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
+              }}
+            >
+              Dobierz dietę
+            </li>
             <li
               onClick={() => {
                 changeMenuTab("offer")
@@ -83,21 +92,33 @@ const Header = ({ pageContext }) => {
             >
               Oferta
             </li>
-            <li onClick={() => {
-              toggleMenu(false)
-              changeMenuTab("pricing")
-              dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
-            }}>Cennik</li>
-            <li onClick={() => {
-              toggleMenu(false)
-              changeMenuTab("opinions")
-              dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
-            }}>Opinie</li>
-            <li onClick={() => {
-              toggleMenu(false)
-              changeMenuTab("contact")
-              dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
-            }}>Kontakt</li>
+            <li
+              onClick={() => {
+                toggleMenu(false)
+                changeMenuTab("pricing")
+                dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
+              }}
+            >
+              Cennik
+            </li>
+            <li
+              onClick={() => {
+                toggleMenu(false)
+                changeMenuTab("opinions")
+                dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
+              }}
+            >
+              Opinie
+            </li>
+            <li
+              onClick={() => {
+                toggleMenu(false)
+                changeMenuTab("contact")
+                dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
+              }}
+            >
+              Kontakt
+            </li>
             <li>
               <Link
                 className={headerStyles.navItem}
@@ -112,16 +133,18 @@ const Header = ({ pageContext }) => {
             <select
               onChange={({ target: { value } }) => {
                 typeof window !== "undefined" &&
-                window.sessionStorage.setItem(
-                  "city",
-                  `${JSON.stringify(value)}`
-                )
+                  window.sessionStorage.setItem(
+                    "city",
+                    `${JSON.stringify(value)}`
+                  )
                 if (value === "lodz") {
                   changeMenuTab("")
                   return navigate(dietSlug ? `/${dietSlug}` : "/")
                 }
                 changeMenuTab("")
-                return navigate(dietSlug ? `/${value}/${dietSlug}` : `/${value}`)
+                return navigate(
+                  dietSlug ? `/${value}/${dietSlug}` : `/${value}`
+                )
               }}
               value={findCity()}
             >
@@ -145,9 +168,56 @@ const Header = ({ pageContext }) => {
 
   return (
     <Fragment>
+      {/*<header*/}
+      {/*  className={`${*/}
+      {/*    yPosition < 100 ? (dietSlug ? headerStyles.dietHeader : headerStyles.header) : (dietSlug ? headerStyles.dietHeader : headerStyles.secondHeader)*/}
+      {/*    }`}*/}
+      {/*>*/}
+      <header className={headerStyles.topHeader}>
+        <span>
+          <Link to={citySlug ? `/${citySlug}` : "/"}>
+            <img src={logo} />
+          </Link>
+        </span>
+        <div className={headerStyles.topMenu}>
+          <h3>Mój panel</h3>
+          <select
+            onChange={({ target: { value } }) => {
+              typeof window !== "undefined" &&
+                window.sessionStorage.setItem(
+                  "city",
+                  `${JSON.stringify(value)}`
+                )
+              if (value === "lodz") {
+                return navigate(dietSlug ? `/${dietSlug}` : "/")
+              }
+              return navigate(dietSlug ? `/${value}/${dietSlug}` : `/${value}`)
+            }}
+            value={findCity()}
+          >
+            {[...cities, { value: "lodz", label: "Łódź" }]
+              .sort((prev, next) => {
+                const prevCity = prev.label
+                const nextCity = next.label
+                return prevCity.localeCompare(nextCity)
+              })
+              .map(city => (
+                <option value={city.value} key={city.value}>
+                  {city.label}
+                </option>
+              ))}
+          </select>
+        </div>
+      </header>
       <header
         className={`${
-          yPosition < 100 ? (dietSlug ? headerStyles.dietHeader : headerStyles.header) : (dietSlug ? headerStyles.dietHeader : headerStyles.secondHeader)
+          yPosition < 100
+            ? dietSlug
+              ? headerStyles.dietHeader
+              : headerStyles.header
+            : dietSlug
+            ? headerStyles.dietHeader
+            : headerStyles.header
         }`}
       >
         <span>
@@ -158,21 +228,25 @@ const Header = ({ pageContext }) => {
         <div
           className={headerStyles.hamburgerMenu}
           onClick={() => toggleMenu(true)}
-        >
-          <img src={hamburgerMenu}/>
-        </div>
+        ></div>
         <div className={headerStyles.menu}>
           <ul className={headerStyles.navList}>
-            <li onClick={() => {
-              dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
-              changeMenuTab("valueProposition")
-            }}>
+            <li
+              onClick={() => {
+                dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
+                changeMenuTab("valueProposition")
+              }}
+            >
               Co nas wyróżnia
             </li>
-            <li onClick={() => {
-              dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
-              changeMenuTab("chatbot")
-            }}>Dobierz dietę</li>
+            <li
+              onClick={() => {
+                dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
+                changeMenuTab("chatbot")
+              }}
+            >
+              Dobierz dietę
+            </li>
             <li
               onClick={() => {
                 dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
@@ -181,18 +255,30 @@ const Header = ({ pageContext }) => {
             >
               Oferta
             </li>
-            <li onClick={() => {
-              dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
-              changeMenuTab("pricing")
-            }}>Cennik</li>
-            <li onClick={() => {
-              dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
-              changeMenuTab("opinions")
-            }}>Opinie</li>
-            <li onClick={() => {
-              dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
-              changeMenuTab("contact")
-            }}>Kontakt</li>
+            <li
+              onClick={() => {
+                dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
+                changeMenuTab("pricing")
+              }}
+            >
+              Cennik
+            </li>
+            <li
+              onClick={() => {
+                dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
+                changeMenuTab("opinions")
+              }}
+            >
+              Opinie
+            </li>
+            <li
+              onClick={() => {
+                dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
+                changeMenuTab("contact")
+              }}
+            >
+              Kontakt
+            </li>
             <li>
               <Link
                 className={headerStyles.navItem}
@@ -205,8 +291,9 @@ const Header = ({ pageContext }) => {
           </ul>
           <button className={commonStyles.button}>Zamów</button>
         </div>
-        <div className={headerStyles.topMenuRightPart}>
-          <button className={headerStyles.panelButton}>Panel</button>
+        <div className={headerStyles.menuRightPart}>
+          {/*<button className={headerStyles.panelButton}>Panel</button>*/}
+          <h4>Panel klienta</h4>
           <select
             onChange={({ target: { value } }) => {
               typeof window !== "undefined" &&

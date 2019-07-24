@@ -34,9 +34,10 @@
     @extend .button;
     background-color: white;
     color: $main-color;
+    cursor: pointer;
     &:hover {
-      background-color: $light-purple;
-      color: $main-color;
+      background-color: #8186C0;
+      color: white;
     }
   }
   .price-summary {
@@ -91,6 +92,11 @@
   align-self: center;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  &:hover {
+    background-color: #8186C0;
+    color: white;
+  }
 }
 
 .active-item {
@@ -114,6 +120,11 @@
   align-self: center;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  &:hover {
+    background-color: #8186C0;
+    color: white;
+  }
 }
 
 .daysSection {
@@ -141,6 +152,10 @@
   font-size: 40px;
   font-weight: 200;
   border-radius: 4px;
+  cursor: pointer;
+  &:hover {
+    background-color: #8186C0;
+  }
 }
 
 .dayInput {
@@ -260,11 +275,24 @@ h2 {
     margin: 0 10px 10px 0;
     font-size: 15px;
   }
+
   .daysSection {
     display: flex;
     align-self: flex-start;
     position: relative;
-    width: 90%;
+    margin-bottom: 30px;
+    p {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      font-size: 15px;
+      color: $main-color;
+      font-weight: 600;
+    }
+  }
+
+  .daysSection {
+   justify-content: center;
     margin: 10px auto;
     p {
       display: flex;
