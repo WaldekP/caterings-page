@@ -209,7 +209,7 @@ li:hover {
     height: 20px;
     width: 100%;
     background-color: #fbdae2;
-    img {
+    .top-logo {
       display: none;
     }
     //margin-right: 200px;
@@ -221,7 +221,7 @@ li:hover {
   .top-menu {
     display: flex;
     align-items: center;
-    img {
+    .top-logo {
       display: none;
     }
     //margin-right: 15%;
@@ -255,7 +255,7 @@ li:hover {
   li {
     margin-right: 1.6rem;
   }
-  img {
+  .logo {
     margin-left: 50px;
   }
 }
@@ -264,7 +264,7 @@ li:hover {
   .header {
     justify-content: center;
     padding: 20px 0;
-    img {
+    .logo {
       display: none;
     }
   }
@@ -275,8 +275,8 @@ li:hover {
   .top-header {
     justify-content: center;
     padding: 20px 0 10px 0;
-    img {
-      margin-right: 210px;
+    .top-logo {
+      margin-right: 190px;
       display: unset;
     }
   }
@@ -284,7 +284,7 @@ li:hover {
 
 @media (max-width: 840px) {
   .header {
-    img {
+    .logo {
       display: unset;
     }
   }
@@ -367,7 +367,7 @@ li:hover {
     justify-content: space-between;
   }
 
-  img {
+  .logo {
     margin: 0 30px;
   }
 

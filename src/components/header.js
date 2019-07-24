@@ -176,7 +176,7 @@ const Header = ({ pageContext }) => {
       <header className={headerStyles.topHeader}>
         <span>
           <Link to={citySlug ? `/${citySlug}` : "/"}>
-            <img src={logo} />
+            <img src={logo} className={headerStyles.topLogo}/>
           </Link>
         </span>
         <div className={headerStyles.topMenu}>
@@ -222,7 +222,7 @@ const Header = ({ pageContext }) => {
       >
         <span>
           <Link to={citySlug ? `/${citySlug}` : "/"}>
-            <img src={logo} />
+            <img src={logo} className={headerStyles.logo}/>
           </Link>
         </span>
         <div
