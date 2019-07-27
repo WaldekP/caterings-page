@@ -1,14 +1,12 @@
 import React, { useEffect, useReducer } from "react"
 import pricingStyles from "../styles/pricing.module.scss"
 import cateringDetails from "../data/companyDetails/cateringDetails"
-import * as generalCityMeals from "../data/companyDetails/citiesPricing/city"
-import * as warsawCityMeals from "../data/companyDetails/citiesPricing/cityLodz"
-import * as lodzCityMeals from "../data/companyDetails/citiesPricing/cityWarsaw"
-import * as lodzMeals from "../data/companyDetails/citiesPricing/lodzPrices"
-import * as testMeals from "../data/companyDetails/citiesPricing/testData"
-const { default: mealsPricing } = generalCityMeals
-const { default: mealsPricingLodz } = testMeals
-const { default: mealsPricingWarsaw } = warsawCityMeals
+import * as lodzMeals from "../data/companyDetails/citiesPricing/lodzMeals"
+import * as restCitiesMealsMeals from '../data/companyDetails/citiesPricing/restCitiesMeals'
+import * as warsawMeals from '../data/companyDetails/citiesPricing/warsawMeals'
+const { default: mealsPricingRestCities } = restCitiesMealsMeals
+const { default: mealsPricingLodz } = lodzMeals
+const { default: mealsPricingWarsaw } = warsawMeals
 
 const Pricing = React.forwardRef((props, ref) => {
   const discounts = [
@@ -295,12 +293,12 @@ const Pricing = React.forwardRef((props, ref) => {
   const handleCityMeals = () => {
     const { pageContext: { city} } = props
     if (!city) {
-      return mealsPricingLodz
+      return mealsPricingRestCities
     }
     if (city === 'warszawa') {
       return mealsPricingWarsaw
     }
-    return mealsPricing
+    return mealsPricingLodz
   }
 
   const handleDietPageDietId = () => {
@@ -455,8 +453,7 @@ const Pricing = React.forwardRef((props, ref) => {
                 <div className={pricingStyles.barItem}>
                   <div
                     style={{
-                      width: `${(getDiscountDetails().barPercentage * 360) /
-                        100}px`,
+                      width: `${(getDiscountDetails().barPercentage)}%`,
                     }}
                   />
                 </div>

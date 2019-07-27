@@ -22,28 +22,27 @@
   left: 0;
   height: 20px;
   width: 100%;
-  background-color: #fbdae2;
   button {
     @extend .button;
   }
 }
 
-.diet-header {
-  padding: 20px 0;
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: space-around;
-  top: 0;
-  left: 0;
-  height: 20px;
-  width: 100%;
-  z-index: 200;
-  background-color: transparent;
-  button {
-    @extend .button;
-  }
-}
+//.diet-header {
+//  padding: 20px 0;
+//  display: flex;
+//  position: relative;
+//  align-items: center;
+//  justify-content: space-around;
+//  top: 0;
+//  left: 0;
+//  height: 20px;
+//  width: 100%;
+//  z-index: 200;
+//  background-color: transparent;
+//  button {
+//    @extend .button;
+//  }
+//}
 
 //.header-up-color {
 //  background-color: #FBDAE2;
@@ -53,24 +52,24 @@
 //  background-color: white;
 //  opacity: 0.7;
 //}
-.secondHeader {
-  padding: 20px 0;
-  display: flex;
-  position: sticky;
-  align-items: center;
-  justify-content: space-around;
-  top: 0;
-  left: 0;
-  height: 20px;
-  width: 100%;
-  color: $main-color;
-  background-color: white;
-  opacity: 0.7;
-  z-index: 200;
-  button {
-    @extend .button;
-  }
-}
+//.secondHeader {
+//  padding: 20px 0;
+//  display: flex;
+//  position: sticky;
+//  align-items: center;
+//  justify-content: space-around;
+//  top: 0;
+//  left: 0;
+//  height: 20px;
+//  width: 100%;
+//  color: $main-color;
+//  background-color: white;
+//  opacity: 0.7;
+//  z-index: 200;
+//  button {
+//    @extend .button;
+//  }
+//}
 
 
 .headerColorDown {
@@ -209,11 +208,9 @@ li:hover {
     justify-content: flex-end;
     height: 20px;
     width: 100%;
-    background-color: #fbdae2;
     .top-logo {
       display: none;
     }
-    //margin-right: 200px;
     select {
       margin-right: 50px;
     }

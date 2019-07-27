@@ -173,7 +173,7 @@ const Header = ({ pageContext }) => {
       {/*    yPosition < 100 ? (dietSlug ? headerStyles.dietHeader : headerStyles.header) : (dietSlug ? headerStyles.dietHeader : headerStyles.secondHeader)*/}
       {/*    }`}*/}
       {/*>*/}
-      <header className={headerStyles.topHeader}>
+      <header className={headerStyles.topHeader} style={{backgroundColor: dietSlug ? "transparent" : "#fbdae2"}}>
         <span>
           <Link to={citySlug ? `/${citySlug}` : "/"}>
             <img src={logo} className={headerStyles.topLogo}/>
@@ -209,16 +209,19 @@ const Header = ({ pageContext }) => {
           </select>
         </div>
       </header>
+      {/*<header*/}
+      {/*  className={`${*/}
+      {/*    yPosition < 100*/}
+      {/*      ? dietSlug*/}
+      {/*        ? headerStyles.dietHeader*/}
+      {/*        : headerStyles.header*/}
+      {/*      : dietSlug*/}
+      {/*      ? headerStyles.dietHeader*/}
+      {/*      : headerStyles.header*/}
+      {/*  }`}*/}
+      {/*>*/}
       <header
-        className={`${
-          yPosition < 100
-            ? dietSlug
-              ? headerStyles.dietHeader
-              : headerStyles.header
-            : dietSlug
-            ? headerStyles.dietHeader
-            : headerStyles.header
-        }`}
+        className={headerStyles.header} style={{backgroundColor: dietSlug ? "transparent" : "#fbdae2"}}
       >
         <span>
           <Link to={citySlug ? `/${citySlug}` : "/"}>

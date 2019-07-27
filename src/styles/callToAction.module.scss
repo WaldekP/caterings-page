@@ -48,6 +48,7 @@
   p {
     margin-top: 30px;
     font-weight: 600;
+    text-align: center;
   }
 }
 
@@ -67,11 +68,29 @@
 
 @media (max-width: 799px) {
   .firstPattern {
-    display: none;
+    left: -270px;
+    width: auto;
+    height: 100%;
+  }
+
+  .secondPattern {
+    right: -300px;
+    width: auto;
+    height: 100%;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .firstPattern {
+    left: -300px;
+    width: auto;
+    height: 100%;
   }
 
   .secondPattern {
     display: none;
   }
+
 }
 
