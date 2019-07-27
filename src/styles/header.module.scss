@@ -72,9 +72,6 @@
   }
 }
 
-.panel-button {
-  @extend .reverse-button;
-}
 
 .headerColorDown {
   background-color: white;
@@ -195,6 +192,10 @@ li:hover {
 
 .hamburgerMenuClose {
   display: none;
+}
+
+.logo {
+  margin-left: 10px;
 }
 
 @media (max-width: 1199px) {

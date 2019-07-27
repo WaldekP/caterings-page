@@ -12,6 +12,72 @@ body {
   }
 }
 
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+
 .container {
   //padding: 1rem;
   width: 100%;
@@ -24,21 +90,23 @@ body {
 }
 
 .overlay {
-  position: fixed; /* Sit on top of the page content */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
+  position: fixed;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(191, 193, 223, 0.7) url("../images/backgrounds/img_city_1.svg");
-  z-index: 1000; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
+  background: rgba(191, 193, 223, 0.8) url("../images/backgrounds/img_city_1.svg");
+  z-index: 1000;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
 }
 
 .overlayContent {
   a {
-    color: $main-color;
+    color: #595EA3;
     text-decoration: none;
     font-weight: 600;
     font-size: 25px;
@@ -48,14 +116,14 @@ body {
     }
   }
   li {
+    margin: 5px 0;
     text-decoration: none;
   }
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%)
+  h2 {
+    font-size: 40px;
+    margin-top: 100px;
+
+  }
 }
 
 .overlayItem {

@@ -5,8 +5,9 @@ import * as generalCityMeals from "../data/companyDetails/citiesPricing/city"
 import * as warsawCityMeals from "../data/companyDetails/citiesPricing/cityLodz"
 import * as lodzCityMeals from "../data/companyDetails/citiesPricing/cityWarsaw"
 import * as lodzMeals from "../data/companyDetails/citiesPricing/lodzPrices"
+import * as testMeals from "../data/companyDetails/citiesPricing/testData"
 const { default: mealsPricing } = generalCityMeals
-const { default: mealsPricingLodz } = lodzCityMeals
+const { default: mealsPricingLodz } = testMeals
 const { default: mealsPricingWarsaw } = warsawCityMeals
 
 const Pricing = React.forwardRef((props, ref) => {
@@ -382,7 +383,11 @@ const Pricing = React.forwardRef((props, ref) => {
                 {state.mealsValidation && "(Minimalna licza posiłków to 3)"}
               </p>
               {state.activeMeals &&
-                state.activeMeals.dietCaloriesMeals.map(meal => (
+                state.activeMeals.dietCaloriesMeals.sort((prev, next) => {
+                  const prevMeal = prev.dietMeal.priority
+                  const nextMeal = next.dietMeal.priority
+                  return prevMeal - nextMeal
+                }).map(meal => (
                   <div
                     onClick={() => {
                       calculateNumberOfSelectedMeals() === 3 &&
@@ -403,7 +408,7 @@ const Pricing = React.forwardRef((props, ref) => {
                         : { backgroundColor: "#E7E7F3", color: "#102682" }
                     }
                   >
-                    Posilek {meal.dietCaloriesMealId}
+                    {meal.dietMeal.meal.name}
                   </div>
                 ))}
             </div>
