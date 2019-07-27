@@ -8,6 +8,7 @@
   justify-content: center;
   margin: 0 auto;
   position: relative;
+  -webkit-overflow-scrolling: touch;
   .inside-text {
     position: absolute;
     font-size: 1.8rem;
