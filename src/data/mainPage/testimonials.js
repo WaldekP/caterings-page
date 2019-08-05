@@ -1,7 +1,7 @@
 export const testimonials = {
   1: {
     testimonial: "Catering dietetyczny Afterfit to przede wszystkim wygoda i pewność, że moje posiłki dietetyczne będą miały odpowiednio skomponowane makroskładniki.",
-    person: "Jacek Palcek",
+    person: "Maciej Wasilewski",
   },
   2: {
     testimonial: "Dużo ćwiczę, a pyszna dieta pudełkowa od Afterfit jest dla mnie dopełnieniem treningu",
