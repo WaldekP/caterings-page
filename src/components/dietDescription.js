@@ -2,11 +2,37 @@ import React from "react"
 import dietDescriptionStyles from '../styles/dietDescription.module.scss'
 
 const DietDescription = ({ diet, city, dietDescription }) => {
+  const findDescription = (diet) => {
+    if (diet === 'dieta-samuraja') {
+      return 'dietaSamuraja'
+    }
+    if (diet === 'dieta-odchudzajaca') {
+      return 'dietaOdchudzajaca'
+    }
+    if (diet === 'dieta-paleo') {
+      return 'dietaPaleo'
+    }
+    if (diet === 'dieta-sportowa-na-mase') {
+      return 'dietaSportowaNaMase'
+    }
+    if (diet === 'dieta-sportowa-na-redukcje') {
+      return 'dietaSportowaNaRedukcje'
+    }
+    if (diet === 'dieta-weganska') {
+      return 'dietaWeganska'
+    }
+    if (diet === 'dieta-wegetarianska') {
+      return 'dietaWegetarianska'
+    }
+    if (diet === 'dieta-standard') {
+      return 'dietaStandard'
+    }
+  }
   return (
     <div>
       <h2>{diet} {city ? city : "Łódź"} - dla kogo?</h2>
       <div className={dietDescriptionStyles.container}>
-        <div className={dietDescriptionStyles.descriptionContainer}><p>{dietDescription}</p></div>
+        <div className={dietDescriptionStyles.descriptionContainer}>{dietDescription.map((description, i) => <p key={i}>{description}</p>)}</div>
         <div className={dietDescriptionStyles.menuContainer}>
           <p>Przykładowe menu</p>
           <div>

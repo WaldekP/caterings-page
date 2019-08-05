@@ -19,13 +19,7 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
   const [age, changeAge] = useState("")
   const [activity, changeActivity] = useState()
   const [purpose, changePurpose] = useState()
-  // const chatRef = useRef(null)
   const chatRef = useRef(null)
-  // const chatRef1 = useRef(null)
-  // const chatRef2 = useRef(null)
-  // const chatRef3 = useRef(null)
-  // const chatRef4 = useRef(null)
-  // const chatRef5 = useRef(null)
   const [typing, changeTypingState] = useState(false)
 
   useEffect(() => {

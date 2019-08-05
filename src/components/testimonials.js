@@ -24,14 +24,7 @@ const Testimonials = React.forwardRef((props, ref) => {
           <h4>{testimonials[testimonialNumber].testimonial}</h4>
           <p>{testimonials[testimonialNumber].person}</p>
           <div className={testimonialsStyles.circlesContainer}>
-            <span onClick={() => {
-              if (testimonialNumber === 1) {
-                console.log('a')
-                return null
-              }
-              console.log('b')
-              return changeTestimonial(1)
-            }}>
+            <span>
               <FontAwesomeIcon
                 className={`${testimonialsStyles.circle} ${testimonialNumber ===
                   1 && testimonialsStyles.active}`}

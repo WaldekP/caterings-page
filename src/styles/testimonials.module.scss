@@ -4,16 +4,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 75px 0;
+  //padding: 75px 0;
+  height: 400px;
 }
 
 
 .wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 60%;
+  height: 350px;
   img {
     width: 50px;
     height: auto;
@@ -50,6 +52,14 @@
     width: 90%;
     .circle {
       font-size: 10px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    h4 {
+      font-size: 20px;
     }
   }
 }
