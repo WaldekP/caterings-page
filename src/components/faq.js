@@ -14,6 +14,7 @@ const Faq = React.forwardRef (({ pageContext }, ref) => {
     }
     return Object.values(faq[city][section])
   }
+  console.log('section', section)
   return (
     <div className={faqStyles.wrapper} ref={ref}>
       <h2>Masz pytania odnośnie naszego cateringu? Zajrzyj tutaj.</h2>
@@ -22,18 +23,22 @@ const Faq = React.forwardRef (({ pageContext }, ref) => {
         <div className={faqStyles.contentsContainer}>
           <p>SPIS TREŚCI</p>
           <p
+            className={faqStyles.chapter}
             onClick={() => {
               chooseSection("general")
             }}
+            style={section === 'general' ? {textDecoration: "underline"} : null}
           >
             OGÓLNE
           </p>
           <p
+            className={faqStyles.chapter}
             onClick={() => {
               chooseSection("dietSelection")
             }}
+            style={section === 'dietSelection' ? {textDecoration: "underline"} : null}
           >
-            DOBÓR DIET
+            DOBÓR DIETY
           </p>
         </div>
         <div className={faqStyles.questionsContainer}>

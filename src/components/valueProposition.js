@@ -3,8 +3,17 @@ import valuePropositionStyles from "../styles/valueProposition.module.scss"
 import firstValueProposition from "../images/valueProposition/img_elastycznosc.svg"
 import secondValueProposition from "../images/valueProposition/img_roznorodnosc.svg"
 import thirdValueProposition from "../images/valueProposition/img_jakosc.svg"
+import { valuePropositionData } from "../data/mainPage/valueProposition"
 
 const ValueProposition = React.forwardRef((props, ref) => {
+  const handleValuePropositionTexts = () => {
+    const { pageContext } = props;
+    const city = pageContext && pageContext.city
+    if (!city) {
+      return valuePropositionData.lodz
+    }
+    return valuePropositionData.lodz
+  }
   return (
     <div ref={ref}>
       <h2 className={valuePropositionStyles.title}>
@@ -14,17 +23,17 @@ const ValueProposition = React.forwardRef((props, ref) => {
         <div className={valuePropositionStyles.item}>
           <img src={firstValueProposition} />
           <h2>ELASTYCZNOŚC</h2>
-          <p>Lorem ipsume lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsume lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsume lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+          <p>{handleValuePropositionTexts().elasticity}</p>
         </div>
         <div className={valuePropositionStyles.item}>
         <img src={secondValueProposition} />
           <h2>RÓŻNORODNOŚC</h2>
-          <p>Lorem ipsume lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+          <p>{handleValuePropositionTexts().variety}</p>
         </div>
         <div className={valuePropositionStyles.item}>
         <img src={thirdValueProposition} />
           <h2>JAKOŚC</h2>
-          <p>Lorem ipsume lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+          <p>{handleValuePropositionTexts().quality}</p>
         </div>
       </div>
     </div>

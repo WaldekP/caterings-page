@@ -50,7 +50,7 @@ const IndexPage = ({ pageContext }) => {
       <SEO title={`Catering dietetyczny Afterfit`} />
       <div className={indexStyles.container}>
         <Hero/>
-        <ValueProposition ref={valuePropositionRef}/>
+        <ValueProposition ref={valuePropositionRef} pageContext={pageContext}/>
         <Chatbot ref={chatbotRef} pageContext={pageContext}/>
         <Offer pageContext={pageContext} ref={offerRef}/>
         <CallToAction cta="catering"/>

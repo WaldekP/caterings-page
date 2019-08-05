@@ -6,6 +6,7 @@ import chatIcon from "../images/chat/ico_chat1.svg"
 import personIcon from "../images/chat/ico_chat2.svg"
 import PageContext from "../context/pageContext"
 import ChatbotSpinner from "../components/chatSpinner"
+import scrollIntoView from "scroll-into-view-if-needed"
 
 const { default: diets } = dietDetails
 
@@ -18,20 +19,72 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
   const [age, changeAge] = useState("")
   const [activity, changeActivity] = useState()
   const [purpose, changePurpose] = useState()
+  // const chatRef = useRef(null)
   const chatRef = useRef(null)
+  // const chatRef1 = useRef(null)
+  // const chatRef2 = useRef(null)
+  // const chatRef3 = useRef(null)
+  // const chatRef4 = useRef(null)
+  // const chatRef5 = useRef(null)
   const [typing, changeTypingState] = useState(false)
 
   useEffect(() => {
     // scrollToRef(chatBottomRef)
     if (questionNumber > 1) {
-      chatRef.current.scrollIntoViewIfNeeded()
       changeTypingState(true)
+      // scrollIntoView(chatRef.current, {
+      //   // block: "center",
+      //   // inline: "center",
+      //   behavior: "smooth",
+      //   block: 'nearest',
+      //   inline: 'nearest',
+      //   // scrollMode: "if-needed",
+      // })
       setTimeout(() => {
         changeTypingState(false)
       }, 2000)
     }
+    if (questionNumber >= 2) {
+      scrollIntoView(chatRef.current, {
+        block: "center",
+        inline: "center",
+        behavior: "smooth",
+        // block: 'nearest',
+        // inline: 'nearest',
+        // scrollMode: "if-needed",
+      })
+    }
+    // if (questionNumber === 3) {
+    //   scrollIntoView(chatRef2.current, {
+    //     // block: "center",
+    //     // inline: "center",
+    //     behavior: "smooth",
+    //     block: 'nearest',
+    //     inline: 'nearest',
+    //     scrollMode: "if-needed",
+    //   })
+    // }
+    // if (questionNumber === 4) {
+    //   scrollIntoView(chatRef3.current, {
+    //     // block: "center",
+    //     // inline: "center",
+    //     behavior: "smooth",
+    //     block: 'nearest',
+    //     inline: 'nearest',
+    //     scrollMode: "if-needed",
+    //   })
+    // }
+    // if (questionNumber === 5) {
+    //   scrollIntoView(chatRef4.current, {
+    //     // block: "center",
+    //     // inline: "center",
+    //     behavior: "smooth",
+    //     block: 'nearest',
+    //     inline: 'nearest',
+    //     // scrollMode: "if-needed",
+    //   })
+    // }
   }, [questionNumber])
-
 
   const renderAnswerButtons = () => {
     if (questionNumber === 1) {
@@ -490,7 +543,7 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
                 ))}
             </Fragment>
           </div>
-          <div ref={chatRef} />
+          <div className={chatbotStyles.ref} ref={chatRef} />
         </div>
       </div>
       <div className={chatbotStyles.answerBox}>

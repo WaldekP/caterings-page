@@ -34,6 +34,7 @@
 
 .circle {
   margin: 0 5px;
+  font-size: 15px;
 }
 
 .active {
@@ -47,5 +48,8 @@
 @media (max-width: 799px) {
   .wrapper {
     width: 90%;
+    .circle {
+      font-size: 10px;
+    }
   }
 }

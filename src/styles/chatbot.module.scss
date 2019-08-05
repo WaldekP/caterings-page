@@ -1,5 +1,9 @@
 @import "common.module";
 
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
 .container {
   display: flex;
   max-width: 1200px;
@@ -8,7 +12,6 @@
   justify-content: center;
   margin: 0 auto;
   position: relative;
-  -webkit-overflow-scrolling: touch;
   .inside-text {
     position: absolute;
     font-size: 1.8rem;
@@ -84,8 +87,8 @@ h2 {
 }
 
 .questions-box {
+  overflow-y: scroll;
   overflow-x: hidden;
-  overflow-y: auto;
   height: 420px;
   background: url("../images/chat/img_czat_bg.svg" ) no-repeat center center;
   background-size: cover;
@@ -104,8 +107,19 @@ h2 {
   }
 }
 
+.ref {
+  margin-top: 100px;
+}
+
+.test {
+  height: 100px;
+  background-color: red;
+  margin: 20px;
+}
+
 .answer-box {
   background-color: #8186C0;
+  margin-top: 40px;
   min-height: 100px;
   display: flex;
   flex-wrap: wrap;
@@ -155,7 +169,6 @@ h2 {
   display: flex;
   flex-direction: column;
   width: 60%;
-
 }
 
 .question {

@@ -25,6 +25,12 @@
   flex: 1 0 auto;
   position: relative;
   left: 10%;
+  .chapter {
+    font-weight: 500;
+    &:hover {
+      font-weight: 600;
+    }
+  }
 }
 
 .questionsContainer {
