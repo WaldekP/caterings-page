@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="57d3d639-63d7-48d6-be77-9e9e5309408c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dietDescription.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dietDescription.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -49,14 +48,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/dietDescription.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+            <state relative-caret-position="376">
+              <caret line="40" column="75" lean-forward="true" selection-start-line="40" selection-start-column="75" selection-end-line="40" selection-end-column="75" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/static/_redirects">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="55" selection-start-column="55" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data/mainPage/testimonials.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -177,7 +194,6 @@
         <option value="$PROJECT_DIR$/src/styles/offer.module.scss" />
         <option value="$PROJECT_DIR$/src/styles/valueProposition.module.scss" />
         <option value="$PROJECT_DIR$/src/components/offer.js" />
-        <option value="$PROJECT_DIR$/src/data/mainPage/testimonials.js" />
         <option value="$PROJECT_DIR$/src/components/testimonials.js" />
         <option value="$PROJECT_DIR$/src/styles/testimonials.module.scss" />
         <option value="$PROJECT_DIR$/src/components/chatbot.js" />
@@ -185,9 +201,10 @@
         <option value="$PROJECT_DIR$/src/styles/faq.module.scss" />
         <option value="$PROJECT_DIR$/src/data/mainPage/faq.js" />
         <option value="$PROJECT_DIR$/src/data/diets.js" />
-        <option value="$PROJECT_DIR$/public/static/_redirects" />
         <option value="$PROJECT_DIR$/src/pages/diet.js" />
         <option value="$PROJECT_DIR$/src/components/dietDescription.js" />
+        <option value="$PROJECT_DIR$/public/static/_redirects" />
+        <option value="$PROJECT_DIR$/src/data/mainPage/testimonials.js" />
       </list>
     </option>
   </component>
@@ -367,21 +384,7 @@
       <workItem from="1563982728781" duration="12402000" />
       <workItem from="1564220315234" duration="9199000" />
       <workItem from="1564303611059" duration="8336000" />
-      <workItem from="1565020810012" duration="9240000" />
-    </task>
-    <task id="LOCAL-00011" summary="Session storage fix">
-      <created>1562191298555</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1562191298555</updated>
-    </task>
-    <task id="LOCAL-00012" summary="temp console.log">
-      <created>1562192671712</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1562192671712</updated>
+      <workItem from="1565020810012" duration="9571000" />
     </task>
     <task id="LOCAL-00013" summary="caching test">
       <created>1562195910507</created>
@@ -712,11 +715,25 @@
       <option name="project" value="LOCAL" />
       <updated>1565037505034</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="dietDescription object commented out">
+      <created>1565037782342</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1565037782342</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Redirects added">
+      <created>1565037990772</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1565037990772</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="290204000" />
+    <option name="totallyTimeSpent" value="290535000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -731,7 +748,7 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24954791" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24954791" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -745,7 +762,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.327551" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32941177" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.31938776" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.31938776" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -777,8 +794,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Mobile menu styles improved" />
-    <MESSAGE value="Select in mobile menu fix" />
     <MESSAGE value="Scrolling added to mobile menu" />
     <MESSAGE value="Changing city in the mobile menu" />
     <MESSAGE value="Menu mobile styles added" />
@@ -802,7 +817,9 @@
     <MESSAGE value="Diets and valueProposition texts for lodz implemented." />
     <MESSAGE value="Redirects implemented" />
     <MESSAGE value="Redirects deleted" />
-    <option name="LAST_COMMIT_MESSAGE" value="Redirects deleted" />
+    <MESSAGE value="dietDescription object commented out" />
+    <MESSAGE value="Redirects added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Redirects added" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/components/footer.js">
@@ -1075,13 +1092,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/mainPage/testimonials.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/testimonials.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -1163,13 +1173,6 @@
     <entry file="file://$PROJECT_DIR$/public/manifest.webmanifest">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/_redirects">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/diets.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3315">
@@ -1189,11 +1192,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/dietDescription.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+        <state relative-caret-position="376">
+          <caret line="40" column="75" lean-forward="true" selection-start-line="40" selection-start-column="75" selection-end-line="40" selection-end-column="75" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/mainPage/testimonials.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/_redirects">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="55" selection-start-column="55" selection-end-column="55" />
         </state>
       </provider>
     </entry>
