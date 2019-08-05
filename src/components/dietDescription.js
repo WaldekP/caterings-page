@@ -32,7 +32,8 @@ const DietDescription = ({ diet, city, dietDescription }) => {
     <div>
       <h2>{diet} {city ? city : "Łódź"} - dla kogo?</h2>
       <div className={dietDescriptionStyles.container}>
-        <div className={dietDescriptionStyles.descriptionContainer}>{dietDescription.map((description, i) => <p key={i}>{description}</p>)}</div>
+        <div className={dietDescriptionStyles.descriptionContainer}>test</div>
+        {/*<div className={dietDescriptionStyles.descriptionContainer}>{dietDescription.map((description, i) => <p key={i}>{description}</p>)}</div>*/}
         <div className={dietDescriptionStyles.menuContainer}>
           <p>Przykładowe menu</p>
           <div>
