@@ -10,7 +10,8 @@ import hamburgerMenu from "../images/Hamurger menu.png"
 import PageContext from "../context/pageContext"
 
 const Header = ({ pageContext }) => {
-  const citySlug = pageContext && pageContext.city
+    const cityCookie = typeof window !== 'undefined' && JSON.parse(window.sessionStorage.getItem("city"))
+    const citySlug = pageContext && pageContext.city
   const dietSlug = pageContext && pageContext.diet
 
   const data = useStaticQuery(graphql`
@@ -48,7 +49,7 @@ const Header = ({ pageContext }) => {
     }
     return citySlug
   }
-  if (menuOverlay) {
+  if (menuOverlay && !cityCookie) {
     return (
       <div className={menuOverlay && headerStyles.overlay}>
         <div className={headerStyles.mobileMenuHeader}>
