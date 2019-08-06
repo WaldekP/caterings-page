@@ -12,23 +12,23 @@ const DietDescription = ({ diet, city, dietDescription, menu }) => {
           <p>Przykładowe menu</p>
           <div>
             <p className={dietDescriptionStyles.mealName}>Śniadanie</p>
-            <p>{menu.breakfast}</p>
+            <p>{menu ? menu.breakfast : null}</p>
           </div>
           <div>
             <p className={dietDescriptionStyles.mealName}>II Śniadanie</p>
-            <p>{menu.secondBreakfast}</p>
+            <p>{menu ? menu.secondBreakfast: null}</p>
           </div>
           <div>
-            <p className={dietDescriptionStyles.mealName}>Śniadanie</p>
-            <p>{menu.dinner}</p>
+            <p className={dietDescriptionStyles.mealName}>Obiad</p>
+            <p>{menu ? menu.dinner: null}</p>
           </div>
           <div>
-            <p className={dietDescriptionStyles.mealName}>Śniadanie</p>
-            <p>{menu.tea}</p>
+            <p className={dietDescriptionStyles.mealName}>Podwieczorek</p>
+            <p>{menu ? menu.tea: null}</p>
           </div>
           <div>
-            <p className={dietDescriptionStyles.mealName}>Śniadanie</p>
-            <p>{menu.supper}</p>
+            <p className={dietDescriptionStyles.mealName}>Kolacja</p>
+            <p>{menu ? menu.supper: null}</p>
 \          </div>
         </div>
       </div>
