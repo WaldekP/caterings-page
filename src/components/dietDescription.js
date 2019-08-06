@@ -1,33 +1,8 @@
 import React from "react"
 import dietDescriptionStyles from '../styles/dietDescription.module.scss'
 
-const DietDescription = ({ diet, city, dietDescription }) => {
-  const findDescription = (diet) => {
-    if (diet === 'dieta-samuraja') {
-      return 'dietaSamuraja'
-    }
-    if (diet === 'dieta-odchudzajaca') {
-      return 'dietaOdchudzajaca'
-    }
-    if (diet === 'dieta-paleo') {
-      return 'dietaPaleo'
-    }
-    if (diet === 'dieta-sportowa-na-mase') {
-      return 'dietaSportowaNaMase'
-    }
-    if (diet === 'dieta-sportowa-na-redukcje') {
-      return 'dietaSportowaNaRedukcje'
-    }
-    if (diet === 'dieta-weganska') {
-      return 'dietaWeganska'
-    }
-    if (diet === 'dieta-wegetarianska') {
-      return 'dietaWegetarianska'
-    }
-    if (diet === 'dieta-standard') {
-      return 'dietaStandard'
-    }
-  }
+const DietDescription = ({ diet, city, dietDescription, menu }) => {
+
   return (
     <div>
       <h2>{diet} - {city ? city : "Łódź"}</h2>
@@ -37,24 +12,24 @@ const DietDescription = ({ diet, city, dietDescription }) => {
           <p>Przykładowe menu</p>
           <div>
             <p className={dietDescriptionStyles.mealName}>Śniadanie</p>
-            <p>Owsianska na mleczku migdałowym z brzoskwiniami i miodem</p>
+            <p>{menu.breakfast}</p>
           </div>
           <div>
             <p className={dietDescriptionStyles.mealName}>II Śniadanie</p>
-            <p>Babeczki szpinakowe z serem gorgonzola</p>
+            <p>{menu.secondBreakfast}</p>
           </div>
           <div>
             <p className={dietDescriptionStyles.mealName}>Śniadanie</p>
-            <p>Pstrąg w pikantnym sosie z mango podany z ryżem brązowym</p>
+            <p>{menu.dinner}</p>
           </div>
           <div>
             <p className={dietDescriptionStyles.mealName}>Śniadanie</p>
-            <p>Ciasto śliwkowe pod kruszonką</p>
+            <p>{menu.tea}</p>
           </div>
           <div>
             <p className={dietDescriptionStyles.mealName}>Śniadanie</p>
-            <p>Węgierski gulasz z kluseczkami pół-francuskimi</p>
-          </div>
+            <p>{menu.supper}</p>
+\          </div>
         </div>
       </div>
 

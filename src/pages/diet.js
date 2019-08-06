@@ -21,6 +21,16 @@ const Diet = ({pageContext}) => {
     return pageContext.city ? pageContext.city : 'lodz'
 
   }
+
+  const getDietAltTag = () => {
+    const city = getCitySlug()
+    const diet = pageContext.diet
+    return {
+      firstAlt: `${diet} - ${city} - catering dietetyczny`,
+      secondAlt: `${diet} - ${city} - dieta pudełkowa`,
+      thirdAlt: `${diet} - ${city} - dieta z dowozem`,
+    }
+  }
   const findCity = () => {
     const citySlug = getCitySlug()
     const cityObject =  cities.find(city => city.value === citySlug)
@@ -37,13 +47,14 @@ const Diet = ({pageContext}) => {
     console.log('descriptions', descriptions)
     return descriptions && descriptions.description
   }
+
   return (
     <Layout pageContext={pageContext}>
       <DietHero />
-      <DietDescription diet={findDiet() && findDiet().fullName} city={findCity()} dietDescription={findDietDescription()}/>
-      <DietGallery/>
+      <DietDescription diet={findDiet() && findDiet().fullName} city={findCity()} dietDescription={findDietDescription()} menu={findDiet() && findDiet().menu}/>
+      <DietGallery getDietAltTag={getDietAltTag}/>
       <DietsFaq pageContext={pageContext}/>
-      <DietPricing pageContext={pageContext}/>
+      <DietPricing pageContext={pageContext} diet={findDiet() && findDiet().fullName}/>
       <CallToAction cta="diet" />
     </Layout>
   )

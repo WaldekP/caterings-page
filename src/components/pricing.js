@@ -330,9 +330,10 @@ const Pricing = React.forwardRef((props, ref) => {
     return null
   }
 
+  const { diet } = props;
   return (
     <div ref={ref}>
-      <h2>Cennik naszych diet pudełkowych</h2>
+      <h2>{ diet ? `Cennik cateringu Afterfit - ${diet}` : "Cennik naszych diet pudełkowych"}</h2>
       <div className={pricingStyles.container}>
         <div className={pricingStyles.leftSide}>
           <div className={pricingStyles.leftSideWrapper}>
