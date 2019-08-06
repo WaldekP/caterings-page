@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `AfterFit`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `TODO`,
     author: `WPieniak`,
   },
   plugins: [
