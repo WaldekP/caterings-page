@@ -23,61 +23,23 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
   const [typing, changeTypingState] = useState(false)
 
   useEffect(() => {
-    // scrollToRef(chatBottomRef)
     if (questionNumber > 1) {
       changeTypingState(true)
-      // scrollIntoView(chatRef.current, {
-      //   // block: "center",
-      //   // inline: "center",
-      //   behavior: "smooth",
-      //   block: 'nearest',
-      //   inline: 'nearest',
-      //   // scrollMode: "if-needed",
-      // })
-      setTimeout(() => {
-        changeTypingState(false)
-      }, 2000)
-    }
-    if (questionNumber >= 2) {
       scrollIntoView(chatRef.current, {
         block: "center",
         inline: "center",
-        behavior: "smooth",
-        // block: 'nearest',
-        // inline: 'nearest',
-        // scrollMode: "if-needed",
+        behavior: "smooth"
+        //available options: https://www.npmjs.com/package/scroll-into-view-if-needed
       })
+      setTimeout(() => {
+        changeTypingState(false)
+        scrollIntoView(chatRef.current, {
+          block: "center",
+          inline: "center",
+          behavior: "smooth"
+        })
+      }, 1000)
     }
-    // if (questionNumber === 3) {
-    //   scrollIntoView(chatRef2.current, {
-    //     // block: "center",
-    //     // inline: "center",
-    //     behavior: "smooth",
-    //     block: 'nearest',
-    //     inline: 'nearest',
-    //     scrollMode: "if-needed",
-    //   })
-    // }
-    // if (questionNumber === 4) {
-    //   scrollIntoView(chatRef3.current, {
-    //     // block: "center",
-    //     // inline: "center",
-    //     behavior: "smooth",
-    //     block: 'nearest',
-    //     inline: 'nearest',
-    //     scrollMode: "if-needed",
-    //   })
-    // }
-    // if (questionNumber === 5) {
-    //   scrollIntoView(chatRef4.current, {
-    //     // block: "center",
-    //     // inline: "center",
-    //     behavior: "smooth",
-    //     block: 'nearest',
-    //     inline: 'nearest',
-    //     // scrollMode: "if-needed",
-    //   })
-    // }
   }, [questionNumber])
 
   const renderAnswerButtons = () => {
@@ -315,6 +277,7 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
     }
     return [1200, 1500, 1800, 2000, 2500]
   }
+
   const parseActivity = () => {
     if (activity === 1.2) {
       return "mała"
@@ -366,12 +329,15 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
     <div ref={ref}>
       <h2>Dobierz idealną dietę pudełkową dla siebie</h2>
       <div className={chatbotStyles.container}>
-        <div className={chatbotStyles.questionsBox}>
+        <div>
           <h3 className={chatbotStyles.insideText}>
             Zacznij jeść <br />
             zdrowo bez <br />
             wysiłku
           </h3>
+        </div>
+
+        <div className={chatbotStyles.questionsBox}>
           <div className={chatbotStyles.questionAnswer}>
             <div className={chatbotStyles.question}>
               <img src={chatIcon} />
@@ -402,7 +368,7 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
               ))}
             {questionNumber >= 3 && (
               <div className={chatbotStyles.answer}>
-                <p>Jestem {gender === "female" ? "kobietą" : "mężczyzną"}</p>
+                <p>Jestem {gender === "female" ? "kobietą" : "mężczyzną"}.</p>
                 <img src={personIcon} />
               </div>
             )}
@@ -440,7 +406,7 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
                 ) : (
                   <div className={chatbotStyles.question}>
                     <img src={chatIcon} />
-                    <p>Ile ważysz w kilogramch?</p>
+                    <p>Ile ważysz w kilogramach?</p>
                   </div>
                 ))}
               {questionNumber >= 5 && (
@@ -511,7 +477,7 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
                 ))}
               {questionNumber >= 8 && (
                 <div className={chatbotStyles.answer}>
-                  <p>Cel Twojej diety to {parseGoal().goal}</p>
+                  <p>Cel Twojej diety to {parseGoal().goal}.</p>
                   <img src={personIcon} />
                 </div>
               )}
@@ -537,7 +503,7 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
                 ))}
             </Fragment>
           </div>
-          <div className={chatbotStyles.ref} ref={chatRef} />
+          <div className={chatbotStyles.ref} ref={chatRef}></div>
         </div>
       </div>
       <div className={chatbotStyles.answerBox}>
