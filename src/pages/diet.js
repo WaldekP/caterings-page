@@ -1,4 +1,4 @@
-import React, { useContext } from "react"
+import React from "react"
 import Layout from "../components/layout"
 import DietHero from "../components/dietHero"
 import DietDescription from "../components/dietDescription"

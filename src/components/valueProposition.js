@@ -22,17 +22,17 @@ const ValueProposition = React.forwardRef((props, ref) => {
       <div className={valuePropositionStyles.container}>
         <div className={valuePropositionStyles.item}>
           <img src={firstValueProposition} />
-          <h2>ELASTYCZNOŚC</h2>
+          <h2>ELASTYCZNOŚĆ</h2>
           <p>{handleValuePropositionTexts().elasticity}</p>
         </div>
         <div className={valuePropositionStyles.item}>
         <img src={secondValueProposition} />
-          <h2>RÓŻNORODNOŚC</h2>
+          <h2>RÓŻNORODNOŚĆ</h2>
           <p>{handleValuePropositionTexts().variety}</p>
         </div>
         <div className={valuePropositionStyles.item}>
         <img src={thirdValueProposition} />
-          <h2>JAKOŚC</h2>
+          <h2>JAKOŚĆ</h2>
           <p>{handleValuePropositionTexts().quality}</p>
         </div>
       </div>

@@ -20,7 +20,7 @@ const Testimonials = React.forwardRef((props, ref) => {
       </h2>
       <div className={testimonialsStyles.container}>
         <div className={testimonialsStyles.wrapper}>
-          <img srcSet={examplePhoto} />
+          <img srcSet={examplePhoto} alt="Example Photo" />
           <h4>{testimonials[testimonialNumber].testimonial}</h4>
           <p>{testimonials[testimonialNumber].person}</p>
           <div className={testimonialsStyles.circlesContainer}>
