@@ -28,12 +28,11 @@ const DietDescription = ({ diet, city, dietDescription }) => {
       return 'dietaStandard'
     }
   }
-  console.log('dietDescription', dietDescription)
   return (
     <div>
       <h2>{diet} - {city ? city : "Łódź"}</h2>
       <div className={dietDescriptionStyles.container}>
-        <div className={dietDescriptionStyles.descriptionContainer}>{dietDescription.map((description, i) => <p key={i}>{description}</p>)}</div>
+        <div className={dietDescriptionStyles.descriptionContainer}>{dietDescription && dietDescription.length > 0 ? dietDescription.map((description, i) => <p key={i}>{description}</p>) : <p>Test</p> }</div>
         <div className={dietDescriptionStyles.menuContainer}>
           <p>Przykładowe menu</p>
           <div>
