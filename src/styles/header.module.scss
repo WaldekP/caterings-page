@@ -284,38 +284,41 @@ li:hover {
   .header {
     .logo {
       display: unset;
-    }
-  }
-  .hamburgerMenu {
-    display: unset;
-    width: 35px;
-    height: 30px;
-    //border: 0;
-    border-top: 5px solid $main-color;
-    position: relative;
-    margin: 0 30px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      border-top: 5px solid $main-color;
       transform: translateY(10px);
     }
-    &::after {
-      content: "MENU";
-      position: absolute;
-      font-size: 12px;
-      text-align: center;
-      top: 0;
-      left: 0;
-      width: 100%;
+    .hamburgerMenu {
+      display: unset;
+      width: 35px;
+      height: 30px;
+      //border: 0;
       border-top: 5px solid $main-color;
-      transform: translateY(25px);
+      transform: translateY(20px);
+      margin: 0 30px;
+      padding-top: 30px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-top: 5px solid $main-color;
+        transform: translateY(10px);
+      }
+      &::after {
+        content: "MENU";
+        position: absolute;
+        font-size: 12px;
+        text-align: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-top: 5px solid $main-color;
+        transform: translateY(25px);
+      }
     }
   }
+
 
   .hamburgerMenuClose {
     display: unset;
@@ -324,7 +327,7 @@ li:hover {
     //border: 0;
     border-top: 5px solid $main-color;
     position: relative;
-    margin: 0 30px;
+    margin: 0 10px;
     transform: rotate(45deg) translateY(10px);
 
     //&::before {
@@ -369,6 +372,11 @@ li:hover {
     margin: 0 30px;
   }
 
+  li {
+    margin-right: 0;
+    left: 0;
+  }
+
   //.secondHeader {
   //  position: relative;
   //}
@@ -390,7 +398,7 @@ li:hover {
     button {
       display: inline-block;
       width: 150px;
-      //margin: 0 auto;
+      margin: 20px 0;
       padding: 0 45px;
       height: 50px;
       line-height: 48px;
@@ -411,20 +419,48 @@ li:hover {
         color: $main-color;
       }
     }
-    li {
-      list-style-type: none;
-      text-decoration: none;
-      font-size: 16px;
-      font-weight: normal;
-      line-height: 2;
-      text-transform: uppercase;
-      padding: 10px 0 10px 25px;
-      margin-left: -40px;
-      //display: block;
-      width: 100%;
-      &:hover {
-        background-color: $intense-yellow;
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      li {
+        width: 100%;
+        list-style-type: none;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 2;
+        text-transform: uppercase;
+        transform: translateX(25px);
+        padding: 10px 0 10px 25px;
+        margin-left: -40px;
+        //display: block;
+        &:hover {
+          background-color: $intense-yellow;
+        }
       }
+    }
+
+    select {
+      display: flex;
+      justify-content: center;
+      margin: 25px auto;
+      width: calc(100% - 100px);
+      height: 50px;
+      border-radius: 8px;
+      background-color: white;
+      border: none;
+      font-size: 18px;
+      font-weight: normal;
+      line-height: 1.56;
+      letter-spacing: normal;
+      color: $main-color;
+      padding: 0 10px;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
+      background-image: url(https://afterfit-catering.pl/wp-content/uploads/2019/01/menu-mobile-arrow.png);
+      background-position: 100%;
+      background-repeat: no-repeat;
     }
   }
   .nav-list-mobile {
@@ -463,24 +499,4 @@ li:hover {
   //  align-self: center;
   //}
 
-  select {
-    margin: 25px 25px 100px 25px;
-    width: calc(100% - 100px);
-    height: 50px;
-    border-radius: 8px;
-    background-color: white;
-    border: none;
-    font-size: 18px;
-    font-weight: normal;
-    line-height: 1.56;
-    letter-spacing: normal;
-    color: $main-color;
-    padding: 0 10px;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    background-image: url(https://afterfit-catering.pl/wp-content/uploads/2019/01/menu-mobile-arrow.png);
-    background-position: 100%;
-    background-repeat: no-repeat;
-  }
 }
