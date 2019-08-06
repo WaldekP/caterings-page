@@ -28,7 +28,6 @@ const Diet = ({pageContext}) => {
   }
 
   const findDietDescription = () => {
-    console.log('bla')
     const diet = findDiet()
     const city = getCitySlug()
     if (!(diet && city)) {
