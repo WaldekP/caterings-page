@@ -4,8 +4,11 @@
     <list default="true" id="57d3d639-63d7-48d6-be77-9e9e5309408c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/dietDescription.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dietDescription.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/dietDescription.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/dietDescription.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/header.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dietGallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dietGallery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pricing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pricing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/diets.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/diets.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/dietsFaqData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dietsFaqData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/diet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/diet.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,12 +22,12 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/dietDescription.js">
+        <entry file="file://$PROJECT_DIR$/src/components/pricing.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+            <state relative-caret-position="156">
+              <caret line="335" column="20" selection-start-line="335" selection-start-column="20" selection-end-line="335" selection-end-column="20" />
               <folding>
-                <element signature="e#0#25#0" expanded="true" />
+                <element signature="e#0#52#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -33,8 +36,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/styles/dietDescription.module.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/dietGallery.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -42,8 +57,47 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/diets.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="951">
-              <caret line="221" column="6" selection-start-line="221" selection-start-column="6" selection-end-line="221" selection-end-column="6" />
+            <state relative-caret-position="411">
+              <caret line="48" column="228" selection-start-line="48" selection-start-column="228" selection-end-line="48" selection-end-column="228" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/dietDescription.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/dietsFaq.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data/dietsFaqData.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="355">
+              <caret line="44" column="18" lean-forward="true" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -51,8 +105,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/diet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+            <state relative-caret-position="482">
+              <caret line="56" column="13" lean-forward="true" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/dietPricing.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -115,20 +181,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/styles/contact.module.scss" />
         <option value="$PROJECT_DIR$/src/data/companyDetails/companyDetails.json" />
         <option value="$PROJECT_DIR$/src/data/companyDetails/cateringDetails.json" />
         <option value="$PROJECT_DIR$/src/data/companyDetails/dietDetails.json" />
         <option value="$PROJECT_DIR$/src/data/companyDetails/citiesPricing/city.json" />
         <option value="$PROJECT_DIR$/src/data/companyDetails/citiesPricing/cityLodz.json" />
         <option value="$PROJECT_DIR$/src/data/companyDetails/citiesPricing/cityWarsaw.json" />
-        <option value="$PROJECT_DIR$/src/components/dietPricing.js" />
         <option value="$PROJECT_DIR$/src/styles/footer.module.scss" />
         <option value="$PROJECT_DIR$/src/components/footer.js" />
         <option value="$USER_HOME$/Downloads/Lodz.json" />
         <option value="$PROJECT_DIR$/src/data/companyDetails/citiesPricing/lodzPrices.json" />
         <option value="$PROJECT_DIR$/src/components/callToAction.js" />
-        <option value="$PROJECT_DIR$/src/components/dietGallery.js" />
         <option value="$PROJECT_DIR$/src/styles/dietGallery.module.scss" />
         <option value="$PROJECT_DIR$/src/styles/common.module.scss" />
         <option value="$PROJECT_DIR$/src/components/layout.js" />
@@ -139,7 +202,6 @@
         <option value="$PROJECT_DIR$/src/styles/dietHero.module.scss" />
         <option value="$PROJECT_DIR$/src/styles/callToAction.module.scss" />
         <option value="$PROJECT_DIR$/src/styles/pricing.module.scss" />
-        <option value="$PROJECT_DIR$/src/components/pricing.js" />
         <option value="$PROJECT_DIR$/src/styles/layout.module.scss" />
         <option value="$PROJECT_DIR$/src/components/faq.js" />
         <option value="$PROJECT_DIR$/src/components/testComponent.js" />
@@ -158,14 +220,18 @@
         <option value="$PROJECT_DIR$/src/components/question.js" />
         <option value="$PROJECT_DIR$/src/styles/faq.module.scss" />
         <option value="$PROJECT_DIR$/src/data/mainPage/faq.js" />
-        <option value="$PROJECT_DIR$/src/data/diets.js" />
-        <option value="$PROJECT_DIR$/src/pages/diet.js" />
         <option value="$PROJECT_DIR$/src/data/mainPage/testimonials.js" />
         <option value="$PROJECT_DIR$/public/static/_redirects" />
         <option value="$PROJECT_DIR$/src/components/header.js" />
         <option value="$PROJECT_DIR$/src/styles/header.module.scss" />
         <option value="$PROJECT_DIR$/src/styles/dietDescription.module.scss" />
+        <option value="$PROJECT_DIR$/src/components/dietGallery.js" />
         <option value="$PROJECT_DIR$/src/components/dietDescription.js" />
+        <option value="$PROJECT_DIR$/src/data/diets.js" />
+        <option value="$PROJECT_DIR$/src/data/dietsFaqData.js" />
+        <option value="$PROJECT_DIR$/src/pages/diet.js" />
+        <option value="$PROJECT_DIR$/src/components/dietPricing.js" />
+        <option value="$PROJECT_DIR$/src/components/pricing.js" />
       </list>
     </option>
   </component>
@@ -201,14 +267,7 @@
             <path>
               <item name="gatsby-bootcamp" type="b2602c69:ProjectViewProjectNode" />
               <item name="gatsby-bootcamp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gatsby-bootcamp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gatsby-bootcamp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gatsby-bootcamp" type="b2602c69:ProjectViewProjectNode" />
@@ -301,21 +360,7 @@
       <workItem from="1564220315234" duration="9199000" />
       <workItem from="1564303611059" duration="8336000" />
       <workItem from="1565020810012" duration="10032000" />
-      <workItem from="1565099129090" duration="3130000" />
-    </task>
-    <task id="LOCAL-00014" summary="caching headers improved">
-      <created>1562227043022</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1562227043022</updated>
-    </task>
-    <task id="LOCAL-00015" summary="caching headers fix">
-      <created>1562227321006</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1562227321006</updated>
+      <workItem from="1565099129090" duration="7444000" />
     </task>
     <task id="LOCAL-00016" summary="caching headers another fix">
       <created>1562227515019</created>
@@ -646,11 +691,25 @@
       <option name="project" value="LOCAL" />
       <updated>1565039910165</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Diet description copy mapped">
+      <created>1565114898430</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1565114898430</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Guard added to diet description.">
+      <created>1565115393811</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1565115393811</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="294126000" />
+    <option name="totallyTimeSpent" value="298440000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -711,8 +770,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Changing city in the mobile menu" />
-    <MESSAGE value="Menu mobile styles added" />
     <MESSAGE value="Mobile navigation fix" />
     <MESSAGE value="Pricing responsive styles fixed" />
     <MESSAGE value="Pricing mapping implemented" />
@@ -736,58 +793,15 @@
     <MESSAGE value="dietDescription object commented out" />
     <MESSAGE value="Redirects added" />
     <MESSAGE value="Redirects enhanced" />
-    <option name="LAST_COMMIT_MESSAGE" value="Redirects enhanced" />
+    <MESSAGE value="Diet description copy mapped" />
+    <MESSAGE value="Guard added to diet description." />
+    <option name="LAST_COMMIT_MESSAGE" value="Guard added to diet description." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/data/companyDetails/citiesPricing/cityLodz.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Lodz.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="26" lean-forward="true" selection-end-line="1796" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/companyDetails/citiesPricing/lodzPrices.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/contact.module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="57" column="6" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/dietGallery.module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/footer.module.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/dietGallery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -874,16 +888,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/pricing.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="462" column="20" selection-start-line="462" selection-start-column="20" selection-end-line="462" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/pricing.module.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2940">
@@ -923,13 +927,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/testComponent.js" />
-    <entry file="file://$PROJECT_DIR$/gatsby-config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-865">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/chatbot.module.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1092,36 +1089,99 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gatsby-config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/dietDescription.module.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/dietGallery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-625" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="44" column="18" lean-forward="true" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/diets.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="951">
-          <caret line="221" column="6" selection-start-line="221" selection-start-column="6" selection-end-line="221" selection-end-column="6" />
+        <state relative-caret-position="411">
+          <caret line="48" column="228" selection-start-line="48" selection-start-column="228" selection-end-line="48" selection-end-column="228" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/dietDescription.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/dietsFaq.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/dietsFaqData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/diet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+        <state relative-caret-position="482">
+          <caret line="56" column="13" lean-forward="true" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/dietDescription.module.scss">
+    <entry file="file://$PROJECT_DIR$/src/components/dietPricing.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        <state relative-caret-position="105">
+          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/dietDescription.js">
+    <entry file="file://$PROJECT_DIR$/src/components/pricing.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+        <state relative-caret-position="156">
+          <caret line="335" column="20" selection-start-line="335" selection-start-column="20" selection-end-line="335" selection-end-column="20" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
