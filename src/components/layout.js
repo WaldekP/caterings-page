@@ -74,7 +74,7 @@ const Layout = ({title, children, pageContext }) => {
       {/*      </ul>*/}
       {/*    </div>*/}
       {/*  </div>}*/}
-      <div className={layoutStyles.overlay} style={cityCookie || citySlug ? {display: 'none'} : null}>
+      <div className={layoutStyles.overlay} style={(citySlug || (!citySlug && cityCookie)) ? {display: 'none'} : null}>
         <div className={layoutStyles.overlayContent}>
           <h2>Wybierz miasto:</h2>
           <ul className={layoutStyles.overlayList}>
