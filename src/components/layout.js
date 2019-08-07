@@ -15,7 +15,7 @@ const Layout = ({title, children, pageContext }) => {
   const citySlug = pageContext && pageContext.city
   const dietSlug = pageContext && pageContext.diet
   // redirect from main page when the cookie is set
-  // useEffect(() => !citySlug && cityCookie && cityCookie !== 'lodz' && navigate(dietSlug ? `/${cityCookie}/${dietSlug}` :`/${cityCookie}`), [])
+  useEffect(() => !citySlug && cityCookie && cityCookie !== 'lodz' && navigate(dietSlug ? `/${cityCookie}/${dietSlug}` :`/${cityCookie}`), [])
   useEffect(() => {
       citySlug && typeof window !== 'undefined' && window.sessionStorage.setItem('city', JSON.stringify(citySlug))
   }, [])
