@@ -48,7 +48,7 @@ const Layout = ({title, children, pageContext }) => {
 
   return (
     <Fragment>
-      {console.log('cityCookie', cityCookie === "lodz")}
+      {console.log('cityCookie', cityCookie)}
       {console.log('citySlug', citySlug)}
       {/*{cityCookie === "lodz" && !citySlug ? null : !cityCookie && !citySlug && <div className={ layoutStyles.overlay}>*/}
       {/*    <div className={layoutStyles.overlayContent}>*/}
