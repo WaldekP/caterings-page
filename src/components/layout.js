@@ -48,30 +48,56 @@ const Layout = ({title, children, pageContext }) => {
 
   return (
     <Fragment>
-      {cityCookie === "lodz" && !citySlug ? null : !cityCookie && !citySlug && <div className={layoutStyles.overlay}>
-          <div className={layoutStyles.overlayContent}>
-            <h2>Wybierz miasto:</h2>
-            <ul className={layoutStyles.overlayList}>
-              {[...cities, { value: "lodz", label: "Łódź" }]
+      {console.log('cityCookie', cityCookie === "lodz")}
+      {console.log('citySlug', citySlug)}
+      {/*{cityCookie === "lodz" && !citySlug ? null : !cityCookie && !citySlug && <div className={ layoutStyles.overlay}>*/}
+      {/*    <div className={layoutStyles.overlayContent}>*/}
+      {/*      <h2>Wybierz miasto:</h2>*/}
+      {/*      <ul className={layoutStyles.overlayList}>*/}
+      {/*        {[...cities, { value: "lodz", label: "Łódź" }]*/}
+      {/*          .sort((prev, next) => {*/}
+      {/*            const prevCity = prev.label*/}
+      {/*            const nextCity = next.label*/}
+      {/*            return prevCity.localeCompare(nextCity)*/}
+      {/*          })*/}
+      {/*          .map(city => (*/}
+      {/*            <li*/}
+      {/*              className={layoutStyles.overlayItem}*/}
+      {/*              onClick={() => placeCityCookie(city.value)}*/}
+      {/*              key={city.value}*/}
+      {/*            >*/}
+      {/*              <Link className={layoutStyles.link} to={getLinkUrl(city.value)}>*/}
+      {/*                {city.label}*/}
+      {/*              </Link>*/}
+      {/*            </li>*/}
+      {/*          ))}*/}
+      {/*      </ul>*/}
+      {/*    </div>*/}
+      {/*  </div>}*/}
+      <div className={layoutStyles.overlay} style={cityCookie || citySlug ? {display: 'none'} : null}>
+        <div className={layoutStyles.overlayContent}>
+          <h2>Wybierz miasto:</h2>
+          <ul className={layoutStyles.overlayList}>
+            {[...cities, { value: "lodz", label: "Łódź" }]
                 .sort((prev, next) => {
                   const prevCity = prev.label
                   const nextCity = next.label
                   return prevCity.localeCompare(nextCity)
                 })
                 .map(city => (
-                  <li
-                    className={layoutStyles.overlayItem}
-                    onClick={() => placeCityCookie(city.value)}
-                    key={city.value}
-                  >
-                    <Link className={layoutStyles.link} to={getLinkUrl(city.value)}>
-                      {city.label}
-                    </Link>
-                  </li>
+                    <li
+                        className={layoutStyles.overlayItem}
+                        onClick={() => placeCityCookie(city.value)}
+                        key={city.value}
+                    >
+                      <Link className={layoutStyles.link} to={getLinkUrl(city.value)}>
+                        {city.label}
+                      </Link>
+                    </li>
                 ))}
-            </ul>
-          </div>
-        </div>}
+          </ul>
+        </div>
+      </div>
       <div className={layoutStyles.container}>
         <div className={layoutStyles.content}>
           <Header pageContext={pageContext} title={title} />
