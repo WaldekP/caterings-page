@@ -5,7 +5,10 @@ import secondValueProposition from "../images/valueProposition/img_roznorodnosc.
 import thirdValueProposition from "../images/valueProposition/img_jakosc.svg"
 import { valuePropositionData } from "../data/mainPage/valueProposition"
 
+
 const ValueProposition = React.forwardRef((props, ref) => {
+
+
   const handleValuePropositionTexts = () => {
     const { pageContext } = props;
     const city = pageContext && pageContext.city

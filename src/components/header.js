@@ -49,7 +49,7 @@ const Header = ({ pageContext }) => {
     }
     return citySlug
   }
-  if (menuOverlay && !cityCookie) {
+  if (menuOverlay) {
     return (
       <div className={menuOverlay && headerStyles.overlay}>
         <div className={headerStyles.mobileMenuHeader}>
