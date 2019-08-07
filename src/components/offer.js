@@ -73,6 +73,7 @@ const Offer = React.forwardRef(({ pageContext }, ref) => {
         {diets.map(diet => (
           <Link to={pageContext.city ? `/${pageContext.city}/${diet.dietUrl}` : `/${diet.dietUrl}`}>
             <div key={diet.dietUrl} className={offerStyles.dietItem}>
+              {console.log('sprawdzam')}
               <img src={findDiet(diet.dietUrl)} className={offerStyles.image}/>
               <h3>{diet.fullName}</h3>
               <p>{dietsDescription[findDescription(diet.dietUrl)]}</p>

@@ -17,9 +17,6 @@ const Layout = ({title, children, pageContext }) => {
   // redirect from main page when the cookie is set
   // useEffect(() => !citySlug && cityCookie && cityCookie !== 'lodz' && navigate(dietSlug ? `/${cityCookie}/${dietSlug}` :`/${cityCookie}`), [])
   useEffect(() => {
-      console.log('cityCookie', cityCookie)
-      console.log('citySlug', citySlug)
-
       citySlug && typeof window !== 'undefined' && window.sessionStorage.setItem('city', JSON.stringify(citySlug))
   }, [])
   const getLinkUrl = (city) => {
@@ -66,6 +63,7 @@ const Layout = ({title, children, pageContext }) => {
           </div>
         </div>}
       <div className={layoutStyles.container}>
+          {console.log('pageContext', pageContext)}
         <div className={layoutStyles.content}>
           <Header pageContext={pageContext} title={title} />
           {children}
