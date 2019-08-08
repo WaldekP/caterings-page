@@ -41,11 +41,11 @@ const DietsFaq = ({ pageContext }) => {
             OGÓLNE
           </p>
         </div>
-        {/*<div className={faqStyles.questionsContainer}>*/}
-        {/*  {getQuestions().map((question, index) => (*/}
-        {/*    <Question key={index} question={question} />*/}
-        {/*  ))}*/}
-        {/*</div>*/}
+        <div className={faqStyles.questionsContainer}>
+          {getQuestions().map((question, index) => (
+            <Question key={index} question={question} />
+          ))}
+        </div>
       </div>
     </div>
   )
