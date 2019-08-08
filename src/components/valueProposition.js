@@ -12,7 +12,7 @@ const ValueProposition = React.forwardRef((props, ref) => {
   const handleValuePropositionTexts = () => {
     const { pageContext } = props;
     const city = pageContext && pageContext.city
-    if (!city) {
+    if (!city || !valuePropositionData[city]) {
       return valuePropositionData.lodz
     }
     return valuePropositionData[city]
