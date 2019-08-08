@@ -19,4 +19,20 @@ export const valuePropositionData = {
     variety: "Dieta pudełkowa z AfterFit to gwarancja różnorodności. Proponujemy oryginalne, smaczne dania, do których inspiracji szukamy w kuchniach całego świata. Nasze jedzenie nie jest nudne! Każdego dnia możesz próbować nowych posiłków!",
     quality: "Odpowiednia jakość to nasz priorytet. Każde danie jest przygotowywane z najlepszych, świeżych składników, pochodzących z pewnych i sprawdzonych źródeł.",
   },
+  poznan: {
+    elasticity: "Dobieraj dowolne posiłki dietetyczne z menu! U nas, nie ma sztywnego menu. W naszym cateringu dietetycznym możesz zamawiać tylko te dania, które Ci zasmakowały. Ty podejmujesz decyzję, a my troszczymy się o całą resztę.",
+    variety: "Nasze posiłki nie są nudne! Jeśli chcesz jeść urozmaicone i oryginalne dania dietetyczne, próbować nowych smaków i czerpać radość z jedzenia, to dobrze trafiłeś! Inspirujemy się kuchnią świata i nie boimy się eksperymentować!",
+    quality: "Nasza dieta pudełkowa jest przygotowywana ze świeżych składników, pochodzących ze sprawdzonych źródeł. W cateringu dietetycznym stawiamy na najwyższą jakość!",
+  },
+  torun: {
+    elasticity: "W przeciwieństwie do konkurencji, u nas nie ma sztywnego menu. Opcja ta umożliwia dopasowanie jadłospisu pod własne preferencje. Twoim jedynym zadaniem jest wskazanie potraw, które Ci najbardziej smakują- my zatroszczymy się o całą resztę.",
+    variety: "Menu AfterFit jest urozmaicone. Proponujemy oryginalne i smaczne dania, inspirowane kuchniami całego świata. Decydując się na nasze usługi, nie będziesz narzekał, że każdego dnia jesz to samo.",
+    quality: "Jakość ma dla nas kluczowe znaczenie. Każde danie, znajdujące się w ofercie AfterFit jest przygotowywane ze zdrowych, świeżych i sprawdzonych składników. Menu układamy z zaangażowaniem i pasją.",
+  },
+  wroclaw: {
+    elasticity: "W AfterFit wybierasz dowolne dania z diety! Skomponuj samodzielnie menu, dostosowując je pod swoje preferencje. Możesz zdecydować się tylko na te posiłki, które najbardziej Ci zasmakowały. U nas nie ma sztywnego jadłospisu!",
+    variety: "Czerpiemy inspiracje z kuchni całego świata! Catering dietetyczny AfterFit sprawi, że nie będziesz znudzony powtarzającymi się daniami. Proponujemy Ci urozmaicone menu, w skład którego wchodzą niebanalne, oryginalne i smaczne posiłki!",
+    quality: "W AfterFit każde danie jest przygotowywane ze świeżych i sprawdzonych składników! Stawiamy na najwyższą jakość. Menu układamy z pasją i zaangażowaniem, wychodząc naprzeciw oczekiwaniom wszystkich Klientów.",
+  },
+
 }
