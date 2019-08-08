@@ -12,7 +12,7 @@ const DietsFaq = ({ pageContext }) => {
     if (section === 'diet') {
       const dietsQuestionsArray = Object.values(dietsFaq[section])
       const dietQuestions = dietsQuestionsArray.find(diet => diet.dietUrl === dietSlug)
-      return dietQuestions &&  Object.values(dietQuestions.questions)
+      return dietQuestions && Object.values(dietQuestions.questions)
     }
 
     return Object.values(dietsFaq[section])
@@ -41,11 +41,11 @@ const DietsFaq = ({ pageContext }) => {
             OGÓLNE
           </p>
         </div>
-        <div className={faqStyles.questionsContainer}>
-          {getQuestions().map((question, index) => (
-            <Question key={index} question={question} />
-          ))}
-        </div>
+        {/*<div className={faqStyles.questionsContainer}>*/}
+        {/*  {getQuestions().map((question, index) => (*/}
+        {/*    <Question key={index} question={question} />*/}
+        {/*  ))}*/}
+        {/*</div>*/}
       </div>
     </div>
   )
