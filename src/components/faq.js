@@ -17,7 +17,7 @@ const Faq = React.forwardRef (({ pageContext }, ref) => {
 
   return (
     <div className={faqStyles.wrapper} ref={ref}>
-      <h2>Masz pytania odnośnie naszego cateringu? Zajrzyj tutaj.</h2>
+      <h2>MMasz pytania odnośnie naszego cateringu? Zajrzyj tutaj.</h2>
       <p>Nie możesz znaleźć odpowiedzi na pytanie? Napisz do nas na czacie</p>
       <div className={faqStyles.container}>
         <div className={faqStyles.contentsContainer}>
