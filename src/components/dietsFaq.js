@@ -10,7 +10,7 @@ const DietsFaq = ({ pageContext }) => {
   const getQuestions = () => {
 
     if (section === 'diet') {
-      const dietsQuestionsArray = Object.values(dietsFaq[section])
+      const dietsQuestionsArray = dietsFaq[section] && Object.values(dietsFaq[section])
       const dietQuestions = dietsQuestionsArray.find(diet => diet.dietUrl === dietSlug)
       return dietQuestions && Object.values(dietQuestions.questions)
     }
