@@ -46,19 +46,21 @@ const Layout = ({title, children, pageContext }) => {
     return typeof window !== 'undefined' && window.sessionStorage.setItem("city", JSON.stringify(city))
   }
   const getCookie = (cname) => {
-    var name = cname + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(';');
-    for(var i = 0; i <ca.length; i++) {
-      var c = ca[i];
-      while (c.charAt(0) == ' ') {
-        c = c.substring(1);
+    if (typeof window !== "undefined") {
+      var name = cname + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(';');
+      for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
       }
-      if (c.indexOf(name) == 0) {
-        return c.substring(name.length, c.length);
-      }
+      return "";
     }
-    return "";
   }
 
   return (
@@ -92,7 +94,12 @@ const Layout = ({title, children, pageContext }) => {
       <div className={layoutStyles.overlay} style={citySlug || getCookie('user') ? {display: 'none'} : null}>
         <div className={layoutStyles.overlayContent}>
           <h2>Wybierz miasto:</h2>
-          <button onClick={() => document.cookie = "user=John"}>Zostaw ciastko</button>
+          <button onClick={() => {
+            if (typeof window !== "undefined") {
+              return document.cookie = "user=John"
+            }
+
+          }}>Zostaw ciastko</button>
           {/*<p>{getCookie('user')}</p>*/}
           <ul className={layoutStyles.overlayList}>
             {[...cities, { value: "lodz", label: "Łódź" }]

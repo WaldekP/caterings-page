@@ -14,15 +14,15 @@ const Header = ({ pageContext }) => {
     const citySlug = pageContext && pageContext.city
   const dietSlug = pageContext && pageContext.diet
 
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     site {
+  //       siteMetadata {
+  //         title
+  //       }
+  //     }
+  //   }
+  // `)
 
   const [yPosition, changePosition] = useState(
     typeof window !== "undefined" && window.scrollY
