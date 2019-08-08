@@ -15,7 +15,7 @@ const ValueProposition = React.forwardRef((props, ref) => {
     if (!city) {
       return valuePropositionData.lodz
     }
-    return valuePropositionData.lodz
+    return valuePropositionData[city]
   }
   return (
     <div ref={ref}>

@@ -14,7 +14,7 @@ const Faq = React.forwardRef (({ pageContext }, ref) => {
     }
     return Object.values(faq[city][section])
   }
-  console.log('section', section)
+
   return (
     <div className={faqStyles.wrapper} ref={ref}>
       <h2>Masz pytania odnośnie naszego cateringu? Zajrzyj tutaj.</h2>
