@@ -9,13 +9,16 @@ const DietsFaq = ({ pageContext }) => {
 
   const getQuestions = () => {
 
+    // if (section === 'diet') {
+    //   const dietsQuestionsArray = dietsFaq[section] && Object.values(dietsFaq[section])
+    //   const dietQuestions = dietsQuestionsArray.find(diet => diet.dietUrl === dietSlug)
+    //   return dietQuestions && Object.values(dietQuestions.questions)
+    // }
     if (section === 'diet') {
-      const dietsQuestionsArray = dietsFaq[section] && Object.values(dietsFaq[section])
-      const dietQuestions = dietsQuestionsArray.find(diet => diet.dietUrl === dietSlug)
-      return dietQuestions && Object.values(dietQuestions.questions)
+      return Object.values(dietsFaq['tempDiet'])
     }
 
-    return Object.values(dietsFaq[section])
+    return Object.values(dietsFaq['general'])
   }
   return (
     <div className={faqStyles.wrapper}>

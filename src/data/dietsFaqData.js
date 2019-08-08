@@ -18,6 +18,28 @@ Na zamówienie każdej kolejnej diety na ten sam adres dajemy <strong>5% rabatu<
           </span>
       },
     },
+    tempDiet: {
+        1: {
+            question: "Rozkład makroskładników",
+            answer: <span>
+                        Białko: 20-30%
+                        Węglowodany: 30-45%
+                        Tłuszcze: 30-35%
+                    </span>
+        },
+        2: {
+            question: "Dla kogo?",
+            answer: <span>
+                        1. Dla osób chcących zredukować swoją masę ciała. <br/><br/>
+
+2. Dla osób zmagających się z chorobami cywilizacyjnymi: nadwaga, otyłość, cukrzyca, podwyższony cholesterol, choroby kardiologiczne. <br/><br/>
+
+3. Dla wszystkich chcących odżywiać się w sposób racjonalny. <br/><br/>
+
+4. Dla ludzi dbających o zdrowie i cieszących się życiem <br/><br/>
+                    </span>
+        },
+    },
     diet: [
         {
             dietUrl: "dieta-odchudzajaca",
