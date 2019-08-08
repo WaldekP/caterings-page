@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from "react"
+import React, { Fragment, useEffect, useContext } from "react"
 import Header from "./header"
 import Footer from "./footer"
 import layoutStyles from "../styles/layout.module.scss"
@@ -7,10 +7,12 @@ import { Link, navigate } from "gatsby"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faCheckSquare, faCircle, faWindowClose } from '@fortawesome/free-solid-svg-icons'
+import PageContext from '../context/pageContext'
 
 library.add(fab, faCheckSquare, faCircle, fab, faWindowClose)
 
 const Layout = ({title, children, pageContext }) => {
+  const {overlay, toggleOverlay } = useContext(PageContext)
   const cityCookie = typeof window !== 'undefined' && JSON.parse(window.sessionStorage.getItem("city"))
   const citySlug = pageContext && pageContext.city
   const dietSlug = pageContext && pageContext.diet
@@ -45,23 +47,23 @@ const Layout = ({title, children, pageContext }) => {
   const placeCityCookie = city => {
     return typeof window !== 'undefined' && window.sessionStorage.setItem("city", JSON.stringify(city))
   }
-  const getCookie = (cname) => {
-    if (typeof window !== "undefined") {
-      var name = cname + "=";
-      var decodedCookie = decodeURIComponent(document.cookie);
-      var ca = decodedCookie.split(';');
-      for(var i = 0; i <ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-          c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-          return c.substring(name.length, c.length);
-        }
-      }
-      return "";
-    }
-  }
+  // const getCookie = (cname) => {
+  //   if (typeof window !== "undefined") {
+  //     var name = cname + "=";
+  //     var decodedCookie = decodeURIComponent(document.cookie);
+  //     var ca = decodedCookie.split(';');
+  //     for(var i = 0; i <ca.length; i++) {
+  //       var c = ca[i];
+  //       while (c.charAt(0) == ' ') {
+  //         c = c.substring(1);
+  //       }
+  //       if (c.indexOf(name) == 0) {
+  //         return c.substring(name.length, c.length);
+  //       }
+  //     }
+  //     return "";
+  //   }
+  // }
 
   return (
     <Fragment>
@@ -91,15 +93,15 @@ const Layout = ({title, children, pageContext }) => {
       {/*      </ul>*/}
       {/*    </div>*/}
       {/*  </div>}*/}
-      <div className={layoutStyles.overlay} style={citySlug || getCookie('user') ? {display: 'none'} : null}>
+      <div className={layoutStyles.overlay} style={citySlug || !overlay ? {display: 'none'} : null}>
         <div className={layoutStyles.overlayContent}>
           <h2>Wybierz miasto:</h2>
-          <button onClick={() => {
-            if (typeof window !== "undefined") {
-              return document.cookie = "user=John"
-            }
+          {/*<button onClick={() => {*/}
+          {/*  if (typeof window !== "undefined") {*/}
+          {/*    return document.cookie = "user=John"*/}
+          {/*  }*/}
 
-          }}>Zostaw ciastko</button>
+          {/*}}>Zostaw ciastko</button>*/}
           {/*<p>{getCookie('user')}</p>*/}
           <ul className={layoutStyles.overlayList}>
             {[...cities, { value: "lodz", label: "Łódź" }]
@@ -111,7 +113,10 @@ const Layout = ({title, children, pageContext }) => {
                 .map(city => (
                     <li
                         className={layoutStyles.overlayItem}
-                        onClick={() => placeCityCookie(city.value)}
+                        onClick={() => {
+                          toggleOverlay(false)
+                          placeCityCookie(city.value)
+                        }}
                         key={city.value}
                     >
                       <Link className={layoutStyles.link} to={getLinkUrl(city.value)}>
