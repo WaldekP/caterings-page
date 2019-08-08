@@ -93,7 +93,7 @@ const Layout = ({title, children, pageContext }) => {
       {/*      </ul>*/}
       {/*    </div>*/}
       {/*  </div>}*/}
-      <div className={layoutStyles.overlay} style={overlay ? {display: 'none'} : null}>
+      <div className={layoutStyles.overlay} style={typeof overlay !== 'undefined' && !overlay ? {display: 'none'} : null}>
         {console.log('overlay', overlay)}
         <div className={layoutStyles.overlayContent}>
           <h2>Wybierz miasto:</h2>
