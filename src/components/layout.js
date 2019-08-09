@@ -38,12 +38,12 @@ const Layout = ({title, children, pageContext }) => {
 
   useEffect(() => {
     if (!citySlug && cityCookie) {
-      if (JSON.parse(cityCookie) !== "lodz") {
-        navigate(dietSlug ? `/${cityCookie}/${dietSlug}` :`/${cityCookie}`)
-      }
-      if (cityCookie === 'lodz') {
+      if (JSON.parse(cityCookie) === 'lodz') {
         console.log('kurwa mac')
         navigate(dietSlug ? `/${dietSlug}` :`/`)
+      }
+      if (JSON.parse(cityCookie) !== "lodz") {
+        navigate(dietSlug ? `/${cityCookie}/${dietSlug}` :`/${cityCookie}`)
       }
     }
     if (citySlug && typeof document !== 'undefined') {
@@ -73,6 +73,7 @@ const Layout = ({title, children, pageContext }) => {
     }
   }
 
+  console.log('ja jebe', typeof cityCookie)
   return (
     <Fragment>
       {console.log('cityCookie', cityCookie)}
