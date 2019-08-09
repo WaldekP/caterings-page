@@ -4,25 +4,14 @@ import headerStyles from "../styles/header.module.scss"
 import commonStyles from "../styles/common.module.scss"
 import { cities } from "../data/cities"
 import logo from "../images/logo/afterfit_img_logo.svg"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import hamburgerMenu from "../images/Hamurger menu.png"
 
 import PageContext from "../context/pageContext"
 
 const Header = ({ pageContext }) => {
-    const cityCookie = typeof window !== 'undefined' && JSON.parse(window.sessionStorage.getItem("city"))
     const citySlug = pageContext && pageContext.city
   const dietSlug = pageContext && pageContext.diet
 
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //       }
-  //     }
-  //   }
-  // `)
+
 
   const [yPosition, changePosition] = useState(
     typeof window !== "undefined" && window.scrollY
@@ -30,11 +19,6 @@ const Header = ({ pageContext }) => {
 
   const [menuOverlay, toggleMenu] = useState(false)
 
-  const placeCookie = (city) => {
-      if (typeof document !== "undefined") {
-          return document.cookie = `city-afterfit=${city}`
-      }
-  }
 
   const handleScroll = () => {
     if (typeof window !== "undefined") {

@@ -12,45 +12,13 @@ import PageContext from '../context/pageContext'
 library.add(fab, faCheckSquare, faCircle, fab, faWindowClose)
 
 const Layout = ({title, children, pageContext }) => {
-  const getCookie = (cname) => {
-    if (typeof window !== "undefined") {
-      var name = cname + "=";
-      var decodedCookie = decodeURIComponent(document.cookie);
-      var ca = decodedCookie.split(';');
-      for(var i = 0; i <ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-          c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-          return c.substring(name.length, c.length);
-        }
-      }
-      return "";
-    }
-  }
 
   const {overlay, toggleOverlay } = useContext(PageContext)
-  // const cityCookie = typeof document !== 'undefined' && getCookie('city-afterfit')
   const cityCookie2 = typeof window !== 'undefined' && window.localStorage.getItem('city')
   const citySlug = pageContext && pageContext.city
   const dietSlug = pageContext && pageContext.diet
   // redirect from main page when the cookie is set
 
-  // useEffect(() => {
-  //   if (!citySlug && cityCookie) {
-  //     if (JSON.parse(cityCookie) === 'lodz') {
-  //       console.log('kurwa mac')
-  //        return navigate(dietSlug ? `/${dietSlug}` :`/`)
-  //     }
-  //     if (JSON.parse(cityCookie) !== "lodz") {
-  //       return navigate(dietSlug ? `/${cityCookie}/${dietSlug}` :`/${cityCookie}`)
-  //     }
-  //   }
-  //   if (citySlug && typeof document !== 'undefined') {
-  //     return document.cookie = `city-afterfit=${citySlug}`
-  //   }
-  // }, [])
 
   useEffect(() => {
     if (!citySlug && cityCookie2) {
@@ -80,43 +48,11 @@ const Layout = ({title, children, pageContext }) => {
     return `/${city}`
   }
 
-  // const placeCityCookie = city => {
-  //   return typeof window !== 'undefined' && window.sessionStorage.setItem("city", JSON.stringify(city))
-  // }
-
-  // const placeCookie = city => {
-  //   if (typeof document !== "undefined") {
-  //     return document.cookie = `city-afterfit=${city}`
-  //   }
-  // }
 
   return (
     <Fragment>
       {console.log('citySlug', citySlug)}
-      {/*{cityCookie === "lodz" && !citySlug ? null : !cityCookie && !citySlug && <div className={ layoutStyles.overlay}>*/}
-      {/*    <div className={layoutStyles.overlayContent}>*/}
-      {/*      <h2>Wybierz miasto:</h2>*/}
-      {/*      <ul className={layoutStyles.overlayList}>*/}
-      {/*        {[...cities, { value: "lodz", label: "Łódź" }]*/}
-      {/*          .sort((prev, next) => {*/}
-      {/*            const prevCity = prev.label*/}
-      {/*            const nextCity = next.label*/}
-      {/*            return prevCity.localeCompare(nextCity)*/}
-      {/*          })*/}
-      {/*          .map(city => (*/}
-      {/*            <li*/}
-      {/*              className={layoutStyles.overlayItem}*/}
-      {/*              onClick={() => placeCityCookie(city.value)}*/}
-      {/*              key={city.value}*/}
-      {/*            >*/}
-      {/*              <Link className={layoutStyles.link} to={getLinkUrl(city.value)}>*/}
-      {/*                {city.label}*/}
-      {/*              </Link>*/}
-      {/*            </li>*/}
-      {/*          ))}*/}
-      {/*      </ul>*/}
-      {/*    </div>*/}
-      {/*  </div>}*/}
+
       <div className={layoutStyles.overlay} style={(typeof overlay !== 'undefined' && !overlay) || citySlug ? {display: 'none'} : null}>
         {console.log('overlay', overlay)}
         <div className={layoutStyles.overlayContent}>
