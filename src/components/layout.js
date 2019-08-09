@@ -40,10 +40,10 @@ const Layout = ({title, children, pageContext }) => {
     if (!citySlug && cityCookie) {
       if (JSON.parse(cityCookie) === 'lodz') {
         console.log('kurwa mac')
-        navigate(dietSlug ? `/${dietSlug}` :`/`)
+         return navigate(dietSlug ? `/${dietSlug}` :`/`)
       }
       if (JSON.parse(cityCookie) !== "lodz") {
-        navigate(dietSlug ? `/${cityCookie}/${dietSlug}` :`/${cityCookie}`)
+        return navigate(dietSlug ? `/${cityCookie}/${dietSlug}` :`/${cityCookie}`)
       }
     }
     if (citySlug && typeof document !== 'undefined') {
