@@ -55,7 +55,7 @@ const Layout = ({title, children, pageContext }) => {
   useEffect(() => {
     if (!citySlug && cityCookie2) {
       if (cityCookie2 === 'lodz') {
-        console.log('kurwa mac')
+         toggleOverlay(false)
          navigate(dietSlug ? `/${dietSlug}` :`/`)
       }
       if (cityCookie2 !== "lodz") {
@@ -117,7 +117,7 @@ const Layout = ({title, children, pageContext }) => {
       {/*      </ul>*/}
       {/*    </div>*/}
       {/*  </div>}*/}
-      <div className={layoutStyles.overlay} style={(typeof overlay !== 'undefined' && !overlay) || citySlug || cityCookie2 ? {display: 'none'} : null}>
+      <div className={layoutStyles.overlay} style={(typeof overlay !== 'undefined' && !overlay) || citySlug ? {display: 'none'} : null}>
         {console.log('overlay', overlay)}
         <div className={layoutStyles.overlayContent}>
           <h2>Wybierz miasto:</h2>
