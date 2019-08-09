@@ -30,6 +30,12 @@ const Header = ({ pageContext }) => {
 
   const [menuOverlay, toggleMenu] = useState(false)
 
+  const placeCookie = (city) => {
+      if (typeof document !== "undefined") {
+          return document.cookie = `city-afterfit=${city}`
+      }
+  }
+
   const handleScroll = () => {
     if (typeof window !== "undefined") {
       return changePosition(window.scrollY)
@@ -42,6 +48,7 @@ const Header = ({ pageContext }) => {
       window.addEventListener("scroll", handleScroll)
     }
   }, [])
+
 
   const findCity = () => {
     if (!citySlug) {
@@ -133,11 +140,8 @@ const Header = ({ pageContext }) => {
           <div>
             <select
               onChange={({ target: { value } }) => {
-                typeof window !== "undefined" &&
-                  window.sessionStorage.setItem(
-                    "city",
-                    `${JSON.stringify(value)}`
-                  )
+                  placeCookie(JSON.stringify(value))
+
                 if (value === "lodz") {
                   changeMenuTab("")
                   return navigate(dietSlug ? `/${dietSlug}` : "/")
@@ -300,12 +304,8 @@ const Header = ({ pageContext }) => {
           <h4>Panel klienta</h4>
           <select
             onChange={({ target: { value } }) => {
-              typeof window !== "undefined" &&
-                window.sessionStorage.setItem(
-                  "city",
-                  `${JSON.stringify(value)}`
-                )
-              if (value === "lodz") {
+                placeCookie(JSON.stringify(value))
+                if (value === "lodz") {
                 return navigate(dietSlug ? `/${dietSlug}` : "/")
               }
               return navigate(dietSlug ? `/${value}/${dietSlug}` : `/${value}`)
