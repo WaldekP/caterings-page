@@ -44,26 +44,32 @@ const Layout = ({title, children, pageContext }) => {
     return `/${city}`
   }
 
-  const placeCityCookie = city => {
-    return typeof window !== 'undefined' && window.sessionStorage.setItem("city", JSON.stringify(city))
-  }
-  // const getCookie = (cname) => {
-  //   if (typeof window !== "undefined") {
-  //     var name = cname + "=";
-  //     var decodedCookie = decodeURIComponent(document.cookie);
-  //     var ca = decodedCookie.split(';');
-  //     for(var i = 0; i <ca.length; i++) {
-  //       var c = ca[i];
-  //       while (c.charAt(0) == ' ') {
-  //         c = c.substring(1);
-  //       }
-  //       if (c.indexOf(name) == 0) {
-  //         return c.substring(name.length, c.length);
-  //       }
-  //     }
-  //     return "";
-  //   }
+  // const placeCityCookie = city => {
+  //   return typeof window !== 'undefined' && window.sessionStorage.setItem("city", JSON.stringify(city))
   // }
+  const getCookie = (cname) => {
+    if (typeof window !== "undefined") {
+      var name = cname + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(';');
+      for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+  }
+
+  const placeCookie = city => {
+    if (typeof window !== "undefined") {
+      return document.cookie = `city-afterfit=${city}`
+    }
+  }
 
   return (
     <Fragment>
@@ -93,14 +99,10 @@ const Layout = ({title, children, pageContext }) => {
       {/*      </ul>*/}
       {/*    </div>*/}
       {/*  </div>}*/}
-      <div className={layoutStyles.overlay} style={typeof overlay !== 'undefined' && !overlay ? {display: 'none'} : null}>
+      <div className={layoutStyles.overlay} style={(typeof getCookie('city-afterfit') && getCookie('city-afterfit'))  || (typeof overlay !== 'undefined' && !overlay) ? {display: 'none'} : null}>
         {console.log('overlay', overlay)}
         <div className={layoutStyles.overlayContent}>
           <h2>Wybierz miasto:</h2>
-          {/*<button onClick={() => {*/}
-          {/*  if (typeof window !== "undefined") {*/}
-          {/*    return document.cookie = "user=John"*/}
-          {/*  }*/}
 
           {/*}}>Zostaw ciastko</button>*/}
           {/*<p>{getCookie('user')}</p>*/}
@@ -116,7 +118,7 @@ const Layout = ({title, children, pageContext }) => {
                         className={layoutStyles.overlayItem}
                         onClick={() => {
                           toggleOverlay(false)
-                          placeCityCookie(city.value)
+                          placeCookie(city.value)
                         }}
                         key={city.value}
                     >
