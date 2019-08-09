@@ -141,9 +141,8 @@ const Header = ({ pageContext }) => {
             <select
               onChange={({ target: { value } }) => {
                   console.log('ccccc')
-                  placeCookie(JSON.stringify(value))
-
-                if (value === "lodz") {
+                  typeof window !== 'undefined' && window.localStorage.setItem('city', value)
+                  if (value === "lodz") {
                   changeMenuTab("")
                   return navigate(dietSlug ? `/${dietSlug}` : "/")
                 }
@@ -189,8 +188,8 @@ const Header = ({ pageContext }) => {
           <h3>Mój panel</h3>
           <select
             onChange={({ target: { value } }) => {
-                placeCookie(JSON.stringify(value))
-             console.log('aaaa')
+                typeof window !== 'undefined' && window.localStorage.setItem('city', value)
+                console.log('aaaa')
               if (value === "lodz") {
                 return navigate(dietSlug ? `/${dietSlug}` : "/")
               }
@@ -303,7 +302,7 @@ const Header = ({ pageContext }) => {
           <select
             onChange={({ target: { value } }) => {
                 console.log('bbbbb')
-                placeCookie(JSON.stringify(value))
+                typeof window !== 'undefined' && window.localStorage.setItem('city', value)
                 console.log('value', value)
                 if (value === "lodz") {
                     console.log('czemu')

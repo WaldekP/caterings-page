@@ -31,23 +31,40 @@ const Layout = ({title, children, pageContext }) => {
   }
 
   const {overlay, toggleOverlay } = useContext(PageContext)
-  const cityCookie = typeof document !== 'undefined' && getCookie('city-afterfit')
+  // const cityCookie = typeof document !== 'undefined' && getCookie('city-afterfit')
+  const cityCookie2 = typeof window !== 'undefined' && window.localStorage.getItem('city')
   const citySlug = pageContext && pageContext.city
   const dietSlug = pageContext && pageContext.diet
   // redirect from main page when the cookie is set
 
+  // useEffect(() => {
+  //   if (!citySlug && cityCookie) {
+  //     if (JSON.parse(cityCookie) === 'lodz') {
+  //       console.log('kurwa mac')
+  //        return navigate(dietSlug ? `/${dietSlug}` :`/`)
+  //     }
+  //     if (JSON.parse(cityCookie) !== "lodz") {
+  //       return navigate(dietSlug ? `/${cityCookie}/${dietSlug}` :`/${cityCookie}`)
+  //     }
+  //   }
+  //   if (citySlug && typeof document !== 'undefined') {
+  //     return document.cookie = `city-afterfit=${citySlug}`
+  //   }
+  // }, [])
+
   useEffect(() => {
-    if (!citySlug && cityCookie) {
-      if (JSON.parse(cityCookie) === 'lodz') {
+    if (!citySlug && cityCookie2) {
+      if (cityCookie2 === 'lodz') {
         console.log('kurwa mac')
-         return navigate(dietSlug ? `/${dietSlug}` :`/`)
+         navigate(dietSlug ? `/${dietSlug}` :`/`)
       }
-      if (JSON.parse(cityCookie) !== "lodz") {
-        return navigate(dietSlug ? `/${cityCookie}/${dietSlug}` :`/${cityCookie}`)
+      if (cityCookie2 !== "lodz") {
+        console.log('kurwa 2')
+        navigate(dietSlug ? `/${cityCookie2}/${dietSlug}` :`/${cityCookie2}`)
       }
     }
-    if (citySlug && typeof document !== 'undefined') {
-      return document.cookie = `city-afterfit=${citySlug}`
+    if (citySlug) {
+      typeof window !== 'undefined' && window.localStorage.setItem('city', citySlug)
     }
   }, [])
   const getLinkUrl = (city) => {
@@ -67,16 +84,14 @@ const Layout = ({title, children, pageContext }) => {
   //   return typeof window !== 'undefined' && window.sessionStorage.setItem("city", JSON.stringify(city))
   // }
 
-  const placeCookie = city => {
-    if (typeof document !== "undefined") {
-      return document.cookie = `city-afterfit=${city}`
-    }
-  }
+  // const placeCookie = city => {
+  //   if (typeof document !== "undefined") {
+  //     return document.cookie = `city-afterfit=${city}`
+  //   }
+  // }
 
-  console.log('ja jebe', typeof cityCookie)
   return (
     <Fragment>
-      {console.log('cityCookie', cityCookie)}
       {console.log('citySlug', citySlug)}
       {/*{cityCookie === "lodz" && !citySlug ? null : !cityCookie && !citySlug && <div className={ layoutStyles.overlay}>*/}
       {/*    <div className={layoutStyles.overlayContent}>*/}
@@ -121,7 +136,7 @@ const Layout = ({title, children, pageContext }) => {
                         className={layoutStyles.overlayItem}
                         onClick={() => {
                           toggleOverlay(false)
-                          placeCookie(city.value)
+                          typeof window !== 'undefined' && window.localStorage.setItem('city', city.value)
                         }}
                         key={city.value}
                     >
