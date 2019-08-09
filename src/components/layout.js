@@ -38,10 +38,11 @@ const Layout = ({title, children, pageContext }) => {
 
   useEffect(() => {
     if (!citySlug && cityCookie) {
-      if (cityCookie !== 'lodz') {
+      if (JSON.parse(cityCookie) !== "lodz") {
         navigate(dietSlug ? `/${cityCookie}/${dietSlug}` :`/${cityCookie}`)
       }
       if (cityCookie === 'lodz') {
+        console.log('kurwa mac')
         navigate(dietSlug ? `/${dietSlug}` :`/`)
       }
     }

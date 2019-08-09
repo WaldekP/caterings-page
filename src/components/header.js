@@ -140,6 +140,7 @@ const Header = ({ pageContext }) => {
           <div>
             <select
               onChange={({ target: { value } }) => {
+                  console.log('ccccc')
                   placeCookie(JSON.stringify(value))
 
                 if (value === "lodz") {
@@ -188,11 +189,8 @@ const Header = ({ pageContext }) => {
           <h3>Mój panel</h3>
           <select
             onChange={({ target: { value } }) => {
-              typeof window !== "undefined" &&
-                window.sessionStorage.setItem(
-                  "city",
-                  `${JSON.stringify(value)}`
-                )
+                placeCookie(JSON.stringify(value))
+             console.log('aaaa')
               if (value === "lodz") {
                 return navigate(dietSlug ? `/${dietSlug}` : "/")
               }
@@ -304,11 +302,15 @@ const Header = ({ pageContext }) => {
           <h4>Panel klienta</h4>
           <select
             onChange={({ target: { value } }) => {
+                console.log('bbbbb')
                 placeCookie(JSON.stringify(value))
+                console.log('value', value)
                 if (value === "lodz") {
+                    console.log('czemu')
                 return navigate(dietSlug ? `/${dietSlug}` : "/")
               }
-              return navigate(dietSlug ? `/${value}/${dietSlug}` : `/${value}`)
+                console.log('bo temu')
+                return navigate(dietSlug ? `/${value}/${dietSlug}` : `/${value}`)
             }}
             value={findCity()}
           >
