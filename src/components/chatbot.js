@@ -28,7 +28,7 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
       scrollIntoView(chatRef.current, {
         block: "center",
         inline: "center",
-        behavior: "smooth"
+        behavior: "smooth",
         //available options: https://www.npmjs.com/package/scroll-into-view-if-needed
       })
       setTimeout(() => {
@@ -36,7 +36,7 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
         scrollIntoView(chatRef.current, {
           block: "center",
           inline: "center",
-          behavior: "smooth"
+          behavior: "smooth",
         })
       }, 1000)
     }
@@ -338,169 +338,143 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
         </div>
 
         <div className={chatbotStyles.questionsBox}>
-            <div className={chatbotStyles.question2}>
-              <img src={chatIcon} />
-              <p>
-                Cześć! Zadam Ci kilka pytań, które pomogą mi dobrać idealną
-                dietę dla Ciebie.1
-              </p>
+          <div className={chatbotStyles.question2}>
+            <img src={chatIcon} />
+            <p>
+              Cześć! Zadam Ci kilka pytań, które pomogą mi dobrać idealną dietę
+              dla Ciebie. Zaczynamy?
+            </p>
+          </div>
+          {questionNumber >= 2 && (
+            <div className={chatbotStyles.answer2}>
+              <p>Zaczynajmy</p>
+              <img src={personIcon} />
             </div>
-            {questionNumber > 2 && <div className={chatbotStyles.answer2} >
-                <p>Zaczynajmy</p>
-                <img src={personIcon} />
-            </div>}
-            {questionNumber > 2 && <div className={chatbotStyles.question2}>
+          )}
+          {questionNumber >= 2 &&
+            (typing && questionNumber === 2 ? (
+              <div className={chatbotStyles.question2}>
                 <img src={chatIcon} />
-                <p>
-                    Cześć! Zadam Ci kilka pytań, które pomogą mi dobrać idealną
-                    dietę dla Ciebie.2
-                </p>
-            </div>}
-            {questionNumber > 3 && <div className={chatbotStyles.answer2} >
-                <p>Zaczynajmy</p>
-                <img src={personIcon} />
-            </div>}
-            {questionNumber > 3 && <div className={chatbotStyles.question2}>
+                <ChatbotSpinner />
+              </div>
+            ) : (
+              <div className={chatbotStyles.question2}>
                 <img src={chatIcon} />
-                <p>
-                    Cześć! Zadam Ci kilka pytań, które pomogą mi dobrać idealną
-                    dietę dla Ciebie.3
-                </p>
-            </div>}
-            {questionNumber > 4 && <div className={chatbotStyles.answer2} >
-                <p>Zaczynajmy</p>
-                <img src={personIcon} />
-            </div>}
-            {questionNumber > 4 && <div className={chatbotStyles.question2}>
+                  <p>Jesteś kobietą czy mężczyzną?</p>
+              </div>
+            ))}
+          {questionNumber >= 3 && (
+            <div className={chatbotStyles.answer2}>
+              <p>Jestem {gender === "female" ? "kobietą" : "mężczyzną"}.</p>
+              <img src={personIcon} />
+            </div>
+          )}
+          {questionNumber >= 3 &&
+            (typing && questionNumber === 3 ? (
+              <div className={chatbotStyles.question2}>
                 <img src={chatIcon} />
-                <p>
-                    Cześć! Zadam Ci kilka pytań, które pomogą mi dobrać idealną
-                    dietę dla Ciebie.4
-                </p>
-            </div>}
-            {questionNumber > 5 && <div className={chatbotStyles.answer2} >
-                <p>Zaczynajmy</p>
-                <img src={personIcon} />
-            </div>}
-            {questionNumber > 5 && <div className={chatbotStyles.question2}>
+                <ChatbotSpinner />
+              </div>
+            ) : (
+              <div className={chatbotStyles.question2}>
                 <img src={chatIcon} />
-                <p>
-                    Cześć! Zadam Ci kilka pytań, które pomogą mi dobrać idealną
-                    dietę dla Ciebie.5
-                </p>
-            </div>}
-            {questionNumber > 6 && <div className={chatbotStyles.answer2} >
-                <p>Zaczynajmy</p>
-                <img src={personIcon} />
-            </div>}
-            {questionNumber > 6 && <div className={chatbotStyles.question2}>
+                <p>Proszę wpisz swój wzrost w centymetrach.</p>
+              </div>
+            ))}
+          {questionNumber >= 4 && (
+            <div className={chatbotStyles.answer2}>
+              <p>Mój wzrost to {height} centymetrów.</p>
+              <img src={personIcon} />
+            </div>
+          )}
+          {questionNumber >= 4 &&
+            (typing && questionNumber === 4 ? (
+              <div className={chatbotStyles.question2}>
                 <img src={chatIcon} />
-                <p>
-                    Cześć! Zadam Ci kilka pytań, które pomogą mi dobrać idealną
-                    dietę dla Ciebie.6
-                </p>
-            </div>}
-            {/*<div className={chatbotStyles.answer2} >*/}
-            {/*    <p>Zaczynajmy</p>*/}
-            {/*    <img src={personIcon} />*/}
-            {/*</div>*/}
-            {/*<div className={chatbotStyles.question2}>*/}
-            {/*    <img src={chatIcon} />*/}
-            {/*    <p>*/}
-            {/*        Cześć! Zadam Ci kilka pytań, które pomogą mi dobrać idealną*/}
-            {/*        dietę dla Ciebie.*/}
-            {/*    </p>*/}
-            {/*</div>*/}
-            {/*<div className={chatbotStyles.answer2} >*/}
-            {/*    <p>Zaczynajmy</p>*/}
-            {/*    <img src={personIcon} />*/}
-            {/*</div>*/}
-          {/*<div className={chatbotStyles.questionAnswer}>*/}
-
-          {/*      <div className={chatbotStyles.question} >*/}
-          {/*        <img src={chatIcon} />*/}
-          {/*        <p>Jesteś kobietą czy mężczyzną?</p>*/}
-          {/*      </div>*/}
-          {/*    <div className={chatbotStyles.answer} >*/}
-          {/*      <p>Jestem {gender === "female" ? "kobietą" : "mężczyzną"}.</p>*/}
-          {/*      <img src={personIcon} />*/}
-          {/*    </div>*/}
-          {/*</div>*/}
-          {/*<div className={chatbotStyles.questionAnswer}>*/}
-          {/*  <Fragment>*/}
-          {/*        <div className={chatbotStyles.question}>*/}
-          {/*          <img src={chatIcon} />*/}
-          {/*          <p>Proszę wpisz swój wzrost w centymetrach.</p>*/}
-          {/*        </div>*/}
-
-          {/*      <div className={chatbotStyles.answer}>*/}
-          {/*        <p>Mój wzrost to {height} centymetrów.</p>*/}
-          {/*        <img src={personIcon} />*/}
-          {/*      </div>*/}
-          {/*  </Fragment>*/}
-          {/*</div>*/}
-          {/*<div className={chatbotStyles.questionAnswer}>*/}
-          {/*  <Fragment>*/}
-          {/*        <div className={chatbotStyles.question}>*/}
-          {/*          <img src={chatIcon} />*/}
-          {/*          <p>Ile ważysz w kilogramach?</p>*/}
-          {/*        </div>*/}
-
-          {/*      <div className={chatbotStyles.answer}>*/}
-          {/*        <p>Ważę {weight} kilogramów.</p>*/}
-          {/*        <img src={personIcon} />*/}
-          {/*      </div>*/}
-          {/*  </Fragment>*/}
-          {/*</div>*/}
-          {/*<div className={chatbotStyles.questionAnswer}>*/}
-          {/*  <Fragment>*/}
-          {/*        <div className={chatbotStyles.question}>*/}
-          {/*          <img src={chatIcon} />*/}
-          {/*          <p>Ile masz lat?</p>*/}
-          {/*        </div>*/}
-          {/*      <div className={chatbotStyles.answer}>*/}
-          {/*        <p>Mam {age} lat.</p>*/}
-          {/*        <img src={personIcon} />*/}
-          {/*      </div>*/}
-          {/*  </Fragment>*/}
-          {/*</div>*/}
-          {/*<div className={chatbotStyles.questionAnswer}>*/}
-          {/*  <Fragment>*/}
-          {/*        <div className={chatbotStyles.question}>*/}
-          {/*          <img src={chatIcon} />*/}
-          {/*          <p>Jaka jest Twoja aktywność fizyczna?</p>*/}
-          {/*        </div>*/}
-          {/*      <div className={chatbotStyles.answer}>*/}
-          {/*        <p>Moja aktywność fizyczna jest {parseActivity()}</p>*/}
-          {/*        <img src={personIcon} />*/}
-          {/*      </div>*/}
-          {/*  </Fragment>*/}
-          {/*</div>*/}
-          {/*<div className={chatbotStyles.questionAnswer}>*/}
-          {/*  <Fragment>*/}
-          {/*        <div className={chatbotStyles.question}>*/}
-          {/*          <img src={chatIcon} />*/}
-          {/*          <p>Jaki jest cel Twojej diety?</p>*/}
-          {/*        </div>*/}
-          {/*      <div className={chatbotStyles.answer}>*/}
-          {/*        <p>Cel Twojej diety to .</p>*/}
-          {/*        /!*<p>Cel Twojej diety to {parseGoal().goal}.</p>*!/*/}
-          {/*        <img src={personIcon} />*/}
-          {/*      </div>*/}
-          {/*  </Fragment>*/}
-          {/*</div>*/}
-          {/*<div className={chatbotStyles.questionAnswer}>*/}
-          {/*  <Fragment>*/}
-          {/*        <div className={chatbotStyles.question}>*/}
-          {/*          <img src={chatIcon} />*/}
-          {/*          <p>*/}
-          {/*            Dieta proponowana dla Ciebie to{" "}*/}
-          {/*            /!*{handleDietSuggestion().dietName}{" "}*!/*/}
-          {/*            /!*{suggestCaloriesFromOffer()} kcal.*!/*/}
-          {/*          </p>*/}
-          {/*        </div>*/}
-          {/*  </Fragment>*/}
-          {/*</div>*/}
+                <ChatbotSpinner />
+              </div>
+            ) : (
+              <div className={chatbotStyles.question2}>
+                <img src={chatIcon} />
+                <p>Ile ważysz w kilogramach?</p>
+              </div>
+            ))}
+          {questionNumber >= 5 && (
+            <div className={chatbotStyles.answer2}>
+              <p>Ważę {weight} kilogramów.</p>
+              <img src={personIcon} />
+            </div>
+          )}
+          {questionNumber >= 5 &&
+            (typing && questionNumber === 5 ? (
+              <div className={chatbotStyles.question2}>
+                <img src={chatIcon} />
+                <ChatbotSpinner />
+              </div>
+            ) : (
+              <div className={chatbotStyles.question2}>
+                <img src={chatIcon} />
+                <p>Ile masz lat?</p>
+              </div>
+            ))}
+          {questionNumber >= 6 && (
+            <div className={chatbotStyles.answer2}>
+              <p>Mam {age} lat.</p>
+              <img src={personIcon} />
+            </div>
+          )}
+          {questionNumber >= 6 &&
+            (typing && questionNumber === 6 ? (
+              <div className={chatbotStyles.question2}>
+                <img src={chatIcon} />
+                <ChatbotSpinner />
+              </div>
+            ) : (
+              <div className={chatbotStyles.question2}>
+                <img src={chatIcon} />
+                <p>Jaka jest Twoja aktywność fizyczna?</p>
+              </div>
+            ))}
+          {questionNumber >= 7 && (
+            <div className={chatbotStyles.answer2}>
+              <p>Moja aktywność fizyczna jest {parseActivity()}</p>
+              <img src={personIcon} />
+            </div>
+          )}
+            {questionNumber >= 7 &&
+            (typing && questionNumber === 7 ? (
+                <div className={chatbotStyles.question2}>
+                    <img src={chatIcon} />
+                    <ChatbotSpinner />
+                </div>
+            ) : (
+                <div className={chatbotStyles.question2}>
+                    <img src={chatIcon} />
+                    <p>Jaki jest cel Twojej diety?</p>
+                </div>
+            ))}
+            {questionNumber >= 8 && (
+                <div className={chatbotStyles.answer2}>
+                    <p>Cel Twojej diety to {parseGoal().goal}.</p>
+                    <img src={personIcon} />
+                </div>
+            )}
+            {questionNumber >= 8 &&
+            (typing && questionNumber === 8 ? (
+                <div className={chatbotStyles.question2}>
+                    <img src={chatIcon} />
+                    <ChatbotSpinner />
+                </div>
+            ) : (
+                <div className={chatbotStyles.question2}>
+                    <img src={chatIcon} />
+                    <p>
+                        Dieta proponowana dla Ciebie to{" "}
+                        {handleDietSuggestion().dietName}{" "}
+                        {suggestCaloriesFromOffer()} kcal.
+                    </p>
+                </div>
+            ))}
           <div className={chatbotStyles.ref} ref={chatRef}></div>
         </div>
       </div>
