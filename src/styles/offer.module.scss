@@ -12,7 +12,7 @@
 }
 
 .diet-item {
-  padding: 5px;
+  padding: 13px 5px 5px 5px;
   border: 1px solid #E1E1E1;
   display: flex;
   flex-direction: column;
@@ -29,6 +29,7 @@
   h3 {
     font-weight: 600;
     font-size: 15px;
+    margin-top: 20px;
 
   }
   p {

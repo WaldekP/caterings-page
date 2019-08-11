@@ -27,76 +27,6 @@
   }
 }
 
-//.diet-header {
-//  padding: 20px 0;
-//  display: flex;
-//  position: relative;
-//  align-items: center;
-//  justify-content: space-around;
-//  top: 0;
-//  left: 0;
-//  height: 20px;
-//  width: 100%;
-//  z-index: 200;
-//  background-color: transparent;
-//  button {
-//    @extend .button;
-//  }
-//}
-
-//.header-up-color {
-//  background-color: #FBDAE2;
-//}
-//
-//.header-down-color {
-//  background-color: white;
-//  opacity: 0.7;
-//}
-//.secondHeader {
-//  padding: 20px 0;
-//  display: flex;
-//  position: sticky;
-//  align-items: center;
-//  justify-content: space-around;
-//  top: 0;
-//  left: 0;
-//  height: 20px;
-//  width: 100%;
-//  color: $main-color;
-//  background-color: white;
-//  opacity: 0.7;
-//  z-index: 200;
-//  button {
-//    @extend .button;
-//  }
-//}
-
-
-.headerColorDown {
-  background-color: white;
-  opacity: 0.7;
-}
-
-.headerColorUp {
-  background-color: #fbdae2;
-}
-
-//.thirdHeader {
-//  padding: 20px 0;
-//  display: flex;
-//  position: fixed;
-//  align-items: center;
-//  justify-content: space-around;
-//  top: 0;
-//  left: 0;
-//  height: 20px;
-//  width: 100%;
-//  color: purple;
-//  background-color: white;
-//  opacity: 0.7;
-//
-//}
-
 .menu-right-part {
   display: flex;
   align-items: center;
@@ -330,15 +260,6 @@ li:hover {
     margin: 0 10px;
     transform: rotate(45deg) translateY(10px);
 
-    //&::before {
-    //  content: "";
-    //  position: absolute;
-    //  top: 0;
-    //  left: 0;
-    //  width: 100%;
-    //  border-top: 5px solid $main-color;
-    //  transform: translateY(10px);
-    //}
     &::after {
       content: "";
       position: absolute;
@@ -377,9 +298,6 @@ li:hover {
     left: 0;
   }
 
-  //.secondHeader {
-  //  position: relative;
-  //}
 
   .hamburger-menu {
     display: block;
@@ -417,22 +335,23 @@ li:hover {
       &:hover {
         background-color: white;
         color: $main-color;
+        cursor: pointer;
       }
     }
     ul {
       display: flex;
       justify-content: flex-end;
       li {
-        width: 100%;
+        width: 120%;
         list-style-type: none;
         text-decoration: none;
         font-size: 16px;
         font-weight: normal;
-        line-height: 2;
+        line-height: 1.7;
         text-transform: uppercase;
-        transform: translateX(25px);
-        padding: 10px 0 10px 25px;
+        padding: 10px 0 10px 50px;
         margin-left: -40px;
+        //transform: translateX(70px);
         //display: block;
         &:hover {
           background-color: $intense-yellow;
@@ -443,7 +362,7 @@ li:hover {
     select {
       display: flex;
       justify-content: center;
-      margin: 25px auto;
+      margin: 15px auto;
       width: calc(100% - 100px);
       height: 50px;
       border-radius: 8px;

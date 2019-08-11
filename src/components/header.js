@@ -40,120 +40,6 @@ const Header = ({ pageContext }) => {
     }
     return citySlug
   }
-  if (menuOverlay) {
-    return (
-      <div className={menuOverlay && headerStyles.overlay}>
-        <div className={headerStyles.mobileMenuHeader}>
-          <span>
-            <Link to={citySlug ? `/${citySlug}` : "/"}>
-              <img src={logo} />
-            </Link>
-          </span>
-          <div
-            className={headerStyles.hamburgerMenuClose}
-            onClick={() => toggleMenu(false)}
-          />
-        </div>
-        <div className={headerStyles.mobileMenu}>
-          <button>Zamów</button>
-          <ul className={headerStyles.navListMobile}>
-            <li
-              onClick={() => {
-                toggleMenu(false)
-                changeMenuTab("valueProposition")
-                dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
-              }}
-            >
-              Co nas wyróżnia
-            </li>
-            <li
-              onClick={() => {
-                changeMenuTab("chatbot")
-                toggleMenu(false)
-                dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
-              }}
-            >
-              Dobierz dietę
-            </li>
-            <li
-              onClick={() => {
-                changeMenuTab("offer")
-                toggleMenu(false)
-                dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
-              }}
-            >
-              Oferta
-            </li>
-            <li
-              onClick={() => {
-                toggleMenu(false)
-                changeMenuTab("pricing")
-                dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
-              }}
-            >
-              Cennik
-            </li>
-            <li
-              onClick={() => {
-                toggleMenu(false)
-                changeMenuTab("opinions")
-                dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
-              }}
-            >
-              Opinie
-            </li>
-            <li
-              onClick={() => {
-                toggleMenu(false)
-                changeMenuTab("contact")
-                dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
-              }}
-            >
-              Kontakt
-            </li>
-            <li>
-              <Link
-                className={headerStyles.navItem}
-                activeClassName={headerStyles.activeNav}
-                to="/blog"
-              >
-                Blog
-              </Link>
-            </li>
-          </ul>
-          <div>
-            <select
-              onChange={({ target: { value } }) => {
-                  console.log('ccccc')
-                  typeof window !== 'undefined' && window.localStorage.setItem('city', value)
-                  if (value === "lodz") {
-                  changeMenuTab("")
-                  return navigate(dietSlug ? `/${dietSlug}` : "/")
-                }
-                changeMenuTab("")
-                return navigate(
-                  dietSlug ? `/${value}/${dietSlug}` : `/${value}`
-                )
-              }}
-              value={findCity()}
-            >
-              {[...cities, { value: "lodz", label: "Łódź" }]
-                .sort((prev, next) => {
-                  const prevCity = prev.label
-                  const nextCity = next.label
-                  return prevCity.localeCompare(nextCity)
-                })
-                .map(city => (
-                  <option value={city.value} key={city.value}>
-                    {city.label}
-                  </option>
-                ))}
-            </select>
-          </div>
-        </div>
-      </div>
-    )
-  }
 
   return (
     <Fragment>
@@ -162,6 +48,116 @@ const Header = ({ pageContext }) => {
       {/*    yPosition < 100 ? (dietSlug ? headerStyles.dietHeader : headerStyles.header) : (dietSlug ? headerStyles.dietHeader : headerStyles.secondHeader)*/}
       {/*    }`}*/}
       {/*>*/}
+        {menuOverlay && <div className={menuOverlay && headerStyles.overlay}>
+            <div className={headerStyles.mobileMenuHeader}>
+          <span>
+            <Link to={citySlug ? `/${citySlug}` : "/"}>
+              <img src={logo} />
+            </Link>
+          </span>
+                <div
+                    className={headerStyles.hamburgerMenuClose}
+                    onClick={() => toggleMenu(false)}
+                />
+            </div>
+            <div className={headerStyles.mobileMenu}>
+                <button>Zamów</button>
+                <ul className={headerStyles.navListMobile}>
+                    <li
+                        onClick={() => {
+                            toggleMenu(false)
+                            changeMenuTab("valueProposition")
+                            dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
+                        }}
+                    >
+                        Co nas wyróżnia
+                    </li>
+                    <li
+                        onClick={() => {
+                            changeMenuTab("chatbot")
+                            toggleMenu(false)
+                            dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
+                        }}
+                    >
+                        Dobierz dietę
+                    </li>
+                    <li
+                        onClick={() => {
+                            changeMenuTab("offer")
+                            toggleMenu(false)
+                            dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
+                        }}
+                    >
+                        Oferta
+                    </li>
+                    <li
+                        onClick={() => {
+                            toggleMenu(false)
+                            changeMenuTab("pricing")
+                            dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
+                        }}
+                    >
+                        Cennik
+                    </li>
+                    <li
+                        onClick={() => {
+                            toggleMenu(false)
+                            changeMenuTab("opinions")
+                            dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
+                        }}
+                    >
+                        Opinie
+                    </li>
+                    <li
+                        onClick={() => {
+                            toggleMenu(false)
+                            changeMenuTab("contact")
+                            dietSlug && navigate(citySlug ? `/${citySlug}` : "/")
+                        }}
+                    >
+                        Kontakt
+                    </li>
+                    <li>
+                        <Link
+                            className={headerStyles.navItem}
+                            activeClassName={headerStyles.activeNav}
+                            to="/blog"
+                        >
+                            Blog
+                        </Link>
+                    </li>
+                </ul>
+                <div>
+                    <select
+                        onChange={({ target: { value } }) => {
+                            console.log('ccccc')
+                            typeof window !== 'undefined' && window.localStorage.setItem('city', value)
+                            if (value === "lodz") {
+                                changeMenuTab("")
+                                return navigate(dietSlug ? `/${dietSlug}` : "/")
+                            }
+                            changeMenuTab("")
+                            return navigate(
+                                dietSlug ? `/${value}/${dietSlug}` : `/${value}`
+                            )
+                        }}
+                        value={findCity()}
+                    >
+                        {[...cities, { value: "lodz", label: "Łódź" }]
+                            .sort((prev, next) => {
+                                const prevCity = prev.label
+                                const nextCity = next.label
+                                return prevCity.localeCompare(nextCity)
+                            })
+                            .map(city => (
+                                <option value={city.value} key={city.value}>
+                                    {city.label}
+                                </option>
+                            ))}
+                    </select>
+                </div>
+            </div>
+        </div>}
       <header className={headerStyles.topHeader} style={{backgroundColor: dietSlug ? "transparent" : "#fbdae2"}}>
         <span>
           <Link to={citySlug ? `/${citySlug}` : "/"}>
