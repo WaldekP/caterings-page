@@ -8,6 +8,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faCheckSquare, faCircle, faWindowClose } from '@fortawesome/free-solid-svg-icons'
 import PageContext from '../context/pageContext'
+import CookieConsent from "react-cookie-consent";
 
 library.add(fab, faCheckSquare, faCircle, fab, faWindowClose)
 
@@ -88,6 +89,16 @@ const Layout = ({title, children, pageContext }) => {
         <div className={layoutStyles.content}>
           <Header pageContext={pageContext} title={title} />
           {children}
+          <CookieConsent
+              location="bottom"
+              buttonText="Zgoda"
+              cookieName="afterfit-consent"
+              style={{ background: "#112682", fontFamily: "'Work Sans', sans-serif" }}
+              buttonStyle={{ backgroundColor: "#FFFFFF", color: "#112682", fontSize: "15px", borderRadius: "20px", height: "40px", width: "130px", fontWeight: "bold", cursor: "pointer" }}
+              expires={150}
+          >
+            Ta strona korzysta z ciasteczek, aby świadczyć usługi na najwyższym poziomie. Dalsze korzystanie ze strony oznacza, że zgadzasz się na ich użycie.
+          </CookieConsent>
         </div>
         <Footer pageContext={pageContext}/>
       </div>

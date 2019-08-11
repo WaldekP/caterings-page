@@ -170,13 +170,15 @@ h2 {
     color: #102682;
     margin: 10px;
     background-color: white;
+    cursor: pointer;
     &:hover {
       color: white;
       background-color: #102682;
+      cursor: pointer;
     }
   }
   input {
-    padding: 0 10px;
+    padding: 0;
     height: 50px;
     min-width: 150px;
     //line-height: 47px;
@@ -193,13 +195,11 @@ h2 {
   }
 }
 
-.question-answer {
-  margin: 20px 20px 0 0;
-  display: flex;
-  flex-direction: column;
-  width: 60%;
+.validation {
+  color: $main-color;
+  text-align: center;
+  height: 20px;
 }
-
 
 @media (max-width: 799px) {
   .container {
@@ -222,12 +222,16 @@ h2 {
       //justify-content: center;
     }
   }
-  .question-answer {
-    margin: 60px auto 0 auto;
-    display: flex;
-    flex-direction: column;
-    width: 80%;
+  .answer-box {
+    min-height: 150px;
+    button {
+      margin: 20px 10px;
 
+    }
+    input {
+      margin: 20px 10px;
+
+    }
   }
 
 }

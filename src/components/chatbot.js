@@ -21,6 +21,7 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
   const [purpose, changePurpose] = useState()
   const chatRef = useRef(null)
   const [typing, changeTypingState] = useState(false)
+  const [inputValidation, validateInput] = useState("")
 
   useEffect(() => {
     if (questionNumber > 1) {
@@ -33,12 +34,7 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
       })
       setTimeout(() => {
         changeTypingState(false)
-        scrollIntoView(chatRef.current, {
-          block: "center",
-          inline: "center",
-          behavior: "smooth",
-        })
-      }, 1000)
+      }, 2000)
     }
   }, [questionNumber])
 
@@ -48,6 +44,7 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
         <button
           onClick={() => {
             changeQuestion(2)
+            changeTypingState(true)
           }}
         >
           Zaczynajmy!
@@ -83,11 +80,27 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
             name="height"
             value={height}
             type="number"
-            onChange={({ target: { value } }) => changeHeight(value)}
+            onChange={({ target: { value } }) => {
+              inputValidation && validateInput("")
+              return changeHeight(value)
+            }}
+            onKeyPress={e => {
+                if (e.key === "Enter") {
+                    if (height > 110) {
+                        changeQuestion(4)
+                    } else {
+                        validateInput("Wpisz poprawny wzrost")
+                    }
+                }
+            }}
           />
           <button
             onClick={() => {
-              changeQuestion(4)
+              if (height > 110) {
+                changeQuestion(4)
+              } else {
+                validateInput("Wpisz poprawny wzrost")
+              }
             }}
           >
             Ok
@@ -104,11 +117,25 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
             type="number"
             onChange={({ target: { value } }) => {
               changeWeight(value)
+              inputValidation && validateInput("")
+            }}
+            onKeyPress={e => {
+                if (e.key === 'Enter') {
+                    if (weight > 30 && weight < 300) {
+                        changeQuestion(5)
+                    } else {
+                        validateInput("Wpisz poprawną wagę")
+                    }
+                }
             }}
           />
           <button
             onClick={() => {
-              changeQuestion(5)
+              if (weight > 30 && weight < 300) {
+                changeQuestion(5)
+              } else {
+                validateInput("Wpisz poprawną wagę")
+              }
             }}
           >
             Ok
@@ -123,11 +150,27 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
             name="age"
             value={age}
             type="number"
-            onChange={({ target: { value } }) => changeAge(value)}
+            onChange={({ target: { value } }) => {
+              inputValidation && validateInput("")
+              changeAge(value)
+            }}
+            onKeyPress={e => {
+                if (e.key === 'Enter') {
+                    if (age > 10 && age < 100) {
+                        changeQuestion(6)
+                    } else {
+                        validateInput("Wpisz poprawny wiek")
+                    }
+                }
+            }}
           />
           <button
             onClick={() => {
-              changeQuestion(6)
+              if (age > 10 && age < 100) {
+                changeQuestion(6)
+              } else {
+                validateInput("Wpisz poprawny wiek")
+              }
             }}
           >
             Ok
@@ -360,7 +403,7 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
             ) : (
               <div className={chatbotStyles.question}>
                 <img src={chatIcon} />
-                  <p>Jesteś kobietą czy mężczyzną?</p>
+                <p>Jesteś kobietą czy mężczyzną?</p>
               </div>
             ))}
           {questionNumber >= 3 && (
@@ -441,39 +484,39 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
               <img src={personIcon} />
             </div>
           )}
-            {questionNumber >= 7 &&
+          {questionNumber >= 7 &&
             (typing && questionNumber === 7 ? (
-                <div className={chatbotStyles.question}>
-                    <img src={chatIcon} />
-                    <ChatbotSpinner />
-                </div>
+              <div className={chatbotStyles.question}>
+                <img src={chatIcon} />
+                <ChatbotSpinner />
+              </div>
             ) : (
-                <div className={chatbotStyles.question}>
-                    <img src={chatIcon} />
-                    <p>Jaki jest cel Twojej diety?</p>
-                </div>
+              <div className={chatbotStyles.question}>
+                <img src={chatIcon} />
+                <p>Jaki jest cel Twojej diety?</p>
+              </div>
             ))}
-            {questionNumber >= 8 && (
-                <div className={chatbotStyles.answer}>
-                    <p>Cel Twojej diety to {parseGoal().goal}.</p>
-                    <img src={personIcon} />
-                </div>
-            )}
-            {questionNumber >= 8 &&
+          {questionNumber >= 8 && (
+            <div className={chatbotStyles.answer}>
+              <p>Cel Twojej diety to {parseGoal().goal}.</p>
+              <img src={personIcon} />
+            </div>
+          )}
+          {questionNumber >= 8 &&
             (typing && questionNumber === 8 ? (
-                <div className={chatbotStyles.question}>
-                    <img src={chatIcon} />
-                    <ChatbotSpinner />
-                </div>
+              <div className={chatbotStyles.question}>
+                <img src={chatIcon} />
+                <ChatbotSpinner />
+              </div>
             ) : (
-                <div className={chatbotStyles.question}>
-                    <img src={chatIcon} />
-                    <p>
-                        Dieta proponowana dla Ciebie to{" "}
-                        {handleDietSuggestion().dietName}{" "}
-                        {suggestCaloriesFromOffer()} kcal.
-                    </p>
-                </div>
+              <div className={chatbotStyles.question}>
+                <img src={chatIcon} />
+                <p>
+                  Dieta proponowana dla Ciebie to{" "}
+                  {handleDietSuggestion().dietName} {suggestCaloriesFromOffer()}{" "}
+                  kcal.
+                </p>
+              </div>
             ))}
           <div ref={chatRef}></div>
         </div>
@@ -481,6 +524,12 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
       <div className={chatbotStyles.answerBox}>
         {!typing && renderAnswerButtons()}
       </div>
+      <p
+        className={chatbotStyles.validation}
+        style={!inputValidation ? { color: "transparent" } : null}
+      >
+        {inputValidation}
+      </p>
     </div>
   )
 })
