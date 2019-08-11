@@ -29,7 +29,7 @@ const DietDescription = ({ diet, city, dietDescription, menu }) => {
           <div>
             <p className={dietDescriptionStyles.mealName}>Kolacja</p>
             <p>{menu ? menu.supper: null}</p>
-\          </div>
+          </div>
         </div>
       </div>
 

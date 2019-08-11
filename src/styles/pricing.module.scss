@@ -268,12 +268,20 @@ h2 {
     height: 45px;
     margin: 0 10px 10px 0;
     font-size: 15px;
+    &:hover {
+      background-color: $main-color;
+      color: white;
+    }
   }
   .mealItem {
     width: 150px;
     height: 45px;
     margin: 0 10px 10px 0;
     font-size: 15px;
+    &:hover {
+      background-color: $main-color;
+      color: white;
+    }
   }
 
   .daysSection {
