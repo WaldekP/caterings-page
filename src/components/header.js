@@ -165,7 +165,7 @@ const Header = ({ pageContext }) => {
           </Link>
         </span>
         <div className={headerStyles.topMenu}>
-          <h3>Mój panel</h3>
+          <h3>Panel klienta</h3>
           <select
             onChange={({ target: { value } }) => {
                 typeof window !== 'undefined' && window.localStorage.setItem('city', value)
@@ -278,7 +278,7 @@ const Header = ({ pageContext }) => {
         </div>
         <div className={headerStyles.menuRightPart}>
           {/*<button className={headerStyles.panelButton}>Panel</button>*/}
-          <h4>Panel klienta</h4>
+          <h3>Panel klienta</h3>
           <select
             onChange={({ target: { value } }) => {
                 console.log('bbbbb')

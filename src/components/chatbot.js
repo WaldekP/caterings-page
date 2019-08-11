@@ -85,13 +85,13 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
               return changeHeight(value)
             }}
             onKeyPress={e => {
-                if (e.key === "Enter") {
-                    if (height > 110) {
-                        changeQuestion(4)
-                    } else {
-                        validateInput("Wpisz poprawny wzrost")
-                    }
+              if (e.key === "Enter") {
+                if (height > 110) {
+                  changeQuestion(4)
+                } else {
+                  validateInput("Wpisz poprawny wzrost")
                 }
+              }
             }}
           />
           <button
@@ -120,13 +120,13 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
               inputValidation && validateInput("")
             }}
             onKeyPress={e => {
-                if (e.key === 'Enter') {
-                    if (weight > 30 && weight < 300) {
-                        changeQuestion(5)
-                    } else {
-                        validateInput("Wpisz poprawną wagę")
-                    }
+              if (e.key === "Enter") {
+                if (weight > 30 && weight < 300) {
+                  changeQuestion(5)
+                } else {
+                  validateInput("Wpisz poprawną wagę")
                 }
+              }
             }}
           />
           <button
@@ -155,13 +155,13 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
               changeAge(value)
             }}
             onKeyPress={e => {
-                if (e.key === 'Enter') {
-                    if (age > 10 && age < 100) {
-                        changeQuestion(6)
-                    } else {
-                        validateInput("Wpisz poprawny wiek")
-                    }
+              if (e.key === "Enter") {
+                if (age > 10 && age < 100) {
+                  changeQuestion(6)
+                } else {
+                  validateInput("Wpisz poprawny wiek")
                 }
+              }
             }}
           />
           <button
@@ -518,7 +518,8 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
                 </p>
               </div>
             ))}
-          <div ref={chatRef}></div>
+          <div ref={chatRef} />
+            <div style={{ padding: "30px" }} />
         </div>
       </div>
       <div className={chatbotStyles.answerBox}>

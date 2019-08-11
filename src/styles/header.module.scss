@@ -30,7 +30,11 @@
 .menu-right-part {
   display: flex;
   align-items: center;
-  //margin-right: 15%;
+  h3 {
+    font-weight: normal;
+    font-size: 16px;
+    cursor: pointer;
+  }
   select {
     font-size: 14px;
     font-weight: normal;
@@ -45,6 +49,7 @@
     padding-right: 10px;
     -moz-appearance: none;
     -webkit-appearance: none;
+    cursor: pointer;
   }
 }
 
@@ -67,6 +72,7 @@ li {
   font-size: 0.9rem;
   margin-right: 1.3rem;
   text-decoration: none;
+  cursor: pointer;
   z-index: 300;
 }
 
@@ -90,6 +96,7 @@ li:hover {
   width: 100px;
   height: 40px;
   align-self: center;
+  cursor: pointer;
 }
 
 .hamburger-menu {
@@ -152,6 +159,11 @@ li:hover {
     .top-logo {
       display: none;
     }
+    h3 {
+      font-weight: normal;
+      font-size: 16px;
+      cursor: pointer;
+    }
     //margin-right: 15%;
     select {
       font-size: 14px;
@@ -167,6 +179,7 @@ li:hover {
       padding-right: 10px;
       -moz-appearance: none;
       -webkit-appearance: none;
+      cursor: pointer;
     }
   }
 
