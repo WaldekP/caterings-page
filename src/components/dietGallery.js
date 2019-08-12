@@ -1,18 +1,16 @@
 import React from "react"
 import dietGalleryStyles from "../styles/dietGallery.module.scss"
-import firstImage from "../images/diets/dietsGalleries/weightLoss/3.jpg"
-import secondImage from "../images/diets/dietsGalleries/weightLoss/5.jpg"
-import thirdImage from "../images/diets/dietsGalleries/weightLoss/9.jpg"
 
-const DietGallery = ({getDietAltTag}) => {
+const DietGallery = ({getDietAltTag, dietGallery}) => {
+
   return (
     <div>
       <h2>Przykładowe potrawy</h2>
       <div className={dietGalleryStyles.container}>
         <div className={dietGalleryStyles.wrapper}>
-          <img src={firstImage} alt={getDietAltTag().firstAlt}/>
-          <img src={secondImage} alt={getDietAltTag().secondAlt}/>
-          <img src={thirdImage} alt={getDietAltTag().thirdAlt}/>
+          <img src={dietGallery[1]} alt={getDietAltTag().firstAlt}/>
+          <img src={dietGallery[2]} alt={getDietAltTag().secondAlt}/>
+          <img src={dietGallery[3]} alt={getDietAltTag().thirdAlt}/>
         </div>
       </div>
     </div>

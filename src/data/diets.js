@@ -2,6 +2,12 @@
 export const diets = [
   {
     dietUrl: "dieta-odchudzajaca",
+    dietImg: 'ssss',
+    dietGallery: {
+      1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_3.jpg",
+      2: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_9.jpg",
+      3: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_5.jpg",
+    },
     fullName: "Dieta odchudzająca",
     menu: {
       breakfast: "Sałatka Cesar z grzanką z bagietki",
@@ -32,6 +38,12 @@ export const diets = [
   },
   {
     dietUrl: "dieta-paleo",
+    dietImg: 'ssss',
+    dietGallery: {
+      1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_10.jpg",
+      2: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_11.jpg",
+      3: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_7.jpg",
+    },
     fullName: " Dieta Paleo",
     menu: {
       breakfast: "Jajecznica z krewetkami i awokado",
@@ -62,6 +74,12 @@ export const diets = [
   },
   {
     dietUrl: "dieta-samuraja",
+    dietImg: 'ssss',
+    dietGallery: {
+      1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_12.jpg",
+      2: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_11.jpg",
+      3: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_4.jpg",
+    },
     fullName: "Dieta Samuraja",
     menu: {
       breakfast: "Bezglutenowa kutia makowa z bakaliami",
@@ -92,6 +110,12 @@ export const diets = [
   },
   {
     dietUrl: "dieta-sportowa-na-mase",
+    dietImg: 'ssss',
+    dietGallery: {
+      1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_12.jpg",
+      2: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_11.jpg",
+      3: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_4.jpg",
+    },
     fullName: "Dieta sportowa na masę",
     menu: {
       breakfast: "Jajecznica z krewetkami, pomidory, pieczywo pełnoziarniste.",
@@ -122,6 +146,12 @@ export const diets = [
   },
   {
     dietUrl: "dieta-sportowa-na-redukcje",
+    dietImg: 'ssss',
+    dietGallery: {
+      1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_3.jpg",
+      2: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_14.jpg",
+      3: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_5.jpg",
+    },
     fullName: "Dieta sportowa na redukcję",
     menu: {
       breakfast: "Sałatka Cesar z grzanką z bagietki",
@@ -152,6 +182,12 @@ export const diets = [
   },
   {
     dietUrl: "dieta-standard",
+    dietImg: 'ssss',
+    dietGallery: {
+      1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_10.jpg",
+      2: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_9.jpg",
+      3: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_2.jpg",
+    },
     fullName: "Dieta standard",
     menu: {
       breakfast: "Sałatka Cesar z grzanką z bagietki i kurczakiem",
@@ -182,6 +218,12 @@ export const diets = [
   },
   {
     dietUrl: "dieta-weganska",
+    dietImg: 'ssss',
+    dietGallery: {
+      1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_13.jpg",
+      2: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_11.jpg",
+      3: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_6.jpg",
+    },
     fullName: "Dieta wegańska",
     menu: {
       breakfast: "Tofucznica z grzankami posmarowanymi oliwą czosnkową i pomidorkami koktajlowymi.",
@@ -212,6 +254,12 @@ export const diets = [
   },
   {
     dietUrl: "dieta-wegetarianska",
+    dietImg: 'ssss',
+    dietGallery: {
+      1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_13.jpg",
+      2: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_11.jpg",
+      3: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_8.jpg",
+    },
     fullName: "Dieta wegetariańska",
     menu: {
       breakfast: "Tofucznica z grzankami posmarowanymi oliwą czosnkową i pomidorkami koktajlowymi.",
