@@ -8,9 +8,9 @@ const DietGallery = ({getDietAltTag, dietGallery}) => {
       <h2>Przykładowe potrawy</h2>
       <div className={dietGalleryStyles.container}>
         <div className={dietGalleryStyles.wrapper}>
-          <img src={dietGallery[1]} alt={getDietAltTag().firstAlt}/>
-          <img src={dietGallery[2]} alt={getDietAltTag().secondAlt}/>
-          <img src={dietGallery[3]} alt={getDietAltTag().thirdAlt}/>
+          <img src={dietGallery && dietGallery[1]} alt={getDietAltTag().firstAlt}/>
+          <img src={dietGallery && dietGallery[2]} alt={getDietAltTag().secondAlt}/>
+          <img src={dietGallery && dietGallery[3]} alt={getDietAltTag().thirdAlt}/>
         </div>
       </div>
     </div>
