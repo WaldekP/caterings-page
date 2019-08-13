@@ -147,7 +147,7 @@ const Header = ({ pageContext }) => {
                             })
                             .map(city => (
                                 <option value={city.value} key={city.value}>
-                                    {city.label} bllaaa
+                                    {city.label}
                                 </option>
                             ))}
                     </select>
@@ -186,17 +186,6 @@ const Header = ({ pageContext }) => {
           </select>
         </div>
       </header>
-      {/*<header*/}
-      {/*  className={`${*/}
-      {/*    yPosition < 100*/}
-      {/*      ? dietSlug*/}
-      {/*        ? headerStyles.dietHeader*/}
-      {/*        : headerStyles.header*/}
-      {/*      : dietSlug*/}
-      {/*      ? headerStyles.dietHeader*/}
-      {/*      : headerStyles.header*/}
-      {/*  }`}*/}
-      {/*>*/}
       <header
         className={headerStyles.header} style={{backgroundColor: dietSlug ? "transparent" : "#fbdae2"}}
       >
@@ -277,7 +266,6 @@ const Header = ({ pageContext }) => {
           <select
             onChange={({ target: { value } }) => {
                 typeof window !== 'undefined' && window.localStorage.setItem('city', value)
-                console.log('value', value)
                 if (value === "lodz") {
                 return navigate(dietSlug ? `/${dietSlug}` : "/")
               }
