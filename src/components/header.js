@@ -41,7 +41,6 @@ const Header = ({ pageContext }) => {
     return "lodz"
   }
 
-  console.log('findCity()', findCity())
   return (
     <Fragment>
         {menuOverlay && <div className={menuOverlay && headerStyles.overlay}>
@@ -170,7 +169,8 @@ const Header = ({ pageContext }) => {
               }
               return navigate(dietSlug ? `/${value}/${dietSlug}` : `/${value}`)
             }}
-            value={findCity()}
+            // value={findCity()}
+            value="lodz"
           >
             {cities
               .sort((prev, next) => {
