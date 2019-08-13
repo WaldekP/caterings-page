@@ -41,6 +41,7 @@ const Header = ({ pageContext }) => {
     return "lodz"
   }
 
+  console.log('findCity()', findCity())
   return (
     <Fragment>
         {menuOverlay && <div className={menuOverlay && headerStyles.overlay}>
@@ -146,7 +147,7 @@ const Header = ({ pageContext }) => {
                             })
                             .map(city => (
                                 <option value={city.value} key={city.value}>
-                                    {city.label}
+                                    {city.label} bllaaa
                                 </option>
                             ))}
                     </select>
