@@ -24,8 +24,8 @@ export const cities = [
     label: 'Łódź'
   },
   {
-    value: 'lublin',
-    label: 'Lublin'
+    value: 'lublina',
+    label: 'Lublina'
   },
   {
     value: 'poznan',
