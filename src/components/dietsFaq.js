@@ -2,11 +2,9 @@ import React, { useState } from "react"
 import faqStyles from "../styles/faq.module.scss"
 import { dietsFaq } from "../data/generalnformationFaq"
 import Question from "./question"
-import { diets } from "../data/diets"
 
-const DietsFaq = ({ pageContext, dietQuestions }) => {
+const DietsFaq = ({ dietQuestions }) => {
   const [section, chooseSection] = useState("diet")
-  const dietSlug = pageContext && pageContext.diet
 
   const getQuestions = () => {
 

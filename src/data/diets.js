@@ -2,7 +2,7 @@
 export const diets = [
   {
     dietUrl: "dieta-odchudzajaca",
-    dietImg: 'ssss',
+    dietImg: "../images/diets/dieta-odchudzajaca.jpg",
     dietGallery: {
       1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_3.jpg",
       2: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_9.jpg",
@@ -26,6 +26,7 @@ export const diets = [
       tea: "Muffinki z parmezanem, cukinią i komosą",
       supper: "Aromatyczny kurczak po indyjsku",
     },
+    offerDescription: "Dieta dla osób, które chcą schudnąć",
     cityDescription: {
       lodz: {
         description: [
@@ -48,7 +49,7 @@ export const diets = [
   },
   {
     dietUrl: "dieta-paleo",
-    dietImg: 'ssss',
+    dietImg: "../images/diets/dieta-odchudzajaca.jpg",
     dietGallery: {
       1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_10.jpg",
       2: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_11.jpg",
@@ -72,6 +73,7 @@ export const diets = [
       tea: "Rolada ze szpinaku i łososia",
       supper: "Pulpety z chorizo w hiszpańskim sosie z pieczonymi warzywami",
     },
+    offerDescription: "Dieta białkowo-tłuszczowa dla osób, które nie tolerują glutenu i roślin strączkowych",
     cityDescription: {
       lodz: {
         description: [
@@ -94,7 +96,7 @@ export const diets = [
   },
   {
     dietUrl: "dieta-samuraja",
-    dietImg: 'ssss',
+    dietImg: "../images/diets/dieta-odchudzajaca.jpg",
     dietGallery: {
       1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_12.jpg",
       2: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_11.jpg",
@@ -118,6 +120,7 @@ export const diets = [
       tea: "Zupa meksykańska",
       supper: "Pikantny dorsz po tajsku z warzywami z ryżem brązowym długo-ziarnistym",
     },
+    offerDescription: "Dieta dla osób aktywnych, które nie tolerują glutenu i kazeiny",
     cityDescription: {
       lodz: {
         description: [
@@ -140,7 +143,7 @@ export const diets = [
   },
   {
     dietUrl: "dieta-sportowa-na-mase",
-    dietImg: 'ssss',
+    dietImg: "../images/diets/dieta-odchudzajaca.jpg",
     dietGallery: {
       1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_12.jpg",
       2: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_11.jpg",
@@ -164,6 +167,7 @@ export const diets = [
       tea: "Babeczki mięsne z sosem imbirowo – pomarańczowym",
       supper: "Naleśniki owsiane z białym serem, miodem i orzechami.",
     },
+    offerDescription: "Dieta dla osób chcących zwiększyć masę mięśniową",
     cityDescription: {
       lodz: {
         description: [
@@ -186,7 +190,7 @@ export const diets = [
   },
   {
     dietUrl: "dieta-sportowa-na-redukcje",
-    dietImg: 'ssss',
+    dietImg: "../images/diets/dieta-odchudzajaca.jpg",
     dietGallery: {
       1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_3.jpg",
       2: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_14.jpg",
@@ -210,6 +214,7 @@ export const diets = [
       tea: "Sałatka z pieczoną dynia, szpinakiem, suszonymi pomidorami i fetą.",
       supper: "Naleśniki owsiane z białym serem, miodem i orzechami.",
     },
+    offerDescription: "Dieta dla osób aktywnych chcących zredukować tkankę tłuszczową",
     cityDescription: {
       lodz: {
         description: [
@@ -232,7 +237,7 @@ export const diets = [
   },
   {
     dietUrl: "dieta-standard",
-    dietImg: 'ssss',
+    dietImg: "../images/diets/dieta-odchudzajaca.jpg",
     dietGallery: {
       1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_10.jpg",
       2: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_9.jpg",
@@ -256,6 +261,7 @@ export const diets = [
       tea: "Muffinki z parmezanem, cukinią i komosą",
       supper: "Pulpety z chorizo z sosem pomidorowym i szpinakowym tagliatelle",
     },
+    offerDescription: "Dieta dla osób chcących się zdrowo odżywiać",
     cityDescription: {
       lodz: {
         description: [
@@ -278,7 +284,7 @@ export const diets = [
   },
   {
     dietUrl: "dieta-weganska",
-    dietImg: 'ssss',
+    dietImg: "../images/diets/dieta-odchudzajaca.jpg",
     dietGallery: {
       1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_13.jpg",
       2: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_11.jpg",
@@ -302,6 +308,7 @@ export const diets = [
       tea: "Sałatka z pieczonym batatem, rukolą, wegańskim serem i granatem polana pikantnym malinowym sosem.",
       supper: "Pulpety z ciecierzycy z sosem żurawinowym, puree z zielonego groszku i kapustą modro po koreańsku.",
     },
+    offerDescription: "Dieta oparta o najwyższej jakości produkty pochodzenia roślinnego",
     cityDescription: {
       lodz: {
         description: [
@@ -324,7 +331,7 @@ export const diets = [
   },
   {
     dietUrl: "dieta-wegetarianska",
-    dietImg: 'ssss',
+    dietImg: "../images/diets/dieta-odchudzajaca.jpg",
     dietGallery: {
       1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_13.jpg",
       2: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_11.jpg",
@@ -348,6 +355,7 @@ export const diets = [
       tea: "Sałatka z pieczonym batatem, rukolą, kozim serem i granatem polana pikantnym malinowym sosem.",
       supper: "Pulpety z ciecierzycy z sosem żurawinowym, puree z zielonego groszku i kapustą modro po koreańsku.",
     },
+    offerDescription: "Dieta roślinna dopuszczająca spożywanie takich pokarmów jak jajka i nabiał",
     cityDescription: {
       lodz: {
         description: [

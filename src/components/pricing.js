@@ -388,6 +388,7 @@ const Pricing = React.forwardRef((props, ref) => {
                   return prevMeal - nextMeal
                 }).map(meal => (
                   <div
+                    key={meal.dietMeal.meal.name}
                     onClick={() => {
                       calculateNumberOfSelectedMeals() === 3 &&
                         meal.selected &&

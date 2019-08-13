@@ -71,11 +71,11 @@ const Offer = React.forwardRef(({ pageContext }, ref) => {
       <h2>Oferta naszej diety pudełkowej - wybierz jedną z 8 diet z dowozem</h2>
       <div className={offerStyles.container} ref={ref}>
         {diets.map(diet => (
-          <Link to={pageContext.city ? `/${pageContext.city}/${diet.dietUrl}` : `/${diet.dietUrl}`}>
-            <div key={diet.dietUrl} className={offerStyles.dietItem}>
-              <img src={findDiet(diet.dietUrl)}/>
+          <Link to={pageContext.city ? `/${pageContext.city}/${diet.dietUrl}` : `/${diet.dietUrl}`} key={diet.dietUrl}>
+            <div className={offerStyles.dietItem} key={diet.dietUrl}>
+              <img src={findDiet(diet.dietUrl)} alt={`Catering dietetyczny ${pageContext.city ? pageContext.city : 'lodz'} - ${diet.fullName}`}/>
               <h3>{diet.fullName}</h3>
-              <p>{dietsDescription[findDescription(diet.dietUrl)]}</p>
+              <p>{diet.offerDescription}</p>
             </div>
           </Link>
         ))}
