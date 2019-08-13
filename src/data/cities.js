@@ -1,50 +1,50 @@
 export const cities = [
   {
-    value: 'lodz',
-    label: 'Łódź'
-  },
-  {
-    value: 'lublin',
-    label: 'Lublin'
-  },
-  {
-    value: 'krakow',
-    label: 'Kraków'
-  },
-  {
-    value: 'wroclaw',
-    label: 'Wrocław'
-  },
-  {
-    value: 'warszawa',
-    label: 'Warszawa'
-  },
-  {
-    value: 'katowice',
-    label: 'Katowice'
-  },
-  {
     value: 'bydgoszcz',
     label: 'Bydgoszcz'
-  },
-  {
-    value: 'torun',
-    label: 'Toruń'
-  },
-  {
-    value: 'gdynia',
-    label: 'Gdynia'
   },
   {
     value: 'gdansk',
     label: 'Gdańsk'
   },
   {
-    value: 'sopot',
-    label: 'Sopot'
+    value: 'gdynia',
+    label: 'Gdynia'
+  },
+  {
+    value: 'katowice',
+    label: 'Katowice'
+  },
+  {
+    value: 'krakow',
+    label: 'Kraków'
+  },
+  {
+    value: 'lublin',
+    label: 'Lublin'
+  },
+  {
+    value: 'lodz',
+    label: 'Łódź'
   },
   {
     value: 'poznan',
     label: 'Poznań'
+  },
+  {
+    value: 'sopot',
+    label: 'Sopot'
+  },
+  {
+    value: 'torun',
+    label: 'Toruń'
+  },
+  {
+    value: 'warszawa',
+    label: 'Warszawa'
+  },
+  {
+    value: 'wroclaw',
+    label: 'Wrocław'
   },
 ]
