@@ -176,7 +176,7 @@ const Header = ({ pageContext }) => {
               }
               return navigate(dietSlug ? `/${value}/${dietSlug}` : `/${value}`)
             }}
-            value={findCity()}
+            value={citySlug ? findCity() : 'lodz'}
           >
             {cities
               .sort((prev, next) => {
