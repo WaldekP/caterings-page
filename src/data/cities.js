@@ -45,7 +45,7 @@ export const cities = [
     label: 'Wrocław'
   },
   {
-    value: 'lu',
-    label: 'Lu'
+    value: 'la',
+    label: 'La'
   },
 ]
