@@ -23,10 +23,10 @@ export const cities = [
     value: 'lodz',
     label: 'Łódź'
   },
-  {
-    value: 'lublina',
-    label: 'Lublina'
-  },
+  // {
+  //   value: 'lublina',
+  //   label: 'Lublina'
+  // },
   {
     value: 'poznan',
     label: 'Poznań'
