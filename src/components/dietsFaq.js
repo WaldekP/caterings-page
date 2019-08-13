@@ -4,16 +4,14 @@ import { dietsFaq } from "../data/generalnformationFaq"
 import Question from "./question"
 import { diets } from "../data/diets"
 
-const DietsFaq = ({ pageContext }) => {
+const DietsFaq = ({ pageContext, dietQuestions }) => {
   const [section, chooseSection] = useState("diet")
   const dietSlug = pageContext && pageContext.diet
 
   const getQuestions = () => {
 
     if (section === 'diet') {
-      const dietFaqObject = diets.find(diet => diet.dietUrl === dietSlug)
-      console.log('czy to to', dietFaqObject)
-      return dietFaqObject && Object.values(dietFaqObject.questions)
+      return dietQuestions
     }
 
     return Object.values(dietsFaq['general'])
