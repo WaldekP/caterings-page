@@ -1,7 +1,8 @@
 import React, { useState } from "react"
 import faqStyles from "../styles/faq.module.scss"
-import { dietsFaq } from "../data/dietsFaqData"
+import { dietsFaq } from "../data/generalnformationFaq"
 import Question from "./question"
+import { diets } from "../data/diets"
 
 const DietsFaq = ({ pageContext }) => {
   const [section, chooseSection] = useState("diet")
@@ -9,13 +10,10 @@ const DietsFaq = ({ pageContext }) => {
 
   const getQuestions = () => {
 
-    // if (section === 'diet') {
-    //   const dietsQuestionsArray = dietsFaq[section] && Object.values(dietsFaq[section])
-    //   const dietQuestions = dietsQuestionsArray.find(diet => diet.dietUrl === dietSlug)
-    //   return dietQuestions && Object.values(dietQuestions.questions)
-    // }
     if (section === 'diet') {
-      return Object.values(dietsFaq['tempDiet'])
+      const dietFaqObject = diets.find(diet => diet.dietUrl === dietSlug)
+      console.log('czy to to', dietFaqObject)
+      return dietFaqObject && Object.values(dietFaqObject.questions)
     }
 
     return Object.values(dietsFaq['general'])

@@ -9,6 +9,16 @@ export const diets = [
       3: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_5.jpg",
     },
     fullName: "Dieta odchudzająca",
+    questions: {
+      1: {
+        question: "Rozkład makroskładników",
+        answer: "Tu trzeba dorobic w zaleznosci od diety"
+      },
+      2: {
+        question: "Dla kogo?",
+        answer: "Tu trzeba dorobic w zaleznosci od diety"
+      },
+    },
     menu: {
       breakfast: "Sałatka Cesar z grzanką z bagietki",
       secondBreakfast: "Koktajl z awokado i masłem orzechowym",
@@ -45,6 +55,16 @@ export const diets = [
       3: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_7.jpg",
     },
     fullName: " Dieta Paleo",
+    questions: {
+      1: {
+        question: "Rozkład makroskładników",
+        answer: "Tu trzeba dorobic w zaleznosci od diety"
+      },
+      2: {
+        question: "Dla kogo?",
+        answer: "Tu trzeba dorobic w zaleznosci od diety"
+      },
+    },
     menu: {
       breakfast: "Jajecznica z krewetkami i awokado",
       secondBreakfast: "Kawowe ptasie mleczko z malinami",
@@ -81,6 +101,16 @@ export const diets = [
       3: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_4.jpg",
     },
     fullName: "Dieta Samuraja",
+    questions: {
+      1: {
+        question: "Rozkład makroskładników",
+        answer: "Tu trzeba dorobic w zaleznosci od diety"
+      },
+      2: {
+        question: "Dla kogo?",
+        answer: "Tu trzeba dorobic w zaleznosci od diety"
+      },
+    },
     menu: {
       breakfast: "Bezglutenowa kutia makowa z bakaliami",
       secondBreakfast: "Sałatka z wędzonym kurczakiem na kaszy jaglanej",
@@ -117,6 +147,16 @@ export const diets = [
       3: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_4.jpg",
     },
     fullName: "Dieta sportowa na masę",
+    questions: {
+      1: {
+        question: "Rozkład makroskładników",
+        answer: "Tu trzeba dorobic w zaleznosci od diety"
+      },
+      2: {
+        question: "Dla kogo?",
+        answer: "Tu trzeba dorobic w zaleznosci od diety"
+      },
+    },
     menu: {
       breakfast: "Jajecznica z krewetkami, pomidory, pieczywo pełnoziarniste.",
       secondBreakfast: "Koktajl jogurtowy na bazie awokado i masła orzechowego",
@@ -153,6 +193,16 @@ export const diets = [
       3: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_5.jpg",
     },
     fullName: "Dieta sportowa na redukcję",
+    questions: {
+      1: {
+        question: "Rozkład makroskładników",
+        answer: "Tu trzeba dorobic w zaleznosci od diety"
+      },
+      2: {
+        question: "Dla kogo?",
+        answer: "Tu trzeba dorobic w zaleznosci od diety"
+      },
+    },
     menu: {
       breakfast: "Sałatka Cesar z grzanką z bagietki",
       secondBreakfast: "Koktajl z awokado i masłem orzechowym",
@@ -189,6 +239,16 @@ export const diets = [
       3: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_2.jpg",
     },
     fullName: "Dieta standard",
+    questions: {
+      1: {
+        question: "Rozkład makroskładników",
+        answer: "Tu trzeba dorobic w zaleznosci od diety"
+      },
+      2: {
+        question: "Dla kogo?",
+        answer: "Tu trzeba dorobic w zaleznosci od diety"
+      },
+    },
     menu: {
       breakfast: "Sałatka Cesar z grzanką z bagietki i kurczakiem",
       secondBreakfast: "Krem daktylowo-bananowy",
@@ -225,6 +285,16 @@ export const diets = [
       3: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_6.jpg",
     },
     fullName: "Dieta wegańska",
+    questions: {
+      1: {
+        question: "Rozkład makroskładników",
+        answer: "Tu trzeba dorobic w zaleznosci od diety"
+      },
+      2: {
+        question: "Dla kogo?",
+        answer: "Tu trzeba dorobic w zaleznosci od diety"
+      },
+    },
     menu: {
       breakfast: "Tofucznica z grzankami posmarowanymi oliwą czosnkową i pomidorkami koktajlowymi.",
       secondBreakfast: "Krem z kaszy jaglanej z kakao, daktylami i bananami.",
@@ -261,6 +331,16 @@ export const diets = [
       3: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_8.jpg",
     },
     fullName: "Dieta wegetariańska",
+    questions: {
+      1: {
+        question: "Rozkład makroskładników",
+        answer: "Tu trzeba dorobic w zaleznosci od diety"
+      },
+      2: {
+        question: "Dla kogo?",
+        answer: "Tu trzeba dorobic w zaleznosci od diety"
+      },
+    },
     menu: {
       breakfast: "Tofucznica z grzankami posmarowanymi oliwą czosnkową i pomidorkami koktajlowymi.",
       secondBreakfast: "Krem z kaszy jaglanej z kakao, daktylami i bananami. ",
