@@ -117,7 +117,8 @@ button:-moz-focusring,
       padding: 0;
       text-align: center;
       margin-top: -20px;
-      a {
+      .overlayItem {
+        list-style: none;
         color: #595EA3;
         text-decoration: none;
         font-weight: 600;
@@ -126,13 +127,6 @@ button:-moz-focusring,
         &:hover {
           color: #8285C1;
         }
-      }
-
-      .overlayItem {
-        list-style: none;
-        color: green;
-        font-size: 20px;
-        text-decoration: none;
       }
       .link {
         text-decoration: none;
