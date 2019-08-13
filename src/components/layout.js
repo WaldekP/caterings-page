@@ -66,15 +66,8 @@ const Layout = ({ title, children, pageContext }) => {
         <div className={layoutStyles.overlayContent}>
           <h2>Wybierz miasto:</h2>
 
-          {/*}}>Zostaw ciastko</button>*/}
-          {/*<p>{getCookie('user')}</p>*/}
           <ul className={layoutStyles.overlayList}>
             {cities
-              // .sort((prev, next) => {
-              //   const prevCity = prev.label
-              //   const nextCity = next.label
-              //   return prevCity.localeCompare(nextCity)
-              // })
               .map(city => (
                 <Link className={layoutStyles.link} to={getLinkUrl(city.value)}>
                   <li
