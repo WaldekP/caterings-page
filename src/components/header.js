@@ -35,19 +35,14 @@ const Header = ({ pageContext }) => {
 
 
   const findCity = () => {
-    if (!citySlug) {
-      return "lodz"
+    if (citySlug) {
+      return citySlug
     }
-    return citySlug
+    return "lodz"
   }
 
   return (
     <Fragment>
-      {/*<header*/}
-      {/*  className={`${*/}
-      {/*    yPosition < 100 ? (dietSlug ? headerStyles.dietHeader : headerStyles.header) : (dietSlug ? headerStyles.dietHeader : headerStyles.secondHeader)*/}
-      {/*    }`}*/}
-      {/*>*/}
         {menuOverlay && <div className={menuOverlay && headerStyles.overlay}>
             <div className={headerStyles.mobileMenuHeader}>
           <span>
@@ -169,7 +164,6 @@ const Header = ({ pageContext }) => {
           <select
             onChange={({ target: { value } }) => {
                 typeof window !== 'undefined' && window.localStorage.setItem('city', value)
-                console.log('aaaa')
               if (value === "lodz") {
                 return navigate(dietSlug ? `/${dietSlug}` : "/")
               }
@@ -281,14 +275,11 @@ const Header = ({ pageContext }) => {
           <h3>Panel klienta</h3>
           <select
             onChange={({ target: { value } }) => {
-                console.log('bbbbb')
                 typeof window !== 'undefined' && window.localStorage.setItem('city', value)
                 console.log('value', value)
                 if (value === "lodz") {
-                    console.log('czemu')
                 return navigate(dietSlug ? `/${dietSlug}` : "/")
               }
-                console.log('bo temu')
                 return navigate(dietSlug ? `/${value}/${dietSlug}` : `/${value}`)
             }}
             value={findCity()}
