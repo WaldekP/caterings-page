@@ -19,13 +19,13 @@ export const cities = [
     value: 'krakow',
     label: 'Kraków'
   },
-  // {
-  //   value: 'lublin',
-  //   label: 'Lublin'
-  // },
   {
     value: 'lodz',
     label: 'Łódź'
+  },
+  {
+    value: 'lublin',
+    label: 'Lublin'
   },
   {
     value: 'poznan',
