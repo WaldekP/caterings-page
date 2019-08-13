@@ -34,11 +34,18 @@ const Header = ({ pageContext }) => {
   }, [])
 
 
+  // const findCity = () => {
+  //   if (citySlug) {
+  //     return citySlug
+  //   }
+  //   return "lodz"
+  // }
+
   const findCity = () => {
     if (citySlug) {
-      return citySlug
+      return cities.find(city => city.value === citySlug).value
     }
-    return "lodz"
+    return 'lodz';
   }
 
   return (

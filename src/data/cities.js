@@ -20,6 +20,10 @@ export const cities = [
     label: 'Kraków'
   },
   {
+    value: 'lublin',
+    label: 'Lublin'
+  },
+  {
     value: 'lodz',
     label: 'Łódź'
   },
@@ -44,8 +48,5 @@ export const cities = [
     value: 'wroclaw',
     label: 'Wrocław'
   },
-  {
-    value: 'la',
-    label: 'La'
-  },
+
 ]
