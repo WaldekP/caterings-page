@@ -44,7 +44,6 @@ const Diet = ({pageContext}) => {
       return null
     }
     const descriptions = diet && diet.cityDescription[city] ? diet.cityDescription[city] : diet.cityDescription['lodz']
-    console.log('descriptions', descriptions)
     return descriptions && descriptions.description
   }
 
