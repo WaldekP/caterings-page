@@ -28,8 +28,8 @@ const Contact = React.forwardRef((props, ref) => {
         />
         <div className={contactStyles.rightMapContainer}>
           <p>LOKALIZACJA</p>
-          <p>ul. Srebrzyńska 7/10</p>
-          <p>91-402 Łódź</p>
+          <p>ul. Siedlecka 3</p>
+          <p>93-138 Łódź</p>
         </div>
       </div>
     </div>
