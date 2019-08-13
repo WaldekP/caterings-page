@@ -41,7 +41,7 @@ const DietsFaq = ({ pageContext, dietQuestions }) => {
           </p>
         </div>
         <div className={faqStyles.questionsContainer}>
-          {getQuestions().map((question, index) => (
+          {getQuestions() && getQuestions().map((question, index) => (
             <Question key={index} question={question} />
           ))}
         </div>
