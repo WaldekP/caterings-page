@@ -1,5 +1,9 @@
 export const cities = [
   {
+    value: 'lodz',
+    label: 'Łódź'
+  },
+  {
     value: 'lublin',
     label: 'Lublin'
   },

@@ -139,7 +139,7 @@ const Header = ({ pageContext }) => {
                         }}
                         value={findCity()}
                     >
-                        {[...cities, { value: "lodz", label: "Łódź" }]
+                        {cities
                             .sort((prev, next) => {
                                 const prevCity = prev.label
                                 const nextCity = next.label
@@ -172,7 +172,7 @@ const Header = ({ pageContext }) => {
             }}
             value={findCity()}
           >
-            {[...cities, { value: "lodz", label: "Łódź" }]
+            {cities
               .sort((prev, next) => {
                 const prevCity = prev.label
                 const nextCity = next.label
@@ -285,7 +285,7 @@ const Header = ({ pageContext }) => {
             }}
             value={findCity()}
           >
-            {[...cities, { value: "lodz", label: "Łódź" }]
+            {cities
               .sort((prev, next) => {
                 const prevCity = prev.label
                 const nextCity = next.label

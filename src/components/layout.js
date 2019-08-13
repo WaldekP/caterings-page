@@ -69,12 +69,12 @@ const Layout = ({ title, children, pageContext }) => {
           {/*}}>Zostaw ciastko</button>*/}
           {/*<p>{getCookie('user')}</p>*/}
           <ul className={layoutStyles.overlayList}>
-            {[...cities, { value: "lodz", label: "Łódź" }]
-              // .sort((prev, next) => {
-              //   const prevCity = prev.label
-              //   const nextCity = next.label
-              //   return prevCity.localeCompare(nextCity)
-              // })
+            {cities
+              .sort((prev, next) => {
+                const prevCity = prev.label
+                const nextCity = next.label
+                return prevCity.localeCompare(nextCity)
+              })
               .map(city => (
                 <Link className={layoutStyles.link} to={getLinkUrl(city.value)}>
                   <li
