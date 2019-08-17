@@ -23,12 +23,12 @@ const Contact = React.forwardRef((props, ref) => {
       </div>
       <div className={contactStyles.mapContainer}>
         {/*<div className={contactStyles}>*/}
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2467.9472120736864!2d19.36968731578037!3d51.78885097968244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471bb537c35651ab%3A0xd37e83ee9a133eb3!2sAfterFit+Catering!5e0!3m2!1spl!2spl!4v1562187806215!5m2!1spl!2spl"
-            width="100%"
-            height="400px"
-            allowFullScreen
-          />
+        {/*  <iframe*/}
+        {/*    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2467.9472120736864!2d19.36968731578037!3d51.78885097968244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471bb537c35651ab%3A0xd37e83ee9a133eb3!2sAfterFit+Catering!5e0!3m2!1spl!2spl!4v1562187806215!5m2!1spl!2spl"*/}
+        {/*    width="100%"*/}
+        {/*    height="400px"*/}
+        {/*    allowFullScreen*/}
+        {/*  />*/}
         {/*</div>*/}
         <div className={contactStyles.rightMapContainer}>
           <p>LOKALIZACJA</p>
