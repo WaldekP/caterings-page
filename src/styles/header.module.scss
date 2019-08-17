@@ -1,5 +1,6 @@
 @import "variables";
 @import "common.module";
+
 .link {
   color: yellow;
 }
@@ -21,9 +22,13 @@
   top: 0;
   left: 0;
   height: 20px;
+  background: #F4EFC7;
   width: 100%;
   button {
     @extend .button;
+  }
+  h3 {
+    margin-right: 20px;
   }
 }
 
@@ -53,13 +58,6 @@
   }
 }
 
-//.title {
-//  color: #000000;
-//  font-size: 3rem;
-//  text-decoration: none;
-//  width: 20px;
-//  height: 5px;
-//}
 
 .nav-list {
   display: flex;
@@ -74,15 +72,17 @@ li {
   text-decoration: none;
   cursor: pointer;
   z-index: 300;
+  .nav-item {
+    text-decoration: none;
+    cursor: pointer;
+    color: $main-color;
+  }
 }
 
 li:hover {
   text-decoration: underline;
 }
 
-.active-nav.item {
-  color: pink;
-}
 
 .menu {
   display: flex;
@@ -326,10 +326,14 @@ li:hover {
   .mobile-menu {
     display: flex;
     flex-direction: column;
+    .mobile-buttons-wrapper {
+      display: flex;
+      justify-content: center;
+    }
     button {
       display: inline-block;
       width: 150px;
-      margin: 20px 0;
+      margin: 20px 10px;
       padding: 0 45px;
       height: 50px;
       line-height: 48px;
@@ -351,6 +355,15 @@ li:hover {
         cursor: pointer;
       }
     }
+    .panel-button {
+      background-color: white;
+      color: $main-color;
+      &:hover {
+        background-color: $main-color;
+        color: white;
+      }
+    }
+
     ul {
       display: flex;
       justify-content: flex-end;
