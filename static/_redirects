@@ -1,4 +1,4 @@
 /blog/*	https://afterfit-catering.pl/blog/:splat 200
 /zamowienie/* https://afterfit-catering.pl/zamowienie/:splat 200
 http://wonderful-heisenberg-ccfa1f.netlify.com/* https://wonderful-heisenberg-ccfa1f.netlify.com/:splat 301!
-http://www.wonderful-heisenberg-ccfa1f.netlify.com/* https://wonderful-heisenberg-ccfa1f.netlify.com/:splat 301!
+https://www.wonderful-heisenberg-ccfa1f.netlify.com/* https://wonderful-heisenberg-ccfa1f.netlify.com/:splat 301!
