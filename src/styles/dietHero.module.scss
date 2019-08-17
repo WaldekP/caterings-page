@@ -16,8 +16,17 @@
   background-color: #EDE8C3;
 }
 
+.diet-paleo {
+  background: url('../images/dietHeros/Dieta paleo - poprawiona.jpg') center center no-repeat;
+  background-size: 85%, cover;
+  background-color: #EDE8C3;
+}
+
 @media (max-width: 1199px) {
   .diet-weight-loss {
+    background-size: cover;
+  }
+  .diet-paleo {
     background-size: cover;
   }
 }
