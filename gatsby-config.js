@@ -10,6 +10,7 @@ module.exports = {
     `gatsby-plugin-polyfill-io`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
+    'gatsby-plugin-robots-txt',
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
