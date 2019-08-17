@@ -3,11 +3,13 @@ module.exports = {
     title: `AfterFit`,
     description: `TODO`,
     author: `WPieniak`,
+    siteUrl: `https://wonderful-heisenberg-ccfa1f.netlify.com`
   },
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-polyfill-io`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
