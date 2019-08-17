@@ -10,6 +10,15 @@ const DietHero = ({diet}) => {
     if (diet === 'dieta-paleo') {
       return heroStyles.dietPaleo
     }
+    if (diet === 'dieta-sportowa-na-redukcje') {
+      return heroStyles.dietSportReduction
+    }
+    if (diet === 'dieta-standard') {
+      return heroStyles.dietStandard
+    }
+    if (diet === 'dieta-weganska') {
+      return heroStyles.dietVegan
+    }
   }
 
 

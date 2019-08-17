@@ -6,12 +6,18 @@
 
 .container {
   width: 100%;
-  height:80vh;
+  height:90vh;
   margin-top: -120px;
 }
 
 .diet-weight-loss {
   background: url('../images/dietHeros/Dieta odchudzajaca-poprawiona.jpg') center center no-repeat;
+  background-size: 85%, cover;
+  background-color: #EDE8C3;
+}
+
+.diet-sport-reduction {
+  background: url('../images/dietHeros/Dieta sportowa na redukcje - poprawiona.jpg') center center no-repeat;
   background-size: 85%, cover;
   background-color: #EDE8C3;
 }
@@ -22,11 +28,31 @@
   background-color: #EDE8C3;
 }
 
+.diet-standard{
+   background: url('../images/dietHeros/Dieta standard - poprawiona.jpg') center center no-repeat;
+   background-size: 85%, cover;
+   background-color: #EDE8C3;
+ }
+.diet-vegan{
+  background: url('../images/dietHeros/Dieta weganska - poprawiona.jpg') center center no-repeat;
+  background-size: 85%, cover;
+  background-color: #EDE8C3;
+}
+
 @media (max-width: 1199px) {
   .diet-weight-loss {
     background-size: cover;
   }
+  .diet-sport-reduction {
+    background-size: cover;
+  }
   .diet-paleo {
+    background-size: cover;
+  }
+  .diet-standard {
+    background-size: cover;
+  }
+  .diet-vegan {
     background-size: cover;
   }
 }
