@@ -1,1 +1,2 @@
 /blog/*	https://afterfit-catering.pl/blog/:splat 200
+/zamowienie/* https://afterfit-catering.pl/zamowienie/:splat 200
