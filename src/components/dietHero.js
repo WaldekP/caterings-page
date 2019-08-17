@@ -13,12 +13,22 @@ const DietHero = ({diet}) => {
     if (diet === 'dieta-sportowa-na-redukcje') {
       return heroStyles.dietSportReduction
     }
+    if (diet === 'dieta-sportowa-na-mase') {
+      return heroStyles.dietSportMass
+    }
     if (diet === 'dieta-standard') {
       return heroStyles.dietStandard
     }
     if (diet === 'dieta-weganska') {
       return heroStyles.dietVegan
     }
+    if (diet === 'dieta-wegetarianska') {
+      return heroStyles.dietVege
+    }
+    if (diet === 'dieta-samuraja') {
+      return heroStyles.dietSamurai
+    }
+    return heroStyles.dietWeightLoss
   }
 
 

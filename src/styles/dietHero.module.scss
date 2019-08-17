@@ -39,6 +39,24 @@
   background-color: #EDE8C3;
 }
 
+.diet-vege {
+  background: url('../images/dietHeros/Dieta wegetarianska - poprawiona.jpg') center center no-repeat;
+  background-size: 85%, cover;
+  background-color: #EDE8C3;
+}
+
+.diet-sport-mass {
+  background: url('../images/dietHeros/Dieta sportowa na mase - poprawiona.jpg') center center no-repeat;
+  background-size: 85%, cover;
+  background-color: #EDE8C3;
+}
+
+.diet-samurai {
+  background: url('../images/dietHeros/Dieta samuraja - poprawiona.jpg') center center no-repeat;
+  background-size: 85%, cover;
+  background-color: #f6f3be;
+}
+
 @media (max-width: 1199px) {
   .diet-weight-loss {
     background-size: cover;
@@ -53,6 +71,15 @@
     background-size: cover;
   }
   .diet-vegan {
+    background-size: cover;
+  }
+  .diet-vege {
+    background-size: cover;
+  }
+  .diet-sport-mass {
+    background-size: cover;
+  }
+  .diet-samurai {
     background-size: cover;
   }
 }

@@ -5,7 +5,7 @@ const DietDescription = ({ diet, city, dietDescription, menu }) => {
 
   return (
     <div>
-      <h2>{diet} - {city ? city : "Łódź"}</h2>
+      <h1 className={dietDescriptionStyles.title}> {diet} - {city ? city : "Łódź"}</h1>
       <div className={dietDescriptionStyles.container}>
         <div className={dietDescriptionStyles.descriptionContainer}>{dietDescription && dietDescription.length > 0 ? dietDescription.map((description, i) => <p key={i}>{description}</p>) : <p>Test</p> }</div>
         <div className={dietDescriptionStyles.menuContainer}>
