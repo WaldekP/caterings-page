@@ -56,3 +56,11 @@
     min-height: 500px;
   }
 }
+
+@media (max-width: 500px) {
+
+  .menuContainer {
+    background: url("../images/menu/img_menu_bg.svg") no-repeat -10px center;
+    background-size: 250%;
+  }
+}
