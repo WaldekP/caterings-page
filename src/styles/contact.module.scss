@@ -2,64 +2,72 @@
 
 .wrapper {
   margin: 60px;
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin: 60px auto 0 auto;
-}
-
-.contactItem {
-  margin: 0 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  .details {
-    white-space: nowrap;
+  .localization {
+    display: flex;
+    justify-content: center;
     font-size: 20px;
+    margin: 0 15px;
   }
-  img {
-    width: 150px;
-    height: 150px;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 60px auto 0 auto;
+    .contactItem {
+      margin: 0 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .details {
+        white-space: nowrap;
+        font-size: 20px;
+      }
+      img {
+        width: 150px;
+        height: 150px;
+      }
+    }
   }
 }
 
-.map-container {
-  display: flex;
-  max-width: 1200px;
-  justify-content: center;
-  margin: 50px auto;
-  color: $intense-yellow;
-}
 
-.right-map-container {
-  background-color: $intense-yellow;
-  width: 50%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  color: $main-color;
-  p {
-    margin-left: 50px;
-    font-weight: 600;
-
-  }
-}
+//.map-container {
+//  display: flex;
+//  max-width: 1200px;
+//  justify-content: center;
+//  margin: 50px auto;
+//  color: $intense-yellow;
+//}
+//
+//.right-map-container {
+//  background-color: $intense-yellow;
+//  width: 50%;
+//  display: flex;
+//  align-items: flex-start;
+//  justify-content: center;
+//  flex-direction: column;
+//  color: $main-color;
+//  p {
+//    margin-left: 50px;
+//    font-weight: 600;
+//
+//  }
+//}
 
 @media (max-width: 799px) {
   .wrapper {
     margin: 30px 0;
+    .localization {
+      font-size: 17px;
+    }
   }
-  .map-container {
-    width: 100%;
-  }
-  .right-map-container {
-    display: none;
-  }
+  //.map-container {
+  //  width: 100%;
+  //}
+  //.right-map-container {
+  //  display: none;
+  //}
 
 }
