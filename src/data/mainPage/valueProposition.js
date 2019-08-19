@@ -4,6 +4,16 @@ export const valuePropositionData = {
     variety: "Proponujemy urozmaicone menu, zawierające różnorodne, oryginalne i smaczne posiłki. Inspiracji szukamy w kuchniach całego świata, dlatego też przygotowywane przez nas dania nie są nudne.",
     quality: "Stawiamy na najwyższą jakość. Każda dieta, którą posiadamy w ofercie, zostaje przygotowane z najlepszych, świeżych i sprawdzonych składników. Nasze dania dietetyczne gotujemy z zaangażowaniem i pasją.",
   },
+  aglomeracjaSlaska: {
+    elasticity: "W AfterFit wybierasz dowolne dania z diety! Skomponuj samodzielnie menu, dostosowując je pod swoje preferencje. Możesz zdecydować się tylko na te posiłki, które najbardziej Ci zasmakowały. U nas nie ma sztywnego jadłospisu!",
+    variety: "Czerpiemy inspiracje z kuchni całego świata! Catering dietetyczny AfterFit sprawi, że nie będziesz znudzony powtarzającymi się daniami. Proponujemy Ci urozmaicone menu, w skład którego wchodzą niebanalne, oryginalne i smaczne posiłki!",
+    quality: "W AfterFit każde danie jest przygotowywane ze świeżych i sprawdzonych składników! Stawiamy na najwyższą jakość. Menu układamy z pasją i zaangażowaniem, wychodząc naprzeciw oczekiwaniom wszystkich Klientów.",
+  },
+  trojmiasto: {
+    elasticity: "W cateringu dietetycznym AfterFit wybierasz tylko te dania, które lubisz. U nas nie obowiązuje sztywne menu. Dostosuj wszystko pod własne preferencje i jedz te potrawy, które przypadły Ci do gustu.",
+    variety: "Dieta pudełkowa AfterFit jest urozmaicona. Próbuj nowości i oryginalnych dań, inspirowanych różnymi smakami kuchni z całego świata. Z nami nie będziesz narzekał na nudę!",
+    quality: "Nasza dieta z dowozem przygotowywana jest tuż przed dostarczeniem pod Twoje drzwi. W AfterFit catering bazujemy na świeżych i sprawdzonych składnikach, pochodzących z pewnych źródeł!",
+  },
   warszawa: {
     elasticity: "Z naszego całego menu, możesz dowolnie wybierać posiłki. Brak sztywnego jadłospisu i opcja dostosowania wszystkiego pod indywidualne preferencje to ogromna zaleta. Samodzielnie zadecyduj, które dania najbardziej Ci zasmakowały, a my zadbamy o całą resztę.",
     variety: "Proponowane przez nas menu jest niezwykle urozmaicone. Szukamy inspiracji w kuchniach z całego świata, stąd tak szeroki wybór. Stawiamy na oryginalność, odpowiedni smak i różnorodność. Od teraz, nie będziesz narzekać na nudę.",
