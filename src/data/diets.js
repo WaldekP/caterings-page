@@ -659,10 +659,58 @@ export const diets = [
     cityDescription: {
       lodz: {
         description: [
-          "Dieta odchudzająca jest przeznaczona dla wszystkich, którzy chcą zrzucić zbędne kilogramy i nie są uczuleni na gluten oraz laktozę. Jest ona odpowiednia dla osób mniej aktywnych fizycznie.",
-          "Taki sposób odżywiania bazuje na mniejszej ilości węglowodanów, co pozwala ustabilizować lub zredukować masę ciała. Menu jest tu tak dobrane, że pozwoli wyeliminować „napady głodu”.",
-          "Dieta odchudzająca jest bogata jest w nabiał. Menu jest w tym przypadku obfite w chude mięso, warzywa, owoce, jaja, nasiona roślin strączkowych oraz orzechy. Zapiekanki warzywne, sałatki, jogurty i koktajle z pewnością będą sporym urozmaiceniem",
-          "Dzięki diecie odchudzającej zyskasz wymarzoną figurę i zmienisz swój tryb życie. Stanowi ona inwestycję w lepszy stan zdrowia i dobre samopoczucie.",
+          "Dieta wegetariańska jest przeznaczona dla osób, które chcą wyeliminować mięso ze swojego codziennego menu. Dieta wegetariańska jest zdrowa, pod warunkiem że wiesz, jak prawidłowo komponować jadłospis. Menu jest smaczne i różnorodne, gdyż wykorzystuje bogactwo roślin, owoców, kasz, orzechów, nasion.",
+          "Każdy posiłek w diecie wegetariańskiej jest odpowiednio zbilansowany i zawiera właściwe proporcje i ilość składników odżywczych (białka, tłuszcze, węglowodany, witaminy, minerał). Dieta wegetariańska zapewnia zwiększenie ilości błonnika, witamin, potasu, magnezu i nienasyconych kwasów tłuszczowych.",
+          "Dania są smaczne, zdrowe, pożywne i sycące. Mimo tego, że nie zawierają mięsa, to po ich spożyciu, jesteś najedzony. Posiłki z diety wegetariańskiej zaspokajają dzienny bilans energetyczny i co najważniejsze, mają pozytywny wpływ na Twoją figurę. ",
+          "Przejście na wegetarianizm zmniejszy ryzyko zachorowania na choroby serca, cukrzycę, otyłość i nowotwory. Bardzo szybko zaczniesz dostrzegać wpływ nowej diety na zdrowie i kondycję organizmu.",
+        ]
+      },
+      warszawa: {
+        description: [
+          "Dieta Wegetariańska jest przeznaczona dla osób, chcących wyeliminować mięso ze swojego menu. Czerpie ona z takich składników, jak rośliny, owoce, kasze, orzechy, nasiona. Posiłki z menu są różnorodne, sycące, smaczne i przede wszystkim zdrowe.",
+          "Odpowiednie ilości oraz proporcje składników odżywczych, takich jak: białka, tłuszcze, węglowodany, witaminy, minerały, sprawiają, że dieta wegetariańska jest odpowiednio zbilansowana.",
+          "Wbrew obiegowym opiniom, dania bezmięsne są urozmaicone i sprawiają, że jesteśmy najedzeni, ale jednocześnie nie jest nam po jedzeniu ciężko. Menu bezmięsne pozwala cieszyć się szczupłą sylwetką.",
+          "Dieta wegetariańska pozytywnie wpływa na nasze zdrowie i oraz ogólną kondycję organizmu. Pozwala ona zmniejszyć ryzyko zachorowania na choroby serca, cukrzycę, otyłość i nowotwory.",
+        ]
+      },
+      bydgoszcz: {
+        description: [
+          "Dieta Wegetariańska jest niezwykle popularna od wielu lat. Będzie to idealna opcja dla wszystkich, którzy chcą poprawić kondycję swojego organizmu oraz przestawić się na zdrowy tryb życia.",
+          "Zmniejsza ono ryzyko zachorowania np. na choroby serca, cukrzycę, otyłość i nowotwory. Wszystko dzięki właściwemu zbilansowaniu diety oraz odpowiedniemu doborowi białka, tłuszczów, węglowodanów i minerałów.",
+          "Posiłki wchodzące w skład menu wegetariańskiego wykorzystują rośliny, owoce, kasze oraz nasiona. Produkty te można wykorzystać na wiele sposób, dzięki czemu posiłki są sycące, smaczne i przede wszystkim zdrowe.",
+          "Dieta wegetariańska pozwoli wypracować szczupłą sylwetkę, przy jednoczesnym zaspokojeniu dziennego bilansu energetycznego. Różnorodność menu sprawi, że na pewno nie będziesz narzekał na monotonne jedzenie.",
+        ]
+      },
+      krakow: {
+        description: [
+          "Dieta Wegetariańska jest bardzo popularna. Kieruje się ją do wszystkich, chcących odstawić mięso. Takie odżywianie pozwala poprawić samopoczucie i kondycję organizmu. Wegetarianizm zmniejsza ryzyko zachorowania np. choroby serca, cukrzycę, otyłość i nowotwory.",
+          "Dieta wegetariańska opiera się na roślinach, owocach, kaszach, orzechach i nasionach. Posiłki są smaczne i urozmaicone, a jednocześnie sycące.",
+          "Menu jest odpowiednio zbilansowane, gdyż zawiera odpowiednią ilość białka, tłuszczów, węglowodanów, witamin i minerałów.",
+          "Dieta wegetariańska zaspokaja dzienny bilans energetyczny, gdyż posiłki są pożywne i sycące. Takie odżywianie jednocześnie przyczynia się do wypracowania szczupłej sylwetki.",
+        ]
+      },
+      poznan: {
+        description: [
+          "Dieta Wegetariańska czerpie z bogactwa roślin, owoców, kasz, orzechów, nasion. Będzie ona odpowiednia dla wszystkich osób, chcących odstawić mięso.",
+          "Wbrew pozorom, menu wegetariańskie jest niezwykle urozmaicone. Dania są smaczne, sycące i przede wszystkim zdrowe. Nie tylko zaspokajają one dzienny bilans energetyczny, ale i pozwalają zachować szczupłą sylwetkę.",
+          "Jadłospis jest prawidłowo zbilansowany. Dania dostarczają niezbędnych składników odżywczych (białka, tłuszcze, węglowodany, witaminy, minerały) w odpowiednich ilościach.",
+          "Przejście na wegetarianizm wpływa pozytywnie na nasze zdrowie- zmniejsza się ryzyko wystąpienia chorób, takich jak np. choroby serca, cukrzyca, otyłość i niektóre nowotwory.",
+        ]
+      },
+      torun: {
+        description: [
+          "Dieta Wegetariańska ma ogromny wpływ na nasze zdrowie i kondycję organizmu – zmniejsza ryzyko zachorowania na wiele chorób cywilizacyjnych, np. choroby serca, cukrzycę, otyłość i nowotwory (szczególnie raka piersi, jajników oraz przewodu pokarmowego). Wegetarianizm to nie tylko dieta eliminująca mięso, to także zdrowy styl życia, który opiera się na swoistej filozofii.",
+          "Nasze wegetariańskie posiłki zostały tak opracowane, aby – wykorzystując bogactwo roślin, owoców, kasz, orzechów, nasion – dostarczyć różnorodne i smaczne dania.",
+          "Nasi dietetycy dobierają odpowiednie ilość oraz proporcje składników odżywczych, takich jak: białka, tłuszcze, węglowodany, witaminy, minerały, aby dieta wegetariańska była odpowiednio zbilansowana.",
+          "Dbamy o to, żeby posiłki w diecie były pożywne, sycące, zaspokajające dzienny bilans energetyczny – wbrew obiegowym opiniom dania bezmięsne doskonale sycą, a jednocześnie pozwalają zachować szczupłą sylwetkę.",
+        ]
+      },
+      wroclaw: {
+        description: [
+          "Dieta Wegetariańska to hit ostatnich lat. Przyczynia się ona do poprawy stanu zdrowia oraz ogólnej kondycji organizmu. Ryzyko chorób cywilizacyjnych, takich tak choroby serca, cukrzyca, otyłość i nowotwory, zostaje dzięki niej ograniczone.",
+          "Menu jest niezwykle urozmaicone, zdrowe, smaczne oraz sycące. Posiłki zaspokajają dzienny bilans energetyczny, ale też pozwalają zachować odpowiednią wagę i szczupłą sylwetkę.",
+          "Dieta wegetariańska jest odpowiednio zbilansowana. Proporcje składników odżywczych są prawidłowo dobrane, dzięki czemu dostarczasz organizmowi właściwą ilość białka, tłuszczu, węglowodanów, witamin i minerałów.",
+          "Podkreślamy, że wykorzystując bogactwo roślin, owoców, kasz, orzechów i nasion, można stworzyć naprawdę zróżnicowane, smaczne i sycące dania.",
         ]
       },
       sopot: {
