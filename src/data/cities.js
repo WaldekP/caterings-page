@@ -1,27 +1,15 @@
 export const cities = [
   {
+    value: 'aglomeracja-slaska',
+    label: 'Agl. śląska'
+  },
+  {
     value: 'bydgoszcz',
     label: 'Bydgoszcz'
   },
   {
-    value: 'gdansk',
-    label: 'Gdańsk'
-  },
-  {
-    value: 'gdynia',
-    label: 'Gdynia'
-  },
-  {
-    value: 'katowice',
-    label: 'Katowice'
-  },
-  {
     value: 'krakow',
     label: 'Kraków'
-  },
-  {
-    value: 'lublin',
-    label: 'Lublin'
   },
   {
     value: 'lodz',
@@ -33,12 +21,12 @@ export const cities = [
     label: 'Poznań'
   },
   {
-    value: 'sopot',
-    label: 'Sopot'
-  },
-  {
     value: 'torun',
     label: 'Toruń'
+  },
+  {
+    value: 'trojmiasto',
+    label: 'Trójmiasto'
   },
   {
     value: 'warszawa',

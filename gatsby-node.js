@@ -9,7 +9,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
   //   acc.push(curr.value)
   //   return acc
   // },[])
-  const citiesArray = ['warszawa', 'poznan', 'wroclaw', 'gdansk', 'gdynia', 'wroclaw', 'torun', 'bydgoszcz', 'lublin', 'krakow', 'sopot', 'katowice']
+  const citiesArray = ['warszawa', 'poznan', 'wroclaw', 'trojmiasto', 'wroclaw', 'torun', 'bydgoszcz', 'krakow', 'aglomeracja-slaska']
   const diets = ['paleo', 'samuraja', 'sportowa-na-redukcje', 'odchudzajaca', 'weganska', 'wegetarianska', 'standard', 'sportowa-na-mase']
   // const res = await graphql(`
   //   query {

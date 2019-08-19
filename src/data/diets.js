@@ -311,10 +311,60 @@ export const diets = [
     cityDescription: {
       lodz: {
         description: [
-          "Dieta odchudzająca jest przeznaczona dla wszystkich, którzy chcą zrzucić zbędne kilogramy i nie są uczuleni na gluten oraz laktozę. Jest ona odpowiednia dla osób mniej aktywnych fizycznie.",
-          "Taki sposób odżywiania bazuje na mniejszej ilości węglowodanów, co pozwala ustabilizować lub zredukować masę ciała. Menu jest tu tak dobrane, że pozwoli wyeliminować „napady głodu”.",
-          "Dieta odchudzająca jest bogata jest w nabiał. Menu jest w tym przypadku obfite w chude mięso, warzywa, owoce, jaja, nasiona roślin strączkowych oraz orzechy. Zapiekanki warzywne, sałatki, jogurty i koktajle z pewnością będą sporym urozmaiceniem",
-          "Dzięki diecie odchudzającej zyskasz wymarzoną figurę i zmienisz swój tryb życie. Stanowi ona inwestycję w lepszy stan zdrowia i dobre samopoczucie.",
+          "Dieta sportowa na masę jest przeznaczona dla wszystkich osób, które są zmotywowane do tego, by zbudować swoją masę mięśniową i \n" +
+          "które intensywnie trenują na siłowni.",
+          "Budowanie masy mięśniowej to proces długotrwały, w którym liczy się odpowiednia strategia. Zwiększenie ilości spożywanych kalorii musi iść z parze z odpowiednim planem treningowym, który pomoże Ci dobrać specjalista.",
+          "W diecie na masę kluczowe są tzw. dobre kalorie, dobre tłuszcze i dobre węglowodany. Pochodzą one z pełnowartościowych i nieprzetworzonych produktów. Wszystkie posiłki z menu są skomponowane według tych wytycznych.",
+          "Składniki są łączone w taki sposób, by wpływały na zwiększenie masy mięśniowej. Dieta sportowa na masę, podobnie jak dieta Samuraja, jest bogata w mięso, ryby oraz jaja.",
+        ]
+      },
+      warszawa: {
+        description: [
+          "Dieta Sportowa na masę jest przeznaczona dla wszystkich tych, którzy pragną poprawić swoją rzeźbę poprzez zwiększenie masy mięśniowej.",
+          "Menu jest bogate w mięso, ryby i jaja (podobnie jak w diecie Samuraja). Posiłki bazują na tzw. dobrych kaloriach, dobrych tłuszczach i dobrych węglowodanach,które pochodzą z pełnowartościowych i zdrowych produktach.",
+          "Głównym celem diety sportowej jest sprawienie, by nastąpił odpowiedni przyrost masy mięśniowej. W tym celu, wszystkie składniki w menu są odpowiednio rozłożone i ze sobą połączone.",
+          "Podkreślamy, że budowanie masy mięśniowej oprócz większej ilości spożywanych kalorii, opiera się również na odpowiedniej strategii treningowej. W tym przypadku dieta musi iść w parze z właściwą aktywnością fizyczną.",
+        ]
+      },
+      bydgoszcz: {
+        description: [
+          "Dieta Sportowa na masę jest przeznaczona dla wszystkich osób, które chcą zwiększyć swoją masę mięśniową i wyrobić odpowiednią muskulaturę.",
+          "Menu bazuje na dobrych kaloriach, dobrych tłuszczach i dobrych węglowodanach. Pochodzą one ze zdrowych, pełnowartościowych oraz nieprzetworzonych produktów.",
+          "Posiłki są bogate w mięso, ryby i jaja (podobnie jak w diecie Samuraja). Odpowiednie połączenie składników gwarantuje, że dania przypadną Ci do gustu, jednocześnie przybliżając do celu, jakim jest zwiększenie masy mięśniowej.",
+          "Pamiętaj, że budowanie masy mięśniowej to proces wymagający konsekwencji. Odpowiednie odżywianie musi iść w parze z przemyślana strategią treningową.",
+        ]
+      },
+      krakow: {
+        description: [
+          "Dieta sportowa na masę jest odpowiednia dla wszystkich tych, którzy chcą zwiększyć swoją masę mięśniową oraz uwydatnić mięśnie.",
+          "Menu jest nakierowane na ten cel. Opiera się ono na mięsie, rybach i jajach (podobnie jak w diecie Samuraja). Wszystkie składniki są odpowiednio zbilansowane i połączone ze sobą.",
+          "Dieta Sportowa na masę bazuje na dobrych kaloriach, dobrych tłuszczach i dobrych węglowodanach. Składniki te pochodzą z nieprzetworzonych i pełnowartościowych produktów.\n" +
+          "\n",
+          "Budowanie masy mięśniowej to proces wymagający konsekwencji. Do realizacji celu, niezbędne jest połączenie diety oraz odpowiedniego planu treningowego.",
+        ]
+      },
+      poznan: {
+        description: [
+          "Dieta Sportowa na masę będzie odpowiednia dla wszystkich osób, chcących popracować nad swoją muskulaturą, czyli zwiększyć masę mięśniową.",
+          "Całe menu opiera się na tzw. dobrych kaloriach, dobrych tłuszczach oraz dobrych węglowodanach. Składniki te pochodzą wyłącznie z pełnowartościowych i nieprzetworzonych produktów.",
+          "Jadłospis zawiera dużą ilość mięsa, ryb i jaj (podobnie jak w diecie Samuraja). Dania zawierają sporą ilość kalorii, gdyż mają za zadanie przyczynić się do budowy masy mięśniowej.",
+          "Budowanie masy mięśniowej to proces długotrwały, wymagający konsekwencji. Niezwykle istotny jest tutaj odpowiednio dobrany plan treningowy, który musi iść w parze z dietą.",
+        ]
+      },
+      torun: {
+        description: [
+          "Dieta sportowa na masę jest skierowana do osób chcących zwiększyć swoją masę mięśniową.",
+          "W diecie tej staramy się w odpowiedni sposób łączyć i wykorzystywać składniki w jadłospisie tak, aby były ukierunkowane na zwiększenie masy mięśniowej Klienta. Podobnie jak dieta Samuraja bogata jest w mięso, ryby oraz jaja.",
+          "Warto pamiętać, że budowanie masy mięśniowej to nie tylko zwiększenie ilości spożywanych kalorii, ale przede wszystkim przemyślana strategia treningowa. Przy budowaniu masy mięśniowej dieta powinna współgrać z planem treningowym.",
+          "Dieta Sportowa na masę bazuje na tzw. dobrych kaloriach, dobrych tłuszczach i dobrych węglowodanach, które pochodzą z pełnowartościowych i nie przetworzonych produktów.",
+        ]
+      },
+      wroclaw: {
+        description: [
+          "Dieta Sportowa na masę na masę będzie idealną opcją dla wszystkich osób, które pragną stworzyć odpowiednią rzeźbę oraz zwiększyć swoją masę mięśniową.",
+          "W diecie sportowej na masę najistotniejsze są tzw. dobre kalorie, tłuszcze i węglowodany, Dieta sportowa na masę bazuje na tzw. dobrych kaloriach, dobrych tłuszczach i dobrych węglowodanach. Składniki te pozyskuje się z nieprzetworzonych, pełnowartościowych produktów.",
+          "Posiłki są ukierunkowane na zwiększenie masy mięśniowej, a więc składają się z odpowiednio połączonych i dobranych produktów. Dieta sportowa na masę jest bogata jest w mięso, ryby oraz jaja (podobnie jak dieta Samuraja).",
+          "Podkreślamy, że budowanie masy mięśniowej nie opiera się wyłącznie na diecie i na zwiększaniu ilości spożywanych kalorii, ale również na odpowiedniej strategii treningowej. Dieta i ćwiczenia muszą iść tu w parze.",
         ]
       },
       sopot: {
