@@ -8,6 +8,7 @@ import DietGallery from "../components/dietGallery"
 import DietsFaq from "../components/dietsFaq"
 import DietPricing from "../components/dietPricing"
 import CallToAction from "../components/callToAction"
+import SEO from "../components/seo"
 
 const Diet = ({ pageContext }) => {
   const findDiet = () => {
@@ -53,6 +54,7 @@ const Diet = ({ pageContext }) => {
 
   return (
     <Layout pageContext={pageContext}>
+      <SEO title={`Dieta pudełkowa paleo`} />
       <DietHero diet={pageContext && getDietSlug()}/>
       <DietDescription
         diet={findDiet() && findDiet().fullName}

@@ -12,6 +12,7 @@ import Faq from "../components/faq"
 import Contact from "../components/contact"
 import indexStyles from '../styles/index.module.scss'
 import PageContext from "../context/pageContext"
+import { cities } from "../data/cities"
 
 const IndexPage = ({ pageContext }) => {
   const { menuTab } = useContext(PageContext)
@@ -44,10 +45,24 @@ const IndexPage = ({ pageContext }) => {
   const scrollToRef = ref => {
     return window.scroll({ top: ref.current.offsetTop, behavior: 'smooth' })
   }
-  ;
+  const getCitySlug = () => {
+    return pageContext.city ? pageContext.city : "lodz"
+  }
+
+  const findCity = () => {
+    const citySlug = getCitySlug()
+    const cityObject = cities.find(city => city.value === citySlug)
+    if (cityObject) {
+      if (cityObject.label === 'Agl. śląska') {
+        return "Aglomeracja śląska"
+      }
+      return cityObject.label
+    }
+    return "cityObject && cityObject.label"
+  }
   return (
     <Layout pageContext={pageContext}>
-      <SEO title={`Catering dietetyczny Afterfit`} />
+      <SEO title={`Afterfit catering dietetyczny ${findCity()}, dieta pudełkowa z dowozem `} />
       <div className={indexStyles.container}>
         <Hero/>
         <ValueProposition ref={valuePropositionRef} pageContext={pageContext}/>
