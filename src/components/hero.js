@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from "react"
 import heroStyles from "../styles/hero.module.scss"
+import { Link } from "gatsby"
 
 const Hero = () => {
   const [yPosition, changePosition] = useState(
@@ -27,7 +28,9 @@ const Hero = () => {
             Afterfit
           </h1>
           <h3>Odkryj smak pasji i zaangażowania</h3>
-          <button>Zamów dietę</button>
+          <Link to="/zamowienie">
+            <button>Zamów dietę</button>
+          </Link>
         </div>
       </div>
     </div>
