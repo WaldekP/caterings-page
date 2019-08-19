@@ -47,7 +47,7 @@ const Diet = ({ pageContext }) => {
     const descriptions =
       diet && diet.cityDescription[city]
         ? diet.cityDescription[city]
-        : diet.cityDescription["lodz"]
+        : city === 'aglomeracja-slaska' ? diet.cityDescription["aglomeracjaSlaska"] : diet.cityDescription["lodz"]
     return descriptions && descriptions.description
   }
 

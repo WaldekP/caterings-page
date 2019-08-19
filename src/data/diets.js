@@ -40,6 +40,20 @@ export const diets = [
           "Dieta odchudzająca jest bogata jest w nabiał. Menu jest w tym przypadku obfite w chude mięso, warzywa, owoce, jaja, nasiona roślin strączkowych oraz orzechy. Zapiekanki warzywne, sałatki, jogurty i koktajle z pewnością będą sporym urozmaiceniem",
           "Dzięki diecie odchudzającej zyskasz wymarzoną figurę i zmienisz swój tryb życie. Stanowi ona inwestycję w lepszy stan zdrowia i dobre samopoczucie.",
       ]},
+      trojmiasto: {
+        description: [
+          "Dieta Odchudzająca jest przeznaczona dla osób, które nie są aktywne fizycznie, jednakże za pomocą odpowiedniego odżywiania, chciałby zredukować swoją wagę. Menu zawiera gluten oraz laktozę.",
+          "W diecie odchudzającej, kluczową kwestią jest odpowiedni dobór kalorii. Właściwie skomponowane menu pozwoli nam się uporać ze zbędnymi kilogramami oraz cieszyć się wymarzoną figurą i lepszym samopoczuciem.",
+          "Menu bazuje na nabiale, chudym mięsie, warzywach, owocach, jajach, nasionach roślin strączkowych, orzechach. Znajdziemy tu sporo sałatek, zapiekanek warzywnych, jogurtów i koktajli.",
+          "Dieta odchudzająca pozwoli Ci uporać się z tzw. „atakami głodu”. Mniejsza ilość węglowodanów aniżeli w diecie standardowej, została tu odpowiednio rozłożona.",
+        ]},
+      aglomeracjaSlaska: {
+        description: [
+          "Dieta Odchudzająca jest odpowiednia dla wszystkich chcących schudnąć, a także się zdrowo odchudzać. Dieta ta przeznaczona jest dla osób mało aktywnych fizycznie oraz mogących spożywać gluten i laktozę.",
+          "Menu jest bogate w nabiał, chude mięso, warzywa, owoce, jaja, nasiona roślin strączkowych i orzechy. Sałatki, jogurty, koktajle i zapiekanki warzywne świetnie je uzupełniają.",
+          "Dieta odchudzająca opiera się na mniejszej ilości węglowodanów. Są one tak rozłożone, by wyeliminować „napady głodu”. Wpłynie to na ustabilizowanie wagi.",
+          "Dzięki diecie odchudzającej wyrobisz zdrowe nawyki żywieniowe, lepiej się poczujesz i dodatkowo schudniesz.",
+        ]},
       warszawa: {
         description: [
           "Dieta odchudzająca jest przeznaczona dla osób, które chcą schudnąć, ale nie są przy tym aktywne fizycznie. Menu zawiera produkty z glutenem i laktozą.",
@@ -91,7 +105,6 @@ export const diets = [
         ]
       }
     },
-    shortDescription: "Bla bla bla",
     image: "../images/diets/dieta-paleo.png"
   },
   {
@@ -136,6 +149,20 @@ export const diets = [
           "Tego rodzaju menu pozwoli Ci wyrobić właściwe i zdrowe nawyki żywieniowe, a w efekcie utracić zbędne kilogramy. Przestawisz się na zdrowy tryb życia i zadbasz o gospodarkę lipidową oraz insulinową swojego organizmu.",
         ]
       },
+      trojmiasto: {
+        description: [
+          "Dieta Paleo bazuje na prostym i jasnym jadłospisie. Menu jest wysokobiałkowe, o sporej zawartości tłuszczów, a deficytowe w węglowodany. Paleo to dieta bezglutenowa.",
+          "Kluczowe jest tutaj wyeliminowanie żywności przetworzonej, zboża, produktów mlecznych, roślin strączkowych. Dieta Paleo zawiera duże ilości żelaza hemowego, błonnika oraz kwasów tłuszczowych omega 3.",
+          "Menu kładzie nacisk na wszelkie mięsne źródła białka, ryby i jaja. Dania zawierają również owoce i warzywa oraz orzechy i pestki.",
+          "Dieta Paleo pozwoli Ci zacząć się zdrowo i odpowiednio odżywiać. Przy okazji zadbasz o gospodarkę lipidową oraz insulinową swojego organizmu. Dodatkowym efektem będzie zredukowanie wagi ciała.",
+        ]},
+      aglomeracjaSlaska: {
+        description: [
+          "Dieta Paleo, czyli tzw. „jadłospis człowieka pierwotnego” skupia się na wyrobieniu odpowiednich nawyków żywieniowych. Bazuje ona przede wszystkim na naturalnych produktach.",
+          "Menu zawiera spore ilości żelaza hemowego, błonnika, kwasów tłuszczone omega 3. Eliminuje ona gluten, produkty przetworzone i modyfikowane, zboża, rośliny strączkowe, produkty mleczne.",
+          "Dieta Paleo jest wysokobiałkowa. Posiłki zawierają sporą ilość tłuszczów oraz mało węglowodanów. Dania składają się przede wszystkim z mięsa, ryb, jaj, warzyw, owoców, orzechów i pestek",
+          "Takie odżywianie pozwoli Ci zadbać o odpowiednią gospodarkę lipidową i insulinową organizmu oraz przestawić się na zdrowy tryb życia. Dodatkowo, zredukujesz swoją wagę.",
+        ]},
       bydgoszcz: {
         description: [
           "Dieta Paleo to typowa dieta wysokobiałkowa. Posiłki wchodzące w skład menu zawierają sporo tłuszczu, zaś mało węglowodanów.",
@@ -228,6 +255,20 @@ export const diets = [
           "Takie menu będzie idealne, dla osób cierpiących nietolerancje pokarmowe, ale chcących dostarczać organizmowi pełnowartościowych składników odżywczych. Dieta Samuraja jest idealną dietą dla osób ćwiczących, którzy pragną, aby ich sylwetka wyglądała jeszcze lepiej.",
         ]
       },
+      trojmiasto: {
+        description: [
+          "Dieta Samuraja jest odpowiednia dla osób aktywnych fizycznie, które borykają się z nietolerancjami pokarmowymi. Menu jest pozbawione glutenu oraz laktozy.",
+          "Dieta Samuraja czerpie z diety Paleo oraz sportowej na masę. W posiłkach znajduje się więcej węglowodanów aniżeli w Paleo.",
+          "Dania składają się z mięsa, ryb, jaj, owoców, warzyw, roślin strączkowych. Takie menu pozwoli Ci wyrobić odpowiednie nawyki jedzeniowe.",
+          "Przechodząc na dietę Samuraja, masz gwarancję, że do Twojego organizmu będą dostarczane pełnowartościowe składniki odżywcze, które zaspokoją dzienny bilans energetyczny. Zdrowe odżywianie jest możliwe także przy nietolerancjach pokarmowych!",
+        ]},
+      aglomeracjaSlaska: {
+        description: [
+          "Dieta Samuraja przeznaczona jest dla osób uprawiających sport i aktywnych fizycznie. Eliminuje ona gluten oraz laktozę, więc będzie idealna dla wszystkich zmagających się z nietolerancjami pokarmowymi.",
+          "Dieta Samuraja czerpie z diety Paleo i sportowej na masę. Posiłki są wzbogacone o większą ilość węglowodanów (aniżeli w Paleo). Menu będzie idealne dla osób, lubiących mięso.",
+          "Dania zawierają również ryby, warzywa, owoce, jaja i rośliny strączkowe. Taka różnorodność gwarantuje zdrowe i smaczne posiłki.",
+          "Posiłki są tak komponowane, by dostarczać organizmowi pełnowartościowe składniki odżywcze, nawet przy alergiach pokarmowych i niemożliwości spożywania wielu produktów.",
+        ]},
       bydgoszcz: {
         description: [
           "Dieta Samuraja to idealna opcja dla osób uczulonych na laktozę oraz gluten. Jest ona dedykowana tym, którzy chcą się zdrowo odżywiać i są przy tym aktywni fizycznie.",
@@ -318,6 +359,23 @@ export const diets = [
           "Składniki są łączone w taki sposób, by wpływały na zwiększenie masy mięśniowej. Dieta sportowa na masę, podobnie jak dieta Samuraja, jest bogata w mięso, ryby oraz jaja.",
         ]
       },
+      trojmiasto: {
+        description: [
+          "Dieta Sportowa na masę jest odpowiednia dla wszystkich osób, którym zależy na wyrobieniu masy mięśniowej.",
+          "Zwiększanie masy mięśniowej jest procesem, w którym dieta musi iść w parze z odpowiednio i profesjonalnie dobranym planem treningowym.",
+          "Istotną kwestią jest tu zwiększenie ilość spożywanych kalorii. Dieta sportowa na masę bazuje na dobrych kaloriach, dobrych tłuszczach i dobrych węglowodanach- pochodzą one z produktów nieprzetworzonych.\n" +
+          "\n",
+          "Posiłki składają się z mięsa, ryb, jaj (podobnie jak w diecie Samuraja). Składniki są ze sobą prawidłowo połączone, tak by przybliżały Cię do celu, jakim jest zwiększenie masy mięśniowej.",
+        ]},
+      aglomeracjaSlaska: {
+        description: [
+          "Dieta sportowa na masę idealnie wpisuje się w potrzeby osób, które chcą uwydatnić swoją masę mięśniową i zadbać o odpowiednie kształty.",
+          "Samo budowanie masy mięśniowej to długotrwały proces. Do sukcesu konieczny jest również odpowiednio dobrany plan treningowy. Zwiększenie ilości spożywanych kalorii musi iść w parze z wysiłkiem fizycznym.",
+          "Dieta Sportowa na masę posiada jasny cel. Składniki są łączone tak, by zbudować masę mięśniową. Menu jest bogate w mięso, ryby i jaja (podobnie jak dieta Samuraja) i będzie odpowiadało wszystkim, lubiącym konkretne potrawy.\n" +
+          "\n",
+          "Kluczowe są tutaj dobre kalorie, dobre tłuszcze oraz dobre węglowodany. Znajdziemy je w nieprzetworzonych, pełnowartościowych produktach.\n" +
+          "\n",
+        ]},
       warszawa: {
         description: [
           "Dieta Sportowa na masę jest przeznaczona dla wszystkich tych, którzy pragną poprawić swoją rzeźbę poprzez zwiększenie masy mięśniowej.",
@@ -416,6 +474,21 @@ export const diets = [
           "Białko w zwiększonych proporcjach „podkręca metabolizm”, spalając tkankę tłuszczową, ale chroniąc przy tym mięśnie. Tym samym, budowanie odpowiedniej figury, powinno przebiegać bezproblemowo.",
         ]
       },
+      trojmiasto: {
+        description: [
+          "Dieta sportowa na redukcję jest przeznaczona dla osób, które chcą pozbyć nadmiaru tkanki tłuszczowej, ale jednocześnie zależy im na przeciwdziałaniu „spalaniu” mięśni.",
+          "Menu pozwoli zrzucić zbędne kilogramy. Zawiera ono mniejszą ilość węglowodanów i większą białka, które ma za zadanie „podkręcić metabolizm” i jednocześnie nie dopuścić do „spalania mięśni”.",
+          "Dieta Sportowa na redukcję ułatwia wcielenie w życie zasad zdrowego odżywiania, które wpłyną na lepsze samopoczucie oraz kondycję.",
+          "Proces redukcji tkanki tłuszczowej jest długotrwały i wymagający. Kluczowe jest tu trzymanie się odpowiedniego zapotrzebowania kalorycznego.",
+        ]},
+      aglomeracjaSlaska: {
+        description: [
+          "Dieta Sportowa na redukcję jest przeznaczona dla osób aktywnych fizycznie. Pomoże ona zrzucić zbędne kilogramy oraz pozbyć się tkanki tłuszczonej.",
+          "Menu jest odpowiednio zbilansowane. Posiłki dostarczają organizmowi wszystkich niezbędnych makroskładników. Zawierają one więcej białka i mniej węglowodanów.",
+          "Zwiększona ilość białka w diecie sportowej na redukcję napędza metabolizm i jednocześnie chroni przed spalaniem mięśni. Dzięki temu, będziesz tracił tkankę tłuszczową, a nie mięśnie.\n" +
+          "\n",
+          "Dieta sportowa na redukcję powinna iść w parze z odpowiednim treningiem, gdyż tylko wtedy będzie przynosiła odpowiednie i oczekiwane rezultaty. W żywieniu kluczowe jest trzymanie się wymaganego zapotrzebowania kalorycznego.",
+        ]},
       warszawa: {
         description: [
           "Dieta sportowa na redukcję będzie idealna dla osób, których celem jest pozbycie się zbędnej tkanki tłuszczowej i dodatkowych kilogramów.",
@@ -515,6 +588,23 @@ export const diets = [
           "Menu tej diety trafi w gust każdej osoby, która chce smacznie i zdrowo jeść, ale nie ma czasu na gotowanie, a tym bardziej na liczenie kalorii.",
         ]
       },
+      aglomeracjaSlaska: {
+        description: [
+          "Dieta standard jest przeznaczona dla wszystkich osób, które chcą się zdrowo odżywiać, ale brak im czasu na gotowanie i na zastanawianie się co mogą zjeść, a co niekoniecznie. Teraz nie musisz już liczyć kalorii!",
+          "Takie żywienie sprawi, że delikatnie zredukujesz masę ciała, ale jednocześnie odczujesz poprawę swojego stanu zdrowia i samopoczucia. Ponadto wyrobisz odpowiednie nawyki żywieniowe.",
+          "Dieta Standard jest odpowiednio zbilansowana, dzięki czemu zyskujesz gwarancję, że dostarczasz organizmowi wszystko to, co najlepsze oraz niezbędną ilość witamin i mikroelementów.",
+          "Od teraz wyeliminowanie szkodliwych nawyków jedzeniowych, będzie proste. Dieta standard udowadnia, że na co dzień można jeść zdrowo, smacznie i rozsądnie.",
+        ]},
+      trojmiasto: {
+        description: [
+          "Dieta Standard jest odpowiednią opcją dla osób, które chcą się zdrowo odżywiać, ale nie mają czasu na gotowanie, wymyślanie dań i liczenie kalorii.\n" +
+          "\n",
+          "Pozwoli ona zredukować wagę, ale jednocześnie wpłynie na stan Twojego zdrowia oraz na samopoczucie. Skutki zdrowego odżywiania odczujesz bardzo szybko.",
+          "Odpowiednie zbilansowanie daje Ci gwarancję, że każdy posiłek dostarcza Twojemu organizmowi niezbędnych składników odżywczych, witamin i mikroelementów.\n" +
+          "\n",
+          "Dieta standard pozwoli Ci przestawić się na zdrowy tryb życia oraz wyrobić odpowiednie nawyki jedzeniowe. Od teraz, masz pewność, że jesz dania składające się z najlepszych i starannie wybranych składników.\n" +
+          "\n",
+        ]},
       warszawa: {
         description: [
           "Dieta Standard jest dedykowana osobom, które pragną zachować aktualną wagę lub jedynie lekko ją skorygować. Głównym celem jest tu jednak przedstawienie się na zdrowe odżywianie.",
@@ -615,6 +705,21 @@ export const diets = [
           "Przy przestawieniu się na ten rodzaj żywienia zaleca się suplementację witaminy D oraz B12 (dostarczanie ich organizmowi poprzez produkty roślinny i zboża jest bardzo trudne).",
         ]
       },
+      aglomeracjaSlaska: {
+        description: [
+          "Dieta Wegańska zyskuje coraz większą popularność. Będzie ona idealna dla osób, które chcą ze swojego jadłospisu wyeliminować wszelkie produkty odzwierzęce, w tym również jajka, miód i nabiał.",
+          "Weganizm to bardziej radykalna forma wegetarianizmu. Menu składa się wyłącznie z posiłków przygotowanych z produktów roślinnych. Dania opierają się na roślinach, zbożach, orzechach, nasionach i algach morskich.",
+          "Składniki odżywcze są pozyskiwane z produktów roślinnych (np. z mleka sojowego, roślin strączkowych, orzechów, soi, soczewicy). Dieta wegańska minimalizuje wystąpienie np. otyłości, nadciśnienia, cukrzycy, nowotworów itp.",
+          "Tego typu żywienie wymaga dodatkowego przyjmowania witaminy D oraz witaminy B12, gdyż ciężko je uzupełnić ze składników roślinnych.",
+        ]},
+      trojmiasto: {
+        description: [
+          "Dieta Wegańska jest odpowiednia dla osób, które chciałaby ze swojego menu całkowicie wyeliminować produktu odzwierzęce.",
+          "Jadłospis bazuje na roślinach, zbożach, orzechach, nasionach i algach morskich. Potrzebne składniki odżywcze są pozyskiwane z produktów roślinnych(np. wapń z roślin strączkowych i zielonych warzyw, białko z orzechów, bobu itd.).",
+          "Dieta wegańska ma pozytywny wpływ na zdrowie. Zmniejsza ono ryzyko wystąpienia chorób takich, jak: otyłość, nadciśnienie, cukrzyca, nowotwory, kamica żółciowa i wiele innych.\n" +
+          "\n",
+          "Przy przejściu na weganizm, wskazana jest suplementacja witaminy D i witaminy B12 (gdyż ciężko je uzupełnić z produktów roślinnych).",
+        ]},
       warszawa: {
         description: [
           "Dieta Wegańska to bardziej restrykcyjna forma diety wegetariańskiej. Tu menu składa się tylko z produktów roślinnych. Wszystko, co pochodzi od zwierząt, jest wykluczane (np. jajka, nabiał, miód).",
@@ -715,6 +820,23 @@ export const diets = [
           "Przejście na wegetarianizm zmniejszy ryzyko zachorowania na choroby serca, cukrzycę, otyłość i nowotwory. Bardzo szybko zaczniesz dostrzegać wpływ nowej diety na zdrowie i kondycję organizmu.",
         ]
       },
+      aglomeracjaSlaska: {
+        description: [
+          "Dieta Wegetariańska wykorzystuje różnorodność roślin, owoców, kasz, orzechów i nasion, dzięki czemu menu jest smaczne, zdrowe, sycące i niejednorodne. Dodatkowo, przyczynia się ona do zachowania szczupłej sylwetki.\n" +
+          "\n",
+          "Odpowiednia ilość oraz proporcje białka, tłuszczów, węglowodanów, witamin i minerałów gwarantują, że posiłki zaspokoją dzienny bilans energetyczny.",
+          "Przechodząc na wegetarianizm, wyświadczasz ogromną przysługę swojemu organizmowi! Po krótkim czasie odczujesz poprawę stanu zdrowia oraz ogólnej kondycji i samopoczucia.",
+          "Dieta wegetariańska minimalizuje ryzyko zachorowania na choroby serca, cukrzycę, otyłość i nowotwory (piersi, jajników i przechodu pokarmowego).",
+        ]},
+      trojmiasto: {
+        description: [
+          "Dieta Wegetariańska opiera się na roślinach, owocach, kaszach i nasionach. Eliminuje ona mięso, jednak posiłki są sycące, smaczne i różnorodne.",
+          "Menu wegetariańskie wpływa na stan Twojego zdrowia oraz ogólnej kondycji organizmu. Przestawiając się na takie żywienie, zmniejsza się ryzyko zachorowania np. na choroby serca, cukrzycę, otyłość i nowotwory.\n" +
+          "\n",
+          "Prawidłowo dobrane proporcje i ilości składników odżywczych, takich jak: białka, tłuszcze, węglowodany, witaminy, minerały, gwarantuje zaspokojenie dziennego bilansu energetycznego.\n" +
+          "\n",
+          "Dieta wegetariańska pozwala zachować szczupłą sylwetkę, a jednocześnie doskonale sprawia, że jesz zdrowo, smacznie i różnorodnie.",
+        ]},
       warszawa: {
         description: [
           "Dieta Wegetariańska jest przeznaczona dla osób, chcących wyeliminować mięso ze swojego menu. Czerpie ona z takich składników, jak rośliny, owoce, kasze, orzechy, nasiona. Posiłki z menu są różnorodne, sycące, smaczne i przede wszystkim zdrowe.",
