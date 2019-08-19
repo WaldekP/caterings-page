@@ -97,4 +97,8 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 Dodawanie kolejnego miasta:
-1. Dodac miasto w gatsby-node, w cities.js w folderze data, w valuePropositionData
+1. Dodac miasto w gatsby-node,
+2. W cities.js w folderze data,
+3. W valueProposition.js folderze data -> mainPage
+4. W faq.js w folderze data -> mainPage
+5. W diets.js w folderze data dla kazdej diety

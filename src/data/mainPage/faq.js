@@ -61,6 +61,196 @@ export const faq = {
       },
     }
   },
+  trojmiasto: {
+    general: {
+      1: {
+        question: "Do jakich miast dowozicie catering dietetyczny AfterFit?",
+        answer: "Nasze dietetyczne boksy dostarczamy do następujących miast: Łódź, Pabianice, Zgierz, Aleksandrów, Andrespol, Zduńska Wola, Wiśniowa Góra, Kalonka, \n" +
+          "Warszawa, Wrocław, Poznań, Kraków, Gdańsk, Gdynia, Sopot, Toruń, Bydgoszcz, Ozorków, Łęczyca, Katowice, Zabrze, Gliwice, Bytom."
+      },
+      2: {
+        question: "Kiedy odbywają się dostawy cateringu dietetycznego AfterFit?",
+        answer: <span>Dostawy naszych dietetycznych boksów odbywają się w iinnych godzinach w zależności od miasta:<br/><br/>
+          Łódź – od godziny 19-23 dnia poprzedzającego.<br/>
+          Warszawa – od godziny 19-23 dnia poprzedzającego.<br/>
+          Wrocław, Kraków, Aglomeracja Śląska, Poznań, Trójmiasto, Toruń, Bydgoszcz – od godziny 5-9 rano (w uwagach do zamówienia proszę zaznaczyć do której godziny najpóźniej ma być dostarczona dieta).</span>
+      },
+      3: {
+        question: "Jakie są zniżki na diety AfterFit?",
+        answer: <spna>
+          Na zamówienie powyżej 14 dni dajemy 5% rabatu <br/>
+          Na zamówienie powyżej 30 dni dajemy 10% rabatu <br/>
+          Na zamówienie każdej kolejnej diety na ten sam adres dajemy 5 % rabatu na tę dietę (pierwsza dieta pozostaje bez rabatu).</spna>
+      },
+      4: {
+        question: "Na czym polega dieta pudełkowa?",
+        answer: "Dieta pudełkowa składa się ze specjalnie skomponowanych i dobranych posiłków. Są one przygotowywane zgodnie z preferencjami Klientów i dostarczane wprost pod Twoje drzwi. Ty sam wskazujesz nam adres dostawy- może to być zarówno dom, jak też praca. My się dostosujemy.\n" +
+          "\n" +
+          "AfterFit posiada w ofercie catering dietetyczny na lekko. Podkreślamy, że każde danie jest przygotowywane z dbałością o każdy detal. Stawiamy na najwyższą jakość oraz na odpowiednie zapotrzebowanie kaloryczne. Robimy wszystko, by wychodzić naprzeciw oczekiwaniom Klientów. Jeśli chcesz zdrowo jeść, to na pewno znajdziesz u nas odpowiednią opcję dla siebie!\n" +
+          "\n" +
+          "W AfterFit Catering, posiłki są przygotowywane na bieżąco, tuż przed dostarczeniem do Ciebie. Każde pudełko jest hermetycznie zapakowane, dzięki czemu danie zachowuje maksymalną świeżość. Catering dietetyczny fit dowozimy wieczorami, dokładnie tam, gdzie nam wskażesz. Daje Ci to pełną swobodę. Możesz zjeść śniadanie tak szybko, jak tylko zechcesz, nie czekając na swoje pudełka.\n" +
+          "\n" +
+          "Dieta pudełkowa z dowozem do domu to znakomite rozwiązanie, które pozwoli Ci zaoszczędzić czas i energię. Teraz nie musisz robić zakupów, wymyślać menu, gotować i sprzątać. Ty wybierasz dania, a my zatroszczymy się o całą resztę i dostarczymy we wskazane przez Ciebie miejsca. Mniej obowiązków oznacza więcej czasu dla Ciebie. Masz wreszcie chwilę dla siebie! Spędzaj więcej czasu na realizowaniu swoich pasji, na treningu, czy wreszcie z bliskimi i rodziną. Dieta z dowozem pozwoli Ci przestawić się na zdrowy tryb życia! Mało tego, zyskasz pewność, że dostarczasz organizmowi wyłącznie najlepsze składniki odżywcze.",
+      }
+    },
+    dietSelection: {
+      1: {
+        question: "Czy w ofercie dostępne są diety dla osób nietolerujących laktozy oraz glutenu?",
+        answer: "AfterFit posiada w swojej ofercie także catering dietetyczny bezglutenowy oraz bezlaktozowy. Opcje te są dedykowane osobom zmagających się z różnymi nietolerancjami pokarmowymi. W takich przypadkach, zdrowe odżywianie jest podstawą, ale jednocześnie samodzielne skomponowanie menu nastręcza mnóstwo trudności, gdyż łatwo o zaniedbania związane z niewystarczającą podażą składników odżywczych. Jeśli nie chcesz jeść wciąż jeść tego samego, nie masz pomysłu, nie umiesz gotować, czy wreszcie nie posiadasz wystarczającej wiedzy, to zapoznaj się z propozycją AfterFit. Osoby cierpiące na nietolerancje pokarmowe, mają do wyboru dwie diety bezglutenowe i bezlaktozowe: Samuraja i Paleo.\n" +
+          "\n" +
+          "Dieta Samuraja jest przeznaczona dla osób regularnie ćwiczących i uprawiających sport. W takich przypadkach posiłki węglowodanowe muszą być przyjmowane zarówno przed, jak i po treningu.\n" +
+          "\n" +
+          "Dieta Paleo jest przeznaczona dla osób, które cierpią na chorobę Hashimoto, celiakię oraz insulinoodporność. Perfekcyjnie dobrane menu gwarantuje nie tylko smaczne posiłki, ale i dostarczenie organizmowi tego, co najlepsze.\n" +
+          "\n" +
+          "Dieta Paleo i Dieta Samuraja od AfterFit udowadniają, że nawet przy nietolerancjach pokarmowych i przy braku możliwości spożywania wielu produktów, zdrowe odżywianie jest możliwe. Mało tego, posiłki z naszego menu na pewno Ci zasmakują!",
+      },
+      2: {
+        question: "Czy w AfterFit Catering znajdę dietę z niskim indeksem glikemicznym?",
+        answer: "Diety o niskim indeksie glikemicznym produktów, również znajdują w ofercie AfterFit. Dieta Odchudzająca oraz Dieta Samuraja to opcje, które cieszą się ogromną popularnością, głównie z tego względu, że dają widoczne rezultaty w postaci chudnięcia oraz wspierają zdrowe odżywianie. Bazują one na produktach o niskim lub średnim indeksie glikemicznym.\n" +
+          "\n" +
+          "Sam indeks glikemiczny działa w następujący sposób: im jest on wyższy, tym szybciej rośnie cukier a następnie spada. W efekcie, po szybkim najedzeniu się i tak jesteśmy głodni. Kiedy jemy produkty z wysokim indeksem glikemicznym, to często mamy do czynienia z napadami głodu. Dieta z niskim indeksem glikemicznym, skutecznie będzie przeciwdziałać temu procesowi, a dodatkowo wpłynie na utratę wagi w rozsądny sposób. Jeśli zależy Ci na tym, by zdrowo schudnąć, to ta opcja będzie idealna. Postaw na catering dietetyczny z dowozem do domu i nie trać czasu za zakupy, wymyślanie dań, gotowanie i sprzątanie!\n" +
+          "\n" +
+          "Propozycje od AfterFit bazują na produktach z niskim lub średnim indeksem glikemicznym. W przypadku Diety Odchudzającej, ten współczynnik liczy się najbardziej. Sama podaż kalorii nie jest tu aż tak istotna. Dlaczego? Otóż nawet spożycie dziennie 1200 kcal, ale pochodzących z przetworzonego jedzenia i z półproduktów nie przyczyni się do schudnięcia. Dlaczego? Otóż, chodzi tu o to, że dostarczamy organizmowi jedynie pustych kalorii. Tymczasem skuteczna dieta bazuje na niezbędnych i pełnowartościowych składników odżywczych, pochodzących m.in. z warzyw, owoców, nieprzetworzonych zbóż itd. Trzymanie się tej zasady sprawi, że będziesz gubić kilogramy, ale bez potrzeby restrykcyjnego odchudzania się.\n" +
+          "\n" +
+          "Podkreślamy, że Dieta Odchudzająca o niskim poziomie glikemicznym, jest przeznaczona tylko dla mało aktywnych osób, które na co dzień nie trenują i nie uprawiają sportu. Takie menu, ma za zadaniem wspomóc redukcję tkanki tłuszczowej.\n" +
+          "\n" +
+          "Jeśli chcesz zbudować masę mięśniową, to Dieta Sportowa na pewno okaże się dla Ciebie idealna.",
+      },
+      3: {
+        question: "Czy mogę stosować diety z oferty AfterFit przy stanach chorobowych?",
+        answer: "Choroby, alergie i nietolerancje pokarmowe to stany, które powinny być wspomagane odpowiednim odżywianiem się. Jednakże stanowi ono nie lada wyzwanie. Po pierwsze, przewlekłe choroby wymagają konsultacji z dietetykiem. Wówczas dowiem się, które produkty możemy spożywać, a których bezwzględnie należy unikać. Te konkretne wskazówki będą dla nas wyznacznikiem. Samodzielne układanie menu, gotowanie i wymyślanie, wymaga jednak ogromnej wiedzy. Dlatego też, zdrowa dieta pudełkowa z dowozem do domu, może stanowić dobre rozwiązanie. AfterFit wychodzi naprzeciw oczekiwaniom Klientów, którzy zmagają się z różnymi dolegliwościami. Wiemy, jak dobierać posiłki do danej sytuacji zdrowotnej. Oferujemy następujące opcje:\n" +
+          "\n" +
+          "-Dieta Odchudzająca- jest przeznaczona dla osób, które dotknięte są chorobami cywilizacyjnymi: cukrzycą, podwyższonym cholesterolem, otyłością, chorobami serca;\n" +
+          "\n" +
+          "-Dieta Samuraja- jest przeznaczona dla osób obciążonych chorobami metabolicznymi, immunologicznymi, celiakią oraz dla tych, którzy nie tolerują laktozy, kazeiny, glutenu.\n" +
+          "\n" +
+          "W AfterFit podkreślamy, że dieta pudełkowa to nie tylko zrzucenie zbędnych kilogramów, ale także inwestycja w zdrowie, kondycję i samopoczucie. Nasz catering dietetyczny wersja podstawowa zawiera 3 posiłki, natomiast wersja rozszerzona to 5 posiłków. Od teraz, możesz całkowicie zrezygnować z gotowania. Prawidłowo zbilansowana dieta indywidualna z dowozem sprawi, że poczujesz się lepiej, a Twoje dzienne zapotrzebowanie odżywcze i kaloryczne zostanie zaspokojone, przy jednoczesnym uwzględnieniu sytuacji zdrowotnej.\n" +
+          "\n" +
+          "Nasi Klienci to często osoby, które borykają się z różnego rodzaju chorobami i chcą zyskać oni pewność, że ich całodzienne menu będzie ułożone właściwie.",
+      },
+      4: {
+        question: "Chcę schudnąć bezpiecznie – jaką dietę wybrać?",
+        answer: "Do utraty zbędnych kilogramów, zawsze należy podejść zdroworozsądkowo. Nie ma czegoś takiego, jak szybka dieta bez efektu jojo. Wszystkie tzw. diety-cud pozwalają zrzucić tkankę tłuszczową jedynie na chwilę. Efekt jojo i tak się pojawi. Każde odchudzanie, powinno się zacząć od dobrania odpowiedniej diety, która zawiera niski indeks glikemiczny.\n" +
+          "\n" +
+          "Dieta Odchudzająca oraz Dieta Paleo, oferowana przez AfterFit będzie dla Ciebie idealna, jeśli chcesz zdrowo i przede wszystkim trwale schudnąć. Dodatkowo, dzięki niej wyrobisz w sobie odpowiednie nawyki żywieniowe i przestawisz się na zdrowy tryb życia. Pozwoli ona Tobie zredukować tkankę tłuszczową, ale i pozbyć się tzw. napadów głodu.\n" +
+          "\n" +
+          "Dieta Odchudzająca jest odpowiednia dla osób, które mogą spożywać gluten, laktozę oraz kazeinę. Będzie odpowiadać Twoim potrzebom, jeśli nie uprawiasz regularnie sportu oraz jesteś raczej mało aktywny. Tego typu catering, gwarantuje efekty w postaci dobrego samopoczucia i szczupłej sylwetki. Co istotne, wartość energetyczna posiłków pokrywa dzienne zapotrzebowanie na składniki odżywcze. Menu daje Ci pewność, że nie będziesz ani głodny, ani też przepełniony jedzeniem. Dieta Odchudzająca to inaczej dieta na cellulit lub dieta na płaski brzuch.\n" +
+          "\n" +
+          "Dieta Paleo (czyli tzw. jadłospis człowieka pierwotnego) również pozwala bezpiecznie i trwale schudnąć. Jest ona przeznaczona dla osób, które borykają się z nietolerancją glutenu, laktozy i kazeiny. Paleo to również idealna dieta pudełkowa do pracy, gdyż otrzymujesz smaczne posiłki, które najczęściej nie wymagają nawet podgrzewania. Menu opiera się na surowych warzywach, owocach, jajach, rybach i owocach morza.\n" +
+          "\n" +
+          "Samodzielne układanie diety wspomagającej odchudzanie wymaga sporej wiedzy i jest dosyć czasochłonne i pracochłonne. Jeśli nie wiesz jak się za to zabrać, to na pewno propozycja AfterFit dieta pudełkowa z dowozem, sprawdzi się idealnie.\n" +
+          "\n" +
+          "AfterFit podkreśla, że catering dietetyczny nie wiąże się wyłącznie z odchudzaniem, więc pytania typu „catering dietetyczny, ile można schudnąć” nie do końca są właściwe. Dieta pudełkowa oczywiście będzie wspomagać proces, ale jednocześnie stanowi ona inwestycję w zdrowie.",
+      },
+      5: {
+        question: "Jak wybrać dietę dla osoby aktywnej fizycznie?",
+        answer: "Dieta Sportowa od AfterFit to idealna opcja dla wszystkich tych, którzy regularnie uprawiają sport i są aktywni na co dzień. Posiadamy w ofercie, zarówno menu dla osób pragnących spalić tkankę tłuszczową, jak i osób, chcących zbudować masę mięśniową:\n" +
+          "\n" +
+          "– Dieta Sportowa na masę (białko 25-30%, węglowodany 40-55%, tłuszcz 25-30%),\n" +
+          "\n" +
+          "– Dieta Sportowa na redukcję (białko 25-30%, węglowodany 40-55%, tłuszcz 25-30%).\n" +
+          "\n" +
+          "W przypadku menu tego rodzaju, niezbędne jest zagwarantowanie organizmowi odpowiedniej podaży energetycznej. Dieta Sportowa bazuje na tak zwanych dobrych kaloriach. Posiłki zawierają dobre tłuszcze oraz węglowodany, pochodzące z pełnowartościowych produktów (np. awokado, orzechy, olej lniany i kokosowy). Dieta fit na dowóz idealnie wpisze się w aktywny tryb życia, który zawsze musi iść w parze ze zdrowym odżywianiem się. Samodzielne wymyślanie pełnowartościowych dań, przy uprawianiu sportu jest wymagające. Jeśli zatem nie wiesz, jak się do tego zabrać to dieta pudełkowa będzie odpowiednim rozwiązaniem Twoich problemów.",
+      },
+    }
+  },
+  aglomeracjaSlaska: {
+    general: {
+      1: {
+        question: "Do jakich miast dowozicie catering dietetyczny AfterFit?",
+        answer: "Nasze dietetyczne boksy dostarczamy do następujących miast: Łódź, Pabianice, Zgierz, Aleksandrów, Andrespol, Zduńska Wola, Wiśniowa Góra, Kalonka, \n" +
+          "Warszawa, Wrocław, Poznań, Kraków, Gdańsk, Gdynia, Sopot, Toruń, Bydgoszcz, Ozorków, Łęczyca, Katowice, Zabrze, Gliwice, Bytom."
+      },
+      2: {
+        question: "Kiedy odbywają się dostawy cateringu dietetycznego AfterFit?",
+        answer: <span>Dostawy naszych dietetycznych boksów odbywają się w iinnych godzinach w zależności od miasta:<br/><br/>
+          Łódź – od godziny 19-23 dnia poprzedzającego.<br/>
+          Warszawa – od godziny 19-23 dnia poprzedzającego.<br/>
+          Wrocław, Kraków, Aglomeracja Śląska, Poznań, Trójmiasto, Toruń, Bydgoszcz – od godziny 5-9 rano (w uwagach do zamówienia proszę zaznaczyć do której godziny najpóźniej ma być dostarczona dieta).</span>
+      },
+      3: {
+        question: "Jakie są zniżki na diety AfterFit?",
+        answer: <spna>
+          Na zamówienie powyżej 14 dni dajemy 5% rabatu <br/>
+          Na zamówienie powyżej 30 dni dajemy 10% rabatu <br/>
+          Na zamówienie każdej kolejnej diety na ten sam adres dajemy 5 % rabatu na tę dietę (pierwsza dieta pozostaje bez rabatu).</spna>
+      },
+      4: {
+        question: "Na czym polega dieta pudełkowa?",
+        answer: "Dieta pudełkowa to opcja, na którą decyduje się coraz więcej osób. Ciężko się temu dziwić: w końcu dzięki takiemu rozwiązaniu, oszczędzasz czas, energię i pieniądze. Nie musisz już robić zakupów, wsadzać do koszyka miliona niepotrzebnych produktów, wymyślać co zjeść, przygotowywać wszystkiego, a na końcu sprzątać. AfterFit zatroszczy się o wszystko, a następnie dowiezie pudełka z posiłkami na każdy dzień, pod wskazany przez Ciebie adres- zarówno do domu, jak i do biura.\n" +
+          "\n" +
+          "Dieta pudełkowa, czyli tak zwany catering dietetyczny to menu dobierane pod Twoje preferencje, które pozwoli Ci się przestawić na zdrowy tryb życia. Wszystko zostaje tu przygotowane z zachowaniem najwyższych standardów. Potrzeby każdego Klienta są dla nas priorytetowe- dania przygotowujemy według indywidualnych wytycznych. Jeśli pragniesz zdrowo żyć i odpowiednio się odżywiać, to catering dietetyczny na lekko, będzie dla Ciebie idealną opcją!\n" +
+          "\n" +
+          "W AfterFit każdy posiłek dietetyczny przygotowujemy na bieżąco, ze świeżych składników, tuż przed dostawą do Ciebie. Zawsze przywozimy pełen zestaw dań na konkretny dzień. Pudełka są zapakowane hermetycznie, by jedzenie zachowało maksymalną świeżość. Catering dietetyczny fit jest dostarczany wieczorami we wskazane przez Ciebie miejsce, co gwarantuje maksymalną swobodę.\n" +
+          "\n" +
+          "Dieta pudełkowa z dowozem do domu to wygoda oraz oszczędność czasu, energii i pieniędzy. Od teraz, zyskujesz więcej wolnego, które możesz spożytkować na swoje pasje i hobby. Odejdzie Ci mnóstwo codziennych obowiązków, nie zawsze wykonywanych z radością.\n" +
+          "\n" +
+          "AfterFit posiada w ofercie również catering dietetyczny dla sportowców. Jest to idealna opcja dla tych, którzy nie wyobrażają sobie życia bez codziennych treningów, jednakże w ferworze obowiązków, ciężko wszystko pogodzić. Dieta pudełkowa sprawi, że znalezienie czasu na aktywność fizyczną, będzie bezproblemowe.\n" +
+          "\n" +
+          "Przestaw się na zdrowy tryb życia, trać zbędne kilogramy i dostarczaj swojemu organizmowi wyłącznie najlepsze składniki odżywcze.",
+      }
+    },
+    dietSelection: {
+      1: {
+        question: "Czy w ofercie dostępne są diety dla osób nietolerujących laktozy oraz glutenu?",
+        answer: "Dieta pudełkowa to idealne rozwiązanie dla wszystkich osób, bez względu na to, z jakimi przypadłościami się one borykają. Oferta AfterFit jest rozbudowana, starając się zapewnić odpowiednie menu w każdej sytuacji. Catering dietetyczny bezglutenowy oraz bezlaktozowy to jedna z naszych propozycji. Borykając się z nietolerancjami pokarmowymi i alergiami, ciężko ustalić menu i wymyślać posiłki, gdyż wymaga to odpowiedniej wiedzy. Zdrowe i prawidłowe odżywianie, to z kolei podstawa przy dolegliwościach zdrowotnych, dlatego też dedykowana dieta pudełkowa stanowi wygodne rozwiązanie.\n" +
+          "\n" +
+          "AfterFit posiada w ofercie dwie diety bezglutenowe i bezlaktozowe: Samuraja i Paleo.\n" +
+          "\n" +
+          "Dieta Samuraja jest przeznaczona dla osób aktywnych fizycznie, które regularnie uprawiają sport. W takich sytuacjach dostarczanie odpowiedniej ilości węglowodanów zarówno przed, jak i po treningu, staje się niezbędne. Od teraz, nawet przy nietolerancjach pokarmowych, możesz bezpiecznie trenować, odżywiając się przy tym zdrowo i pełnowartościowo.\n" +
+          "\n" +
+          "Dieta Paleo jest dedykowana osobom, cierpiącym na celiakię, insulinoodporność oraz chorobę Hashimoto. Specjalnie dobrane posiłki idealnie wpiszą się w Twoje potrzeby i sprawią, że organizm będzie otrzymywał dokładnie takie składniki, jakie są jemu potrzebne.",
+      },
+      2: {
+        question: "Czy w AfterFit Catering znajdę dietę z niskim indeksem glikemicznym?",
+        answer: "Dieta z niskim indeksem glikemicznym, to jedna z propozycji AfterFit. Posiadamy dwie opcje do wyboru: Dieta Odchudzająca i Dieta Samuraja. Opierają się one na chudnięciu, ale w odpowiedni sposób. Opiera się ono na produktach z niskim lub średnim indeksem glikemicznym. Wartość ta określa poziom cukru we krwi. W praktyce, indeks glikemiczny działa następująco: im jest on wyższy, tym szybciej rośnie cukier a następnie spada, efektem czego jest ponowne uczucie głodu. Dlatego też, należy unikać produktów z wysokim indeksem glikemicznym. Spożywanie ich prowadzi bowiem do napadów głodu i szybkiego zapełniania się tym, co akurat jest pod ręką – czyli najczęściej słodyczami. Dieta z niskim indeksem glikemicznym pozwala na skuteczne przeciwdziałanie tego typu praktykom. Przechodząc na nią, będziesz tracił wagę w kontrolowany i zdrowy sposób. Jeśli nie wiesz, jak się za zabrać, co gotować i w zasadzie nie masz czasu na to wszystko, to postaw na catering dietetyczny. AfterFit perfekcyjnie dobierze menu pod Ciebie i gotowe posiłki dowiezie pod wskazany adres!\n" +
+          "\n" +
+          "Indeks glikemiczny dań, oferowanych przez AfterFit, jest niski lub średni. Będziesz zatem gubić kilogramy w rozsądny sposób, bez restrykcyjnego i wręcz niezdrowego odchudzania się. Dieta Odchudzająca skupia się na indeksie glikemicznym. Sama podaż kalorii nie jest aż tak istotna, gdyż dostarczając organizmowi 1200 kcal pochodzących z niezdrowego przetworzonego jedzenia i z półproduktów nie chudniemy, gdyż zapełniamy się pustymi kaloriami. Zdrowa i skuteczna dieta musi bazować na niezbędnych i pełnowartościowych składnikach odżywczych, które znajdziemy w warzywach, owocach, nieprzetworzonych zbożach i w innych składnikach. Sama Dieta Odchudzająca AfterFit, jest przeznaczona dla mało aktywnych osób, gdyż skupia się na redukcji tkanki tłuszczowej. Jeśli chcesz budować masę mięśniową to Dieta Sportowa na masę będzie dla Ciebie odpowiednia.",
+      },
+      3: {
+        question: "Czy mogę stosować diety z oferty AfterFit przy stanach chorobowych?",
+        answer: "Zdrowe odżywianie się przy przewlekłych chorobach, nietolerancjach pokarmowych i alergiach, staje się nie lada wyzwaniem. Ustalanie menu, musimy wówczas zacząć od wizyty u dietetyka. Konsultacja pozwoli ustawić, które produkty będą dla nas odpowiednie, a które wprost przeciwnie. Wprowadzanie porad w życie, może się jednak okazać bardzo trudne- samodzielne komponowanie codziennego menu, brak czasu, problem z dostępnością niektórych produktów – to zaledwie część dylematów.\n" +
+          "\n" +
+          "Dieta pudełkowa z dowozem do domu od AfterFit to znakomite rozwiązanie. Do każdej choroby, należy odpowiednio dobierać posiłki, jednak nie zawsze mamy do tego głowę. Dlatego też, osobom, zmagającym się z różnymi przykrymi dolegliwościami zdrowotnymi, proponujemy następujące opcje:\n" +
+          "\n" +
+          "Dieta Odchudzająca – przeznaczona dla osób, cierpiących na tzw. choroby cywilizacyjne (cukrzyca, podwyższony cholesterol, otyłość, choroby serca);\n" +
+          "\n" +
+          "Dieta Samuraja – przeznaczona dla osób obciążonych chorobami metabolicznymi, immunologicznymi oraz dla tych, które nie tolerują laktozy, kazeiny, glutenu oraz chorują na celiakię.\n" +
+          "\n" +
+          "Odpowiednie odżywianie przekłada się nie tylko na utratę zbędnych kilogramów, ale stanowi ono inwestycję w zdrowie, kondycję i samopoczucie. AfterFit oferuje dwie opcje diety pudełkowej:\n" +
+          "\n" +
+          "-catering dietetyczny wersja podstawa – zawiera 3 posiłki;\n" +
+          "\n" +
+          "-catering dietetyczny wersja rozszerzona – zawiera 5 posiłków.\n" +
+          "\n" +
+          "Zrezygnuj całkowicie z gotowania! Od teraz, my zatroszczymy się o wszystko, a gotowe, hermetycznie zapakowane jedzenie, dostarczymy każdego dnia, wprost pod Twoje drzwi. Miej świadomość, że prawidłowo zbilansowana dieta indywidualna z dowozem sprawi, że dzienne zapotrzebowanie odżywcze i kaloryczne, zawsze będzie pokryte!\n" +
+          "\n" +
+          "Zapytania typu „catering dietetyczny ile można schudnąć?” są powszechne i pojawiają się bardzo często. W AfterFit podkreślamy, że catering dietetyczny nie wiąże się wyłącznie z odchudzaniem. Dieta pudełkowa to inwestycja w zdrowie i dobre samopoczucie. Nasi Klienci to często osoby, które cierpią na różne choroby i muszą posiadać oni gwarancję, że ich całodzienne menu będzie ułożone właściwie i wpisze się w ich preferencje.",
+      },
+      4: {
+        question: "Chcę schudnąć bezpiecznie – jaką dietę wybrać?",
+        answer: "Do utraty zbędnych kilogramów zawsze trzeba podchodzić zdroworozsądkowo. Szybka dieta bez efektu jojo nie istnieje, mimo tego, że kolejne artykuły i reklamy, próbują nas przekonać, że jest inaczej. W AfterFit zawsze mówimy Klientom, że kilogramy zrzucone w wyniki tzw. diety-cud powrócą z nawiązką. Dlatego też, tylko zdrowa dieta odchudzająca musi być podstawą w walce o wymarzoną figurę. Powinniśmy przy tym zwrócić uwagą na niski indeks glikemiczny. Dla naszych Klientów przygotowaliśmy dwie opcje w tym zakresie: Dieta Odchudzająca i Dieta Paleo.\n" +
+          "\n" +
+          "Dieta Odchudzająca jest często wybierana przez osoby, które chcą prowadzić w życie zdrowe nawyki żywieniowe i przy tym bezpieczne schudnąć, ciesząc się trwałymi rezultatami. Pozwoli ona na skuteczne wyeliminowanie napadów głodu oraz na redukcję tkanki tłuszczowej. Efektem będzie wymarzona sylwetka i dobre samopoczucie. Wartość energetyczna posiłków z tego menu, pokrywa dzienne zapotrzebowanie na składniki odżywcze. Nie będziesz ani głodny, ani przejedzony. Dieta Odchudzająca to inaczej dieta na cellulit lub dieta na płaski brzuch.\n" +
+          "\n" +
+          "Dieta Paleo to inaczej jadłospis człowieka pierwotnego. Będzie ona idealna dla osób, które chcą bezpiecznie i skuteczne schudnąć, ale są przy tym uczuleni na gluten, laktozę i kazeinę. Posiłki z Paleo, bazują na surowych warzywach, owocach, jajach, rybach i owocach morza. Dana są smaczne i proste oraz co istotne, nie zawsze wymagają podgrzewania. Dlatego też, jest to idealna dieta pudełkowa do pracy.",
+      },
+      5: {
+        question: "Jak wybrać dietę dla osoby aktywnej fizycznie?",
+        answer: "Dieta Sportowa to propozycja AfterFit, przeznaczona dla tych, którzy regularnie uprawiają sport i na co dzień są aktywni fizycznie. Nasza dieta pudełkowa dla sportowców jest odpowiednio zbilansowana i ustalana w taki sposób, by posiłki dostarczyły organizmowi wszystkich niezbędnych makroskładników.\n" +
+          "\n" +
+          " Oferujemy dwa warianty tej diety:\n" +
+          "\n" +
+          "–Dieta Sportowa na redukcje – przeznaczona dla osób, chcących zredukować tkankę tłuszczową. Składniki odżywcze są w niej rozłożone następująco: białko 25-30%, węglowodany 40-55%, tłuszcz 25-30%.\n" +
+          "\n" +
+          "-Dieta na masę – przeznaczona dla osób, chcących zbudować masę mięśniową. Składniki odżywcze są w niej rozłożone następująco: białko 25-30%, węglowodany 40-55%, tłuszcz 25-30%.\n" +
+          "\n" +
+          "Posiłki wchodzące w skład powyższych diet składają się z tzw. dobrych kalorii, dobrych tłuszczów i dobrych węglowodanów. Oznacza to tyle, że pochodzą ze zdrowych, pełnowartościowych produktów (np. awokado, orzechy, olej lniany i kokosowy).\n" +
+          "\n" +
+          "Dieta fit na dowóz to opcja wybierana przez miłośników ruchu. Jak wiadomo, aktywność fizyczna musi iść w parze ze zdrowym odżywianiem. Samodzielnie wymyślanie posiłków i gotowanie, w tym przypadku, jest trudne i wymaga specjalistycznej wiedzy, dlatego też dieta pudełkowa z dowozem, cieszy się tak ogromną popularnością.",
+      },
+    }
+  },
   wroclaw: {
     general: {
       1: {
