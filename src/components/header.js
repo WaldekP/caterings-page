@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState, useContext } from "react"
-import { Link, graphql, useStaticQuery, navigate } from "gatsby"
+import { Link, navigate } from "gatsby"
 import headerStyles from "../styles/header.module.scss"
 import commonStyles from "../styles/common.module.scss"
 import { cities } from "../data/cities"
@@ -55,7 +55,9 @@ const Header = ({ pageContext }) => {
           </div>
           <div className={headerStyles.mobileMenu}>
             <div className={headerStyles.mobileButtonsWrapper}>
-              <button>Zamów</button>
+              <Link to="/zamowienie">
+                <button>Zamów</button>
+              </Link>
               <button className={headerStyles.panelButton}>Panel</button>
             </div>
             <ul className={headerStyles.navListMobile}>
@@ -258,7 +260,9 @@ const Header = ({ pageContext }) => {
               </Link>
             </li>
           </ul>
-          <button className={commonStyles.button}>Zamów</button>
+          <Link to="/zamowienie">
+            <button className={commonStyles.button}>Zamów</button>
+          </Link>
         </div>
         <div className={headerStyles.menuRightPart}>
           <h3>Panel klienta</h3>
