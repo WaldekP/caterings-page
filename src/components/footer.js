@@ -57,7 +57,7 @@ const Footer = ({ pageContext }) => {
             <p>Telefon: +48 42 715-80-85</p>
             <p>Email: zamowienia@afterfit-catering.pl</p>
             <p>Regulamin</p>
-            <p>Polityka prewatności</p>
+            <p>Polityka prywatności</p>
           </div>
           <div>
             <h4>Diety</h4>
