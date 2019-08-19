@@ -58,7 +58,7 @@ const Header = ({ pageContext }) => {
               <Link to="/zamowienie">
                 <button>Zamów</button>
               </Link>
-              <button className={headerStyles.panelButton}>Panel</button>
+              <button className={headerStyles.panelButton}><a href="https://panel.dietly.pl/logowanie-catering?company=afterfit">Panel</a></button>
             </div>
             <ul className={headerStyles.navListMobile}>
               <li
@@ -165,7 +165,7 @@ const Header = ({ pageContext }) => {
           </Link>
         </span>
         <div className={headerStyles.topMenu}>
-          <h3>Panel klienta</h3>
+          <h3><a href="https://panel.dietly.pl/logowanie-catering?company=afterfit">Panel klienta</a></h3>
           <select
             onChange={({ target: { value } }) => {
               typeof window !== "undefined" &&
@@ -265,7 +265,7 @@ const Header = ({ pageContext }) => {
           </Link>
         </div>
         <div className={headerStyles.menuRightPart}>
-          <h3>Panel klienta</h3>
+          <h3><a href="https://panel.dietly.pl/logowanie-catering?company=afterfit">Panel klienta</a></h3>
           <select
             onChange={({ target: { value } }) => {
               typeof window !== "undefined" &&

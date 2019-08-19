@@ -4,6 +4,7 @@ import cateringDetails from "../data/companyDetails/cateringDetails"
 import * as lodzMeals from "../data/companyDetails/citiesPricing/lodzMeals"
 import * as restCitiesMealsMeals from '../data/companyDetails/citiesPricing/restCitiesMeals'
 import * as warsawMeals from '../data/companyDetails/citiesPricing/warsawMeals'
+import { Link } from "gatsby"
 const { default: mealsPricingRestCities } = restCitiesMealsMeals
 const { default: mealsPricingLodz } = lodzMeals
 const { default: mealsPricingWarsaw } = warsawMeals
@@ -476,7 +477,9 @@ const Pricing = React.forwardRef((props, ref) => {
                 state.days
               } dni`}
             </p>
-            <button>Zamów</button>
+            <Link to="/zamowienie">
+              <button>Zamów</button>
+            </Link>
           </div>
         </div>
       </div>

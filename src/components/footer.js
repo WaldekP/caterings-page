@@ -54,7 +54,7 @@ const Footer = ({ pageContext }) => {
                 </span>
               </a>
             </div>
-            <p>Telefon: 692-432-102</p>
+            <p>Telefon: +48 42 715-80-85</p>
             <p>Email: zamowienia@afterfit-catering.pl</p>
             <p>Regulamin</p>
             <p>Polityka prewatności</p>

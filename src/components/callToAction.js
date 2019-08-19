@@ -1,8 +1,8 @@
 import React, { Fragment } from "react"
 import callToActionStyles from '../styles/callToAction.module.scss'
-import commonStyles from '../styles/common.module.scss'
 import firstPattern from '../images/patterns/img_zacznij-jesc-zdrowo-1.svg'
 import secondPattern from '../images/patterns/img_zacznij-jesc-zdrowo-2.svg'
+import { Link } from "gatsby"
 
 const CallToAction = ({cta}) => {
   const renderCtaMessage = () => {
@@ -20,7 +20,9 @@ const CallToAction = ({cta}) => {
         <img className={callToActionStyles.secondPattern} src={secondPattern} />
         <div className={callToActionStyles.textsContainer}>
           <h2>{renderCtaMessage()}</h2>
-          <button>Zamów dietę</button>
+          <Link to="/zamowienie">
+            <button>Zamów dietę</button>
+          </Link>
           <p>Zobacz wymarzone efekty w krótkim czasie </p>
         </div>
       </div>

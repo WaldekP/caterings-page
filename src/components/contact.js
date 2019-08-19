@@ -14,7 +14,7 @@ const Contact = React.forwardRef((props, ref) => {
         <div className={contactStyles.contactItem}>
           <img src={phoneIcon} />
           <p>telefon</p>
-          <p className={contactStyles.details}>692-432-102</p>
+          <p className={contactStyles.details}>+48 42 715-80-85</p>
         </div>
         <div className={contactStyles.contactItem}>
           <img src={emailIcon} />

@@ -30,6 +30,10 @@
   h3 {
     margin-right: 20px;
   }
+  a {
+    text-decoration: none;
+    color: $main-color;
+  }
 }
 
 .menu-right-part {
@@ -150,6 +154,10 @@ li:hover {
     }
     select {
       margin-right: 50px;
+    }
+    a {
+      text-decoration: none;
+      color: $main-color;
     }
   }
 
