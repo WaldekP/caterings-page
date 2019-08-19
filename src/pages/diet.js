@@ -20,6 +20,18 @@ const Diet = ({ pageContext }) => {
     return pageContext.city ? pageContext.city : "lodz"
   }
 
+  const findCity = () => {
+    const citySlug = getCitySlug()
+    const cityObject = cities.find(city => city.value === citySlug)
+    if (cityObject) {
+      if (cityObject.label === "Agl. śląska") {
+        return "Aglomeracja śląska"
+      }
+      return cityObject.label
+    }
+    return "cityObject && cityObject.label"
+  }
+
   const getDietSlug = () => {
     return pageContext && pageContext.diet
   }
@@ -32,11 +44,6 @@ const Diet = ({ pageContext }) => {
       secondAlt: `${diet} - ${city} - dieta pudełkowa`,
       thirdAlt: `${diet} - ${city} - dieta z dowozem`,
     }
-  }
-  const findCity = () => {
-    const citySlug = getCitySlug()
-    const cityObject = cities.find(city => city.value === citySlug)
-    return cityObject && cityObject.label
   }
 
   const findDietDescription = () => {
@@ -52,9 +59,10 @@ const Diet = ({ pageContext }) => {
     return descriptions && descriptions.description
   }
 
+
   return (
     <Layout pageContext={pageContext}>
-      <SEO title={`Dieta pudełkowa paleo`} />
+      <SEO title={`${findDiet() && findDiet().fullName} - catering dietetyczny ${findCity()}`} description={findDiet() && findDiet().metaDescription}/>
       <DietHero diet={pageContext && getDietSlug()}/>
       <DietDescription
         diet={findDiet() && findDiet().fullName}

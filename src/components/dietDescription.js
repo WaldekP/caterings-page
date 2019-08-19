@@ -2,12 +2,11 @@ import React from "react"
 import dietDescriptionStyles from "../styles/dietDescription.module.scss"
 
 const DietDescription = ({ diet, city, dietDescription, menu }) => {
-  const cityName = !city ? "Łódź" : city === "Agl. śląska" ? 'Aglomeracja śląska' : city
   return (
     <div>
       <h1 className={dietDescriptionStyles.title}>
         {" "}
-        {diet} - {cityName}
+        {diet} - {city}
       </h1>
       <div className={dietDescriptionStyles.container}>
         <div className={dietDescriptionStyles.descriptionContainer}>

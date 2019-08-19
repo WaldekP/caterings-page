@@ -2,6 +2,7 @@ import React from 'react';
 export const diets = [
   {
     dietUrl: "dieta-odchudzajaca",
+    metaDescription: 'Dieta Odchudzająca jest idealna dla każdego, kto chce schudnąć, nie będąc przy tym aktywnym fizycznie. Najważniejszy jest tutaj odpowiedni dobór kalorii.',
     dietImg: "../images/diets/dieta-odchudzajaca.jpg",
     dietGallery: {
       1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_3.jpg",
@@ -109,6 +110,7 @@ export const diets = [
   },
   {
     dietUrl: "dieta-paleo",
+    metaDescription: 'Dieta Paleo bazuje na prostym, bezglutenowym menu. Jest ono bogate w białka i tłuszcze. Składa się głównie z dań mięsnych, ryb, jaj, owoców i warzyw.',
     dietImg: "../images/diets/dieta-odchudzajaca.jpg",
     dietGallery: {
       1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_10.jpg",
@@ -216,6 +218,7 @@ export const diets = [
   },
   {
     dietUrl: "dieta-samuraja",
+    metaDescription: 'Dieta Samuraja kładzie nacisk na zdrowe odżywianie, wykluczając gluten i laktozę. Menu jest odpowiednie dla osób aktywnych fizycznie.',
     dietImg: "../images/diets/dieta-odchudzajaca.jpg",
     dietGallery: {
       1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_12.jpg",
@@ -322,6 +325,7 @@ export const diets = [
   },
   {
     dietUrl: "dieta-sportowa-na-mase",
+    metaDescription: 'Dieta sportowa na masę to opcja dla tych, którzy chcą wyrobić masę mięśniową. Proces ten powinien się łączyć z odpowiednim planem treningowym.',
     dietImg: "../images/diets/dieta-odchudzajaca.jpg",
     dietGallery: {
       1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_12.jpg",
@@ -438,6 +442,7 @@ export const diets = [
   },
   {
     dietUrl: "dieta-sportowa-na-redukcje",
+    metaDescription: 'Dieta sportowa na masę jest dietą wysokobiałkową, dzięki czemu nie dochodzi do „spalania mięśni”. Ciesz się lepszą kondycją oraz dobrym samopoczuciem.',
     dietImg: "../images/diets/dieta-odchudzajaca.jpg",
     dietGallery: {
       1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_3.jpg",
@@ -550,6 +555,7 @@ export const diets = [
   },
   {
     dietUrl: "dieta-standard",
+    metaDescription: 'Dieta standard pozwoli Ci zacząć się smacznie i zdrowo odżywiać. Menu dostarcza organizmowi niezbędne składniki odżywcze, witaminy i mikroelementy.',
     dietImg: "../images/diets/dieta-odchudzajaca.jpg",
     dietGallery: {
       1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_10.jpg",
@@ -666,6 +672,7 @@ export const diets = [
   },
   {
     dietUrl: "dieta-weganska",
+    metaDescription: 'Dieta wegańska zmniejsza ryzyko wystąpienia otyłości, nadciśnienia, cukrzycy i niektórych nowotworów. Eliminuje ona całkowicie produkty odzwierzęce.',
     dietImg: "../images/diets/dieta-odchudzajaca.jpg",
     dietGallery: {
       1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_13.jpg",
@@ -781,6 +788,7 @@ export const diets = [
   },
   {
     dietUrl: "dieta-wegetarianska",
+    metaDescription: 'Dieta wegetariańska bazuje na warzywach, owocach, roślinach, kaszach i nasionach. Mimo wyeliminowania mięsa, posiłki są smaczne, sycące i zróżnicowane.',
     dietImg: "../images/diets/dieta-odchudzajaca.jpg",
     dietGallery: {
       1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_13.jpg",
