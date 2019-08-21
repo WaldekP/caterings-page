@@ -55,10 +55,11 @@
     color: $main-color;
     background-color: transparent;
     border: none;
-    padding-right: 10px;
+    padding-right: 15px;
     -moz-appearance: none;
     -webkit-appearance: none;
     cursor: pointer;
+    background: url(../images/select/menu_miasto.svg) no-repeat center right;
   }
 }
 
@@ -185,10 +186,11 @@ li:hover {
       color: $main-color;
       background-color: transparent;
       border: none;
-      padding-right: 10px;
+      padding-right: 15px;
       -moz-appearance: none;
       -webkit-appearance: none;
       cursor: pointer;
+      background: url(../images/select/menu_miasto.svg) no-repeat center right;
     }
   }
 
@@ -415,7 +417,8 @@ li:hover {
       -moz-appearance: none;
       -webkit-appearance: none;
       appearance: none;
-      background-image: url(https://afterfit-catering.pl/wp-content/uploads/2019/01/menu-mobile-arrow.png);
+      //background-image: url(https://afterfit-catering.pl/wp-content/uploads/2019/01/menu-mobile-arrow.png);
+      background-image: url("../images/select/Ikonka menu mobilnego.jpg");
       background-position: 100%;
       background-repeat: no-repeat;
     }
