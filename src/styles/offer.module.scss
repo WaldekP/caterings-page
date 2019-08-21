@@ -26,10 +26,10 @@
     height: auto;
   }
 
-  h3 {
+  .diet-title {
     font-weight: 600;
     font-size: 15px;
-    margin-top: 20px;
+    margin: 20px 0 0 0;
 
   }
   p {
@@ -39,6 +39,7 @@
   }
   color: $main-color;
   &:hover {
+    transition: background-color 1s;
     background-color: #FFB800;
   }
   &.first {

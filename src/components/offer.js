@@ -74,7 +74,7 @@ const Offer = React.forwardRef(({ pageContext }, ref) => {
           <Link to={pageContext.city ? `/${pageContext.city}/${diet.dietUrl}` : `/${diet.dietUrl}`} key={diet.dietUrl}>
             <div className={offerStyles.dietItem} key={diet.dietUrl}>
               <img src={findDiet(diet.dietUrl)} alt={`Catering dietetyczny ${pageContext.city ? pageContext.city : 'lodz'} - ${diet.fullName}`}/>
-              <h3>{diet.fullName}</h3>
+              <h2 className={offerStyles.dietTitle}>{diet.fullName}</h2>
               <p>{diet.offerDescription}</p>
             </div>
           </Link>

@@ -371,10 +371,18 @@ li:hover {
     }
     .panel-button {
       background-color: white;
+      transition: color 0.5s, background-color 0.5s;
       color: $main-color;
+      a {
+        text-decoration: none;
+        color: $main-color;
+      }
       &:hover {
         background-color: $main-color;
         color: white;
+        a {
+          color: white;
+        }
       }
     }
 

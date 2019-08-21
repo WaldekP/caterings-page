@@ -470,10 +470,10 @@ const Pricing = React.forwardRef((props, ref) => {
         <div className={pricingStyles.rightSide}>
           <div className={pricingStyles.rightSideWrapper}>
             <p>CENA DIETY</p>
-            <h2>{state.days > 0 && calculatePrice()} PLN / DZIEN</h2>
+            <h2>{state.days > 0 ? calculatePrice(): "0"} PLN / DZIEŃ</h2>
             <p className={pricingStyles.priceSummary}>
-              {`RAZEM: ${state.days > 0 &&
-                (calculatePrice() * state.days).toFixed(1)} PLN za ${
+              {`RAZEM: ${state.days > 0 ?
+                (calculatePrice() * state.days).toFixed(1) : "0"} PLN za ${
                 state.days
               } dni`}
             </p>
