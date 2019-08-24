@@ -55,10 +55,18 @@ const Header = ({ pageContext }) => {
           </div>
           <div className={headerStyles.mobileMenu}>
             <div className={headerStyles.mobileButtonsWrapper}>
-              <Link to="/zamowienie">
+              <a
+                href="https://afterfit-catering.pl/zamowienie"
+                target="_blank"
+                rel="noopener"
+              >
                 <button>Zamów</button>
-              </Link>
-              <button className={headerStyles.panelButton}><a href="https://panel.dietly.pl/logowanie-catering?company=afterfit">Panel</a></button>
+              </a>
+              <button className={headerStyles.panelButton}>
+                <a href="https://panel.dietly.pl/logowanie-catering?company=afterfit">
+                  Panel
+                </a>
+              </button>
             </div>
             <ul className={headerStyles.navListMobile}>
               <li
@@ -165,7 +173,15 @@ const Header = ({ pageContext }) => {
           </Link>
         </span>
         <div className={headerStyles.topMenu}>
-          <h3><a href="https://panel.dietly.pl/logowanie-catering?company=afterfit">Panel klienta</a></h3>
+          <h3>
+            <a
+              href="https://panel.dietly.pl/logowanie-catering?company=afterfit"
+              target="_blank"
+              rel="noopener"
+            >
+              Panel klienta
+            </a>
+          </h3>
           <select
             onChange={({ target: { value } }) => {
               typeof window !== "undefined" &&
@@ -260,12 +276,24 @@ const Header = ({ pageContext }) => {
               </Link>
             </li>
           </ul>
-          <Link to="/zamowienie">
+          <a
+            href="https://afterfit-catering.pl/zamowienie"
+            target="_blank"
+            rel="noopener"
+          >
             <button className={commonStyles.button}>Zamów</button>
-          </Link>
+          </a>
         </div>
         <div className={headerStyles.menuRightPart}>
-          <h3><a href="https://panel.dietly.pl/logowanie-catering?company=afterfit">Panel klienta</a></h3>
+          <h3>
+            <a
+              href="https://panel.dietly.pl/logowanie-catering?company=afterfit"
+              target="_blank"
+              rel="noopener"
+            >
+              Panel klienta
+            </a>
+          </h3>
           <select
             onChange={({ target: { value } }) => {
               typeof window !== "undefined" &&

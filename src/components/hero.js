@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react"
 import heroStyles from "../styles/hero.module.scss"
 import { Link } from "gatsby"
+import commonStyles from "../styles/common.module.scss"
 
 const Hero = () => {
   const [yPosition, changePosition] = useState(
@@ -28,9 +29,13 @@ const Hero = () => {
             Afterfit
           </h1>
           <h3>Odkryj smak pasji i zaangażowania</h3>
-          <Link to="/zamowienie">
+          <a
+            href="https://afterfit-catering.pl/zamowienie"
+            target="_blank"
+            rel="noopener"
+          >
             <button>Zamów dietę</button>
-          </Link>
+          </a>
         </div>
       </div>
     </div>
