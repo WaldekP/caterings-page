@@ -5,6 +5,7 @@ import * as lodzMeals from "../data/companyDetails/citiesPricing/lodzPricing"
 import * as restCitiesMealsMeals from '../data/companyDetails/citiesPricing/restCitiesPricing'
 import * as warsawMeals from '../data/companyDetails/citiesPricing/warsawPricing'
 import { Link } from "gatsby"
+import commonStyles from "../styles/common.module.scss"
 const { default: mealsPricingRestCities } = restCitiesMealsMeals
 const { default: mealsPricingLodz } = lodzMeals
 const { default: mealsPricingWarsaw } = warsawMeals
@@ -477,9 +478,13 @@ const Pricing = React.forwardRef((props, ref) => {
                 state.days
               } dni`}
             </p>
-            <Link to="/zamowienie">
+            <a
+              href="https://afterfit-catering.pl/zamowienie"
+              target="_blank"
+              rel="noopener"
+            >
               <button>Zamów</button>
-            </Link>
+            </a>
           </div>
         </div>
       </div>

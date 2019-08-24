@@ -20,9 +20,13 @@ const CallToAction = ({cta}) => {
         <img className={callToActionStyles.secondPattern} src={secondPattern} />
         <div className={callToActionStyles.textsContainer}>
           <h2>{renderCtaMessage()}</h2>
-          <Link to="/zamowienie">
+          <a
+            href="https://afterfit-catering.pl/zamowienie"
+            target="_blank"
+            rel="noopener"
+          >
             <button>Zamów dietę</button>
-          </Link>
+          </a>
           <p>Zobacz wymarzone efekty w krótkim czasie </p>
         </div>
       </div>

@@ -62,11 +62,15 @@ const Header = ({ pageContext }) => {
               >
                 <button>Zamów</button>
               </a>
-              <button className={headerStyles.panelButton}>
-                <a href="https://panel.dietly.pl/logowanie-catering?company=afterfit">
+              <a
+                href="https://panel.dietly.pl/logowanie-catering?company=afterfit"
+                target="_blank"
+                rel="noopener"
+              >
+                <button className={headerStyles.panelButton}>
                   Panel
-                </a>
-              </button>
+                </button>
+              </a>
             </div>
             <ul className={headerStyles.navListMobile}>
               <li
