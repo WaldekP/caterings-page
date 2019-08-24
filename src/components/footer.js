@@ -56,8 +56,23 @@ const Footer = ({ pageContext }) => {
             </div>
             <p>Telefon: +48 42 715-80-85</p>
             <p>Email: zamowienia@afterfit-catering.pl</p>
-            <p>Regulamin</p>
-            <p>Polityka prywatności</p>
+            <p>
+              <a
+                href="http://serwer1526119.home.pl/wp-content/uploads/2019/02/Regulamin-Cateringu-Dietetycznego-AfterFit.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Regulamin
+              </a>
+            </p> <p>
+              <a
+                href="http://serwer1526119.home.pl/wp-content/uploads/2019/02/Polityka-Prywatności-cateringu-dietetycznego-AfterFit.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Polityka prywatności
+              </a>
+            </p>
           </div>
           <div>
             <h4>Diety</h4>
