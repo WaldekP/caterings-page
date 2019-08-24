@@ -462,8 +462,8 @@ const Pricing = React.forwardRef((props, ref) => {
                   />
                 </div>
               )}
-              <div>
-                <p>RABAT: {handleDiscount()}</p>
+             <div>
+                <p style={!handleDiscount() ? {visibility: "hidden"} : null}>RABAT: {handleDiscount()}</p>
               </div>
             </div>
           </div>
