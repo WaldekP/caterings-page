@@ -261,7 +261,7 @@ const Header = ({ pageContext }) => {
             </li>
           </ul>
           <Link to="/zamowienie">
-            <button className={commonStyles.button}><a href="">Zamów</a></button>
+            <button className={commonStyles.button}>Zamów</button>
           </Link>
         </div>
         <div className={headerStyles.menuRightPart}>
