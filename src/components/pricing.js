@@ -1,9 +1,9 @@
 import React, { useEffect, useReducer } from "react"
 import pricingStyles from "../styles/pricing.module.scss"
 import cateringDetails from "../data/companyDetails/cateringDetails"
-import * as lodzMeals from "../data/companyDetails/citiesPricing/lodzMeals"
-import * as restCitiesMealsMeals from '../data/companyDetails/citiesPricing/restCitiesMeals'
-import * as warsawMeals from '../data/companyDetails/citiesPricing/warsawMeals'
+import * as lodzMeals from "../data/companyDetails/citiesPricing/lodzPricing"
+import * as restCitiesMealsMeals from '../data/companyDetails/citiesPricing/restCitiesPricing'
+import * as warsawMeals from '../data/companyDetails/citiesPricing/warsawPricing'
 import { Link } from "gatsby"
 const { default: mealsPricingRestCities } = restCitiesMealsMeals
 const { default: mealsPricingLodz } = lodzMeals
