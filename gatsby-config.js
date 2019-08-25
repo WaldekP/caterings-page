@@ -3,7 +3,7 @@ module.exports = {
     title: `AfterFit`,
     description: `TODO`,
     author: `WPieniak`,
-    siteUrl: `https://wonderful-heisenberg-ccfa1f.netlify.com`
+    siteUrl: `https://afterfit-catering.pl`
   },
   plugins: [
     `gatsby-plugin-sass`,
