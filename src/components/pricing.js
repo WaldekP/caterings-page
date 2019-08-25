@@ -272,10 +272,10 @@ const Pricing = React.forwardRef((props, ref) => {
     const { days } = state
 
     if (days > 13 && days < 30) {
-      return "5%"
+      return "10%"
     }
     if (days >= 30) {
-      return "10%"
+      return "15%"
     }
   }
 
