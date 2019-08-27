@@ -20,7 +20,7 @@ const Footer = ({ pageContext }) => {
               <a
                 href="https://www.facebook.com/AfterFitCatering"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow"
               >
                 <span>
                   <FontAwesomeIcon icon={["fab", "facebook"]} />
@@ -29,7 +29,7 @@ const Footer = ({ pageContext }) => {
               <a
                 href="https://www.instagram.com/afterfitcatering"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow"
               >
                 <span>
                   <FontAwesomeIcon icon={["fab", "instagram"]} />
@@ -38,7 +38,7 @@ const Footer = ({ pageContext }) => {
               <a
                 href="https://www.youtube.com/channel/UCfm4X063UsfBGyxG82MJS1g"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow"
               >
                 <span>
                   <FontAwesomeIcon icon={["fab", "youtube"]} />
@@ -47,7 +47,7 @@ const Footer = ({ pageContext }) => {
               <a
                 href="https://pl.pinterest.com/afterfit/"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow"
               >
                 <span>
                   <FontAwesomeIcon icon={["fab", "pinterest"]} />
@@ -58,17 +58,17 @@ const Footer = ({ pageContext }) => {
             <p>Email: zamowienia@afterfit-catering.pl</p>
             <p>
               <a
-                href="http://serwer1526119.home.pl/wp-content/uploads/2019/02/Regulamin-Cateringu-Dietetycznego-AfterFit.pdf"
+                href="https://serwer1526119.home.pl/wp-content/uploads/2019/02/Regulamin-Cateringu-Dietetycznego-AfterFit.pdf"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow"
               >
                 Regulamin
               </a>
             </p> <p>
               <a
-                href="http://serwer1526119.home.pl/wp-content/uploads/2019/02/Polityka-Prywatności-cateringu-dietetycznego-AfterFit.pdf"
+                href="https://serwer1526119.home.pl/wp-content/uploads/2019/02/Polityka-Prywatności-cateringu-dietetycznego-AfterFit.pdf"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow"
               >
                 Polityka prywatności
               </a>

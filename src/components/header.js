@@ -181,7 +181,7 @@ const Header = ({ pageContext }) => {
             <a
               href="https://panel.dietly.pl/logowanie-catering?company=afterfit"
               target="_blank"
-              rel="noopener"
+              rel="nofollow"
             >
               Panel klienta
             </a>
@@ -293,7 +293,7 @@ const Header = ({ pageContext }) => {
             <a
               href="https://panel.dietly.pl/logowanie-catering?company=afterfit"
               target="_blank"
-              rel="noopener"
+              rel="nofollow"
             >
               Panel klienta
             </a>
