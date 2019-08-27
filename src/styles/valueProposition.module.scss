@@ -35,9 +35,14 @@
 
 .title {
   text-align: center;
+  margin: 50px 0;
 }
 
 @media (max-width: 799px) {
+  .title {
+    font-size: 30px;
+    margin: 50px 20px;
+  }
   .container {
     display: flex;
     flex-direction: column;

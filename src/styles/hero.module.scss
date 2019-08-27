@@ -23,8 +23,11 @@
   align-items: flex-start;
   justify-content: center;
   //padding: 10% 10%;
-  h1 {
+  h2 {
     font-size: 2rem;
+    margin: unset;
+    padding: unset;
+    text-align: left;
   }
   button {
     cursor: pointer;
@@ -75,7 +78,7 @@
   .titleWrapper {
     padding: 6% 5%;
 
-    h1 {
+    h2 {
       font-size: 1.6rem;
     }
     h3 {

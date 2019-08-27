@@ -24,10 +24,10 @@ const Hero = () => {
     <div className={heroStyles.container}>
       <div className={heroStyles.wrapper}>
         <div className={heroStyles.titleWrapper}>
-          <h1>
+          <h2>
             Catering dietetyczny <br />
             Afterfit
-          </h1>
+          </h2>
           <h3>Odkryj smak pasji i zaangażowania</h3>
           <a
             href="https://afterfit-catering.pl/zamowienie"

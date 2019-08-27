@@ -29,7 +29,7 @@ const Diet = ({ pageContext }) => {
       }
       return cityObject.label
     }
-    return "cityObject && cityObject.label"
+    return cityObject && cityObject.label
   }
 
   const getDietSlug = () => {
