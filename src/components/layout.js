@@ -41,6 +41,7 @@ const Layout = ({ title, children, pageContext }) => {
   }, [])
   const getLinkUrl = city => {
     if (city === "lodz") {
+      console.log("city", city)
       if (dietSlug) {
         return `/${dietSlug}`
       }
@@ -92,7 +93,14 @@ const Layout = ({ title, children, pageContext }) => {
                         .map((cityName, index) => (
                           <Link to={getLinkUrl(cityName.value)} key={index}>
                             {" "}
-                            <li className={layoutStyles.city}>
+                            <li
+                              className={layoutStyles.city}
+                              onClick={() => {
+                                toggleOverlay(false)
+                                typeof window !== "undefined" &&
+                                  window.localStorage.setItem("city", cityName.value)
+                              }}
+                            >
                               {" "}
                               {cityName.label}
                             </li>
@@ -114,7 +122,14 @@ const Layout = ({ title, children, pageContext }) => {
                         .map((cityName, index) => (
                           <Link to={getLinkUrl(cityName.value)} key={index}>
                             {" "}
-                            <li className={layoutStyles.city}>
+                            <li
+                              onClick={() => {
+                                toggleOverlay(false)
+                                typeof window !== "undefined" &&
+                                window.localStorage.setItem("city", cityName.value)
+                              }}
+                              className={layoutStyles.city}
+                            >
                               {" "}
                               {cityName.label}
                             </li>
@@ -133,10 +148,17 @@ const Layout = ({ title, children, pageContext }) => {
                     <ul className={layoutStyles.cityList}>
                       {cities
                         .filter(city => city.label[0] === letter)
-                        .map((cityName, index)=> (
+                        .map((cityName, index) => (
                           <Link to={getLinkUrl(cityName.value)} key={index}>
                             {" "}
-                            <li className={layoutStyles.city}>
+                            <li
+                              onClick={() => {
+                                toggleOverlay(false)
+                                typeof window !== "undefined" &&
+                                window.localStorage.setItem("city", cityName.value)
+                              }}
+                              className={layoutStyles.city}
+                            >
                               {" "}
                               {cityName.label}
                             </li>
