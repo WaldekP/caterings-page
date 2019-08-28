@@ -49,6 +49,15 @@ const IndexPage = ({ pageContext }) => {
     return pageContext.city ? pageContext.city : "lodz"
   }
 
+  const checkIfIndexingShouldBeOn = () => {
+    const citySlug = getCitySlug()
+    const cityObject = cities.find(city => city.value === citySlug)
+    if (!cityObject) {
+      return false
+    }
+    return cityObject.indexing
+  }
+
   const findCity = () => {
     const citySlug = getCitySlug()
     const cityObject = cities.find(city => city.value === citySlug)
@@ -68,6 +77,7 @@ const IndexPage = ({ pageContext }) => {
       <SEO
         title={`Afterfit catering dietetyczny ${findCity()}, dieta pudełkowa z dowozem `}
         description={getMetaDescription()}
+        indexing={checkIfIndexingShouldBeOn()}
       />
       <div className={indexStyles.container}>
         <Hero />

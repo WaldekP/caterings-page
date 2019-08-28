@@ -31,7 +31,6 @@ const Layout = ({ title, children, pageContext }) => {
         navigate(dietSlug ? `/${dietSlug}` : `/`)
       }
       if (cityCookie2 !== "lodz") {
-        console.log("kurwa 2")
         navigate(dietSlug ? `/${cityCookie2}/${dietSlug}` : `/${cityCookie2}`)
       }
     }
@@ -53,6 +52,22 @@ const Layout = ({ title, children, pageContext }) => {
     return `/${city}`
   }
 
+  const findUniqueLetters = () => {
+    return cities.reduce((acc, curr) => {
+      const firstLetter = curr.label[0]
+      const isLetterAlreadyInArray = acc.includes(firstLetter)
+      !isLetterAlreadyInArray && acc.push(firstLetter)
+      return acc
+    }, [])
+  }
+
+  const filterEvenOrOddLetter = evenOrOdd => {
+    if (evenOrOdd === "even") {
+      return findUniqueLetters().filter((city, i) => (i + 1) % 2 === 0)
+    }
+    return findUniqueLetters().filter((city, i) => Math.abs((i + 1) % 2) === 1)
+  }
+
   return (
     <Fragment>
       <div
@@ -65,25 +80,74 @@ const Layout = ({ title, children, pageContext }) => {
       >
         <div className={layoutStyles.overlayContent}>
           <h2>Wybierz miasto:</h2>
-
-          <ul className={layoutStyles.overlayList}>
-            {cities
-              .map(city => (
-                <Link className={layoutStyles.link} to={getLinkUrl(city.value)}>
-                  <li
-                    className={layoutStyles.overlayItem}
-                    onClick={() => {
-                      toggleOverlay(false)
-                      typeof window !== "undefined" &&
-                        window.localStorage.setItem("city", city.value)
-                    }}
-                    key={city.value}
-                  >
-                    {city.label}
+          <div className={layoutStyles.overlayWrapper}>
+            <ul className={layoutStyles.overlayList}>
+              {filterEvenOrOddLetter("odd").map((letter, i) => {
+                return (
+                  <li key={i}>
+                    <h3>{letter.toUpperCase()}</h3>
+                    <ul className={layoutStyles.cityList}>
+                      {cities
+                        .filter(city => city.label[0] === letter)
+                        .map((cityName, index) => (
+                          <Link to={getLinkUrl(cityName.value)} key={index}>
+                            {" "}
+                            <li className={layoutStyles.city}>
+                              {" "}
+                              {cityName.label}
+                            </li>
+                          </Link>
+                        ))}
+                    </ul>
                   </li>
-                </Link>
-              ))}
-          </ul>
+                )
+              })}
+            </ul>
+            <ul className={layoutStyles.overlayList}>
+              {filterEvenOrOddLetter("even").map((letter, i) => {
+                return (
+                  <li>
+                    <h3>{letter.toUpperCase()}</h3>
+                    <ul className={layoutStyles.cityList}>
+                      {cities
+                        .filter(city => city.label[0] === letter)
+                        .map((cityName, index) => (
+                          <Link to={getLinkUrl(cityName.value)} key={index}>
+                            {" "}
+                            <li className={layoutStyles.city}>
+                              {" "}
+                              {cityName.label}
+                            </li>
+                          </Link>
+                        ))}
+                    </ul>
+                  </li>
+                )
+              })}
+            </ul>
+            <ul className={layoutStyles.overlayMobileList}>
+              {findUniqueLetters().map((letter, i) => {
+                return (
+                  <li key={i}>
+                    <h3>{letter.toUpperCase()}</h3>
+                    <ul className={layoutStyles.cityList}>
+                      {cities
+                        .filter(city => city.label[0] === letter)
+                        .map((cityName, index)=> (
+                          <Link to={getLinkUrl(cityName.value)} key={index}>
+                            {" "}
+                            <li className={layoutStyles.city}>
+                              {" "}
+                              {cityName.label}
+                            </li>
+                          </Link>
+                        ))}
+                    </ul>
+                  </li>
+                )
+              })}
+            </ul>
+          </div>
         </div>
       </div>
       <div className={layoutStyles.container}>

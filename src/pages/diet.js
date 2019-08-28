@@ -20,6 +20,15 @@ const Diet = ({ pageContext }) => {
     return pageContext.city ? pageContext.city : "lodz"
   }
 
+  const checkIfIndexingShouldBeOn = () => {
+    const citySlug = getCitySlug()
+    const cityObject = cities.find(city => city.value === citySlug)
+    if (!cityObject) {
+      return false
+    }
+    return cityObject.indexing
+  }
+
   const findCity = () => {
     const citySlug = getCitySlug()
     const cityObject = cities.find(city => city.value === citySlug)
@@ -55,15 +64,21 @@ const Diet = ({ pageContext }) => {
     const descriptions =
       diet && diet.cityDescription[city]
         ? diet.cityDescription[city]
-        : city === 'aglomeracja-slaska' ? diet.cityDescription["aglomeracjaSlaska"] : diet.cityDescription["lodz"]
+        : city === "aglomeracja-slaska"
+        ? diet.cityDescription["aglomeracjaSlaska"]
+        : diet.cityDescription["lodz"]
     return descriptions && descriptions.description
   }
 
-
   return (
     <Layout pageContext={pageContext}>
-      <SEO title={`${findDiet() && findDiet().fullName} - catering dietetyczny ${findCity()}`} description={findDiet() && findDiet().metaDescription}/>
-      <DietHero diet={pageContext && getDietSlug()}/>
+      <SEO
+        title={`${findDiet() &&
+          findDiet().fullName} - catering dietetyczny ${findCity()}`}
+        description={findDiet() && findDiet().metaDescription}
+        indexing={checkIfIndexingShouldBeOn()}
+      />
+      <DietHero diet={pageContext && getDietSlug()} />
       <DietDescription
         diet={findDiet() && findDiet().fullName}
         city={findCity()}

@@ -10,7 +10,6 @@ const Faq = React.forwardRef (({ pageContext }, ref) => {
   const getQuestions = () => {
     const cityObject = faq[city]
     if (!cityObject) {
-      console.log('citysss', city)
       if (city === 'aglomeracja-slaska') {
         return Object.values(faq["aglomeracjaSlaska"][section])
       }

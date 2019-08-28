@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import footerStyles from "../styles/footer.module.scss"
 import logo from "../images/logo/afterfit_img_logo.svg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {cities } from "../data/cities"
+import { cities } from "../data/cities"
 
 const Footer = ({ pageContext }) => {
   const city = pageContext && pageContext.city
@@ -64,7 +64,8 @@ const Footer = ({ pageContext }) => {
               >
                 Regulamin
               </a>
-            </p> <p>
+            </p>{" "}
+            <p>
               <a
                 href="https://serwer1526119.home.pl/wp-content/uploads/2019/02/Polityka-Prywatności-cateringu-dietetycznego-AfterFit.pdf"
                 target="_blank"
@@ -121,15 +122,22 @@ const Footer = ({ pageContext }) => {
           </div>
           <div>
             <h4>Miasta</h4>
-            {cities.map(city => (
-              <Link
-                key={city.value}
-                to={city.value === "lodz" ? "/" : `/${city.value}`}
-                onClick={() => city.value === "lodz" ? typeof window !== 'undefined' && window.localStorage.setItem('city', 'lodz') : null}
-              >
-                <p>{city.label}</p>
-              </Link>
-            ))}
+            {cities
+              .filter(cityName => cityName.popular)
+              .map(city => (
+                <Link
+                  key={city.value}
+                  to={city.value === "lodz" ? "/" : `/${city.value}`}
+                  onClick={() =>
+                    city.value === "lodz"
+                      ? typeof window !== "undefined" &&
+                        window.localStorage.setItem("city", "lodz")
+                      : null
+                  }
+                >
+                  <p>{city.label}</p>
+                </Link>
+              ))}
           </div>
         </div>
       </div>

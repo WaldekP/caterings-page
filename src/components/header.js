@@ -136,7 +136,6 @@ const Header = ({ pageContext }) => {
             <div>
               <select
                 onChange={({ target: { value } }) => {
-                  console.log("ccccc")
                   typeof window !== "undefined" &&
                     window.localStorage.setItem("city", value)
                   if (value === "lodz") {
