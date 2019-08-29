@@ -7,7 +7,7 @@ export const cities = [
   },
   {
     value: 'bialystok',
-    label: 'Bialystok',
+    label: 'Białystok',
     popular: false,
     indexing: false,
   },
