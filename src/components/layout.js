@@ -88,7 +88,7 @@ const findCitiesInTheLeftAndRightColumn = (column) => {
         style={
           (typeof overlay !== "undefined" && !overlay) || citySlug
             ? { display: "none" }
-            : {overflow: 'hidden'}
+            : null
         }
       >
         <div className={layoutStyles.overlayContent}>
@@ -222,7 +222,7 @@ const findCitiesInTheLeftAndRightColumn = (column) => {
           </div>
         </div>
       </div>
-      <div className={layoutStyles.container}>
+      <div className={layoutStyles.container} style={typeof overlay !== "undefined" && overlay ? {overflow: 'hidden'}: null}>
         <div className={layoutStyles.content}>
           <Header pageContext={pageContext} title={title} />
           {children}
