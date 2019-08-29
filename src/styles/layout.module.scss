@@ -128,9 +128,6 @@ button {
     .overlay-wrapper {
       display: flex;
       justify-content: center;
-      .overlay-mobile-list {
-        display: none;
-      }
       .city-list {
         list-style: none;
         padding-left: 0;
@@ -154,6 +151,16 @@ button {
         text-decoration: none;
       }
     }
+    .mobile-wrapper {
+      display: none;
+        //display: none;
+        .mobile-city-list {
+
+          .mobile-city {
+
+          }
+        }
+      }
   }
 }
 
@@ -164,16 +171,39 @@ button {
      h2 {
        position: relative;
        top: 0;
-       //margin-top: 30px;
+       margin: 20px 0;
      }
       .overlay-wrapper {
-        margin: 0;
-        .city-list {
+        display: none;
+      }
+      .mobile-wrapper {
+        h3 {
+          font-size: 25px;
           margin: 0;
-          .city {
-            margin: 10px 35px;
-            font-size: 20px;
-            line-height: 1.7;
+          padding: 0;
+        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 200px;
+        .mobile-city-list {
+          list-style: none;
+          padding-left: 0;
+          a {
+            text-decoration: none;
+          }
+          .mobile-city {
+            margin: 10px 0;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 1.5;
+            color: #595ea3;
+            cursor: pointer;
+            &:hover {
+              color: $main-color;
+            }
           }
         }
         .link {

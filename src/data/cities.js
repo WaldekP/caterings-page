@@ -20,7 +20,7 @@ export const cities = [
   {
     value: 'bydgoszcz',
     label: 'Bydgoszcz',
-    popular: true,
+    popular: false,
     indexing: true,
 
   },
@@ -106,7 +106,7 @@ export const cities = [
   {
     value: 'torun',
     label: 'Toruń',
-    popular: true,
+    popular: false,
     indexing: true,
   },
   {

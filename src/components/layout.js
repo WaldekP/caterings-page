@@ -62,17 +62,17 @@ const Layout = ({ title, children, pageContext }) => {
     }, [])
   }
 
-const findCitiesInTheLeftAndRightColumn = (column) => {
+  const findCitiesInTheLeftAndRightColumn = column => {
     const citiesLength = cities.length
     const citiesLenthDividedByTwo = Math.floor(cities.length / 2)
-    if (column === 'left') {
-      console.log('a')
+    if (column === "left") {
+      console.log("a")
       return cities.slice(0, citiesLenthDividedByTwo)
     } else {
-      console.log('b')
+      console.log("b")
       return cities.slice(citiesLenthDividedByTwo, citiesLength)
     }
-}
+  }
 
   const filterEvenOrOddLetter = evenOrOdd => {
     if (evenOrOdd === "even") {
@@ -94,32 +94,55 @@ const findCitiesInTheLeftAndRightColumn = (column) => {
         <div className={layoutStyles.overlayContent}>
           <h2>Wybierz miasto:</h2>
           <div className={layoutStyles.overlayWrapper}>
-                    <ul className={layoutStyles.cityList}>
-                      {findCitiesInTheLeftAndRightColumn('left')
-                        .map((cityName, index) => (
-                          <Link to={getLinkUrl(cityName.value)} key={index}>
-                            {" "}
-                            <li
-                              className={layoutStyles.city}
-                              onClick={() => {
-                                toggleOverlay(false)
-                                typeof window !== "undefined" &&
-                                window.localStorage.setItem("city", cityName.value)
-                              }}
-                            >
-                              {" "}
-                              {cityName.label}
-                            </li>
-                          </Link>
-                        ))}
-                    </ul>
             <ul className={layoutStyles.cityList}>
-              {findCitiesInTheLeftAndRightColumn('right')
-                .map((cityName, index) => (
+              {findCitiesInTheLeftAndRightColumn("left").map(
+                (cityName, index) => (
                   <Link to={getLinkUrl(cityName.value)} key={index}>
                     {" "}
                     <li
                       className={layoutStyles.city}
+                      onClick={() => {
+                        toggleOverlay(false)
+                        typeof window !== "undefined" &&
+                          window.localStorage.setItem("city", cityName.value)
+                      }}
+                    >
+                      {" "}
+                      {cityName.label}
+                    </li>
+                  </Link>
+                )
+              )}
+            </ul>
+            <ul className={layoutStyles.cityList}>
+              {findCitiesInTheLeftAndRightColumn("right").map(
+                (cityName, index) => (
+                  <Link to={getLinkUrl(cityName.value)} key={index}>
+                    {" "}
+                    <li
+                      className={layoutStyles.city}
+                      onClick={() => {
+                        toggleOverlay(false)
+                        typeof window !== "undefined" &&
+                          window.localStorage.setItem("city", cityName.value)
+                      }}
+                    >
+                      {" "}
+                      {cityName.label}
+                    </li>
+                  </Link>
+                )
+              )}
+            </ul>
+          </div>
+          <div className={layoutStyles.mobileWrapper}>
+            <h3>Popularne miasta:</h3>
+              <ul className={layoutStyles.mobileCityList}>
+                {cities.filter(city => city.popular).map((cityName, index) => (
+                  <Link to={getLinkUrl(cityName.value)} key={index}>
+                    {" "}
+                    <li
+                      className={layoutStyles.mobileCity}
                       onClick={() => {
                         toggleOverlay(false)
                         typeof window !== "undefined" &&
@@ -132,97 +155,36 @@ const findCitiesInTheLeftAndRightColumn = (column) => {
                   </Link>
                 ))}
             </ul>
-            {/*<ul className={layoutStyles.overlayList}>*/}
-            {/*  {filterEvenOrOddLetter("odd").map((letter, i) => {*/}
-            {/*    return (*/}
-            {/*      <li key={i}>*/}
-            {/*        <h3>{letter.toUpperCase()}</h3>*/}
-            {/*        <ul className={layoutStyles.cityList}>*/}
-            {/*          {cities*/}
-            {/*            .filter(city => city.label[0] === letter)*/}
-            {/*            .map((cityName, index) => (*/}
-            {/*              <Link to={getLinkUrl(cityName.value)} key={index}>*/}
-            {/*                {" "}*/}
-            {/*                <li*/}
-            {/*                  className={layoutStyles.city}*/}
-            {/*                  onClick={() => {*/}
-            {/*                    toggleOverlay(false)*/}
-            {/*                    typeof window !== "undefined" &&*/}
-            {/*                      window.localStorage.setItem("city", cityName.value)*/}
-            {/*                  }}*/}
-            {/*                >*/}
-            {/*                  {" "}*/}
-            {/*                  {cityName.label}*/}
-            {/*                </li>*/}
-            {/*              </Link>*/}
-            {/*            ))}*/}
-            {/*        </ul>*/}
-            {/*      </li>*/}
-            {/*    )*/}
-            {/*  })}*/}
-            {/*</ul>*/}
-            {/*<ul className={layoutStyles.overlayList}>*/}
-            {/*  {filterEvenOrOddLetter("even").map((letter, i) => {*/}
-            {/*    return (*/}
-            {/*      <li>*/}
-            {/*        <h3>{letter.toUpperCase()}</h3>*/}
-            {/*        <ul className={layoutStyles.cityList}>*/}
-            {/*          {cities*/}
-            {/*            .filter(city => city.label[0] === letter)*/}
-            {/*            .map((cityName, index) => (*/}
-            {/*              <Link to={getLinkUrl(cityName.value)} key={index}>*/}
-            {/*                {" "}*/}
-            {/*                <li*/}
-            {/*                  onClick={() => {*/}
-            {/*                    toggleOverlay(false)*/}
-            {/*                    typeof window !== "undefined" &&*/}
-            {/*                    window.localStorage.setItem("city", cityName.value)*/}
-            {/*                  }}*/}
-            {/*                  className={layoutStyles.city}*/}
-            {/*                >*/}
-            {/*                  {" "}*/}
-            {/*                  {cityName.label}*/}
-            {/*                </li>*/}
-            {/*              </Link>*/}
-            {/*            ))}*/}
-            {/*        </ul>*/}
-            {/*      </li>*/}
-            {/*    )*/}
-            {/*  })}*/}
-            {/*</ul>*/}
-            {/*<ul className={layoutStyles.overlayMobileList}>*/}
-            {/*  {findUniqueLetters().map((letter, i) => {*/}
-            {/*    return (*/}
-            {/*      <li key={i}>*/}
-            {/*        <h3>{letter.toUpperCase()}</h3>*/}
-            {/*        <ul className={layoutStyles.cityList}>*/}
-            {/*          {cities*/}
-            {/*            .filter(city => city.label[0] === letter)*/}
-            {/*            .map((cityName, index) => (*/}
-            {/*              <Link to={getLinkUrl(cityName.value)} key={index}>*/}
-            {/*                {" "}*/}
-            {/*                <li*/}
-            {/*                  onClick={() => {*/}
-            {/*                    toggleOverlay(false)*/}
-            {/*                    typeof window !== "undefined" &&*/}
-            {/*                    window.localStorage.setItem("city", cityName.value)*/}
-            {/*                  }}*/}
-            {/*                  className={layoutStyles.city}*/}
-            {/*                >*/}
-            {/*                  {" "}*/}
-            {/*                  {cityName.label}*/}
-            {/*                </li>*/}
-            {/*              </Link>*/}
-            {/*            ))}*/}
-            {/*        </ul>*/}
-            {/*      </li>*/}
-            {/*    )*/}
-            {/*  })}*/}
-            {/*</ul>*/}
+            <h3>Wszystkie miasta:</h3>
+            <ul className={layoutStyles.mobileCityList}>
+              {cities.map((cityName, index) => (
+                <Link to={getLinkUrl(cityName.value)} key={index}>
+                  {" "}
+                  <li
+                    className={layoutStyles.mobileCity}
+                    onClick={() => {
+                      toggleOverlay(false)
+                      typeof window !== "undefined" &&
+                        window.localStorage.setItem("city", cityName.value)
+                    }}
+                  >
+                    {" "}
+                    {cityName.label}
+                  </li>
+                </Link>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
-      <div className={layoutStyles.container} style={typeof overlay !== "undefined" && overlay ? {overflow: 'hidden'}: null}>
+      <div
+        className={layoutStyles.container}
+        style={
+          typeof overlay !== "undefined" && overlay
+            ? { overflow: "hidden" }
+            : null
+        }
+      >
         <div className={layoutStyles.content}>
           <Header pageContext={pageContext} title={title} />
           {children}
