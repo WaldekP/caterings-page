@@ -62,6 +62,18 @@ const Layout = ({ title, children, pageContext }) => {
     }, [])
   }
 
+const findCitiesInTheLeftAndRightColumn = (column) => {
+    const citiesLength = cities.length
+    const citiesLenthDividedByTwo = Math.floor(cities.length / 2)
+    if (column === 'left') {
+      console.log('a')
+      return cities.slice(0, citiesLenthDividedByTwo)
+    } else {
+      console.log('b')
+      return cities.slice(citiesLenthDividedByTwo, citiesLength)
+    }
+}
+
   const filterEvenOrOddLetter = evenOrOdd => {
     if (evenOrOdd === "even") {
       return findUniqueLetters().filter((city, i) => (i + 1) % 2 === 0)
@@ -82,53 +94,18 @@ const Layout = ({ title, children, pageContext }) => {
         <div className={layoutStyles.overlayContent}>
           <h2>Wybierz miasto:</h2>
           <div className={layoutStyles.overlayWrapper}>
-            <ul className={layoutStyles.overlayList}>
-              {filterEvenOrOddLetter("odd").map((letter, i) => {
-                return (
-                  <li key={i}>
-                    <h3>{letter.toUpperCase()}</h3>
                     <ul className={layoutStyles.cityList}>
-                      {cities
-                        .filter(city => city.label[0] === letter)
+                      {findCitiesInTheLeftAndRightColumn('left')
                         .map((cityName, index) => (
                           <Link to={getLinkUrl(cityName.value)} key={index}>
                             {" "}
                             <li
                               className={layoutStyles.city}
-                              onClick={() => {
-                                toggleOverlay(false)
-                                typeof window !== "undefined" &&
-                                  window.localStorage.setItem("city", cityName.value)
-                              }}
-                            >
-                              {" "}
-                              {cityName.label}
-                            </li>
-                          </Link>
-                        ))}
-                    </ul>
-                  </li>
-                )
-              })}
-            </ul>
-            <ul className={layoutStyles.overlayList}>
-              {filterEvenOrOddLetter("even").map((letter, i) => {
-                return (
-                  <li>
-                    <h3>{letter.toUpperCase()}</h3>
-                    <ul className={layoutStyles.cityList}>
-                      {cities
-                        .filter(city => city.label[0] === letter)
-                        .map((cityName, index) => (
-                          <Link to={getLinkUrl(cityName.value)} key={index}>
-                            {" "}
-                            <li
                               onClick={() => {
                                 toggleOverlay(false)
                                 typeof window !== "undefined" &&
                                 window.localStorage.setItem("city", cityName.value)
                               }}
-                              className={layoutStyles.city}
                             >
                               {" "}
                               {cityName.label}
@@ -136,39 +113,112 @@ const Layout = ({ title, children, pageContext }) => {
                           </Link>
                         ))}
                     </ul>
-                  </li>
-                )
-              })}
+            <ul className={layoutStyles.cityList}>
+              {findCitiesInTheLeftAndRightColumn('right')
+                .map((cityName, index) => (
+                  <Link to={getLinkUrl(cityName.value)} key={index}>
+                    {" "}
+                    <li
+                      className={layoutStyles.city}
+                      onClick={() => {
+                        toggleOverlay(false)
+                        typeof window !== "undefined" &&
+                        window.localStorage.setItem("city", cityName.value)
+                      }}
+                    >
+                      {" "}
+                      {cityName.label}
+                    </li>
+                  </Link>
+                ))}
             </ul>
-            <ul className={layoutStyles.overlayMobileList}>
-              {findUniqueLetters().map((letter, i) => {
-                return (
-                  <li key={i}>
-                    <h3>{letter.toUpperCase()}</h3>
-                    <ul className={layoutStyles.cityList}>
-                      {cities
-                        .filter(city => city.label[0] === letter)
-                        .map((cityName, index) => (
-                          <Link to={getLinkUrl(cityName.value)} key={index}>
-                            {" "}
-                            <li
-                              onClick={() => {
-                                toggleOverlay(false)
-                                typeof window !== "undefined" &&
-                                window.localStorage.setItem("city", cityName.value)
-                              }}
-                              className={layoutStyles.city}
-                            >
-                              {" "}
-                              {cityName.label}
-                            </li>
-                          </Link>
-                        ))}
-                    </ul>
-                  </li>
-                )
-              })}
-            </ul>
+            {/*<ul className={layoutStyles.overlayList}>*/}
+            {/*  {filterEvenOrOddLetter("odd").map((letter, i) => {*/}
+            {/*    return (*/}
+            {/*      <li key={i}>*/}
+            {/*        <h3>{letter.toUpperCase()}</h3>*/}
+            {/*        <ul className={layoutStyles.cityList}>*/}
+            {/*          {cities*/}
+            {/*            .filter(city => city.label[0] === letter)*/}
+            {/*            .map((cityName, index) => (*/}
+            {/*              <Link to={getLinkUrl(cityName.value)} key={index}>*/}
+            {/*                {" "}*/}
+            {/*                <li*/}
+            {/*                  className={layoutStyles.city}*/}
+            {/*                  onClick={() => {*/}
+            {/*                    toggleOverlay(false)*/}
+            {/*                    typeof window !== "undefined" &&*/}
+            {/*                      window.localStorage.setItem("city", cityName.value)*/}
+            {/*                  }}*/}
+            {/*                >*/}
+            {/*                  {" "}*/}
+            {/*                  {cityName.label}*/}
+            {/*                </li>*/}
+            {/*              </Link>*/}
+            {/*            ))}*/}
+            {/*        </ul>*/}
+            {/*      </li>*/}
+            {/*    )*/}
+            {/*  })}*/}
+            {/*</ul>*/}
+            {/*<ul className={layoutStyles.overlayList}>*/}
+            {/*  {filterEvenOrOddLetter("even").map((letter, i) => {*/}
+            {/*    return (*/}
+            {/*      <li>*/}
+            {/*        <h3>{letter.toUpperCase()}</h3>*/}
+            {/*        <ul className={layoutStyles.cityList}>*/}
+            {/*          {cities*/}
+            {/*            .filter(city => city.label[0] === letter)*/}
+            {/*            .map((cityName, index) => (*/}
+            {/*              <Link to={getLinkUrl(cityName.value)} key={index}>*/}
+            {/*                {" "}*/}
+            {/*                <li*/}
+            {/*                  onClick={() => {*/}
+            {/*                    toggleOverlay(false)*/}
+            {/*                    typeof window !== "undefined" &&*/}
+            {/*                    window.localStorage.setItem("city", cityName.value)*/}
+            {/*                  }}*/}
+            {/*                  className={layoutStyles.city}*/}
+            {/*                >*/}
+            {/*                  {" "}*/}
+            {/*                  {cityName.label}*/}
+            {/*                </li>*/}
+            {/*              </Link>*/}
+            {/*            ))}*/}
+            {/*        </ul>*/}
+            {/*      </li>*/}
+            {/*    )*/}
+            {/*  })}*/}
+            {/*</ul>*/}
+            {/*<ul className={layoutStyles.overlayMobileList}>*/}
+            {/*  {findUniqueLetters().map((letter, i) => {*/}
+            {/*    return (*/}
+            {/*      <li key={i}>*/}
+            {/*        <h3>{letter.toUpperCase()}</h3>*/}
+            {/*        <ul className={layoutStyles.cityList}>*/}
+            {/*          {cities*/}
+            {/*            .filter(city => city.label[0] === letter)*/}
+            {/*            .map((cityName, index) => (*/}
+            {/*              <Link to={getLinkUrl(cityName.value)} key={index}>*/}
+            {/*                {" "}*/}
+            {/*                <li*/}
+            {/*                  onClick={() => {*/}
+            {/*                    toggleOverlay(false)*/}
+            {/*                    typeof window !== "undefined" &&*/}
+            {/*                    window.localStorage.setItem("city", cityName.value)*/}
+            {/*                  }}*/}
+            {/*                  className={layoutStyles.city}*/}
+            {/*                >*/}
+            {/*                  {" "}*/}
+            {/*                  {cityName.label}*/}
+            {/*                </li>*/}
+            {/*              </Link>*/}
+            {/*            ))}*/}
+            {/*        </ul>*/}
+            {/*      </li>*/}
+            {/*    )*/}
+            {/*  })}*/}
+            {/*</ul>*/}
           </div>
         </div>
       </div>
