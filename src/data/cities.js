@@ -98,7 +98,7 @@ export const cities = [
     indexing: false,
   },
   {
-    value: 'szczescin',
+    value: 'szczecin',
     label: 'Szczecin',
     popular: false,
     indexing: false,
