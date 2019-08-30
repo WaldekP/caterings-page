@@ -72,13 +72,6 @@ const Layout = ({ title, children, pageContext }) => {
     }
   }
 
-  const filterEvenOrOddLetter = evenOrOdd => {
-    if (evenOrOdd === "even") {
-      return findUniqueLetters().filter((city, i) => (i + 1) % 2 === 0)
-    }
-    return findUniqueLetters().filter((city, i) => Math.abs((i + 1) % 2) === 1)
-  }
-
   return (
     <Fragment>
       <div
