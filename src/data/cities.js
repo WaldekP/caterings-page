@@ -61,6 +61,12 @@ export const cities = [
     indexing: false,
   },
   {
+    value: 'lublin',
+    label: 'Lublin',
+    popular: false,
+    indexing: false,
+  },
+  {
     value: 'lodz',
     label: 'Łódź',
     popular: true,
@@ -134,5 +140,4 @@ export const cities = [
     popular: true,
     indexing: true,
   },
-
 ]
