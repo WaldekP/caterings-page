@@ -70,13 +70,13 @@ export const cities = [
     indexing: false,
     cityId: 10,
   },
-  {
-    value: 'lublin',
-    label: 'Lublin',
-    popular: false,
-    indexing: false,
-    cityId: 11,
-  },
+  // {
+  //   value: 'lublin',
+  //   label: 'Lublin',
+  //   popular: false,
+  //   indexing: false,
+  //   cityId: 11,
+  // },
   {
     value: 'lodz',
     label: 'Łódź',
