@@ -61,16 +61,16 @@ export const cities = [
     indexing: false,
   },
   {
-    value: 'lodz',
-    label: 'Łódź',
-    popular: true,
-    indexing: true,
-  },
-  {
     value: 'lublin',
     label: 'Lublin',
     popular: false,
     indexing: false,
+  },
+  {
+    value: 'lodz',
+    label: 'Łódź',
+    popular: true,
+    indexing: true,
   },
   {
     value: 'opole',
