@@ -9,7 +9,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
   //   acc.push(curr.value)
   //   return acc
   // },[])
-  const citiesArray = ['warszawa', 'poznan', 'wroclaw', 'trojmiasto', 'wroclaw', 'torun', 'bydgoszcz', 'krakow', 'aglomeracja-slaska', 'bialystok', 'bielsko-biala', 'czestochowa', 'elblag', 'gorzow-wielkopolski', 'kielce', 'kutno', 'opole', 'plock', 'radom', 'rzeszow', 'szczecin', 'wloclawek' ]
+  const citiesArray = ['warszawa', 'poznan', 'wroclaw', 'trojmiasto', 'wroclaw', 'torun', 'bydgoszcz', 'krakow', 'aglomeracja-slaska', 'bialystok', 'bielsko-biala', 'czestochowa', 'elblag', 'gorzow-wielkopolski', 'kielce', 'kutno', 'opole', 'plock', 'radom', 'rzeszow', 'szczecin', 'wloclawek', 'lublin' ]
   const diets = ['paleo', 'samuraja', 'sportowa-na-redukcje', 'odchudzajaca', 'weganska', 'wegetarianska', 'standard', 'sportowa-na-mase']
   // const res = await graphql(`
   //   query {
