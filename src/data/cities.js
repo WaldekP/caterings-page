@@ -67,6 +67,12 @@ export const cities = [
     indexing: true,
   },
   {
+    value: 'lublin',
+    label: 'Lublin',
+    popular: false,
+    indexing: false,
+  },
+  {
     value: 'opole',
     label: 'Opole',
     popular: false,
