@@ -28,6 +28,18 @@ const DietHero = ({diet}) => {
     if (diet === 'dieta-samuraja') {
       return heroStyles.dietSamurai
     }
+    // if (diet === 'dieta-bezglutenowa') {
+    //   return heroStyles.dietGlutenFree
+    // }
+    // if (diet === 'dieta-wege-fish') {
+    //   return heroStyles.dietWegeFish
+    // }
+    // if (diet === 'dieta-bezlaktozy') {
+    //   return heroStyles.dietNoLactose
+    // }
+    // if (diet === 'dieta-detox') {
+    //   return heroStyles.dietDetox
+    // }
     return heroStyles.dietWeightLoss
   }
 
