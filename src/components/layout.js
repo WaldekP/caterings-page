@@ -53,15 +53,6 @@ const Layout = ({ title, children, pageContext }) => {
     return `/${city}`
   }
 
-  const findUniqueLetters = () => {
-    return cities.reduce((acc, curr) => {
-      const firstLetter = curr.label[0]
-      const isLetterAlreadyInArray = acc.includes(firstLetter)
-      !isLetterAlreadyInArray && acc.push(firstLetter)
-      return acc
-    }, [])
-  }
-
   const findCitiesInTheLeftAndRightColumn = column => {
     const citiesLength = cities.length
     const citiesLenthDividedByTwo = Math.floor(cities.length / 2)
@@ -179,7 +170,8 @@ const Layout = ({ title, children, pageContext }) => {
         <div className={layoutStyles.content}>
           <Header pageContext={pageContext} title={title} />
           {children}
-          <CookieConsent
+          {console.log('overlay', overlay)}
+          {(citySlug || !overlay) && <CookieConsent
             location="bottom"
             buttonText="Zgoda"
             cookieName="afterfit-consent"
@@ -202,7 +194,7 @@ const Layout = ({ title, children, pageContext }) => {
             Ta strona korzysta z ciasteczek, aby świadczyć usługi na najwyższym
             poziomie. Dalsze korzystanie ze strony oznacza, że zgadzasz się na
             ich użycie.
-          </CookieConsent>
+          </CookieConsent>}
         </div>
         <Footer pageContext={pageContext} />
       </div>
