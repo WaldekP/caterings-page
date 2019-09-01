@@ -4,6 +4,7 @@ import headerStyles from "../styles/header.module.scss"
 import commonStyles from "../styles/common.module.scss"
 import { cities } from "../data/cities"
 import logo from "../images/logo/afterfit_img_logo.svg"
+import { useSpring, animated} from "react-spring"
 
 import PageContext from "../context/pageContext"
 
@@ -11,11 +12,17 @@ const Header = ({ pageContext }) => {
   const citySlug = pageContext && pageContext.city
   const dietSlug = pageContext && pageContext.diet
 
+
   const [yPosition, changePosition] = useState(
     typeof window !== "undefined" && window.scrollY
   )
 
   const [menuOverlay, toggleMenu] = useState(false)
+
+  //animations
+  const animatedNav = useSpring({
+    transform: menuOverlay ? `translate3d(0, 0, 0)` : `translate3d(0, 100%, 0)`
+  })
 
   const handleScroll = () => {
     if (typeof window !== "undefined") {
@@ -41,7 +48,7 @@ const Header = ({ pageContext }) => {
     <Fragment>
       {/*mobile menu*/}
       {menuOverlay && (
-        <div className={menuOverlay && headerStyles.overlay}>
+        <animated.div className={menuOverlay && headerStyles.overlay} style={animatedNav}>
           <div className={headerStyles.mobileMenuHeader}>
             <span>
               <Link to={citySlug ? `/${citySlug}` : "/"}>
@@ -163,7 +170,7 @@ const Header = ({ pageContext }) => {
               </select>
             </div>
           </div>
-        </div>
+        </animated.div>
       )}
       {/*this header is for medium screens*/}
       <header
