@@ -27,48 +27,48 @@ function SEO({ description, lang, meta, title, indexing }) {
 
   const metaDescription = description || site.siteMetadata.description
 
-  const handleMetaData = () => {
-    const meta = [
-      {
-        name: `description`,
-        content: metaDescription,
-      },
-      {
-        property: `og:title`,
-        content: title,
-      },
-      {
-        property: `og:description`,
-        content: metaDescription,
-      },
-      {
-        name: `twitter:card`,
-        content: `summary`,
-      },
-      {
-        name: `robots`,
-        content: `noindex`,
-      },
-
-      {
-        name: `twitter:creator`,
-        content: site.siteMetadata.author,
-      },
-      {
-        name: `twitter:title`,
-        content: title,
-      },
-      {
-        name: `twitter:description`,
-        content: metaDescription,
-      },
-    ]
-
-    if (indexing) {
-      return meta.filter(data => data.name !== "robots")
-    }
-    return meta
-  }
+  // const handleMetaData = () => {
+  //   const meta = [
+  //     {
+  //       name: `description`,
+  //       content: metaDescription,
+  //     },
+  //     {
+  //       property: `og:title`,
+  //       content: title,
+  //     },
+  //     {
+  //       property: `og:description`,
+  //       content: metaDescription,
+  //     },
+  //     {
+  //       name: `twitter:card`,
+  //       content: `summary`,
+  //     },
+  //     {
+  //       name: `robots`,
+  //       content: `noindex`,
+  //     },
+  //
+  //     {
+  //       name: `twitter:creator`,
+  //       content: site.siteMetadata.author,
+  //     },
+  //     {
+  //       name: `twitter:title`,
+  //       content: title,
+  //     },
+  //     {
+  //       name: `twitter:description`,
+  //       content: metaDescription,
+  //     },
+  //   ]
+  //
+  //   // if (indexing) {
+  //   //   return meta.filter(data => data.name !== "robots")
+  //   // }
+  //   return meta
+  // }
 
 
   return (
@@ -78,7 +78,36 @@ function SEO({ description, lang, meta, title, indexing }) {
       }}
       title={title}
       // titleTemplate={`%s | ${site.siteMetadata.title}`}
-      meta={handleMetaData().concat(meta)}
+      meta={[
+        {
+          name: `description`,
+          content: metaDescription,
+        },
+        {
+          property: `og:title`,
+          content: title,
+        },
+        {
+          property: `og:description`,
+          content: metaDescription,
+        },
+        {
+          name: `twitter:card`,
+          content: `summary`,
+        },
+        {
+          name: `twitter:creator`,
+          content: site.siteMetadata.author,
+        },
+        {
+          name: `twitter:title`,
+          content: title,
+        },
+        {
+          name: `twitter:description`,
+          content: metaDescription,
+        },
+      ].concat(meta)}
     />
   )
 }

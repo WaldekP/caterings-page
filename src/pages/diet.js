@@ -34,7 +34,10 @@ const Diet = ({ pageContext }) => {
     const cityObject = cities.find(city => city.value === citySlug)
     if (cityObject) {
       if (cityObject.label === "Agl. śląska") {
-        return "Aglomeracja śląska"
+        return "Aglomeracja śląska (Bytom, Gliwice, Katowice, Zabrze)"
+      }
+      if (cityObject.label === "Trójmiasto") {
+        return "Trójmiasto (Gdynia, Gdańsk, Sopot)"
       }
       return cityObject.label
     }

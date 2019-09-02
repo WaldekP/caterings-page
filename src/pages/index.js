@@ -63,11 +63,14 @@ const IndexPage = ({ pageContext }) => {
     const cityObject = cities.find(city => city.value === citySlug)
     if (cityObject) {
       if (cityObject.label === "Agl. śląska") {
-        return "Aglomeracja śląska"
+        return "Aglomeracja śląska (Bytom, Gliwice, Katowice, Zabrze)"
+      }
+      if (cityObject.label === "Trójmiasto") {
+        return "Trójmiasto (Gdynia, Gdańsk, Sopot)"
       }
       return cityObject.label
     }
-    return "cityObject && cityObject.label"
+    return cityObject && cityObject.label
   }
   const getMetaDescription = () => {
     return "AfterFit to catering dietetyczny dla wymagających oferujący dietę z dostawą. Odkryj smak pasji i zaangażowania w każdym pudełku"
@@ -81,7 +84,7 @@ const IndexPage = ({ pageContext }) => {
       />
       <div className={indexStyles.container}>
         <Hero />
-        <ValueProposition ref={valuePropositionRef} pageContext={pageContext} />
+        <ValueProposition ref={valuePropositionRef} pageContext={pageContext} findCity={findCity}/>
         <Chatbot ref={chatbotRef} pageContext={pageContext} />
         <Offer pageContext={pageContext} ref={offerRef} />
         <CallToAction cta="catering" />
