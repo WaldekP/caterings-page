@@ -4,16 +4,14 @@ import cateringDetails from "../data/companyDetails/cateringDetails"
 import * as lodzMeals from "../data/companyDetails/citiesPricing/lodzPricing"
 import * as restCitiesMealsMeals from '../data/companyDetails/citiesPricing/restCitiesPricing'
 import * as warsawMeals from '../data/companyDetails/citiesPricing/warsawPricing'
-import { Link } from "gatsby"
-import commonStyles from "../styles/common.module.scss"
 const { default: mealsPricingRestCities } = restCitiesMealsMeals
 const { default: mealsPricingLodz } = lodzMeals
 const { default: mealsPricingWarsaw } = warsawMeals
 
 const Pricing = React.forwardRef((props, ref) => {
   const discounts = [
-    { minimumDays: 14, discount: 5, discountType: "PERCENTAGE" },
-    { minimumDays: 30, discount: 10, discountType: "PERCENTAGE" },
+    { minimumDays: 14, discount: 10, discountType: "PERCENTAGE" },
+    { minimumDays: 30, discount: 15, discountType: "PERCENTAGE" },
   ]
   const initialState = {
     activeDiet: "",
@@ -260,10 +258,10 @@ const Pricing = React.forwardRef((props, ref) => {
     const price = activeMeals && activeMeals.sectorPriceSettings[0].fullPrice
     const deductedPrice = parseFloat(price - calculatePriceOfUnCheckedMeals())
     if (days > 13 && days < 30) {
-      return (deductedPrice * 0.95).toFixed(1)
+      return (deductedPrice * 0.90).toFixed(1)
     }
     if (days >= 30) {
-      return (deductedPrice * 0.9).toFixed(1)
+      return (deductedPrice * 0.85).toFixed(1)
     }
     return deductedPrice.toFixed(1)
   }
@@ -449,7 +447,7 @@ const Pricing = React.forwardRef((props, ref) => {
                 <div>
                   <p>
                     Dodaj {getDiscountDetails().daysTillDiscount} dni, aby
-                    uzyskać {getDiscountDetails().discount}% rabatu
+                    uzyskać {getDiscountDetails().discount }% rabatu
                   </p>
                 </div>
               )}
