@@ -151,6 +151,14 @@ export const diets = [
           "Tego rodzaju menu pozwoli Ci wyrobić właściwe i zdrowe nawyki żywieniowe, a w efekcie utracić zbędne kilogramy. Przestawisz się na zdrowy tryb życia i zadbasz o gospodarkę lipidową oraz insulinową swojego organizmu.",
         ]
       },
+      warszawa: {
+        description: [
+          "Dieta Paleo funkcjonuje również pod nazwą „dieta człowieka pierwotnego”. Jest ona przeznaczona dla osób, które chcą wyrobić sobie odpowiednie nawyki żywieniowe.",
+          "Jest to dieta wysokobiałkowa, o sporej zawartości tłuszczu. Węglowodany zostają tutaj z kolei ograniczone. Menu eliminuje żywność przetworzoną, zboża, rośliny strączkowe i nabiał (produkty mleczne).",
+          "Typowe posiłki zawierają mięsne źródła białka, ryby i oraz jaja. Dodatkowo, jadłospis został uzupełniony o owoce, warzywa, a także orzechy i pestki. Menu w diecie Paleo jest urozmaicone.",
+          "Posiłki, wchodzące w skład tej diety, nie zawierają glutenu. Dieta Paleo jest bogata jest w żelazo hemowe, błonnik oraz kwasy tłuszczowe omega 3. Pozwoli Ci to zadbać o gospodarkę lipidową oraz insulinową swojego organizmu oraz zrzucić zbędne kilogramy.",
+        ]
+      },
       trojmiasto: {
         description: [
           "Dieta Paleo bazuje na prostym i jasnym jadłospisie. Menu jest wysokobiałkowe, o sporej zawartości tłuszczów, a deficytowe w węglowodany. Paleo to dieta bezglutenowa.",
@@ -253,9 +261,17 @@ export const diets = [
       lodz: {
         description: [
           "Dieta Samuraja jest przeznaczona dla osób aktywnych fizycznie. Stanowi ona połączenie diety Paleo i diety sportowej na masę. W tym menu mamy większą ilość węglowodanów niż w Paleo.",
-          "Posiłki z diety Samuraja nie zawierają glutenu (tzn. ryżu, kasz, makaronów i pseudo-zbóż) oraz laktozy (tzn. produktów mlecznych). Menu przykuwa uwagę większą ilością mięsa. Posiłki są obfite również w jaja, ryby, warzywa i owoce.",
+          "Posiłki z diety Samuraja nie zawierają glutenu oraz laktozy (tzn. produktów mlecznych). Menu przykuwa uwagę większą ilością mięsa. Posiłki są obfite również w jaja, ryby, warzywa i owoce.",
           "Do diety Samuraja zostały wprowadzone rośliny strączkowe, które stanowią ciekawe urozmaicenie. Smaczne, zdrowe i konkretne posiłki na pewno przypadną do gustu każdej osobie, która lubi się ruszać.",
           "Takie menu będzie idealne, dla osób cierpiących nietolerancje pokarmowe, ale chcących dostarczać organizmowi pełnowartościowych składników odżywczych. Dieta Samuraja jest idealną dietą dla osób ćwiczących, którzy pragną, aby ich sylwetka wyglądała jeszcze lepiej.",
+        ]
+      },
+      warszawa: {
+        description: [
+          "Dieta Samuraja jest przeznaczona dla osób aktywnych fizycznie, które zmagają się z nietolerancjami pokarmowymi – są uczulone na gluten i laktozę.",
+          "Dieta Samuraja czerpie z diety Paleo oraz ze sportowej na masę. Menu zawiera większą ilość węglowodanów niż w diecie Paleo, ale również jest pozbawione glutenu i laktozy (produkty mleczne).",
+          "Do jadłospisu wprowadzono rośliny strączkowe, które są sporym urozmaiceniem. Dieta Samuraja jest bogata w mięso, ryby, warzywa, owoce, jaja.",
+          "Dzięki niej, Twój organizm codziennie będzie otrzymywał pełnowartościowe składniki odżywcze, mimo tego, że zmagasz się z nietolerancjami pokarmowymi. Przestawienie się na zdrowe odżywianie jest zawsze możliwe!",
         ]
       },
       trojmiasto: {
@@ -307,7 +323,7 @@ export const diets = [
       wroclaw: {
         description: [
           "Dieta Samuraja jest odpowiednia dla wszystkich osób, które są aktywne fizycznie i chcą się zdrowo oraz smacznie odżywiać, ale cierpią na nietolerancje pokarmowe.",
-          "Posiłki są pozbawione laktozy oraz glutenu (ryż, kasza, makarony, pseudo-zboża). Menu udowadnia jednak, że możliwe jest dostarczenie organizmowi pełnowartościowych składników odżywczych, nawet przy alergiach pokarmowych.",
+          "Posiłki są pozbawione laktozy oraz glutenu. Menu udowadnia jednak, że możliwe jest dostarczenie organizmowi pełnowartościowych składników odżywczych, nawet przy alergiach pokarmowych.",
           "Dieta Samuraja to połączenie diety Paleo oraz diety sportowej na masę. Menu zostało wzbogacone o większą ilość węglowodanów.",
           "W diecie Samuraja posiłki składają się z mięsa, ryb, warzyw, owoców, jajek. Rośliny strączkowe stanowią tu ciekawe i smaczne urozmaicenie.",
         ]

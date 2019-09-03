@@ -73,12 +73,15 @@ const Diet = ({ pageContext }) => {
     return descriptions && descriptions.description
   }
 
+  console.log('xxxxx', `${findDiet() &&
+  findDiet().fullName} - ${findCity()}. ${findDiet() && findDiet().metaDescription}`)
   return (
     <Layout pageContext={pageContext}>
       <SEO
         title={`${findDiet() &&
           findDiet().fullName} - catering dietetyczny ${findCity()}`}
-        description={findDiet() && findDiet().metaDescription}
+        description={`${findDiet() &&
+        findDiet().fullName} - ${findCity()}. ${findDiet() && findDiet().metaDescription}`}
         indexing={checkIfIndexingShouldBeOn()}
       />
       <DietHero diet={pageContext && getDietSlug()} />

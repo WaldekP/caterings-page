@@ -57,9 +57,9 @@ const Layout = ({ title, children, pageContext }) => {
     const citiesLength = cities.length
     const citiesLenthDividedByTwo = Math.floor(cities.length / 2)
     if (column === "left") {
-      return cities.slice(0, citiesLenthDividedByTwo)
+      return cities.slice(0, citiesLenthDividedByTwo + 1)
     } else {
-      return cities.slice(citiesLenthDividedByTwo, citiesLength)
+      return cities.slice(citiesLenthDividedByTwo + 1, citiesLength)
     }
   }
 

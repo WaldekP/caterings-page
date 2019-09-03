@@ -73,7 +73,7 @@ const IndexPage = ({ pageContext }) => {
     return cityObject && cityObject.label
   }
   const getMetaDescription = () => {
-    return "AfterFit to catering dietetyczny dla wymagających oferujący dietę z dostawą. Odkryj smak pasji i zaangażowania w każdym pudełku"
+    return `Catering dietetyczny AfterFit - ${findCity()}. Zbilansowana dieta pudełkowa z dostawą do domu dla wymagających.`
   }
   return (
     <Layout pageContext={pageContext}>

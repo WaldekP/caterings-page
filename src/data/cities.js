@@ -36,13 +36,6 @@ export const cities = [
     cityId: 5,
   },
   {
-    value: 'elblag',
-    label: 'Elbląg',
-    popular: false,
-    indexing: false,
-    cityId: 6,
-  },
-  {
     value: 'gorzow-wielkopolski',
     label: 'Gorzów Wielk.',
     popular: false,
