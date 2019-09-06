@@ -130,7 +130,6 @@ const Pricing = React.forwardRef((props, ref) => {
   }, [state.activeCalories])
 
   const getDiets = () => {
-    console.log('cateringDetails', cateringDetails)
     return cateringDetails.diets
       .reduce((acc, curr) => {
         const dietAlreadyExists = acc.findIndex(
@@ -328,13 +327,27 @@ const Pricing = React.forwardRef((props, ref) => {
     if (diet === 'dieta-wegetarianska') {
       return 576
     }
+    if (diet === 'dieta-bezglutenowa') {
+      return 582
+    }
+    if (diet === 'dieta-bezlaktozowa') {
+      return 581
+    }
+    if (diet === 'dieta-detox') {
+      return 580
+    }
+    if (diet === 'dieta-niski-indeks') {
+      return 579
+    }
+    if (diet === 'dieta-wege-z-rybami') {
+      return 234
+    }
     return null
   }
 
   const { diet } = props;
   return (
     <div ref={ref}>
-      {console.log('getDiets', getDiets())}
       <h2>{ diet ? `Cennik cateringu Afterfit - ${diet}` : "Cennik naszych diet pudełkowych"}</h2>
       <div className={pricingStyles.container}>
         <div className={pricingStyles.leftSide}>

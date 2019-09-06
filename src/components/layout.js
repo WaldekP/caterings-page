@@ -41,7 +41,6 @@ const Layout = ({ title, children, pageContext }) => {
   }, [])
   const getLinkUrl = city => {
     if (city === "lodz") {
-      console.log("city", city)
       if (dietSlug) {
         return `/${dietSlug}`
       }
@@ -170,7 +169,6 @@ const Layout = ({ title, children, pageContext }) => {
         <div className={layoutStyles.content}>
           <Header pageContext={pageContext} title={title} />
           {children}
-          {console.log('overlay', overlay)}
           {(citySlug || !overlay) && <CookieConsent
             location="bottom"
             buttonText="Zgoda"

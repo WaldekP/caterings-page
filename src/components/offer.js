@@ -59,7 +59,6 @@ const Offer = React.forwardRef(({ pageContext }, ref) => {
     <div>
       <h2>Oferta naszej diety pudełkowej - wybierz jedną z 8 diet z dowozem</h2>
       <div className={offerStyles.container} ref={ref}>
-        {console.log('diets', diets)}
         {diets.map(diet => (
           <Link to={pageContext.city ? `/${pageContext.city}/${diet.dietUrl}` : `/${diet.dietUrl}`} key={diet.dietUrl}>
             <div className={offerStyles.dietItem} key={diet.dietUrl}>
