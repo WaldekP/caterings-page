@@ -1,6 +1,172 @@
 import React from 'react';
 export const diets = [
   {
+    dietUrl: "dieta-bezglutenowa",
+    metaDescription: 'Dieta bezglutenowa jest idealna dla każdego, kto chce się zdrowo odżywiać i nie toleruje glutenu.',
+    dietImg: "../images/diets/dieta-odchudzajaca.jpg",
+    dietGallery: {
+      1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_3.jpg",
+      2: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_14.jpg",
+      3: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_5.jpg",
+    },
+    fullName: "Dieta bezglutenowa",
+    questions: {
+      1: {
+        question: "Rozkład makroskładników",
+        answer: "Białko: 15-25%\n" +
+          "Węglowodany: 40-50%\n" +
+          "Tłuszcze: 25-35%"
+      },
+      2: {
+        question: "Dla kogo?",
+        answer: <span>1. Dedykowana osobom z alergią, nadwrażliwością i nietolerancją na gluten.<br/> <br/>
+          2.Może być zalecana w chorobach autoimmunologicznych w tym Hashimoto a także w chorobach  nieswoistych zapaleń jelit<br/> <br/>
+          3. Dla osób, którym po spożyciu produktów z glutenem towarzyszą objawy min. wzdęcia, bóle brzucha, nudności i wymioty, uczucie pełności,  zaparcia czy gazy<br/> <br/></span>
+      },
+    },
+    menu: {
+      breakfast: "Biszkoptowe omlety z  grzybami",
+      secondBreakfast: "Czekoladowo-orzechowe ciastka z awokado",
+      dinner: "Schab z suszonymi pomidorami podany z sałatką z buraczka i pieczonymi talarkami ziemniaczanymi",
+      tea: "Muffinki z parmezanem, cukinią i komosą",
+      supper: "Wołowina po burgundzku podana z komosą ryżową",
+    },
+    offerDescription: "Dieta dla osób, które nie tolerują glutenu",
+    cityDescription: {
+      lodz: {
+        description: [
+          "Dieta bezglutenowa przeznaczona jest dla osób, które w swojej diecie pudełkowej z różnych przyczyn muszą wyeliminować lub ograniczyć gluten.",
+          "W naszej diecie bezglutenowej produkty zbożowe zostały zastąpione produktami naturalnie bezglutenowymi takimi jak np. kasza jaglana, kasza gryczana, ryż czy makarony kukurydziane.",
+          "W jadłospisie cateringu bezglutenowego AfterFit znajdziecie również produkty mleczne, różnego rodzaju mięso, ryby, jaja, owoce, warzywa czy nasiona i orzechy.",
+          "Z uwagi na to, że w diecie bezglutenowej mogą pojawić się śladowe ilości glutenu, nie jest na polecana dla osób z celiakią.",
+        ]},
+    },
+  },
+  {
+    dietUrl: "dieta-bezlaktozowa",
+    metaDescription: 'Dieta bezlaktozowa jest idealna dla każdego, kto chce się zdrowo odżywiać i nie toleruje laktozy.',
+    dietImg: "../images/diets/dieta-odchudzajaca.jpg",
+    dietGallery: {
+      1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_3.jpg",
+      2: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_14.jpg",
+      3: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_5.jpg",
+    },
+    fullName: "Dieta bezlaktozowa",
+    questions: {
+      1: {
+        question: "Rozkład makroskładników",
+        answer: "Białko: 15-25%\n" +
+          "Węglowodany: 40-50%\n" +
+          "Tłuszcze: 25-35%"
+      },
+      2: {
+        question: "Dla kogo?",
+        answer: <span>1. Skierowana do osób nietolerujących laktozy.<br/> <br/>
+          2. Dla osób, którym po spożyciu produktów mlecznych towarzyszy uciążliwe uczucie dyskomfortu min. wzdęcia, bóle brzucha, kolki,  zaparcia, gazy, biegunki.<br/> <br/>
+          3. Dla osób, które zrezygnowały z jedzenia nabiału.<br/></span>
+      },
+    },
+    menu: {
+      breakfast: "Jajeczne muffiny z boczkiem",
+      secondBreakfast: "Smoothie bowl z ananasem i granolą",
+      dinner: "Schab z suszonymi pomidorami podany z sałatką z buraczka i pieczonymi talarkami ziemniaczanymi",
+      tea: "Muffinki z parmezanem, cukinią i komosą",
+      supper: "Lekka sałatka azjatycka z wołowiną",
+    },
+    offerDescription: "Dieta dla osób, które nie tolerują laktozy",
+    cityDescription: {
+      lodz: {
+        description: [
+          "Dieta pudełkowa bezlaktozowa przeznaczona jest dla osób z nietolerancją laktozy. Z menu zostały wyeliminowane produkty zawierające laktozę a wykorzystane zostały jego zamienniki.",
+          "Jadłospis cateringu dietetycznego AfterFit bazuje na pełnowartościowych bezlaktozowych produktach spożywczych. Mleko krowie zostało zastąpione napojami roślinnymi, mlekiem kokosowym czy mlekiem kozim.  ",
+          "Dieta bezlaktozowa tym samym dostarcza odpowiednią ilość białka, która pochodzi zarówno ze źródeł zwierzęcych jak i roślinnych. ",
+          "Prawidłowo skomponowane posiłki mają wspomóc nasze zdrowie i dore samopoczucie przy towarzyszącej nietolerancji na cukier zawarty w mleku.",
+        ]},
+    },
+  },
+  {
+    dietUrl: "dieta-detox",
+    metaDescription: 'Dieta przeznaczona jest dla osób, które chcą oczyścić organizm z toksyn i zbędnych produktów przemiany materii.',
+    dietImg: "../images/diets/dieta-odchudzajaca.jpg",
+    dietGallery: {
+      1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_3.jpg",
+      2: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_9.jpg",
+      3: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_11.jpg",
+    },
+    fullName: "Dieta detox",
+    questions: {
+      1: {
+        question: "Rozkład makroskładników",
+        answer: "W diecie detox nie liczymy makroskładników. Jest to dieta , która powinna być stosowana tylko przez krótki okres. Optymalny czas to 1-3 tygodnie.",
+      },
+      2: {
+        question: "Dla kogo?",
+        answer: <span>1. Dedykowana osobom, które są w ciągłym biegu, czują się wyczerpane, ociężałe, pozbawione energii do życia.<br/> <br/>
+          2. Dla osób które chcą oczyścić swój organizm z toksyn, wspomóc system trawienny oraz odpornościowy.<br/> <br/>
+          3. Skierowana dla osób, które chcą w szybki sposób zrzucić kilka kilogramów.<br/> <br/></span>
+      },
+    },
+    menu: {
+      breakfast: "Budyń jaglany z wiśniową nutką detox",
+      secondBreakfast: "Sernik z orzechów nerkowca",
+      dinner: "Lekki bigos z suszonymi morelami",
+      tea: "Sałatka  z mango i gruszki z granatem",
+      supper: "Azjatycki krem z marchewki detox",
+    },
+    offerDescription: "Dieta dla osób, które chcą oczyścić organizm z toksyn.",
+    cityDescription: {
+      lodz: {
+        description: [
+          "Dieta pudełkowa Detox przeznaczona jest dla osób, które chcą oczyścić organizm z toksyn i zbędnych produktów przemiany materii. Może też być stosowana jaka krótkotrwała kuracja odchudzająca, która pozwoli nam zrzucić kilka kilogramów w szybszym czasie.",
+          "Dieta Detox to przede wszystkim dieta owocowo-warzywna, która została wzbogacona o produkty naturalnie bezglutenowe takie jak np. kasza jaglana, ryż brązowy czy płatki gryczane. ",
+          "Jadłospis uzupełniają tłuszcze roślinne, nasiona oraz orzechy. Eliminuję ona mięso, ryby, jaja , rośliny strączkowe oraz gluten i laktozę.",
+          "W cateringu diety Detox znajdują się różnego rodzaju soki warzywno-owocowe, zupy czy smaczne sałatki. Dieta detox dostarczy naszemu organizmowi sporą dawkę witamin, składników mineralnych a także błonnika, który skutecznie pobudzi naszą przemianę materii.",
+        ]},
+    },
+  },
+  {
+    dietUrl: "dieta-niski-indeks",
+    metaDescription: 'Dieta z niskim indeksem glikemicznym przeznaczona jest dla osób , które mają problemy z nieprawidłowym poziom glukozy we krwi.',
+    dietImg: "../images/diets/dieta-odchudzajaca.jpg",
+    dietGallery: {
+      1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_3.jpg",
+      2: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_9.jpg",
+      3: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_5.jpg",
+    },
+    fullName: "Dieta niski indeks",
+    questions: {
+      1: {
+        question: "Rozkład makroskładników",
+        answer: "Białko: 20-25%\n" +
+          "Węglowodany: 40-50%\n" +
+          "Tłuszcze: 30-35%"
+      },
+      2: {
+        question: "Dla kogo?",
+        answer: <span>1. Dedykowana osobom, które chcą zacząć odżywiać się zdrowo i pragną zapanować nad niekontrolowanymi napadami głodu.<br/> <br/>
+          2. Skierowana dla osób cierpiących na cukrzycę, insulinooporość, choroby ze strony układu krążenia.<br/> <br/>
+          3. Zalecana osobom, które chcą zrzucić zbędne kilogramy.<br/> <br/></span>
+      },
+    },
+    menu: {
+      breakfast: "Sałatka norweska z łososiem",
+      secondBreakfast: "Smoothie bowl z ananasem i granolą",
+      dinner: "Filet z indyka w winnym sosie śliwkowym z kaszą jaglaną i kalafiorem",
+      tea: "Spring rolls z mango",
+      supper: "Bakłażan  faszerowany mozarellą i pomidorami",
+    },
+    offerDescription: "Dieta dla osób, które mają problemy z nieprawidłowym poziomem glukozy we krwi.",
+    cityDescription: {
+      lodz: {
+        description: [
+          "Dieta z niskim indeksem glikemicznym przeznaczona jest dla osób , które mają problemy z nieprawidłowym poziomem glukozy we krwi, insulinoopornością czy chorująch na cukrzycę. Może być również stosowana w profilaktyce chorób serca oraz otyłości.",
+          "Dieta opiera się głównie o produkty o niskim indeksie glikemicznym. W diecie została ograniczona ilość produktów bogatych w cukry proste. W słodkich deserach cukier został zastąpiony jego zdrowszym zamiennikiem – ksylitolem.",
+          "Jadłospis obfituje w warzywa, owoce, mięso, ryby, produkty mleczne, jaja, nasiona roślin strączkowych oraz orzechy.",
+          "W diecie zwrócono uwagę nie tylko na indeks glikemiczny produktów ale na udział gramowy danego składnika w potrawie czyli na ładunek glikemiczny.",
+        ]},
+    },
+  },
+  {
     dietUrl: "dieta-odchudzajaca",
     metaDescription: 'Dieta Odchudzająca jest idealna dla każdego, kto chce schudnąć, nie będąc przy tym aktywnym fizycznie. Najważniejszy jest tutaj odpowiedni dobór kalorii.',
     dietImg: "../images/diets/dieta-odchudzajaca.jpg",
@@ -339,123 +505,123 @@ export const diets = [
     },
     image: "../images/diets/dieta-paleo.png"
   },
-  {
-    dietUrl: "dieta-sportowa-na-mase",
-    metaDescription: 'Dieta sportowa na masę to opcja dla tych, którzy chcą wyrobić masę mięśniową. Proces ten powinien się łączyć z odpowiednim planem treningowym.',
-    dietImg: "../images/diets/dieta-odchudzajaca.jpg",
-    dietGallery: {
-      1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_12.jpg",
-      2: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_11.jpg",
-      3: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_4.jpg",
-    },
-    fullName: "Dieta sportowa na masę",
-    questions: {
-      1: {
-        question: "Rozkład makroskładników",
-        answer: "Białko: 25-30% \n" +
-          "Węglowodany: 40-55% \n" +
-          "Tłuszcze: 25-30%"
-      },
-      2: {
-        question: "Dla kogo?",
-        answer: "Dieta skierowana do osób, które aktywnie uprawiają sport i pragną zwiększyć masę mięśniową, a nie maja czasu ani wiedzy potrzebnej do przygotowania odpowiednio zbilansowanych posiłków."
-      },
-    },
-    menu: {
-      breakfast: "Jajecznica z krewetkami, pomidory, pieczywo pełnoziarniste.",
-      secondBreakfast: "Koktajl jogurtowy na bazie awokado i masła orzechowego",
-      dinner: "Marokańskie pulpeciki z kurczaka z ziemniaczanymi krokietami ze szpinakiem",
-      tea: "Babeczki mięsne z sosem imbirowo – pomarańczowym",
-      supper: "Naleśniki owsiane z białym serem, miodem i orzechami.",
-    },
-    offerDescription: "Dieta dla osób chcących zwiększyć masę mięśniową",
-    cityDescription: {
-      lodz: {
-        description: [
-          "Dieta sportowa na masę jest przeznaczona dla wszystkich osób, które są zmotywowane do tego, by zbudować swoją masę mięśniową i \n" +
-          "które intensywnie trenują na siłowni.",
-          "Budowanie masy mięśniowej to proces długotrwały, w którym liczy się odpowiednia strategia. Zwiększenie ilości spożywanych kalorii musi iść z parze z odpowiednim planem treningowym, który pomoże Ci dobrać specjalista.",
-          "W diecie na masę kluczowe są tzw. dobre kalorie, dobre tłuszcze i dobre węglowodany. Pochodzą one z pełnowartościowych i nieprzetworzonych produktów. Wszystkie posiłki z menu są skomponowane według tych wytycznych.",
-          "Składniki są łączone w taki sposób, by wpływały na zwiększenie masy mięśniowej. Dieta sportowa na masę, podobnie jak dieta Samuraja, jest bogata w mięso, ryby oraz jaja.",
-        ]
-      },
-      trojmiasto: {
-        description: [
-          "Dieta Sportowa na masę jest odpowiednia dla wszystkich osób, którym zależy na wyrobieniu masy mięśniowej.",
-          "Zwiększanie masy mięśniowej jest procesem, w którym dieta musi iść w parze z odpowiednio i profesjonalnie dobranym planem treningowym.",
-          "Istotną kwestią jest tu zwiększenie ilość spożywanych kalorii. Dieta sportowa na masę bazuje na dobrych kaloriach, dobrych tłuszczach i dobrych węglowodanach- pochodzą one z produktów nieprzetworzonych.\n" +
-          "\n",
-          "Posiłki składają się z mięsa, ryb, jaj (podobnie jak w diecie Samuraja). Składniki są ze sobą prawidłowo połączone, tak by przybliżały Cię do celu, jakim jest zwiększenie masy mięśniowej.",
-        ]},
-      aglomeracjaSlaska: {
-        description: [
-          "Dieta sportowa na masę idealnie wpisuje się w potrzeby osób, które chcą uwydatnić swoją masę mięśniową i zadbać o odpowiednie kształty.",
-          "Samo budowanie masy mięśniowej to długotrwały proces. Do sukcesu konieczny jest również odpowiednio dobrany plan treningowy. Zwiększenie ilości spożywanych kalorii musi iść w parze z wysiłkiem fizycznym.",
-          "Dieta Sportowa na masę posiada jasny cel. Składniki są łączone tak, by zbudować masę mięśniową. Menu jest bogate w mięso, ryby i jaja (podobnie jak dieta Samuraja) i będzie odpowiadało wszystkim, lubiącym konkretne potrawy.\n" +
-          "\n",
-          "Kluczowe są tutaj dobre kalorie, dobre tłuszcze oraz dobre węglowodany. Znajdziemy je w nieprzetworzonych, pełnowartościowych produktach.\n" +
-          "\n",
-        ]},
-      warszawa: {
-        description: [
-          "Dieta Sportowa na masę jest przeznaczona dla wszystkich tych, którzy pragną poprawić swoją rzeźbę poprzez zwiększenie masy mięśniowej.",
-          "Menu jest bogate w mięso, ryby i jaja (podobnie jak w diecie Samuraja). Posiłki bazują na tzw. dobrych kaloriach, dobrych tłuszczach i dobrych węglowodanach,które pochodzą z pełnowartościowych i zdrowych produktach.",
-          "Głównym celem diety sportowej jest sprawienie, by nastąpił odpowiedni przyrost masy mięśniowej. W tym celu, wszystkie składniki w menu są odpowiednio rozłożone i ze sobą połączone.",
-          "Podkreślamy, że budowanie masy mięśniowej oprócz większej ilości spożywanych kalorii, opiera się również na odpowiedniej strategii treningowej. W tym przypadku dieta musi iść w parze z właściwą aktywnością fizyczną.",
-        ]
-      },
-      bydgoszcz: {
-        description: [
-          "Dieta Sportowa na masę jest przeznaczona dla wszystkich osób, które chcą zwiększyć swoją masę mięśniową i wyrobić odpowiednią muskulaturę.",
-          "Menu bazuje na dobrych kaloriach, dobrych tłuszczach i dobrych węglowodanach. Pochodzą one ze zdrowych, pełnowartościowych oraz nieprzetworzonych produktów.",
-          "Posiłki są bogate w mięso, ryby i jaja (podobnie jak w diecie Samuraja). Odpowiednie połączenie składników gwarantuje, że dania przypadną Ci do gustu, jednocześnie przybliżając do celu, jakim jest zwiększenie masy mięśniowej.",
-          "Pamiętaj, że budowanie masy mięśniowej to proces wymagający konsekwencji. Odpowiednie odżywianie musi iść w parze z przemyślana strategią treningową.",
-        ]
-      },
-      krakow: {
-        description: [
-          "Dieta sportowa na masę jest odpowiednia dla wszystkich tych, którzy chcą zwiększyć swoją masę mięśniową oraz uwydatnić mięśnie.",
-          "Menu jest nakierowane na ten cel. Opiera się ono na mięsie, rybach i jajach (podobnie jak w diecie Samuraja). Wszystkie składniki są odpowiednio zbilansowane i połączone ze sobą.",
-          "Dieta Sportowa na masę bazuje na dobrych kaloriach, dobrych tłuszczach i dobrych węglowodanach. Składniki te pochodzą z nieprzetworzonych i pełnowartościowych produktów.\n" +
-          "\n",
-          "Budowanie masy mięśniowej to proces wymagający konsekwencji. Do realizacji celu, niezbędne jest połączenie diety oraz odpowiedniego planu treningowego.",
-        ]
-      },
-      poznan: {
-        description: [
-          "Dieta Sportowa na masę będzie odpowiednia dla wszystkich osób, chcących popracować nad swoją muskulaturą, czyli zwiększyć masę mięśniową.",
-          "Całe menu opiera się na tzw. dobrych kaloriach, dobrych tłuszczach oraz dobrych węglowodanach. Składniki te pochodzą wyłącznie z pełnowartościowych i nieprzetworzonych produktów.",
-          "Jadłospis zawiera dużą ilość mięsa, ryb i jaj (podobnie jak w diecie Samuraja). Dania zawierają sporą ilość kalorii, gdyż mają za zadanie przyczynić się do budowy masy mięśniowej.",
-          "Budowanie masy mięśniowej to proces długotrwały, wymagający konsekwencji. Niezwykle istotny jest tutaj odpowiednio dobrany plan treningowy, który musi iść w parze z dietą.",
-        ]
-      },
-      torun: {
-        description: [
-          "Dieta sportowa na masę jest skierowana do osób chcących zwiększyć swoją masę mięśniową.",
-          "W diecie tej staramy się w odpowiedni sposób łączyć i wykorzystywać składniki w jadłospisie tak, aby były ukierunkowane na zwiększenie masy mięśniowej Klienta. Podobnie jak dieta Samuraja bogata jest w mięso, ryby oraz jaja.",
-          "Warto pamiętać, że budowanie masy mięśniowej to nie tylko zwiększenie ilości spożywanych kalorii, ale przede wszystkim przemyślana strategia treningowa. Przy budowaniu masy mięśniowej dieta powinna współgrać z planem treningowym.",
-          "Dieta Sportowa na masę bazuje na tzw. dobrych kaloriach, dobrych tłuszczach i dobrych węglowodanach, które pochodzą z pełnowartościowych i nie przetworzonych produktów.",
-        ]
-      },
-      wroclaw: {
-        description: [
-          "Dieta Sportowa na masę na masę będzie idealną opcją dla wszystkich osób, które pragną stworzyć odpowiednią rzeźbę oraz zwiększyć swoją masę mięśniową.",
-          "W diecie sportowej na masę najistotniejsze są tzw. dobre kalorie, tłuszcze i węglowodany, Dieta sportowa na masę bazuje na tzw. dobrych kaloriach, dobrych tłuszczach i dobrych węglowodanach. Składniki te pozyskuje się z nieprzetworzonych, pełnowartościowych produktów.",
-          "Posiłki są ukierunkowane na zwiększenie masy mięśniowej, a więc składają się z odpowiednio połączonych i dobranych produktów. Dieta sportowa na masę jest bogata jest w mięso, ryby oraz jaja (podobnie jak dieta Samuraja).",
-          "Podkreślamy, że budowanie masy mięśniowej nie opiera się wyłącznie na diecie i na zwiększaniu ilości spożywanych kalorii, ale również na odpowiedniej strategii treningowej. Dieta i ćwiczenia muszą iść tu w parze.",
-        ]
-      },
-      sopot: {
-        description: [
-          "Dieta odchudzająca jest przeznaczona dla wszystkich, którzy chcą zrzucić zbędne kilogramy i nie są uczuleni na gluten oraz laktozę. Jest ona odpowiednia dla osób mniej aktywnych fizycznie.",
-          "Taki sposób odżywiania bazuje na mniejszej ilości węglowodanów, co pozwala ustabilizować lub zredukować masę ciała. Menu jest tu tak dobrane, że pozwoli wyeliminować „napady głodu”.",
-          "Dieta odchudzająca jest bogata jest w nabiał. Menu jest w tym przypadku obfite w chude mięso, warzywa, owoce, jaja, nasiona roślin strączkowych oraz orzechy. Zapiekanki warzywne, sałatki, jogurty i koktajle z pewnością będą sporym urozmaiceniem",
-          "Dzięki diecie odchudzającej zyskasz wymarzoną figurę i zmienisz swój tryb życie. Stanowi ona inwestycję w lepszy stan zdrowia i dobre samopoczucie.",
-        ]
-      }
-    },
-    image: "../images/diets/dieta-paleo.png"
-  },
+  // {
+  //   dietUrl: "dieta-sportowa-na-mase",
+  //   metaDescription: 'Dieta sportowa na masę to opcja dla tych, którzy chcą wyrobić masę mięśniową. Proces ten powinien się łączyć z odpowiednim planem treningowym.',
+  //   dietImg: "../images/diets/dieta-odchudzajaca.jpg",
+  //   dietGallery: {
+  //     1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_12.jpg",
+  //     2: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_11.jpg",
+  //     3: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_4.jpg",
+  //   },
+  //   fullName: "Dieta sportowa na masę",
+  //   questions: {
+  //     1: {
+  //       question: "Rozkład makroskładników",
+  //       answer: "Białko: 25-30% \n" +
+  //         "Węglowodany: 40-55% \n" +
+  //         "Tłuszcze: 25-30%"
+  //     },
+  //     2: {
+  //       question: "Dla kogo?",
+  //       answer: "Dieta skierowana do osób, które aktywnie uprawiają sport i pragną zwiększyć masę mięśniową, a nie maja czasu ani wiedzy potrzebnej do przygotowania odpowiednio zbilansowanych posiłków."
+  //     },
+  //   },
+  //   menu: {
+  //     breakfast: "Jajecznica z krewetkami, pomidory, pieczywo pełnoziarniste.",
+  //     secondBreakfast: "Koktajl jogurtowy na bazie awokado i masła orzechowego",
+  //     dinner: "Marokańskie pulpeciki z kurczaka z ziemniaczanymi krokietami ze szpinakiem",
+  //     tea: "Babeczki mięsne z sosem imbirowo – pomarańczowym",
+  //     supper: "Naleśniki owsiane z białym serem, miodem i orzechami.",
+  //   },
+  //   offerDescription: "Dieta dla osób chcących zwiększyć masę mięśniową",
+  //   cityDescription: {
+  //     lodz: {
+  //       description: [
+  //         "Dieta sportowa na masę jest przeznaczona dla wszystkich osób, które są zmotywowane do tego, by zbudować swoją masę mięśniową i \n" +
+  //         "które intensywnie trenują na siłowni.",
+  //         "Budowanie masy mięśniowej to proces długotrwały, w którym liczy się odpowiednia strategia. Zwiększenie ilości spożywanych kalorii musi iść z parze z odpowiednim planem treningowym, który pomoże Ci dobrać specjalista.",
+  //         "W diecie na masę kluczowe są tzw. dobre kalorie, dobre tłuszcze i dobre węglowodany. Pochodzą one z pełnowartościowych i nieprzetworzonych produktów. Wszystkie posiłki z menu są skomponowane według tych wytycznych.",
+  //         "Składniki są łączone w taki sposób, by wpływały na zwiększenie masy mięśniowej. Dieta sportowa na masę, podobnie jak dieta Samuraja, jest bogata w mięso, ryby oraz jaja.",
+  //       ]
+  //     },
+  //     trojmiasto: {
+  //       description: [
+  //         "Dieta Sportowa na masę jest odpowiednia dla wszystkich osób, którym zależy na wyrobieniu masy mięśniowej.",
+  //         "Zwiększanie masy mięśniowej jest procesem, w którym dieta musi iść w parze z odpowiednio i profesjonalnie dobranym planem treningowym.",
+  //         "Istotną kwestią jest tu zwiększenie ilość spożywanych kalorii. Dieta sportowa na masę bazuje na dobrych kaloriach, dobrych tłuszczach i dobrych węglowodanach- pochodzą one z produktów nieprzetworzonych.\n" +
+  //         "\n",
+  //         "Posiłki składają się z mięsa, ryb, jaj (podobnie jak w diecie Samuraja). Składniki są ze sobą prawidłowo połączone, tak by przybliżały Cię do celu, jakim jest zwiększenie masy mięśniowej.",
+  //       ]},
+  //     aglomeracjaSlaska: {
+  //       description: [
+  //         "Dieta sportowa na masę idealnie wpisuje się w potrzeby osób, które chcą uwydatnić swoją masę mięśniową i zadbać o odpowiednie kształty.",
+  //         "Samo budowanie masy mięśniowej to długotrwały proces. Do sukcesu konieczny jest również odpowiednio dobrany plan treningowy. Zwiększenie ilości spożywanych kalorii musi iść w parze z wysiłkiem fizycznym.",
+  //         "Dieta Sportowa na masę posiada jasny cel. Składniki są łączone tak, by zbudować masę mięśniową. Menu jest bogate w mięso, ryby i jaja (podobnie jak dieta Samuraja) i będzie odpowiadało wszystkim, lubiącym konkretne potrawy.\n" +
+  //         "\n",
+  //         "Kluczowe są tutaj dobre kalorie, dobre tłuszcze oraz dobre węglowodany. Znajdziemy je w nieprzetworzonych, pełnowartościowych produktach.\n" +
+  //         "\n",
+  //       ]},
+  //     warszawa: {
+  //       description: [
+  //         "Dieta Sportowa na masę jest przeznaczona dla wszystkich tych, którzy pragną poprawić swoją rzeźbę poprzez zwiększenie masy mięśniowej.",
+  //         "Menu jest bogate w mięso, ryby i jaja (podobnie jak w diecie Samuraja). Posiłki bazują na tzw. dobrych kaloriach, dobrych tłuszczach i dobrych węglowodanach,które pochodzą z pełnowartościowych i zdrowych produktach.",
+  //         "Głównym celem diety sportowej jest sprawienie, by nastąpił odpowiedni przyrost masy mięśniowej. W tym celu, wszystkie składniki w menu są odpowiednio rozłożone i ze sobą połączone.",
+  //         "Podkreślamy, że budowanie masy mięśniowej oprócz większej ilości spożywanych kalorii, opiera się również na odpowiedniej strategii treningowej. W tym przypadku dieta musi iść w parze z właściwą aktywnością fizyczną.",
+  //       ]
+  //     },
+  //     bydgoszcz: {
+  //       description: [
+  //         "Dieta Sportowa na masę jest przeznaczona dla wszystkich osób, które chcą zwiększyć swoją masę mięśniową i wyrobić odpowiednią muskulaturę.",
+  //         "Menu bazuje na dobrych kaloriach, dobrych tłuszczach i dobrych węglowodanach. Pochodzą one ze zdrowych, pełnowartościowych oraz nieprzetworzonych produktów.",
+  //         "Posiłki są bogate w mięso, ryby i jaja (podobnie jak w diecie Samuraja). Odpowiednie połączenie składników gwarantuje, że dania przypadną Ci do gustu, jednocześnie przybliżając do celu, jakim jest zwiększenie masy mięśniowej.",
+  //         "Pamiętaj, że budowanie masy mięśniowej to proces wymagający konsekwencji. Odpowiednie odżywianie musi iść w parze z przemyślana strategią treningową.",
+  //       ]
+  //     },
+  //     krakow: {
+  //       description: [
+  //         "Dieta sportowa na masę jest odpowiednia dla wszystkich tych, którzy chcą zwiększyć swoją masę mięśniową oraz uwydatnić mięśnie.",
+  //         "Menu jest nakierowane na ten cel. Opiera się ono na mięsie, rybach i jajach (podobnie jak w diecie Samuraja). Wszystkie składniki są odpowiednio zbilansowane i połączone ze sobą.",
+  //         "Dieta Sportowa na masę bazuje na dobrych kaloriach, dobrych tłuszczach i dobrych węglowodanach. Składniki te pochodzą z nieprzetworzonych i pełnowartościowych produktów.\n" +
+  //         "\n",
+  //         "Budowanie masy mięśniowej to proces wymagający konsekwencji. Do realizacji celu, niezbędne jest połączenie diety oraz odpowiedniego planu treningowego.",
+  //       ]
+  //     },
+  //     poznan: {
+  //       description: [
+  //         "Dieta Sportowa na masę będzie odpowiednia dla wszystkich osób, chcących popracować nad swoją muskulaturą, czyli zwiększyć masę mięśniową.",
+  //         "Całe menu opiera się na tzw. dobrych kaloriach, dobrych tłuszczach oraz dobrych węglowodanach. Składniki te pochodzą wyłącznie z pełnowartościowych i nieprzetworzonych produktów.",
+  //         "Jadłospis zawiera dużą ilość mięsa, ryb i jaj (podobnie jak w diecie Samuraja). Dania zawierają sporą ilość kalorii, gdyż mają za zadanie przyczynić się do budowy masy mięśniowej.",
+  //         "Budowanie masy mięśniowej to proces długotrwały, wymagający konsekwencji. Niezwykle istotny jest tutaj odpowiednio dobrany plan treningowy, który musi iść w parze z dietą.",
+  //       ]
+  //     },
+  //     torun: {
+  //       description: [
+  //         "Dieta sportowa na masę jest skierowana do osób chcących zwiększyć swoją masę mięśniową.",
+  //         "W diecie tej staramy się w odpowiedni sposób łączyć i wykorzystywać składniki w jadłospisie tak, aby były ukierunkowane na zwiększenie masy mięśniowej Klienta. Podobnie jak dieta Samuraja bogata jest w mięso, ryby oraz jaja.",
+  //         "Warto pamiętać, że budowanie masy mięśniowej to nie tylko zwiększenie ilości spożywanych kalorii, ale przede wszystkim przemyślana strategia treningowa. Przy budowaniu masy mięśniowej dieta powinna współgrać z planem treningowym.",
+  //         "Dieta Sportowa na masę bazuje na tzw. dobrych kaloriach, dobrych tłuszczach i dobrych węglowodanach, które pochodzą z pełnowartościowych i nie przetworzonych produktów.",
+  //       ]
+  //     },
+  //     wroclaw: {
+  //       description: [
+  //         "Dieta Sportowa na masę na masę będzie idealną opcją dla wszystkich osób, które pragną stworzyć odpowiednią rzeźbę oraz zwiększyć swoją masę mięśniową.",
+  //         "W diecie sportowej na masę najistotniejsze są tzw. dobre kalorie, tłuszcze i węglowodany, Dieta sportowa na masę bazuje na tzw. dobrych kaloriach, dobrych tłuszczach i dobrych węglowodanach. Składniki te pozyskuje się z nieprzetworzonych, pełnowartościowych produktów.",
+  //         "Posiłki są ukierunkowane na zwiększenie masy mięśniowej, a więc składają się z odpowiednio połączonych i dobranych produktów. Dieta sportowa na masę jest bogata jest w mięso, ryby oraz jaja (podobnie jak dieta Samuraja).",
+  //         "Podkreślamy, że budowanie masy mięśniowej nie opiera się wyłącznie na diecie i na zwiększaniu ilości spożywanych kalorii, ale również na odpowiedniej strategii treningowej. Dieta i ćwiczenia muszą iść tu w parze.",
+  //       ]
+  //     },
+  //     sopot: {
+  //       description: [
+  //         "Dieta odchudzająca jest przeznaczona dla wszystkich, którzy chcą zrzucić zbędne kilogramy i nie są uczuleni na gluten oraz laktozę. Jest ona odpowiednia dla osób mniej aktywnych fizycznie.",
+  //         "Taki sposób odżywiania bazuje na mniejszej ilości węglowodanów, co pozwala ustabilizować lub zredukować masę ciała. Menu jest tu tak dobrane, że pozwoli wyeliminować „napady głodu”.",
+  //         "Dieta odchudzająca jest bogata jest w nabiał. Menu jest w tym przypadku obfite w chude mięso, warzywa, owoce, jaja, nasiona roślin strączkowych oraz orzechy. Zapiekanki warzywne, sałatki, jogurty i koktajle z pewnością będą sporym urozmaiceniem",
+  //         "Dzięki diecie odchudzającej zyskasz wymarzoną figurę i zmienisz swój tryb życie. Stanowi ona inwestycję w lepszy stan zdrowia i dobre samopoczucie.",
+  //       ]
+  //     }
+  //   },
+  //   image: "../images/diets/dieta-paleo.png"
+  // },
   {
     dietUrl: "dieta-sportowa-na-redukcje",
     metaDescription: 'Dieta sportowa na masę jest dietą wysokobiałkową, dzięki czemu nie dochodzi do „spalania mięśni”. Ciesz się lepszą kondycją oraz dobrym samopoczuciem.',
@@ -919,5 +1085,46 @@ export const diets = [
       }
     },
     image: "../images/diets/dieta-paleo.png"
+  },
+  {
+    dietUrl: "dieta-wege-z-rybami",
+    metaDescription: 'Dieta dla osób, które chcą się zdrowo odżywiać i pragną ze swojego jadłospisu wyeliminować mięso nie rezygnując przy tym z ryb',
+    dietImg: "../images/diets/dieta-odchudzajaca.jpg",
+    dietGallery: {
+      1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_3.jpg",
+      2: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_9.jpg",
+      3: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_2.jpg",
+    },
+    fullName: "Dieta wege z rybami",
+    questions: {
+      1: {
+        question: "Rozkład makroskładników",
+        answer: "Białko: 15-25%\n" +
+          "Węglowodany: 45-55%\n" +
+          "Tłuszcze: 25-35%"
+      },
+      2: {
+        question: "Dla kogo?",
+        answer: <span>1. Dedykowana osobom, które nie spożywają mięsa ale nie chcą rezygnować z ryb czy owoców morza, które są doskonałym źródłem białka i kwasów omega - 3.<br/> <br/>
+          2. Dla wszystkich, którzy pragną zdrowo się odżywiać i zadbać o prawidłową masę ciała czy zrzucić zbędne kilogramy.<br/> <br/></span>
+      },
+    },
+    menu: {
+      breakfast: "Sałatka z grillowaną cukinią, serem kozim i czarną porzeczką",
+      secondBreakfast: "Jogurtowy deser z mango z nasionami chia",
+      dinner: "Pełnoziarnisty makaron z krewetkami, pomidorkami i szpinakiem",
+      tea: "Muffinki z parmezanem, cukinią i komosą",
+      supper: "Dorsz w sosie musztardowym, mix warzyw na parze, ryż brązowy",
+    },
+    offerDescription: "Dieta dla osób nie jedzących mięsa czerwonego i drobiu",
+    cityDescription: {
+      lodz: {
+        description: [
+          "Dieta pudełkowa wege z rybami przeznaczona jest dla osób, które chcą się zdrowo odżywiać, ale ze względów zdrowotnych lub smakowych pragną ze swojego jadłospisu wyeliminować mięso nie rezygnując przy tym z ryb i owoców morza.",
+          "W diecie wege z rybami oprócz ryb i owoców morza znajdują się produkty mleczne, jaja, warzywa, owoce, rośliny strączkowe, produkty zbożowe oraz różnego rodzaju tłuszcze roślinne.",
+          "Podobnie jak dieta wegetariańska dostarczy ona nam sporą dawkę witamin, składników mineralnych, błonnika oraz znacznie więcej pełnowartościowego białka.",
+          "Skomponowana została tak, aby dostarczała wszystkich niezbędnych składników odżywczych w odpowiednich ilościach. ",
+        ]},
+    },
   },
 ]

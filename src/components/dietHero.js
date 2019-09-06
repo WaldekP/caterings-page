@@ -28,18 +28,21 @@ const DietHero = ({diet}) => {
     if (diet === 'dieta-samuraja') {
       return heroStyles.dietSamurai
     }
-    // if (diet === 'dieta-bezglutenowa') {
-    //   return heroStyles.dietGlutenFree
-    // }
-    // if (diet === 'dieta-wege-fish') {
-    //   return heroStyles.dietWegeFish
-    // }
-    // if (diet === 'dieta-bezlaktozy') {
-    //   return heroStyles.dietNoLactose
-    // }
-    // if (diet === 'dieta-detox') {
-    //   return heroStyles.dietDetox
-    // }
+    if (diet === 'dieta-bezglutenowa') {
+      return heroStyles.dietGlutenFree
+    }
+    if (diet === 'dieta-wege-z-rybami') {
+      return heroStyles.dietWegeFish
+    }
+    if (diet === 'dieta-bezlaktozowa') {
+      return heroStyles.dietNoLactose
+    }
+    if (diet === 'dieta-detox') {
+      return heroStyles.dietDetox
+    }
+    if (diet === 'dieta-niski-indeks') {
+      return heroStyles.dietLowIg
+    }
     return heroStyles.dietWeightLoss
   }
 

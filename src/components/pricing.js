@@ -130,6 +130,7 @@ const Pricing = React.forwardRef((props, ref) => {
   }, [state.activeCalories])
 
   const getDiets = () => {
+    console.log('cateringDetails', cateringDetails)
     return cateringDetails.diets
       .reduce((acc, curr) => {
         const dietAlreadyExists = acc.findIndex(
@@ -333,6 +334,7 @@ const Pricing = React.forwardRef((props, ref) => {
   const { diet } = props;
   return (
     <div ref={ref}>
+      {console.log('getDiets', getDiets())}
       <h2>{ diet ? `Cennik cateringu Afterfit - ${diet}` : "Cennik naszych diet pudełkowych"}</h2>
       <div className={pricingStyles.container}>
         <div className={pricingStyles.leftSide}>

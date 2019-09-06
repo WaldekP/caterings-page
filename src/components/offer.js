@@ -4,13 +4,16 @@ import offerStyles from "../styles/offer.module.scss"
 import { diets } from "../data/diets"
 import slimDiet from "../images/diets/dieta-odchudzajaca.jpg"
 import paleoDiet from "../images/diets/dieta-paleo.jpg"
-import standardDiet from "../images/diets/dieta-standard.jpg"
+import vegeWithFish from "../images/diets/dieta-wege-z-rybami.jpg"
 import samurajDiet from "../images/diets/dieta-samuraja.jpg"
 import vegeDiet from "../images/diets/dieta-wegetarianska.jpg"
 import vegaDiet from "../images/diets/dieta-weganska.jpg"
 import reductionDiet from "../images/diets/dieta-na-redukcje.jpg"
-import massDiet from "../images/diets/dieta-na-mase.jpg"
-import { dietsDescription } from "../data/mainPage/dietsDescriptions"
+import standardDiet from "../images/diets/dieta-standard.jpg"
+import glutennFreeDiet from "../images/diets/dieta-bezglutenowa.jpg"
+import detoxDiet from "../images/diets/dieta-detox.jpg"
+import lowIgDiet from "../images/diets/Dieta-niski-indeks.jpg"
+import lactoseFreeDiet from "../images/diets/dieta-bezlaktozowa.jpg"
 
 const Offer = React.forwardRef(({ pageContext }, ref) => {
   const findDiet = diet => {
@@ -23,8 +26,8 @@ const Offer = React.forwardRef(({ pageContext }, ref) => {
     if (diet === 'dieta-paleo') {
       return paleoDiet
     }
-    if (diet === 'dieta-sportowa-na-mase') {
-      return massDiet
+    if (diet === 'dieta-standard') {
+      return standardDiet
     }
     if (diet === 'dieta-sportowa-na-redukcje') {
       return reductionDiet
@@ -35,41 +38,28 @@ const Offer = React.forwardRef(({ pageContext }, ref) => {
     if (diet === 'dieta-wegetarianska') {
       return vegeDiet
     }
-    if (diet === 'dieta-standard') {
-      return standardDiet
+    if (diet === 'dieta-wege-z-rybami') {
+      return vegeWithFish
+    }
+    if (diet === 'dieta-bezlaktozowa') {
+      return lactoseFreeDiet
+    }
+    if (diet === 'dieta-bezglutenowa') {
+      return glutennFreeDiet
+    }
+    if (diet === 'dieta-niski-indeks') {
+      return lowIgDiet
+    }
+    if (diet === 'dieta-detox') {
+      return detoxDiet
     }
   }
 
-  const findDescription = (diet) => {
-    if (diet === 'dieta-samuraja') {
-      return 'dietaSamuraja'
-    }
-    if (diet === 'dieta-odchudzajaca') {
-      return 'dietaOdchudzajaca'
-    }
-    if (diet === 'dieta-paleo') {
-      return 'dietaPaleo'
-    }
-    if (diet === 'dieta-sportowa-na-mase') {
-      return 'dietaSportowaNaMase'
-    }
-    if (diet === 'dieta-sportowa-na-redukcje') {
-      return 'dietaSportowaNaRedukcje'
-    }
-    if (diet === 'dieta-weganska') {
-      return 'dietaWeganska'
-    }
-    if (diet === 'dieta-wegetarianska') {
-      return 'dietaWegetarianska'
-    }
-    if (diet === 'dieta-standard') {
-      return 'dietaStandard'
-    }
-  }
   return (
     <div>
       <h2>Oferta naszej diety pudełkowej - wybierz jedną z 8 diet z dowozem</h2>
       <div className={offerStyles.container} ref={ref}>
+        {console.log('diets', diets)}
         {diets.map(diet => (
           <Link to={pageContext.city ? `/${pageContext.city}/${diet.dietUrl}` : `/${diet.dietUrl}`} key={diet.dietUrl}>
             <div className={offerStyles.dietItem} key={diet.dietUrl}>

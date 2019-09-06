@@ -73,8 +73,6 @@ const Diet = ({ pageContext }) => {
     return descriptions && descriptions.description
   }
 
-  console.log('xxxxx', `${findDiet() &&
-  findDiet().fullName} - ${findCity()}. ${findDiet() && findDiet().metaDescription}`)
   return (
     <Layout pageContext={pageContext}>
       <SEO
