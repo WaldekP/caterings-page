@@ -368,6 +368,8 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
     })
   }
 
+  console.log('temp log')
+
   return (
     <div ref={ref}>
       <h2>Dobierz idealną dietę pudełkową dla siebie</h2>
