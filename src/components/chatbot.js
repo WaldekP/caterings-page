@@ -381,73 +381,83 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
         </div>
 
         <div className={chatbotStyles.questionsBox}>
-          <div className={chatbotStyles.question}>
-            <img src={chatIcon} />
-            <p>
-              Cześć! Zadam Ci kilka pytań, które pomogą mi dobrać idealną dietę
-              dla Ciebie. Zaczynamy?
-            </p>
+          <div className={chatbotStyles.questionAnswerWrapper}>
+            <div className={chatbotStyles.question}>
+              <img src={chatIcon} />
+              <p>
+                Cześć! Zadam Ci kilka pytań, które pomogą mi dobrać idealną
+                dietę dla Ciebie. Zaczynamy?
+              </p>
+            </div>
+            {questionNumber >= 2 && (
+              <div className={chatbotStyles.answer}>
+                <p>Zaczynajmy</p>
+                <img src={personIcon} />
+              </div>
+            )}
           </div>
-          {questionNumber >= 2 && (
-            <div className={chatbotStyles.answer}>
-              <p>Zaczynajmy</p>
-              <img src={personIcon} />
-            </div>
-          )}
-          {questionNumber >= 2 &&
-            (typing && questionNumber === 2 ? (
-              <div className={chatbotStyles.question}>
-                <img src={chatIcon} />
-                <ChatbotSpinner />
+          <div className={chatbotStyles.questionAnswerWrapper}>
+            {questionNumber >= 2 &&
+              (typing && questionNumber === 2 ? (
+                <div className={chatbotStyles.question}>
+                  <img src={chatIcon} />
+                  <ChatbotSpinner />
+                </div>
+              ) : (
+                <div className={chatbotStyles.question}>
+                  <img src={chatIcon} />
+                  <p>Jesteś kobietą czy mężczyzną?</p>
+                </div>
+              ))}
+
+            {questionNumber >= 3 && (
+              <div className={chatbotStyles.answer}>
+                <p>Jestem {gender === "female" ? "kobietą" : "mężczyzną"}.</p>
+                <img src={personIcon} />
               </div>
-            ) : (
-              <div className={chatbotStyles.question}>
-                <img src={chatIcon} />
-                <p>Jesteś kobietą czy mężczyzną?</p>
+            )}
+          </div>
+          <div className={chatbotStyles.questionAnswerWrapper}>
+            {questionNumber >= 3 &&
+              (typing && questionNumber === 3 ? (
+                <div className={chatbotStyles.question}>
+                  <img src={chatIcon} />
+                  <ChatbotSpinner />
+                </div>
+              ) : (
+                <div className={chatbotStyles.question}>
+                  <img src={chatIcon} />
+                  <p>Proszę wpisz swój wzrost w centymetrach.</p>
+                </div>
+              ))}
+            {questionNumber >= 4 && (
+              <div className={chatbotStyles.answer}>
+                <p>Mój wzrost to {height} centymetrów.</p>
+                <img src={personIcon} />
               </div>
-            ))}
-          {questionNumber >= 3 && (
-            <div className={chatbotStyles.answer}>
-              <p>Jestem {gender === "female" ? "kobietą" : "mężczyzną"}.</p>
-              <img src={personIcon} />
-            </div>
-          )}
-          {questionNumber >= 3 &&
-            (typing && questionNumber === 3 ? (
-              <div className={chatbotStyles.question}>
-                <img src={chatIcon} />
-                <ChatbotSpinner />
-              </div>
-            ) : (
-              <div className={chatbotStyles.question}>
-                <img src={chatIcon} />
-                <p>Proszę wpisz swój wzrost w centymetrach.</p>
-              </div>
-            ))}
-          {questionNumber >= 4 && (
-            <div className={chatbotStyles.answer}>
-              <p>Mój wzrost to {height} centymetrów.</p>
-              <img src={personIcon} />
-            </div>
-          )}
+            )}
+          </div>
+          <div className={chatbotStyles.questionAnswerWrapper}>
           {questionNumber >= 4 &&
-            (typing && questionNumber === 4 ? (
-              <div className={chatbotStyles.question}>
-                <img src={chatIcon} />
-                <ChatbotSpinner />
-              </div>
-            ) : (
-              <div className={chatbotStyles.question}>
-                <img src={chatIcon} />
-                <p>Ile ważysz w kilogramach?</p>
-              </div>
-            ))}
+              (typing && questionNumber === 4 ? (
+                <div className={chatbotStyles.question}>
+                  <img src={chatIcon} />
+                  <ChatbotSpinner />
+                </div>
+              ) : (
+                <div className={chatbotStyles.question}>
+                  <img src={chatIcon} />
+                  <p>Ile ważysz w kilogramach?</p>
+                </div>
+              ))}
           {questionNumber >= 5 && (
             <div className={chatbotStyles.answer}>
               <p>Ważę {weight} kilogramów.</p>
               <img src={personIcon} />
             </div>
           )}
+          </div>
+          <div className={chatbotStyles.questionAnswerWrapper}>
           {questionNumber >= 5 &&
             (typing && questionNumber === 5 ? (
               <div className={chatbotStyles.question}>
@@ -466,6 +476,8 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
               <img src={personIcon} />
             </div>
           )}
+          </div>
+          <div className={chatbotStyles.questionAnswerWrapper}>
           {questionNumber >= 6 &&
             (typing && questionNumber === 6 ? (
               <div className={chatbotStyles.question}>
@@ -484,6 +496,8 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
               <img src={personIcon} />
             </div>
           )}
+          </div>
+          <div className={chatbotStyles.questionAnswerWrapper}>
           {questionNumber >= 7 &&
             (typing && questionNumber === 7 ? (
               <div className={chatbotStyles.question}>
@@ -496,6 +510,8 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
                 <p>Jaki jest cel Twojej diety?</p>
               </div>
             ))}
+          </div>
+          <div className={chatbotStyles.questionAnswerWrapper}>
           {questionNumber >= 8 && (
             <div className={chatbotStyles.answer}>
               <p>Cel Twojej diety to {parseGoal().goal}.</p>
@@ -518,8 +534,9 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
                 </p>
               </div>
             ))}
+          </div>
           <div ref={chatRef} />
-            <div style={{ padding: "30px" }} />
+          <div style={{ padding: "30px" }} />
         </div>
       </div>
       <div className={chatbotStyles.answerBox}>

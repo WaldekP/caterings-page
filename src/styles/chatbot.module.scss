@@ -98,12 +98,16 @@ h2 {
   flex-direction: column;
   align-items: flex-end;
   max-width: inherit;
-  .question {
-    margin: 30px 10px 50px 0;
+  .question-answer-wrapper {
     width: 70%;
+  }
+  .question {
+    //margin: 30px 10px 50px 0;
+    //width: 70%;
     justify-content: flex-start;
     display: flex;
     align-items: center;
+    margin: 20px 10px;
     img {
       width: 50px;
       height: 50px;
@@ -119,11 +123,11 @@ h2 {
 
   }
   .answer {
-    margin: 30px 10px 50px 0;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 60%;
+    margin: 15px 10px;
+    //width: 60%;
     img {
       width: 50px;
       height: 50px;
@@ -211,15 +215,9 @@ h2 {
   .questions-box {
     background-position: left 20px top 0;
     background-size: cover;
-    .question {
+    .question-answer-wrapper {
       width: 90%;
-      margin: 60px 10px 60px 10px;
-      //justify-content: center;
-    }
-    answer {
-      width: 90%;
-      margin: 60px 10px 60px 10px;
-      //justify-content: center;
+      margin: 0 auto;
     }
   }
   .answer-box {
