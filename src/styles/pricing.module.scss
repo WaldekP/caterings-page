@@ -20,12 +20,13 @@
   display: flex;
   margin: 45px 30px 45px 0;
   flex: 1;
+  min-width: 250px;
 }
 
 .rightSideWrapper {
   display: flex;
   flex-direction: column;
-  //justify-content: center;
+  //justify-content: flex-start;
   align-items: center;
   width: 100%;
   color: white;
@@ -60,12 +61,14 @@
   align-items: center;
   width: 100%;
   color: $main-color;
+  flex-wrap: wrap;
 }
 
 .section {
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  width: 100%;
   margin-bottom: 30px;
   p {
     position: absolute;
@@ -215,21 +218,19 @@ h2 {
   text-align: center;
 }
 
-@media (max-width: 1186px) {
-  .leftSide {
-    flex: unset
-  }
-
-  .rightSide {
-    flex: unset;
-    width: 700px;
-
-    //min-width: 500px;
+@media (max-width: 1050px) {
+  .rightSideWrapper {
+    .price-summary {
+      font-size: 17px;
+    }
+    h2 {
+      margin-top: 100px;
+    }
   }
 }
 
 
-@media (max-width: 799px) {
+@media (max-width: 900px) {
   .container {
     display: flex;
     flex-direction: column;
