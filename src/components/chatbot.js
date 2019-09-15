@@ -303,8 +303,8 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
       }
       if (activity === 1.6 || activity === 1.75) {
         return {
-          dietName: "Dieta sportowa na masę",
-          dietUrl: "dieta-sportowa-na-mase",
+          dietName: "Dieta Samuraja",
+          dietUrl: "dieta-samuraja",
         }
       }
     }
