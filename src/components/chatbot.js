@@ -516,7 +516,7 @@ const Chatbot = React.forwardRef(({ pageContext }, ref) => {
           <div className={chatbotStyles.questionAnswerWrapper}>
           {questionNumber >= 8 && (
             <div className={chatbotStyles.answer}>
-              <p>Cel Twojej diety to {parseGoal().goal}.</p>
+              <p>Cel mojej diety to {parseGoal().goal}.</p>
               <img src={personIcon} />
             </div>
           )}
