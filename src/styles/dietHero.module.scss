@@ -6,43 +6,8 @@
 
 .container {
   width: 100%;
-  height:90vh;
+  height:80vh;
   margin-top: -120px;
-}
-
-.diet-weight-loss {
-  background: url('../images/dietHeros/Dieta odchudzajaca-poprawiona.jpg') center center no-repeat;
-  background-size: 85%, cover;
-  background-color: #EDE8C3;
-}
-
-.diet-sport-reduction {
-  background: url('../images/dietHeros/Dieta sportowa na redukcje - poprawiona.jpg') center center no-repeat;
-  background-size: 85%, cover;
-  background-color: #EDE8C3;
-}
-
-.diet-paleo {
-  background: url('../images/dietHeros/Dieta paleo - poprawiona.jpg') center center no-repeat;
-  background-size: 85%, cover;
-  background-color: #EDE8C3;
-}
-
-.diet-standard{
-   background: url('../images/dietHeros/Dieta standard - poprawiona.jpg') center center no-repeat;
-   background-size: 85%, cover;
-   background-color: #EDE8C3;
- }
-.diet-vegan{
-  background: url('../images/dietHeros/Dieta weganska - poprawiona.jpg') center center no-repeat;
-  background-size: 85%, cover;
-  background-color: #EDE8C3;
-}
-
-.diet-vege {
-  background: url('../images/dietHeros/Dieta wegetarianska - poprawiona.jpg') center center no-repeat;
-  background-size: 85%, cover;
-  background-color: #EDE8C3;
 }
 
 .diet-sport-mass {
@@ -51,71 +16,75 @@
   background-color: #EDE8C3;
 }
 
-.diet-samurai {
-  background: url('../images/dietHeros/Dieta samuraja - poprawiona.jpg') center center no-repeat;
-  background-size: 85%, cover;
-  background-color: #f6f3be;
-}
-
 .diet-gluten-free {
   background: url('../images/dietHeros/newDiets/glutenFree/glutenFree-desktop.jpg') center center no-repeat;
   background-size: cover;
-  background-color: #EDE8C3;
-  height:80vh;
+  background-color: #DFD6FF;
 }
 
 .diet-low-ig {
   background: url('../images/dietHeros/newDiets/lowIg/lowIg-desktop.jpg') center center no-repeat;
   background-size: cover;
-  background-color: #EDE8C3;
-  height:80vh;
+  background-color: #DFD6FF;
 }
 
 .diet-wege-fish {
   background: url('../images/dietHeros/newDiets/vegeFish/vegeFish-desktop.jpg') center center no-repeat;
   background-size: cover;
-  background-color: #EDE8C3;
-  height:80vh;
+  background-color: #DFD6FF;
 }
 
 .diet-no-lactose {
   background: url('../images/dietHeros/newDiets/glutenFree/glutenFree-desktop.jpg') center center no-repeat;
   background-size: cover;
-  background-color: #EDE8C3;
-  height:80vh;
+  background-color: #DFD6FF;
 }
 .diet-detox {
   background: url('../images/dietHeros/newDiets/detox/detox-desktop.jpg') center center no-repeat;
   background-size: cover;
-  background-color: #EDE8C3;
-  height:80vh;
+  background-color: #DFD6FF;
+}
+
+.diet-paleo {
+  background: url('../images/dietHeros/newDiets/paleo/PaleoDiet-desktop.jpg') center center no-repeat;
+  background-size: cover;
+  background-color: #DFD6FF;
+}
+
+.diet-weight-loss {
+  background: url('../images/dietHeros/newDiets/weigthLoss/DietWeightLoss-desktop.jpg') center center no-repeat;
+  background-size: cover;
+  background-color: #DFD6FF;
+}
+
+.diet-sport-reduction {
+  background: url('../images/dietHeros/newDiets/reductionDiet/Reduction-diet-desktop.jpg') center center no-repeat;
+  background-size: cover;
+  background-color: #DFD6FF;
+}
+
+.diet-vegan {
+  background: url('../images/dietHeros/newDiets/vegeDiet/VegeDiet-desktop.jpg') center center no-repeat;
+  background-size: cover;
+  background-color: #DFD6FF;
+}
+
+.diet-vege {
+  background: url('../images/dietHeros/newDiets/vegeDiet/VegeDiet-desktop.jpg') center center no-repeat;
+  background-size: cover;
+  background-color: #DFD6FF;
+}
+
+.diet-samurai {
+  background: url('../images/dietHeros/newDiets/samurai/SamuraiDiet-desktop.jpg') center center no-repeat;
+  background-size: cover;
+  background-color: #DFD6FF;
+}
+
+.diet-standard {
+  background: url('../images/dietHeros/newDiets/glutenFree/glutenFree-desktop.jpg') center center no-repeat;
+  background-size: cover;
+  background-color: #DFD6FF;
 }
 
 
-
-@media (max-width: 1199px) {
-  .diet-weight-loss {
-    background-size: cover;
-  }
-  .diet-sport-reduction {
-    background-size: cover;
-  }
-  .diet-paleo {
-    background-size: cover;
-  }
-  .diet-standard {
-    background-size: cover;
-  }
-  .diet-vegan {
-    background-size: cover;
-  }
-  .diet-vege {
-    background-size: cover;
-  }
-  .diet-sport-mass {
-    background-size: cover;
-  }
-  .diet-samurai {
-    background-size: cover;
-  }
-}
