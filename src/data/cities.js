@@ -5,6 +5,7 @@ export const cities = [
     popular: true,
     indexing: true,
     cityId: 1,
+    footer: true,
   },
   {
     value: 'bialystok',
@@ -12,6 +13,7 @@ export const cities = [
     popular: false,
     indexing: false,
     cityId: 2,
+    footer: true,
   },
   {
     value: 'bielsko-biala',
@@ -19,6 +21,7 @@ export const cities = [
     popular: false,
     indexing: false,
     cityId: 3,
+    footer: false,
   },
   {
     value: 'bydgoszcz',
@@ -26,6 +29,7 @@ export const cities = [
     popular: false,
     indexing: true,
     cityId: 4,
+    footer: true,
 
   },
   {
@@ -34,6 +38,7 @@ export const cities = [
     popular: false,
     indexing: false,
     cityId: 5,
+    footer: true,
   },
   {
     value: 'gorzow-wielkopolski',
@@ -41,6 +46,7 @@ export const cities = [
     popular: false,
     indexing: false,
     cityId: 7,
+    footer: false,
   },
   {
     value: 'kielce',
@@ -48,6 +54,7 @@ export const cities = [
     popular: false,
     indexing: false,
     cityId: 8,
+    footer: false,
   },
   {
     value: 'krakow',
@@ -55,6 +62,7 @@ export const cities = [
     popular: true,
     indexing: true,
     cityId: 9,
+    footer: true,
   },
   {
     value: 'kutno',
@@ -62,6 +70,7 @@ export const cities = [
     popular: false,
     indexing: false,
     cityId: 10,
+    footer: false,
   },
   // {
   //   value: 'lublin',
@@ -76,6 +85,7 @@ export const cities = [
     popular: true,
     indexing: true,
     cityId: 12,
+    footer: true,
   },
   {
     value: 'opole',
@@ -83,6 +93,7 @@ export const cities = [
     popular: false,
     indexing: false,
     cityId: 13,
+    footer: false,
   },
   {
     value: 'plock',
@@ -90,6 +101,7 @@ export const cities = [
     popular: false,
     indexing: false,
     cityId: 14,
+    footer: false,
   },
   {
     value: 'poznan',
@@ -97,6 +109,7 @@ export const cities = [
     popular: true,
     indexing: true,
     cityId: 15,
+    footer: true,
   },
   {
     value: 'radom',
@@ -104,6 +117,7 @@ export const cities = [
     popular: false,
     indexing: false,
     cityId: 16,
+    footer: false,
 
   },
   {
@@ -112,6 +126,7 @@ export const cities = [
     popular: false,
     indexing: false,
     cityId: 17,
+    footer: false,
   },
   {
     value: 'szczecin',
@@ -119,6 +134,7 @@ export const cities = [
     popular: false,
     indexing: false,
     cityId: 18,
+    footer: true,
   },
   {
     value: 'torun',
@@ -126,6 +142,7 @@ export const cities = [
     popular: false,
     indexing: true,
     cityId: 19,
+    footer: true,
   },
   {
     value: 'trojmiasto',
@@ -133,6 +150,7 @@ export const cities = [
     popular: true,
     indexing: true,
     cityId: 20,
+    footer: true,
   },
   {
     value: 'warszawa',
@@ -140,6 +158,7 @@ export const cities = [
     popular: true,
     indexing: true,
     cityId: 21,
+    footer: true,
   },
   {
     value: 'wloclawek',
@@ -147,6 +166,7 @@ export const cities = [
     popular: false,
     indexing: false,
     cityId: 22,
+    footer: false,
   },
   {
     value: 'wroclaw',
@@ -154,5 +174,6 @@ export const cities = [
     popular: true,
     indexing: true,
     cityId: 23,
+    footer: true,
   },
 ]

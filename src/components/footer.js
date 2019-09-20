@@ -56,6 +56,7 @@ const Footer = ({ pageContext }) => {
             </div>
             <p>Telefon: +48 42 715-80-85</p>
             <p>Email: zamowienia@afterfit-catering.pl</p>
+            <p>Biuro obsługi: pn.- pt.: 9:00-18:00, so.: 10:00-15:00</p>
             <p>
               <a
                 href="https://serwer1526119.home.pl/wp-content/uploads/2019/02/Regulamin-Cateringu-Dietetycznego-AfterFit.pdf"
@@ -78,6 +79,26 @@ const Footer = ({ pageContext }) => {
           <div>
             <h4>Diety</h4>
             <Link
+              to={city ? `/${city}/dieta-bezglutenowa` : "/dieta-bezglutenowa"}
+            >
+              <p>Dieta bezglutenowa</p>
+            </Link>
+            <Link
+              to={city ? `/${city}/dieta-bezlaktozowa` : "/dieta-bezlaktozowa"}
+            >
+              <p>Dieta bezlaktozowa</p>
+            </Link>
+            <Link
+              to={city ? `/${city}/dieta-detox` : "/dieta-detox"}
+            >
+              <p>Dieta detox</p>
+            </Link>
+            <Link
+              to={city ? `/${city}/dieta-niski-indeks` : "/dieta-niski-indeks"}
+            >
+              <p>Dieta niski indeks</p>
+            </Link>
+            <Link
               to={city ? `/${city}/dieta-odchudzajaca` : "/dieta-odchudzajaca"}
             >
               <p>Dieta odchudzająca</p>
@@ -97,15 +118,6 @@ const Footer = ({ pageContext }) => {
             >
               <p>Dieta sportowa na redukcję</p>
             </Link>
-            <Link
-              to={
-                city
-                  ? `/${city}/dieta-sportowa-na-mase`
-                  : "/dieta-sportowa-na-mase"
-              }
-            >
-              <p>Dieta sportowa na masę</p>
-            </Link>
             <Link to={city ? `/${city}/dieta-standard` : "/dieta-standard"}>
               <p>Dieta standard</p>
             </Link>
@@ -119,11 +131,18 @@ const Footer = ({ pageContext }) => {
             >
               <p>Dieta wegetariańska</p>
             </Link>
+            <Link
+              to={
+                city ? `/${city}/dieta-wege-z-rybami` : "/dieta-wege-z-rybami"
+              }
+            >
+              <p>Dieta wege z rybami</p>
+            </Link>
           </div>
           <div>
-            <h4>Miasta</h4>
+            <h4>Popularne miasta</h4>
             {cities
-              .filter(cityName => cityName.popular)
+              .filter(cityName => cityName.footer)
               .map(city => (
                 <Link
                   key={city.value}
