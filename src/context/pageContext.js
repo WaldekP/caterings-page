@@ -5,7 +5,7 @@ const PageContext = React.createContext({})
 const PageProvider = ({children}) => {
   const [menuTab, changeMenuTab] = useState()
   const [calories, changeCalories] = useState()
-  const [overlay, toggleOverlay] = useState(true)
+  const [overlay, toggleOverlay] = useState(false)
   return (
     <PageContext.Provider
       value={{menuTab, changeMenuTab, calories, changeCalories, overlay, toggleOverlay}}
