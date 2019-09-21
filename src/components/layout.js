@@ -27,15 +27,12 @@ const Layout = ({ title, children, pageContext }) => {
   useEffect(() => {
     if (!citySlug && cityCookie2) {
       if (cityCookie2 === "lodz") {
-        // toggleOverlay(false)
+        toggleOverlay(false)
         navigate(dietSlug ? `/${dietSlug}` : `/`)
       }
       if (cityCookie2 !== "lodz") {
         navigate(dietSlug ? `/${cityCookie2}/${dietSlug}` : `/${cityCookie2}`)
       }
-    }
-    if (!citySlug && !cityCookie2) {
-      toggleOverlay(true)
     }
     if (citySlug) {
       typeof window !== "undefined" &&
