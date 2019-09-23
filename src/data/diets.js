@@ -40,6 +40,13 @@ export const diets = [
           "W jadłospisie cateringu bezglutenowego AfterFit znajdziecie również produkty mleczne, różnego rodzaju mięso, ryby, jaja, owoce, warzywa czy nasiona i orzechy.",
           "Z uwagi na to, że w diecie bezglutenowej mogą pojawić się śladowe ilości glutenu, nie jest na polecana dla osób z celiakią.",
         ]},
+      aglomeracjaSlaska: {
+        description: [
+          "Dieta bezglutenowa przeznaczona jest dla osób, które w swojej diecie pudełkowej z różnych przyczyn muszą wyeliminować lub ograniczyć gluten.",
+          "W naszej diecie bezglutenowej produkty zbożowe zostały zastąpione produktami naturalnie bezglutenowymi takimi jak np. kasza jaglana, kasza gryczana, ryż czy makarony kukurydziane.",
+          "W jadłospisie cateringu bezglutenowego AfterFit znajdziecie również produkty mleczne, różnego rodzaju mięso, ryby, jaja, owoce, warzywa czy nasiona i orzechy.",
+          "Z uwagi na to, że w diecie bezglutenowej mogą pojawić się śladowe ilości glutenu, nie jest na polecana dla osób z celiakią.",
+        ]},
     },
   },
   {
@@ -76,6 +83,13 @@ export const diets = [
     offerDescription: "Dieta dla osób, które nie tolerują laktozy",
     cityDescription: {
       lodz: {
+        description: [
+          "Dieta pudełkowa bezlaktozowa przeznaczona jest dla osób z nietolerancją laktozy. Z menu zostały wyeliminowane produkty zawierające laktozę a wykorzystane zostały jego zamienniki.",
+          "Jadłospis cateringu dietetycznego AfterFit bazuje na pełnowartościowych bezlaktozowych produktach spożywczych. Mleko krowie zostało zastąpione napojami roślinnymi, mlekiem kokosowym czy mlekiem kozim.  ",
+          "Dieta bezlaktozowa tym samym dostarcza odpowiednią ilość białka, która pochodzi zarówno ze źródeł zwierzęcych jak i roślinnych. ",
+          "Prawidłowo skomponowane posiłki mają wspomóc nasze zdrowie i dore samopoczucie przy towarzyszącej nietolerancji na cukier zawarty w mleku.",
+        ]},
+      aglomeracjaSlaska: {
         description: [
           "Dieta pudełkowa bezlaktozowa przeznaczona jest dla osób z nietolerancją laktozy. Z menu zostały wyeliminowane produkty zawierające laktozę a wykorzystane zostały jego zamienniki.",
           "Jadłospis cateringu dietetycznego AfterFit bazuje na pełnowartościowych bezlaktozowych produktach spożywczych. Mleko krowie zostało zastąpione napojami roślinnymi, mlekiem kokosowym czy mlekiem kozim.  ",
@@ -122,6 +136,13 @@ export const diets = [
           "Jadłospis uzupełniają tłuszcze roślinne, nasiona oraz orzechy. Eliminuję ona mięso, ryby, jaja , rośliny strączkowe oraz gluten i laktozę.",
           "W cateringu diety Detox znajdują się różnego rodzaju soki warzywno-owocowe, zupy czy smaczne sałatki. Dieta detox dostarczy naszemu organizmowi sporą dawkę witamin, składników mineralnych a także błonnika, który skutecznie pobudzi naszą przemianę materii.",
         ]},
+      aglomeracjaSlaska: {
+        description: [
+          "Dieta pudełkowa Detox przeznaczona jest dla osób, które chcą oczyścić organizm z toksyn i zbędnych produktów przemiany materii. Może też być stosowana jaka krótkotrwała kuracja odchudzająca, która pozwoli nam zrzucić kilka kilogramów w szybszym czasie.",
+          "Dieta Detox to przede wszystkim dieta owocowo-warzywna, która została wzbogacona o produkty naturalnie bezglutenowe takie jak np. kasza jaglana, ryż brązowy czy płatki gryczane. ",
+          "Jadłospis uzupełniają tłuszcze roślinne, nasiona oraz orzechy. Eliminuję ona mięso, ryby, jaja , rośliny strączkowe oraz gluten i laktozę.",
+          "W cateringu diety Detox znajdują się różnego rodzaju soki warzywno-owocowe, zupy czy smaczne sałatki. Dieta detox dostarczy naszemu organizmowi sporą dawkę witamin, składników mineralnych a także błonnika, który skutecznie pobudzi naszą przemianę materii.",
+        ]},
     },
   },
   {
@@ -158,6 +179,13 @@ export const diets = [
     offerDescription: "Dieta dla osób, które mają problemy z nieprawidłowym poziomem glukozy we krwi.",
     cityDescription: {
       lodz: {
+        description: [
+          "Dieta z niskim indeksem glikemicznym przeznaczona jest dla osób , które mają problemy z nieprawidłowym poziomem glukozy we krwi, insulinoopornością czy chorująch na cukrzycę. Może być również stosowana w profilaktyce chorób serca oraz otyłości.",
+          "Dieta opiera się głównie o produkty o niskim indeksie glikemicznym. W diecie została ograniczona ilość produktów bogatych w cukry proste. W słodkich deserach cukier został zastąpiony jego zdrowszym zamiennikiem – ksylitolem.",
+          "Jadłospis obfituje w warzywa, owoce, mięso, ryby, produkty mleczne, jaja, nasiona roślin strączkowych oraz orzechy.",
+          "W diecie zwrócono uwagę nie tylko na indeks glikemiczny produktów ale na udział gramowy danego składnika w potrawie czyli na ładunek glikemiczny.",
+        ]},
+      aglomeracjaSlaska: {
         description: [
           "Dieta z niskim indeksem glikemicznym przeznaczona jest dla osób , które mają problemy z nieprawidłowym poziomem glukozy we krwi, insulinoopornością czy chorująch na cukrzycę. Może być również stosowana w profilaktyce chorób serca oraz otyłości.",
           "Dieta opiera się głównie o produkty o niskim indeksie glikemicznym. W diecie została ograniczona ilość produktów bogatych w cukry proste. W słodkich deserach cukier został zastąpiony jego zdrowszym zamiennikiem – ksylitolem.",
@@ -1119,6 +1147,13 @@ export const diets = [
     offerDescription: "Dieta dla osób nie jedzących mięsa czerwonego i drobiu",
     cityDescription: {
       lodz: {
+        description: [
+          "Dieta pudełkowa wege z rybami przeznaczona jest dla osób, które chcą się zdrowo odżywiać, ale ze względów zdrowotnych lub smakowych pragną ze swojego jadłospisu wyeliminować mięso nie rezygnując przy tym z ryb i owoców morza.",
+          "W diecie wege z rybami oprócz ryb i owoców morza znajdują się produkty mleczne, jaja, warzywa, owoce, rośliny strączkowe, produkty zbożowe oraz różnego rodzaju tłuszcze roślinne.",
+          "Podobnie jak dieta wegetariańska dostarczy ona nam sporą dawkę witamin, składników mineralnych, błonnika oraz znacznie więcej pełnowartościowego białka.",
+          "Skomponowana została tak, aby dostarczała wszystkich niezbędnych składników odżywczych w odpowiednich ilościach. ",
+        ]},
+      aglomeracjaSlaska: {
         description: [
           "Dieta pudełkowa wege z rybami przeznaczona jest dla osób, które chcą się zdrowo odżywiać, ale ze względów zdrowotnych lub smakowych pragną ze swojego jadłospisu wyeliminować mięso nie rezygnując przy tym z ryb i owoców morza.",
           "W diecie wege z rybami oprócz ryb i owoców morza znajdują się produkty mleczne, jaja, warzywa, owoce, rośliny strączkowe, produkty zbożowe oraz różnego rodzaju tłuszcze roślinne.",
