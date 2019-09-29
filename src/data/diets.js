@@ -298,7 +298,15 @@ export const diets = [
           "Dieta odchudzająca jest bogata jest w nabiał. Menu jest w tym przypadku obfite w chude mięso, warzywa, owoce, jaja, nasiona roślin strączkowych oraz orzechy. Zapiekanki warzywne, sałatki, jogurty i koktajle z pewnością będą sporym urozmaiceniem",
           "Dzięki diecie odchudzającej zyskasz wymarzoną figurę i zmienisz swój tryb życie. Stanowi ona inwestycję w lepszy stan zdrowia i dobre samopoczucie.",
         ]
-      }
+      },
+      // bialystok: {
+      //   description: [
+      //     <span>Chcesz bezpiecznie zrzucić zbędne kilogramy? <a href="https://afterfit-catering.pl/dieta-odchudzajaca" >Dieta odchudzająca</a> będzie dla Ciebie idealna! Główne założenie jadłospisu dotyczy zmniejszenia dziennej dawki przyjmowanych kalorii, przy jednoczesnym dostarczaniu organizmowi wszystkich niezbędnych witamin, minerałów i składników odżywczych.</span>,
+      //     "Taki sposób odżywiania bazuje na mniejszej ilości węglowodanów, co pozwala ustabilizować lub zredukować masę ciała. Menu jest tu tak dobrane, że pozwoli wyeliminować „napady głodu”.",
+      //     "Dieta odchudzająca jest bogata jest w nabiał. Menu jest w tym przypadku obfite w chude mięso, warzywa, owoce, jaja, nasiona roślin strączkowych oraz orzechy. Zapiekanki warzywne, sałatki, jogurty i koktajle z pewnością będą sporym urozmaiceniem",
+      //     "Dzięki diecie odchudzającej zyskasz wymarzoną figurę i zmienisz swój tryb życie. Stanowi ona inwestycję w lepszy stan zdrowia i dobre samopoczucie.",
+      //   ]
+      // },
     },
     image: "../images/diets/dieta-paleo.png"
   },
