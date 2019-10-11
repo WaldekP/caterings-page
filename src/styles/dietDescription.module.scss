@@ -11,30 +11,37 @@
   justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.descriptionContainer {
-  border: 1px solid $border-grey;
-  margin-right: 30px;
-  padding: 10px;
-  flex: 1;
-  p {
-    font-size: 16px;
-    line-height: 2;
+  .descriptionContainer {
+    border: 1px solid $border-grey;
+    margin-right: 30px;
+    padding: 10px;
+    flex: 1;
+    p {
+      font-size: 16px;
+      line-height: 2;
+      span {
+        font-size: 16px;
+        line-height: 2;
+      }
+      a {
+        text-decoration: none;
+        color: $main-color;
+      }
+    }
   }
-}
 
-.menuContainer {
-  display: flex;
-  flex-direction: column;
-  margin-left: 30px;
-  border: 1px solid $border-grey;
-  padding: 10px;
-  flex: 1;
-  background: url("../images/menu/img_menu_bg.svg") no-repeat center center;
-  background-size: cover;
-  .mealName {
-    font-weight: 600;
+  .menuContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    border: 1px solid $border-grey;
+    padding: 10px;
+    flex: 1;
+    background: url("../images/menu/img_menu_bg.svg") no-repeat center center;
+    background-size: cover;
+    .mealName {
+      font-weight: 600;
+    }
   }
 }
 
@@ -42,25 +49,26 @@
   .container {
     flex-direction: column;
     align-items: center;
-  }
-  .descriptionContainer {
-    margin-right: unset;
-    width: 80%;
-    min-height: 500px;
-    margin-bottom: 20px;
-  }
+    .descriptionContainer {
+      margin-right: unset;
+      width: 80%;
+      min-height: 500px;
+      margin-bottom: 20px;
+    }
 
-  .menuContainer {
-    margin-left: unset;
-    width: 80%;
-    min-height: 500px;
+    .menuContainer {
+      margin-left: unset;
+      width: 80%;
+      min-height: 500px;
+    }
   }
 }
 
 @media (max-width: 500px) {
-
-  .menuContainer {
-    background: url("../images/menu/img_menu_bg.svg") no-repeat -10px center;
-    background-size: 250%;
+  .container {
+    .menuContainer {
+      background: url("../images/menu/img_menu_bg.svg") no-repeat -10px center;
+      background-size: 250%;
+    }
   }
 }

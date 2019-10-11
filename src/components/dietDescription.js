@@ -10,12 +10,10 @@ const DietDescription = ({ diet, city, dietDescription, menu }) => {
       </h1>
       <div className={dietDescriptionStyles.container}>
         <div className={dietDescriptionStyles.descriptionContainer}>
-          {dietDescription && dietDescription.length > 0 ? (
+          {dietDescription && dietDescription.length > 0 && (
             dietDescription.map((description, i) => (
               <p key={i}>{description}</p>
             ))
-          ) : (
-            <p>Test</p>
           )}
         </div>
         <div className={dietDescriptionStyles.menuContainer}>

@@ -140,7 +140,7 @@ const Footer = ({ pageContext }) => {
             </Link>
           </div>
           <div>
-            <h4>Popularne miasta</h4>
+            <h4>Miasta</h4>
             {cities
               .filter(cityName => cityName.footer)
               .map(city => (

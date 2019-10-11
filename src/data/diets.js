@@ -299,14 +299,14 @@ export const diets = [
           "Dzięki diecie odchudzającej zyskasz wymarzoną figurę i zmienisz swój tryb życie. Stanowi ona inwestycję w lepszy stan zdrowia i dobre samopoczucie.",
         ]
       },
-      // bialystok: {
-      //   description: [
-      //     <span>Chcesz bezpiecznie zrzucić zbędne kilogramy? <a href="https://afterfit-catering.pl/dieta-odchudzajaca" >Dieta odchudzająca</a> będzie dla Ciebie idealna! Główne założenie jadłospisu dotyczy zmniejszenia dziennej dawki przyjmowanych kalorii, przy jednoczesnym dostarczaniu organizmowi wszystkich niezbędnych witamin, minerałów i składników odżywczych.</span>,
-      //     "Taki sposób odżywiania bazuje na mniejszej ilości węglowodanów, co pozwala ustabilizować lub zredukować masę ciała. Menu jest tu tak dobrane, że pozwoli wyeliminować „napady głodu”.",
-      //     "Dieta odchudzająca jest bogata jest w nabiał. Menu jest w tym przypadku obfite w chude mięso, warzywa, owoce, jaja, nasiona roślin strączkowych oraz orzechy. Zapiekanki warzywne, sałatki, jogurty i koktajle z pewnością będą sporym urozmaiceniem",
-      //     "Dzięki diecie odchudzającej zyskasz wymarzoną figurę i zmienisz swój tryb życie. Stanowi ona inwestycję w lepszy stan zdrowia i dobre samopoczucie.",
-      //   ]
-      // },
+      bialystok: {
+        description: [
+          <span>Chcesz bezpiecznie zrzucić zbędne kilogramy? <a href="https://afterfit-catering.pl/dieta-odchudzajaca" >Dieta odchudzająca</a> będzie dla Ciebie idealna! Główne założenie jadłospisu dotyczy zmniejszenia dziennej dawki przyjmowanych kalorii, przy jednoczesnym dostarczaniu organizmowi wszystkich niezbędnych witamin, minerałów i składników odżywczych.</span>,
+          "Menu w przypadku diety odchudzającej zawiera zarówno gluten, jak i laktozę. Dania bazują na mniejszej ilości węglowodanów, dzięki czemu efekty przejścia na ten sposób odżywiania się będą widoczne gołym okiem. ",
+          "Decydując się na dietę odchudzającą, przestaniesz odczuwać tzw. napady głodu. Poszczególne dania z menu sprawią, że poczujesz się najedzony, ale nie przepełniony. Jednocześnie jadłospis ten sprawdzi się przypadku osób nieco mniej aktywnych fizycznie. ",
+          "Menu diety odchudzającej jest bogate jest w nabiał. Można w nim znaleźć chude mięso, warzywa, owoce, jaja, nasiona roślin strączkowych oraz orzechy. Takie posiłki pozwolą Ci zredukować masę ciała, przy jednoczesnej poprawie stanu zdrowia, kondycji oraz lepszym samopoczuciu. ",
+        ]
+      },
     },
     image: "../images/diets/dieta-paleo.png"
   },
@@ -422,6 +422,13 @@ export const diets = [
           "Dieta odchudzająca jest bogata jest w nabiał. Menu jest w tym przypadku obfite w chude mięso, warzywa, owoce, jaja, nasiona roślin strączkowych oraz orzechy. Zapiekanki warzywne, sałatki, jogurty i koktajle z pewnością będą sporym urozmaiceniem",
           "Dzięki diecie odchudzającej zyskasz wymarzoną figurę i zmienisz swój tryb życie. Stanowi ona inwestycję w lepszy stan zdrowia i dobre samopoczucie.",
         ]
+      },
+      bialystok: {
+        description: [
+          <span><a href="https://afterfit-catering.pl/dieta-paleo" >Dieta Paleo</a> pozwala dostarczyć organizmowi dużo energii i pozwala bezpiecznie schudnąć. Menu uwzględnia składniki, do których przypuszczalnie miał dostęp człowiek już w okresie paleolitu. Według badań, każdy z nas jest niemalże przystosowany genetycznie do takiego sposobu odżywania się. </span>,
+          "Dieta paleo opiera się naturalnych produktach, takich jak: warzywa, owoce, orzechy, grzyby, jajka, mięso i ryby. Co ważne, całkowicie eliminuje ona produkty przetworzone, a zatem osoby uczulone na gluten, mogą spokojnie skorzystać z tego jadłospisu. Będzie on odpowiedni również dla osób cierpiących na choroby autoimmunologiczne. ",
+          "Menu jest wysokobiałkowe, o sporej zawartości tłuszczu, a mniejszej ilości węglowodanów. Poszczególne dania są bogate w żelazo hemowe, błonnik oraz kwasy tłuszczowe omega 3. ",
+        ]
       }
     },
     image: "../images/diets/dieta-paleo.png"
@@ -536,6 +543,14 @@ export const diets = [
           "Taki sposób odżywiania bazuje na mniejszej ilości węglowodanów, co pozwala ustabilizować lub zredukować masę ciała. Menu jest tu tak dobrane, że pozwoli wyeliminować „napady głodu”.",
           "Dieta odchudzająca jest bogata jest w nabiał. Menu jest w tym przypadku obfite w chude mięso, warzywa, owoce, jaja, nasiona roślin strączkowych oraz orzechy. Zapiekanki warzywne, sałatki, jogurty i koktajle z pewnością będą sporym urozmaiceniem",
           "Dzięki diecie odchudzającej zyskasz wymarzoną figurę i zmienisz swój tryb życie. Stanowi ona inwestycję w lepszy stan zdrowia i dobre samopoczucie.",
+        ]
+      },
+      bialystok: {
+        description: [
+          "Dieta samuraja jest idealna dla wszystkich tych, którzy regularnie i intensywnie trenują. Podkreśla ona rolę aktywności fizycznej i jest inspirowana sposobem odżywiania się japońskich wojowników. ",
+          "Jadłospis jest połączniem menu znanego z paleo oraz z diety sportowej na masę. Jeśli jesteś aktywny i jednocześnie nie możesz spożywać glutenu i laktozy, to menu będzie dla Ciebie idealne. ",
+          <span><a href="https://afterfit-catering.pl/dieta-samuraja" >Dieta samuraja</a> jest wysokobiałkowa. Poszczególne posiłki zawierają większą ilość węglowodanów aniżeli dieta paleo. Jej podstawę stanowią naturalne produkty, a więc warzywa, owoce, mięso, ryby, jaja, oliwa, bezglutenowe zboża. Menu eliminuje żywność przetworzoną, gluten i laktozę. </span>,
+          "Taki jadłospis pozwoli wymodelować sylwetkę, a jednocześnie każdego dnia będzie zaskakiwać różnorodnością potraw. Dieta samuraja podkreśla, że istotna jest również jakość poszczególnych składników.",
         ]
       }
     },
@@ -767,7 +782,15 @@ export const diets = [
           "Dieta odchudzająca jest bogata jest w nabiał. Menu jest w tym przypadku obfite w chude mięso, warzywa, owoce, jaja, nasiona roślin strączkowych oraz orzechy. Zapiekanki warzywne, sałatki, jogurty i koktajle z pewnością będą sporym urozmaiceniem",
           "Dzięki diecie odchudzającej zyskasz wymarzoną figurę i zmienisz swój tryb życie. Stanowi ona inwestycję w lepszy stan zdrowia i dobre samopoczucie.",
         ]
-      }
+      },
+      bialystok: {
+        description: [
+          <span>Chcesz zgubić zbędne kilogramy i w końcu spalić nadmiar tkanki tłuszczowej? <a href="https://afterfit-catering.pl/dieta-sportowa-na-redukcje" >Dieta sportowa na redukcję</a> będzie dla Ciebie idealna! Bazuje ona na odpowiednio zbilansowanych posiłkach i zdrowych składnikach. </span>,
+          "Jadłospis w przypadku diety na redukcję ułatwia kształtowanie figury. Sama redukcja tkanki tłuszczowej jest procesem rozłożonym w czasie, dlatego też bardzo istotną kwestią jest trzymanie się odpowiedniego zapotrzebowania kalorycznego. ",
+          "Podstawą jadłospisu są lekkostrawne potrawy bogate w błonnik. Węglowodany i tłuszcze są w nich ograniczone, natomiast ilość białka zwiększona. Wszystko to wpływa na metabolizm oraz na spalanie tkanki tłuszczowej. Takie menu pozwala pozbyć się jej nadmiaru, ale jednocześnie nie redukuje masy mięśniowej, co jest niezwykle istotne.",
+          "Posiłki z diety na redukcję zawierają sporo warzyw, nabiału o niskiej zawartości tłuszczu, ryb, chudego mięsa drobiowego oraz owoców. W menu nie znajdziemy wyrobów z mąki. Dieta na redukcję tkanki tłuszczowej nie musi, a wręcz nie powinna być obciążeniem dla organizmu oraz dla psychiki.",
+        ]
+      },
     },
     image: "../images/diets/dieta-paleo.png"
   },
@@ -884,7 +907,15 @@ export const diets = [
           "Dieta odchudzająca jest bogata jest w nabiał. Menu jest w tym przypadku obfite w chude mięso, warzywa, owoce, jaja, nasiona roślin strączkowych oraz orzechy. Zapiekanki warzywne, sałatki, jogurty i koktajle z pewnością będą sporym urozmaiceniem",
           "Dzięki diecie odchudzającej zyskasz wymarzoną figurę i zmienisz swój tryb życie. Stanowi ona inwestycję w lepszy stan zdrowia i dobre samopoczucie.",
         ]
-      }
+      },
+      bialystok: {
+        description: [
+          <span>Jeśli chcesz zadbać o sposób odżywiania się i wyrobić zdrowe nawyki żywieniowe, to <a href="https://afterfit-catering.pl/dieta-standard" >dieta standard</a> będzie dla Ciebie odpowiednia. Pozwala ona na bezproblemowe utrzymanie aktualnej masy ciała lub delikatne jej skorygowanie przy jednoczesnym wyeliminowaniu niewłaściwych produktów i zwyczajów. </span>,
+          "Menu pozwala zacząć odpowiednio się odżywiać i jednocześnie odstawić przetworzone i sztuczne produkty. Na diecie standard będziesz dostarczał organizmowi wszystkie niezbędne i pełnowartościowe składniki.",
+          "Jadłospis opiera się na posiłkach odpowiednio zbilansowanych. Poszczególne dania gwarantują pokrycie dziennego zapotrzebowania na składniki odżywcze, witaminy i mikroelementy.",
+          "Od teraz smaczne i zdrowe posiłki są w zasięgu ręki, nawet jeśli nie masz czasu gotowanie i na pilnowanie tego, co jesz i w jakich ilościach. ",
+        ]
+      },
     },
     image: "../images/diets/dieta-paleo.png"
   },
@@ -999,6 +1030,14 @@ export const diets = [
           "Taki sposób odżywiania bazuje na mniejszej ilości węglowodanów, co pozwala ustabilizować lub zredukować masę ciała. Menu jest tu tak dobrane, że pozwoli wyeliminować „napady głodu”.",
           "Dieta odchudzająca jest bogata jest w nabiał. Menu jest w tym przypadku obfite w chude mięso, warzywa, owoce, jaja, nasiona roślin strączkowych oraz orzechy. Zapiekanki warzywne, sałatki, jogurty i koktajle z pewnością będą sporym urozmaiceniem",
           "Dzięki diecie odchudzającej zyskasz wymarzoną figurę i zmienisz swój tryb życie. Stanowi ona inwestycję w lepszy stan zdrowia i dobre samopoczucie.",
+        ]
+      },
+      bialystok: {
+        description: [
+          <span><a href="https://afterfit-catering.pl/dieta-weganska" >Dieta wegańska</a> jest odpowiednia dla osób, które chcą zrezygnować z mięsa i produktów odzwierzęcych. Zmiana nawyków jedzeniowych jest w tym przypadku konkretna, ale przy odpowiednim menu całkowicie bezpieczna. </span>,
+          "Jadłospis bazuje na roślinach, zbożach, orzechach, nasionach i algach morskich. Poszczególne posiłki zaskakują pysznym smakiem, oryginalnym połączeniem produktów i kreatywnością. ",
+          "W przypadku diety wegańskiej, nie musisz się martwić o to, czy dostarczasz organizmowi wszystko to, co niezbędne. Składniki odżywcze są tutaj pozyskiwane w odpowiednich ilościach z produktów roślinnych (np. wapń z mleka sojowego, roślin strączkowych i niektórych warzyw; białko z orzechów, soi, soczewicy i bobu).",
+          "Jadłospis diety wegańskiej wymaga dodatkowej suplementacji witaminy D oraz B12, gdyż ich pozyskiwanie z produktów roślinnych jest trudne i niewystarczające dla organizmu. Warto podkreślić, że weganizm zmniejsza ryzyko zachorowania na otyłość, nadciśnienie, cukrzycę, nowotwory i kamicę żółciową.",
         ]
       }
     },
@@ -1117,6 +1156,14 @@ export const diets = [
           "Taki sposób odżywiania bazuje na mniejszej ilości węglowodanów, co pozwala ustabilizować lub zredukować masę ciała. Menu jest tu tak dobrane, że pozwoli wyeliminować „napady głodu”.",
           "Dieta odchudzająca jest bogata jest w nabiał. Menu jest w tym przypadku obfite w chude mięso, warzywa, owoce, jaja, nasiona roślin strączkowych oraz orzechy. Zapiekanki warzywne, sałatki, jogurty i koktajle z pewnością będą sporym urozmaiceniem",
           "Dzięki diecie odchudzającej zyskasz wymarzoną figurę i zmienisz swój tryb życie. Stanowi ona inwestycję w lepszy stan zdrowia i dobre samopoczucie.",
+        ]
+      },
+      bialystok: {
+        description: [
+          <span>Jeśli chcesz wyeliminować mięso ze swojego codziennego menu, to <a href="https://afterfit-catering.pl/dieta-wegetarianska" >dieta wegetariańska</a> jest tym, czego szukasz. Jadłospis jest odpowiednio zbilansowany i zawiera pozwala dostarczać do organizmu niezbędną ilość składników odżywczych.</span>,
+          "Menu w przypadku diety wegetariańskiej opiera się na zwiększeniu ilości błonnika, witamin, potasu, magnezu i nienasyconych kwasów tłuszczowych. Poszczególne posiłki bazują na różnorodności roślin, owoców, kasz, orzechów, nasion.",
+          "Dania wegetariańskie są pożywne, smaczne i zdrowe. Sprawiają one, że jesteś najedzony, ale jednocześnie nie masz poczucia przepełnienia. Taki jadłospis zaspokoją dzienny bilans energetyczny i sprawia, że masz siłę do działania. ",
+          "Wegetarianizm pozwala ograniczyć ryzyko zachorowania na choroby serca, cukrzycę, otyłość i nowotwory. Taki sposób odżywiania jednocześnie wpłynie pozytywne na Twoją kondycję, stan zdrowia, samopoczucie oraz sylwetkę.",
         ]
       }
     },
