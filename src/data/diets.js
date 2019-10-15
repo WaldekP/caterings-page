@@ -235,6 +235,14 @@ export const diets = [
           "Dieta odchudzająca jest bogata jest w nabiał. Menu jest w tym przypadku obfite w chude mięso, warzywa, owoce, jaja, nasiona roślin strączkowych oraz orzechy. Zapiekanki warzywne, sałatki, jogurty i koktajle z pewnością będą sporym urozmaiceniem",
           "Dzięki diecie odchudzającej zyskasz wymarzoną figurę i zmienisz swój tryb życie. Stanowi ona inwestycję w lepszy stan zdrowia i dobre samopoczucie.",
       ]},
+      szczecin: {
+        description: [
+          "Dieta odchudzająca jest idealna dla wszystkich tych, którzy chcą zrzucić dodatkowe kilogramy, ale nie lubią ćwiczyć. Takie menu pozwala w całkowicie bezpieczny sposób ukształtować figurę i osiągnąć swój cel. ",
+          "W jadłospisie znajdziesz chude mięsa, warzywa, owoce, jaja, nasiona roślin strączkowych i orzechy. Posiłki będą lekkie, ale jednocześnie zaspokoją poczucie głodu. Teraz po jedzeniu poczujesz, że masz siłę. ",
+          <span><a href="https://afterfit-catering.pl/dieta-odchudzajaca" >Dieta odchudzająca</a> bazuje na produktach o ograniczonej kaloryczności, dzięki czemu będziesz chudnąć. Menu jest jednocześnie odpowiednio zbilansowane, a tym samym zawiera wszystkie niezbędne składniki odżywcze. Zdrowe dania będą różnorodne i każdego dnia będą Cię zaskakiwać smakiem. </span>,
+          "Poszczególne posiłki diety odchudzającej zawierają gluten i laktozę.",
+        ]
+      },
       trojmiasto: {
         description: [
           "Dieta Odchudzająca jest przeznaczona dla osób, które nie są aktywne fizycznie, jednakże za pomocą odpowiedniego odżywiania, chciałby zredukować swoją wagę. Menu zawiera gluten oraz laktozę.",
@@ -307,6 +315,14 @@ export const diets = [
           "Menu diety odchudzającej jest bogate jest w nabiał. Można w nim znaleźć chude mięso, warzywa, owoce, jaja, nasiona roślin strączkowych oraz orzechy. Takie posiłki pozwolą Ci zredukować masę ciała, przy jednoczesnej poprawie stanu zdrowia, kondycji oraz lepszym samopoczuciu. ",
         ]
       },
+      czestochowa: {
+        description: [
+          <span><a href="https://afterfit-catering.pl/dieta-odchudzajaca" >Dieta odchudzająca</a> jest dla Ciebie idealna, jeśli chcesz zrzucić nadprogramowe kilogramy, ale jednocześnie nie przepadasz za aktywnością fizyczną. Od teraz napady głodu zostaną zredukowane, a Ty poczujesz się najedzony, ale nie przepełniony. </span>,
+          "Cały jadłospis zawiera posiłki ograniczone kalorycznie, ale jednocześnie pozwala zaopatrzyć organizm w niezbędną dawkę witamin, minerałów i składników odżywczych. Poszczególne dania bazują na mniejszej ilości węglowodanów. ",
+          "Dieta odchudzająca jest bogata w nabiał. W menu znajdziesz chude mięso, warzywa, owoce, jaja, nasiona roślin strączkowych oraz orzechy. Dania zawierają laktozę i gluten. ",
+          "Decydując się na dietę odchudzającą zaczniesz się zdrowo odżywiać, zrzucisz zbędne kilogramy i jednocześnie poprawi się Twoja kondycja i samopoczucie! Odpowiedni dobór kalorii sprawi, że rezultaty przejścia na ten sposób odżywiania będą widoczne gołym okiem. ",
+        ]
+      }
     },
     image: "../images/diets/dieta-paleo.png"
   },
@@ -351,6 +367,22 @@ export const diets = [
           "Jest to dieta wysokobiałkowa, o sporej zawartości tłuszczu, a mniejszej ilości węglowodanów. Menu jest bogate w żelazo hemowe, błonnik oraz kwasy tłuszczowe omega 3. Zawiera ono sporo mięsa, ryb, jaj oraz owoców, warzyw, orzechów i pestek.",
           "Dieta Paleo jest odpowiednia dla osób uczulonych na gluten. Eliminuje wszelką żywność przetworzoną, zboża, rośliny strączkowe, jak również nabiał (produkty mleczne).",
           "Tego rodzaju menu pozwoli Ci wyrobić właściwe i zdrowe nawyki żywieniowe, a w efekcie utracić zbędne kilogramy. Przestawisz się na zdrowy tryb życia i zadbasz o gospodarkę lipidową oraz insulinową swojego organizmu.",
+        ]
+      },
+      szczecin: {
+        description: [
+          "Dieta paleo jest idealną propozycją dla wszystkich osób, które chcą jadać zdrowo i całkowicie odstawić ze swojego jadłospisu sztuczne produkty. Tzw. jadłospis człowieka paleolitu to dania skomponowane wyłącznie z naturalnych składników. ",
+          "Menu opiera się na mięsach, rybach, warzywach, owocach, jajach, orzechach itp. Takie produkty tworzą proste i pyszne dania, które na pewno przypadną Ci do gustu. Dieta paleo eliminuje gluten, produkty mleczne i wszystkie przetworzone składniki. ",
+          "Zdrowe dania, które będziesz otrzymywał, zawierają żelazo hemowe, błonnik, kwasy tłuszczowe omega-3. Menu jest wysokobiałkowe, dzięki czemu jedzenie będzie Ci dawało siłę. ",
+          <span><a href="https://afterfit-catering.pl/dieta-paleo" >Dieta Paleo</a> wpłynie na Twój stan zdrowia, samopoczucie, ale i na przyzwyczajenia jedzeniowe. Od teraz będziesz sięgał jedynie po to, co naturalne i nieprzetworzone. Wpłynie to pozytywnie na Twój stan zdrowia i samopoczucie. </span>,
+        ]
+      },
+      czestochowa: {
+        description: [
+          <span><a href="https://afterfit-catering.pl/dieta-paleo" >Dieta Paleo</a> to wysokobiałkowe menu o sporej zawartości tłuszczu. Jadłospis całkowicie eliminuje żywność przetworzoną, gluten, produkty mleczne oraz sztuczne składniki. Jeśli borykasz się z alergiami pokarmowymi, to menu jest równie dla Ciebie odpowiednie. </span>,
+          "Według badań, każdy z nas jest niemalże przystosowany genetycznie do takiego sposobu odżywania się. Poszczególne dania składają się bowiem ze składników, do których przypuszczalnie miał dostęp człowiek już w okresie paleolitu.",
+          "Jadłospis bazuje na naturalnych produktach, takich jak: warzywa, owoce, orzechy, grzyby, jajka, mięso i ryby. Pozwala on zredukować wagę, ale i zadbać o ogólny stan zdrowia i wyrobić zdrowe nawyki żywieniowe. ",
+          "Dania w diecie paleo są bogate w żelazo hemowe, błonnik oraz kwasy tłuszczowe omega 3. Posiłki są smaczne, zdrowe i na pewno przypadną Ci do gustu.",
         ]
       },
       warszawa: {
@@ -473,6 +505,22 @@ export const diets = [
           "Posiłki z diety Samuraja nie zawierają glutenu oraz laktozy (tzn. produktów mlecznych). Menu przykuwa uwagę większą ilością mięsa. Posiłki są obfite również w jaja, ryby, warzywa i owoce.",
           "Do diety Samuraja zostały wprowadzone rośliny strączkowe, które stanowią ciekawe urozmaicenie. Smaczne, zdrowe i konkretne posiłki na pewno przypadną do gustu każdej osobie, która lubi się ruszać.",
           "Takie menu będzie idealne, dla osób cierpiących nietolerancje pokarmowe, ale chcących dostarczać organizmowi pełnowartościowych składników odżywczych. Dieta Samuraja jest idealną dietą dla osób ćwiczących, którzy pragną, aby ich sylwetka wyglądała jeszcze lepiej.",
+        ]
+      },
+      szczecin: {
+        description: [
+          "Dieta samuraja jest odpowiednią opcją dla wszystkich osób, które trenują, chcą się zdrowo odżywiać, a jednocześnie nie mogą spożywać laktozy i glutenu. Jadłospis kładzie nacisk na naturalne i pełnowartościowe składniki. ",
+          <span><a href="https://afterfit-catering.pl/dieta-samuraja" >Dieta samuraja</a> łączy w sobie elementy diety paleo i sportowej na masę. Poszczególne posiłki zawierają dużą ilość węglowodanów, a zatem dodadzą Ci energii. </span>,
+          "Takie menu przypadnie do gustu osobom, które lubią w dziennym jadłospisie duże ilości mięsa. Dania opierają się również na rybach, warzywach, owocach, jajach i nasionach strączkowych. Różnego rodzaju urozmaicają posiłki i nadają im pyszny smak. ",
+          "Jadłospis diety samuraja pozwala odpowiednio się odżywiać, eliminując przy tym potencjalnie szkodliwe produkty. Posiłki dostarczają dużo energii nawet tym, którzy nie wyobrażają sobie dnia bez wysiłku fizycznego. ",
+        ]
+      },
+      czestochowa: {
+        description: [
+          <span><a href="https://afterfit-catering.pl/dieta-samuraja" >Dieta samuraja</a> to połączenie diety paleo i diety sportowej na masę. Jeśli lubisz ruch, aktywność fizyczną i regularnie trenujesz, to będzie ona dla Ciebie idealna. Menu zostało tak skomponowane, żeby trafiać również w potrzeby osób cierpiących na nietolerancje pokarmowe. Jest ono pozbawione glutenu i laktozy. </span>,
+          "Jadłospis w diecie samuraja jest wysokobiałkowy. Zawiera on również większą ilość węglowodanów niż w przypadku paleo. W menu znajdziesz dużo mięsa, ale również ryb, warzyw, owoców, jaj oraz roślin strączkowych. ",
+          "Różnorodne potrawy są smaczne i jednocześnie odpowiednio zbilansowane. Codziennie będziesz dostarczał organizmowi pełnowartościowe składniki odżywcze. ",
+          "Dieta samuraja bazuje na naturalnych produktach wysokiej jakości. Eliminuje ono żywność przetworzoną. Wszystko to przyczynia się do wyrobienia zdrowych nawyków jedzeniowych oraz pozwala wymodelować figurę dzięki odpowiedniemu menu. ",
         ]
       },
       warszawa: {
@@ -712,6 +760,22 @@ export const diets = [
           "Białko w zwiększonych proporcjach „podkręca metabolizm”, spalając tkankę tłuszczową, ale chroniąc przy tym mięśnie. Tym samym, budowanie odpowiedniej figury, powinno przebiegać bezproblemowo.",
         ]
       },
+      szczecin: {
+        description: [
+          <span><a href="https://afterfit-catering.pl/dieta-sportowa-na-redukcje" >Dieta sportowa na redukcję</a> jest przeznaczona dla wszystkich tych, którzy chcą się pozbyć tkanki tłuszczowej i dodatkowych kilogramów. Specjalnie skomponowane menu pozwala jednocześnie chronić mięśnie. </span>,
+          "Wysokobiałkowe menu przyspiesza metabolizm, co pozwala na spalanie tkanki tłuszczowej, ale nie mięśni. Codzienne posiłki bazują na chudym mięsie drobiowym, rybach, warzywach, owocach. ",
+          "W jadłospisie kluczowe jest trzymanie się prawidłowego zapotrzebowania kalorycznego. Całość jest odpowiednio zbilansowana i dostarczy Ci wszystko, co najlepsze. ",
+          "Dieta sportowa na redukcję powinna być połączona z odpowiednimi i przemyślanymi treningami. Dzięki temu, kształtowanie figury będzie prostsze. ",
+        ]
+      },
+      czestochowa: {
+        description: [
+          <span><a href="https://afterfit-catering.pl/dieta-sportowa-na-redukcje" >Dieta sportowa</a> na redukcję będzie dla Ciebie idealna, jeśli chcesz spalić nadmiar tkanki tłuszczowej, ale jednocześnie ochronić mięśnie. Takie menu nie musi być obciążające dla organizmu oraz dla psychiki. </span>,
+          "Jadłospis opiera się na zdrowych i smacznych posiłkach, które są odpowiednio zbilansowane. Poszczególne dania zawierają dużo białka i mało węglowodanów, co przyczynia się do „podkręcenia metabolizmu”, a w rezultacie do spalania tkanki tłuszczowej. ",
+          "Menu diety sportowej na redukcję składa się z dużej ilości chudego mięsa drobiowego, owoców, ryb, warzyw, ale i chudego nabiału. Potrawy są bogate w błonnik. Jadłospis eliminuje wyroby z mąki. ",
+          "Redukcja tkanki tłuszczowej to proces czasochłonny i kluczowe jest połączenie go z odpowiednim i profesjonalnym planem treningowym. Całość wymaga konsekwencji w działaniu i cierpliwości. ",
+        ]
+      },
       trojmiasto: {
         description: [
           "Dieta sportowa na redukcję jest przeznaczona dla osób, które chcą pozbyć nadmiaru tkanki tłuszczowej, ale jednocześnie zależy im na przeciwdziałaniu „spalaniu” mięśni.",
@@ -833,6 +897,22 @@ export const diets = [
           "Pozwoli ona wcielić Ci w życie odpowiednie nawyki jedzeniowe. Od teraz posiłki przestaną bazować na przetworzonych i sztucznych składnikach. Codziennie dostarczysz organizmowi to, co najlepsze.",
           "Dieta Standard jest odpowiednio zbilansowana, a więc gwarantuje pokrycie dziennego zapotrzebowania na składniki odżywcze, witaminy i mikroelementy.",
           "Menu tej diety trafi w gust każdej osoby, która chce smacznie i zdrowo jeść, ale nie ma czasu na gotowanie, a tym bardziej na liczenie kalorii.",
+        ]
+      },
+      szczecin: {
+        description: [
+          "Dieta standard jest odpowiednia dla osób chcących się zdrowo odżywiać. Od teraz codzienne posiłki będą się opierały na właściwie dobranych składnikach. Wyeliminujesz ze swojego menu wszystko to, co źle wpływa na stan Twojego organizmu. ",
+          "Prawidłowo zbilansowany jadłospis składa się ze zróżnicowanych dań. Sztuczne i niezdrowe dodatki zostały z nich wykluczone. Od teraz po jedzeniu nie będziesz czuł się „ciężko”. ",
+          "Urozmaicone posiłki zaskoczą Cię pysznym smakiem. Przekonasz się, że pełnowartościowe dania są syte i sprawiają, że masz siłę i energię. ",
+          <span><a href="https://afterfit-catering.pl/dieta-standard" >Dieta standard</a> sprawi, że wykluczysz ze swojego menu wszystko to, co niezdrowe. Różnicę w samopoczuciu i kondycji odczujesz bardzo szybko. </span>,
+        ]
+      },
+      czestochowa: {
+        description: [
+          "Dieta standard jest dedykowana osobom, które w ferworze codziennych obowiązków nie mają czasu na gotowanie, liczenie kalorii i zastanawianie się, czy na pewno odpowiednio się odżywiają. Jeśli chcesz przestawić się na zdrowe menu, to dieta ta będzie dla Ciebie idealna. ",
+          "Jadłospis opiera się na smacznych posiłkach, odpowiednio zbilansowanych, zawierających właściwą ilość składników odżywczych, witamin i mikroelementów. Takie menu idealnie pokrywa Twoje dziennie zapotrzebowanie kaloryczne. ",
+          <span><a href="https://afterfit-catering.pl/dieta-standard" >Dieta standardowa</a> pozwala na utrzymanie obecnej masy ciała lub na jej delikatne skorygowanie. Pomoże ona wyeliminować niewłaściwe i przetworzone produkty z codziennego jadłospisu. </span>,
+          "Menu sprawi, że oprócz tego, że będziesz się właściwie odżywiać, to dodatkowo zadbasz o stan swojego zdrowia oraz o samopoczucie. W końcu nie będziesz musiał pilnować się, czy jesz odpowiednio. ",
         ]
       },
       aglomeracjaSlaska: {
@@ -961,6 +1041,22 @@ export const diets = [
           "Przy przestawieniu się na ten rodzaj żywienia zaleca się suplementację witaminy D oraz B12 (dostarczanie ich organizmowi poprzez produkty roślinny i zboża jest bardzo trudne).",
         ]
       },
+      szczecin: {
+        description: [
+          <span><a href="https://afterfit-catering.pl/dieta-weganska" >Dieta wegańska</a> jest idealna dla wszystkich tych, którzy całkowicie wykluczyli lub chcą wykluczyć produkty odzwierzęce i mięso. Taki jadłospis jest zdrowy i bezpieczny i udowadnia, że dania opierające się na różnorodności produktów roślinnych zaskakują pysznym smakiem. </span>,
+          "Menu opiera się na roślinach, zbożach, orzechach, nasionach i algach morskich. Jest ono prawidłowo zbilansowane. Składniki odżywcze są pozyskiwane z produktów roślinnych, a więc nie musisz się obawiać o ich niedobory w codziennym menu. ",
+          "Weganizm zmniejsza ryzyko zachorowania na otyłość, nadciśnienie, cukrzycę, nowotwory i kamicę żółciową. Mało tego, po przejściu na taki sposób odżywiania się, bardzo szybko odczujesz różnicę w samopoczuciu. ",
+          "Przejście na taki sposób odżywiania wymaga dodatkowej suplementacji witaminy D i B12, gdy są one ciężko przyswajalne z produktów roślinnych. ",
+        ]
+      },
+      czestochowa: {
+        description: [
+          <span><a href="https://afterfit-catering.pl/dieta-weganska" >Dieta wegańska</a> eliminuje mięso i produkty odzwierzęce. Jeśli chcesz całkowicie zmienić swoje zwyczaje jedzeniowe, to będzie ona dla Ciebie odpowiednia. Poszczególne posiłki nieraz Cię zaskoczą swoją różnorodnością oraz niesamowitym smakiem. </span>,
+          "Jadłospis jest urozmaicony i opiera się na roślinach, zbożach, orzechach, nasionach i algach morskich. Należy podkreślić, że menu wegańskie jest całkowicie bezpieczne dla organizmu. Pozytywne skutki działania tej diety odczujesz bardzo szybko. Wpłynie ona na Twoje samopoczucie, ale i figurę. ",
+          "Menu pozwala dostarczyć organizmowi wszystko to, co niezbędne. Składniki odżywcze są pozyskiwane z produktów roślinnych i w odpowiednich ilościach. Co istotne, weganizm pozwala zmniejszyć ryzyko wystąpienia otyłości, nadciśnienia, cukrzycy, nowotworów, kamicy żółciowej. ",
+          "W weganizmie bardzo ważne jest to, by dodatkowo suplementować witaminy D oraz B12, gdyż pozyskiwanie ich z produktów roślinnych jest niewystarczające.",
+        ]
+      },
       aglomeracjaSlaska: {
         description: [
           "Dieta Wegańska zyskuje coraz większą popularność. Będzie ona idealna dla osób, które chcą ze swojego jadłospisu wyeliminować wszelkie produkty odzwierzęce, w tym również jajka, miód i nabiał.",
@@ -1083,6 +1179,22 @@ export const diets = [
           "Każdy posiłek w diecie wegetariańskiej jest odpowiednio zbilansowany i zawiera właściwe proporcje i ilość składników odżywczych (białka, tłuszcze, węglowodany, witaminy, minerał). Dieta wegetariańska zapewnia zwiększenie ilości błonnika, witamin, potasu, magnezu i nienasyconych kwasów tłuszczowych.",
           "Dania są smaczne, zdrowe, pożywne i sycące. Mimo tego, że nie zawierają mięsa, to po ich spożyciu, jesteś najedzony. Posiłki z diety wegetariańskiej zaspokajają dzienny bilans energetyczny i co najważniejsze, mają pozytywny wpływ na Twoją figurę. ",
           "Przejście na wegetarianizm zmniejszy ryzyko zachorowania na choroby serca, cukrzycę, otyłość i nowotwory. Bardzo szybko zaczniesz dostrzegać wpływ nowej diety na zdrowie i kondycję organizmu.",
+        ]
+      },
+      szczecin: {
+        description: [
+          "Dieta wegetariańska jest odpowiednia dla wszystkich osób, które zdecydowały się wykluczyć mięso ze swojego menu. Taki sposób odżywiania jasno pokazuje, że dania z warzyw, owoców, roślin, kasz, nasion i orzechów są różnorodne, smaczne i syte. ",
+          "Jadłospis wegetariański pozytywnie wpłynie na Twoją figurę. Jednocześnie odczujesz zmianę na plus, jeśli chodzi o stan organizmu i samopoczucie. Teraz po posiłkach nie będziesz miał poczucia „przejedzenia”. ",
+          <span><a href="https://afterfit-catering.pl/dieta-wegetarianska" >Dieta wegetariańska</a> jest bogata w składniki odżywcze i dostarcza Ci wszystko to, co najlepsze i zdrowe dla organizmu. Co ważne, poszczególne posiłki zaspokajają dzienny bilans energetyczny. </span>,
+          "Wegetarianizm ogranicza ryzyko chorób serca, cukrzycy, otyłości i nowotworów. Pamiętaj, że odstawienie mięsa jest procesem całkowicie bezpiecznym. ",
+        ]
+      },
+      czestochowa: {
+        description: [
+          <span><a href="https://afterfit-catering.pl/dieta-wegetarianska" >Dieta wegetariańska</a> pozwala wyeliminować mięso ze swojego codziennego menu. Nowe zwyczaje żywieniowe sprawią, że się poczujesz się zdrowiej i jednocześnie lepiej. </span>,
+          "Jadłospis opiera roślinach, owocach, kaszach, orzechach i nasionach. Menu jest odpowiednio zbilansowane i zawiera właściwą ilość białka, tłuszczów, węglowodanów, witamin i minerałów. Będziesz dostarczał swojemu organizmowi wszystko to, co najlepsze. ",
+          "Dania wegetariańskie są różnorodne, smaczne oraz zdrowe. Zaspokajają one dzienny bilans energetyczny, a posiłki są sycące. Od teraz nie będziesz miał poczucia przepełnienia po jedzeniu. ",
+          "Przechodząc na tę dietę, odczujesz poprawę swojej kondycji i samopoczucia. Wegetarianizm ogranicza ryzyko zachorowania na choroby serca, cukrzycę, otyłość i nowotwory. Taki sposób odżywiania wpłynie pozytywnie na Twoją sylwetkę i jednocześnie zapewni Ci dużo siły i energii. ",
         ]
       },
       aglomeracjaSlaska: {
