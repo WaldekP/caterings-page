@@ -64,12 +64,27 @@ const Diet = ({ pageContext }) => {
     if (!(diet && city)) {
       return null
     }
-    const descriptions =
-      diet && diet.cityDescription[city]
-        ? diet.cityDescription[city]
-        : city === "aglomeracja-slaska"
-        ? diet.cityDescription["aglomeracjaSlaska"]
-        : diet.cityDescription["lodz"]
+    let descriptions;
+    if (diet.cityDescription[city]) {
+      descriptions = diet.cityDescription[city]
+    }
+
+    if (city === "aglomeracja-slaska") {
+      descriptions = diet.cityDescription["aglomeracjaSlaska"]
+    }
+
+    if (city === "gorzow-wielkopolski") {
+      descriptions = diet.cityDescription["gorzowWielkopolski"]
+    }
+
+    if (city === "bielsko-biala") {
+      descriptions = diet.cityDescription["bielskoBiala"]
+    }
+
+    if (!city) {
+     descriptions = diet.cityDescription["lodz"]
+    }
+
     return descriptions && descriptions.description
   }
 
