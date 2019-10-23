@@ -85,6 +85,10 @@ const Diet = ({ pageContext }) => {
      descriptions = diet.cityDescription["lodz"]
     }
 
+    if (!diet.cityDescription[city]) {
+      descriptions = diet.cityDescription["lodz"]
+    }
+
     return descriptions && descriptions.description
   }
 
