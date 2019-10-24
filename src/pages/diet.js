@@ -64,29 +64,36 @@ const Diet = ({ pageContext }) => {
     if (!(diet && city)) {
       return null
     }
+
     let descriptions;
+
+    if (!diet.cityDescription[city]) {
+      descriptions = diet.cityDescription["lodz"]
+    }
+
     if (diet.cityDescription[city]) {
       descriptions = diet.cityDescription[city]
     }
 
     if (city === "aglomeracja-slaska") {
-      descriptions = diet.cityDescription["aglomeracjaSlaska"]
+      descriptions = diet.cityDescription["aglomeracjaSlaska"] ?
+        diet.cityDescription["aglomeracjaSlaska"] :
+        diet.cityDescription["lodz"]
     }
 
     if (city === "gorzow-wielkopolski") {
-      descriptions = diet.cityDescription["gorzowWielkopolski"]
+      descriptions = diet.cityDescription["gorzowWielkopolski"] ?
+        diet.cityDescription["gorzowWielkopolski"] : diet.cityDescription["lodz"]
     }
 
     if (city === "bielsko-biala") {
-      descriptions = diet.cityDescription["bielskoBiala"]
+      descriptions = diet.cityDescription["bielskoBiala"] ?
+        diet.cityDescription["bielskoBiala"] :
+        diet.cityDescription["lodz"]
     }
 
     if (!city) {
      descriptions = diet.cityDescription["lodz"]
-    }
-
-    if (!diet.cityDescription[city]) {
-      descriptions = diet.cityDescription["lodz"]
     }
 
     return descriptions && descriptions.description
