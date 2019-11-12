@@ -1,3 +1,9 @@
+const dotenv = require('dotenv')
+
+if(process.env.NODE_ENV !== 'production') {
+  dotenv.config()
+}
+
 module.exports = {
   siteMetadata: {
     title: `AfterFit`,
@@ -11,6 +17,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     'gatsby-plugin-robots-txt',
+    `@contentful/gatsby-transformer-contentful-richtext`,
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
@@ -72,13 +79,13 @@ module.exports = {
     //     useACF: false,
     //   }
     // },
-    // {
-    //   resolve: `gatsby-source-contentful`,
-    //   options: {
-    //     spaceId: process.env.CONTENTFUL_SPACE_ID,
-    //     accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-    //   }
-    // },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: 'q9p0tdrrxgn9',
+        accessToken: 'q3fJn0YXuIvXC8DqMHfsapk09gYAR066B94_53DaezA',
+      }
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {

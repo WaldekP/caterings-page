@@ -22,10 +22,14 @@ const Layout = ({ title, children, pageContext }) => {
     typeof window !== "undefined" && window.localStorage.getItem("city")
   const citySlug = pageContext && pageContext.city
   const dietSlug = pageContext && pageContext.diet
+
+  const checkIfBlog = () =>
+    typeof window !== "undefined" && window.location.href.includes("temp-blog")
+
   // redirect from main page when the cookie is set
 
   useEffect(() => {
-    if (!citySlug && cityCookie2) {
+    if (!citySlug && cityCookie2 && !checkIfBlog()) {
       if (cityCookie2 === "lodz") {
         toggleOverlay(false)
         navigate(dietSlug ? `/${dietSlug}` : `/`)
@@ -34,7 +38,7 @@ const Layout = ({ title, children, pageContext }) => {
         navigate(dietSlug ? `/${cityCookie2}/${dietSlug}` : `/${cityCookie2}`)
       }
     }
-    if (citySlug) {
+    if (citySlug && !checkIfBlog()) {
       typeof window !== "undefined" &&
         window.localStorage.setItem("city", citySlug)
     }
@@ -67,7 +71,9 @@ const Layout = ({ title, children, pageContext }) => {
       <div
         className={layoutStyles.overlay}
         style={
-          (typeof overlay !== "undefined" && !overlay) || citySlug
+          (typeof overlay !== "undefined" && !overlay) ||
+          citySlug ||
+          checkIfBlog()
             ? { display: "none" }
             : null
         }
@@ -118,8 +124,10 @@ const Layout = ({ title, children, pageContext }) => {
           </div>
           <div className={layoutStyles.mobileWrapper}>
             <h3>Popularne miasta:</h3>
-              <ul className={layoutStyles.mobileCityList}>
-                {cities.filter(city => city.popular).map((cityName, index) => (
+            <ul className={layoutStyles.mobileCityList}>
+              {cities
+                .filter(city => city.popular)
+                .map((cityName, index) => (
                   <Link to={getLinkUrl(cityName.value)} key={index}>
                     {" "}
                     <li
@@ -127,7 +135,7 @@ const Layout = ({ title, children, pageContext }) => {
                       onClick={() => {
                         toggleOverlay(false)
                         typeof window !== "undefined" &&
-                        window.localStorage.setItem("city", cityName.value)
+                          window.localStorage.setItem("city", cityName.value)
                       }}
                     >
                       {" "}
@@ -169,30 +177,32 @@ const Layout = ({ title, children, pageContext }) => {
         <div className={layoutStyles.content}>
           <Header pageContext={pageContext} title={title} />
           {children}
-          {(citySlug || !overlay) && <CookieConsent
-            location="bottom"
-            buttonText="Zgoda"
-            cookieName="afterfit-consent"
-            style={{
-              background: "#112682",
-              fontFamily: "'Work Sans', sans-serif",
-            }}
-            buttonStyle={{
-              backgroundColor: "#FFFFFF",
-              color: "#112682",
-              fontSize: "15px",
-              borderRadius: "20px",
-              height: "40px",
-              width: "130px",
-              fontWeight: "bold",
-              cursor: "pointer",
-            }}
-            expires={150}
-          >
-            Ta strona korzysta z ciasteczek, aby świadczyć usługi na najwyższym
-            poziomie. Dalsze korzystanie ze strony oznacza, że zgadzasz się na
-            ich użycie.
-          </CookieConsent>}
+          {(citySlug || !overlay) && (
+            <CookieConsent
+              location="bottom"
+              buttonText="Zgoda"
+              cookieName="afterfit-consent"
+              style={{
+                background: "#112682",
+                fontFamily: "'Work Sans', sans-serif",
+              }}
+              buttonStyle={{
+                backgroundColor: "#FFFFFF",
+                color: "#112682",
+                fontSize: "15px",
+                borderRadius: "20px",
+                height: "40px",
+                width: "130px",
+                fontWeight: "bold",
+                cursor: "pointer",
+              }}
+              expires={150}
+            >
+              Ta strona korzysta z ciasteczek, aby świadczyć usługi na
+              najwyższym poziomie. Dalsze korzystanie ze strony oznacza, że
+              zgadzasz się na ich użycie.
+            </CookieConsent>
+          )}
         </div>
         <Footer pageContext={pageContext} />
       </div>
