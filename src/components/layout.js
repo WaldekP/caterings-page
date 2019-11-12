@@ -74,8 +74,7 @@ const Layout = ({ title, children, pageContext }) => {
         className={layoutStyles.overlay}
         style={
           (typeof overlay !== "undefined" && !overlay) ||
-          citySlug ||
-          (typeof overlay !== "undefined" && checkIfBlog())
+          citySlug
             ? { display: "none" }
             : null
         }

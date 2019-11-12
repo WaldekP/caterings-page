@@ -1,6 +1,8 @@
-import React from "react"
+import React, { useContext, useEffect } from "react"
 import Layout from '../components/layout'
 import { graphql, Link } from "gatsby";
+import PageContext from "../context/pageContext"
+
 // import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 export const query = graphql`
@@ -16,8 +18,12 @@ export const query = graphql`
     }
 `
 const Blog = ({ data }) => {
+  const { toggleOverlay } = useContext(PageContext)
   const posts = data.allContentfulPost.edges
 
+  useEffect(() => {
+    toggleOverlay(false)
+  })
   return (
     <Layout>
       <h1>To bedzie blog</h1>
