@@ -66,6 +66,8 @@ const Layout = ({ title, children, pageContext }) => {
     }
   }
 
+  console.log('checkIfBlog()', checkIfBlog())
+
   return (
     <Fragment>
       <div
@@ -73,7 +75,7 @@ const Layout = ({ title, children, pageContext }) => {
         style={
           (typeof overlay !== "undefined" && !overlay) ||
           citySlug ||
-          checkIfBlog()
+          (typeof overlay !== "undefined" && checkIfBlog())
             ? { display: "none" }
             : null
         }
