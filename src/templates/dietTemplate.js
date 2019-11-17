@@ -11,24 +11,8 @@ import CallToAction from "../components/callToAction"
 import SEO from "../components/seo"
 import axios from "axios"
 import { DateTime } from 'luxon'
-import { graphql } from "gatsby"
 
-
-export const query = graphql`
-    query MyDietQuery($city: String!) {
-        allContentfulDietData(filter: {city: {eq: $city}}) {
-            edges {
-                node {
-                    index
-                    city
-                    content
-                }
-            }
-        }
-    }
-`
-
-const DietTemplate = ({ pageContext, data }) => {
+const DietTemplate = ({ pageContext }) => {
 
   const [dayOffset, changeDayOffset] = useState(0)
 
