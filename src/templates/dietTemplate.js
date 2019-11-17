@@ -42,7 +42,6 @@ const DietTemplate = ({ pageContext }) => {
   }, [])
 
   const disableMenuDateChange = direction => {
-    console.log('direction', direction)
     if (direction === 'up' && dayOffset >= 3) {
       return true
     }
