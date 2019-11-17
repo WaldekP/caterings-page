@@ -66,8 +66,6 @@ const Layout = ({ title, children, pageContext }) => {
     }
   }
 
-  console.log('checkIfBlog()', checkIfBlog())
-
   return (
     <Fragment>
       <div

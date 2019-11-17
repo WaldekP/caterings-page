@@ -1,10 +1,22 @@
 const dotenv = require('dotenv')
+const proxy = require("http-proxy-middleware")
 
 if(process.env.NODE_ENV !== 'production') {
   dotenv.config()
 }
 
 module.exports = {
+  developMiddleware: app => {
+    app.use(
+      "/.netlify/functions/",
+      proxy({
+        target: "http://localhost:9000",
+        pathRewrite: {
+          "/.netlify/functions/": "",
+        },
+      })
+    )
+  },
   siteMetadata: {
     title: `AfterFit`,
     description: `TODO`,
@@ -18,6 +30,13 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     'gatsby-plugin-robots-txt',
     `@contentful/gatsby-transformer-contentful-richtext`,
+    {
+      resolve: `gatsby-plugin-netlify-functions`,
+      options: {
+        functionsSrc: `${__dirname}/src/lambda`,
+        functionsOutput: `${__dirname}/lambda`,
+      },
+    },
     {
       resolve: `gatsby-plugin-favicon`,
       options: {

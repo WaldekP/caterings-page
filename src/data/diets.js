@@ -2,6 +2,7 @@ import React from 'react';
 export const diets = [
   {
     dietUrl: "dieta-bezglutenowa",
+    dietId: 581,
     metaDescription: 'Dieta bezglutenowa jest idealna dla każdego, kto chce się zdrowo odżywiać i nie toleruje glutenu.',
     dietImg: "../images/diets/dieta-odchudzajaca.jpg",
     dietGallery: {
@@ -51,6 +52,7 @@ export const diets = [
   },
   {
     dietUrl: "dieta-bezlaktozowa",
+    dietId: 582,
     metaDescription: 'Dieta bezlaktozowa jest idealna dla każdego, kto chce się zdrowo odżywiać i nie toleruje laktozy.',
     dietImg: "../images/diets/dieta-odchudzajaca.jpg",
     dietGallery: {
@@ -100,6 +102,7 @@ export const diets = [
   },
   {
     dietUrl: "dieta-detox",
+    dietId: 580,
     metaDescription: 'Dieta przeznaczona jest dla osób, które chcą oczyścić organizm z toksyn i zbędnych produktów przemiany materii.',
     dietImg: "../images/diets/dieta-odchudzajaca.jpg",
     dietGallery: {
@@ -147,6 +150,7 @@ export const diets = [
   },
   {
     dietUrl: "dieta-niski-indeks",
+    dietId: 579,
     metaDescription: 'Dieta z niskim indeksem glikemicznym przeznaczona jest dla osób , które mają problemy z nieprawidłowym poziom glukozy we krwi.',
     dietImg: "../images/diets/dieta-odchudzajaca.jpg",
     dietGallery: {
@@ -196,6 +200,7 @@ export const diets = [
   },
   {
     dietUrl: "dieta-odchudzajaca",
+    dietId: 124,
     metaDescription: 'Dieta Odchudzająca jest idealna dla każdego, kto chce schudnąć, nie będąc przy tym aktywnym fizycznie. Najważniejszy jest tutaj odpowiedni dobór kalorii.',
     dietImg: "../images/diets/dieta-odchudzajaca.jpg",
     dietGallery: {
@@ -400,6 +405,7 @@ export const diets = [
   },
   {
     dietUrl: "dieta-paleo",
+    dietId: 114,
     metaDescription: 'Dieta Paleo bazuje na prostym, bezglutenowym menu. Jest ono bogate w białka i tłuszcze. Składa się głównie z dań mięsnych, ryb, jaj, owoców i warzyw.',
     dietImg: "../images/diets/dieta-odchudzajaca.jpg",
     dietGallery: {
@@ -611,6 +617,7 @@ export const diets = [
   },
   {
     dietUrl: "dieta-samuraja",
+    dietId: 134,
     metaDescription: 'Dieta Samuraja kładzie nacisk na zdrowe odżywianie, wykluczając gluten i laktozę. Menu jest odpowiednie dla osób aktywnych fizycznie.',
     dietImg: "../images/diets/dieta-odchudzajaca.jpg",
     dietGallery: {
@@ -939,6 +946,7 @@ export const diets = [
   // },
   {
     dietUrl: "dieta-sportowa-na-redukcje",
+    dietId: 104,
     metaDescription: 'Dieta sportowa na masę jest dietą wysokobiałkową, dzięki czemu nie dochodzi do „spalania mięśni”. Ciesz się lepszą kondycją oraz dobrym samopoczuciem.',
     dietImg: "../images/diets/dieta-odchudzajaca.jpg",
     dietGallery: {
@@ -1148,6 +1156,7 @@ export const diets = [
   },
   {
     dietUrl: "dieta-standard",
+    dietId: 578,
     metaDescription: 'Dieta standard pozwoli Ci zacząć się smacznie i zdrowo odżywiać. Menu dostarcza organizmowi niezbędne składniki odżywcze, witaminy i mikroelementy.',
     dietImg: "../images/diets/dieta-odchudzajaca.jpg",
     dietGallery: {
@@ -1361,6 +1370,7 @@ export const diets = [
   },
   {
     dietUrl: "dieta-weganska",
+    dietId: 577,
     metaDescription: 'Dieta wegańska zmniejsza ryzyko wystąpienia otyłości, nadciśnienia, cukrzycy i niektórych nowotworów. Eliminuje ona całkowicie produkty odzwierzęce.',
     dietImg: "../images/diets/dieta-odchudzajaca.jpg",
     dietGallery: {
@@ -1573,6 +1583,7 @@ export const diets = [
   },
   {
     dietUrl: "dieta-wegetarianska",
+    dietId: 576,
     metaDescription: 'Dieta wegetariańska bazuje na warzywach, owocach, roślinach, kaszach i nasionach. Mimo wyeliminowania mięsa, posiłki są smaczne, sycące i zróżnicowane.',
     dietImg: "../images/diets/dieta-odchudzajaca.jpg",
     dietGallery: {
@@ -1787,6 +1798,7 @@ export const diets = [
   },
   {
     dietUrl: "dieta-wege-z-rybami",
+    dietId: 234,
     metaDescription: 'Dieta dla osób, które chcą się zdrowo odżywiać i pragną ze swojego jadłospisu wyeliminować mięso nie rezygnując przy tym z ryb',
     dietImg: "../images/diets/dieta-odchudzajaca.jpg",
     dietGallery: {

@@ -11,8 +11,24 @@ import CallToAction from "../components/callToAction"
 import SEO from "../components/seo"
 import axios from "axios"
 import { DateTime } from 'luxon'
+import { graphql } from "gatsby"
 
-const Diet = ({ pageContext }) => {
+
+export const query = graphql`
+    query MyDietQuery($city: String!) {
+        allContentfulDietData(filter: {city: {eq: $city}}) {
+            edges {
+                node {
+                    index
+                    city
+                    content
+                }
+            }
+        }
+    }
+`
+
+const DietTemplate = ({ pageContext, data }) => {
 
   const [dayOffset, changeDayOffset] = useState(0)
 
@@ -26,9 +42,13 @@ const Diet = ({ pageContext }) => {
   }, {})
 
   useEffect( () => {
-    axios('/.netlify/functions/currentMenus', {
-      method:'GET',
+    axios(`/.netlify/functions/currentMenus?menus=${JSON.stringify(getMenusObject())}`, {
+      method:'POST',
+      body: JSON.stringify({
+        url: getMenusObject()
+      })
     }).then(results => {
+      console.log('results', results)
       if (results.status === 200) {
         dispatch({
           type: 'STORE_MENUS', menus: results.data
@@ -37,26 +57,57 @@ const Diet = ({ pageContext }) => {
     })
   }, [])
 
-  const getDay = (dayOffset) => {
-    const dayObject = getDateObject(dayOffset)
-    const day = dayObject.day < 10 ? `0${dayObject.day}` : dayObject.day
-    const month = dayObject.month < 10 ? `0${dayObject.month}`: dayObject.month
-    const year = dayObject.year
-    return `${year}-${month}-${day}`
+  const disableMenuDateChange = direction => {
+    console.log('direction', direction)
+    if (direction === 'up' && dayOffset >= 3) {
+      return true
+    }
+    if (direction === 'down' && dayOffset <= -7) {
+      return true
+    }
+    return false
   }
 
-  const getDateObject = (dayOffset) => {
+  const getDay = () => {
+    return getDateObject().toISODate()
+  }
+
+  const getDateObject = () => {
     return DateTime.local().plus({days: dayOffset})
   }
-  const getParsedDay = (dayOffset) => {
-    const dayObject = getDateObject(dayOffset)
-    return dayObject.toLocaleString()
+
+  const getDatesArray = () => {
+    let days = [DateTime.local().toISODate()];
+
+    for (let j = 0; j < 7; j++) {
+      days.push(DateTime.local().minus({days: j + 1 }).toISODate())
+    }
+
+    for (let i = 0; i < 3; i++) {
+      days.push(DateTime.local().plus({days: i + 1 }).toISODate())
+    }
+    return days
   }
 
   const findDiet = () => {
     const dietSlug = pageContext.diet
     return diets.find(diet => diet.dietUrl === dietSlug)
   }
+
+  const getMenusObject = () => {
+    const dietId = findDiet() && findDiet().dietId
+    const dates = getDatesArray()
+    return {
+      dietId,
+      dates,
+    }
+  }
+
+  const getParsedDay = () => {
+    const date = getDateObject().setLocale('pl').toFormat("DDDD")
+    return date.charAt(0).toUpperCase() + date.slice(1)
+  }
+
 
   const getCitySlug = () => {
     return pageContext.city ? pageContext.city : "lodz"
@@ -135,7 +186,7 @@ const Diet = ({ pageContext }) => {
     }
 
     if (!city) {
-     descriptions = diet.cityDescription["lodz"]
+      descriptions = diet.cityDescription["lodz"]
     }
 
     return descriptions && descriptions.description
@@ -175,7 +226,7 @@ const Diet = ({ pageContext }) => {
     <Layout pageContext={pageContext}>
       <SEO
         title={`${findDiet() &&
-          findDiet().fullName} - catering dietetyczny ${findCity()}`}
+        findDiet().fullName} - catering dietetyczny ${findCity()}`}
         description={`${findDiet() &&
         findDiet().fullName} - ${findCity()}. ${findDiet() && findDiet().metaDescription}`}
         indexing={checkIfIndexingShouldBeOn()}
@@ -189,6 +240,7 @@ const Diet = ({ pageContext }) => {
         changeDayOffset={changeDayOffset}
         dayOffset={dayOffset}
         parsedDay={getParsedDay(dayOffset)}
+        disableMenuDateChange={disableMenuDateChange}
       />
       <DietGallery
         getDietAltTag={getDietAltTag}
@@ -211,4 +263,4 @@ const Diet = ({ pageContext }) => {
   )
 }
 
-export default Diet
+export default DietTemplate

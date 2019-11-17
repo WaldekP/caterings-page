@@ -31,6 +31,20 @@
   }
 
   .menuContainer {
+    .menu-date {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: 600;
+      p {
+        min-width: 300px;
+        text-align: center;
+      }
+      span {
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+    }
     display: flex;
     flex-direction: column;
     margin-left: 30px;

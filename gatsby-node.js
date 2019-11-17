@@ -3,8 +3,8 @@ const path = require("path")
 module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   //const blogTemplate = path.resolve("./src/templates/blog.js")
-  const cityComponent = path.resolve("./src/pages/index.js")
-  const dietComponent = path.resolve("./src/pages/diet.js")
+  const cityComponent = path.resolve("./src/templates/mainPage.js")
+  const dietComponent = path.resolve("./src/templates/dietTemplate.js")
   const blog = path.resolve("./src/templates/blog.js")
   const blogPost = path.resolve("./src/templates/blogPost.js")
   // const citiesArray = cities.reduce((acc, curr) => {

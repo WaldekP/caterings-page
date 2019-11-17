@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import faqStyles from "../styles/faq.module.scss"
 import { dietsFaq } from "../data/generalnformationFaq"
-import Question from "./question"
+import DietQuestion from "./dietQuestion"
 
 const DietsFaq = ({ dietQuestions }) => {
   const [section, chooseSection] = useState("diet")
@@ -14,6 +14,7 @@ const DietsFaq = ({ dietQuestions }) => {
 
     return Object.values(dietsFaq['general'])
   }
+
   return (
     <div className={faqStyles.wrapper}>
       <h2>Masz więcej pytań? Zajrzyj tutaj.</h2>
@@ -40,7 +41,7 @@ const DietsFaq = ({ dietQuestions }) => {
         </div>
         <div className={faqStyles.questionsContainer}>
           {getQuestions() && getQuestions().map((question, index) => (
-            <Question key={index} question={question} />
+            <DietQuestion key={index} question={question} />
           ))}
         </div>
       </div>
