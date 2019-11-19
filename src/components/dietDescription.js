@@ -30,17 +30,17 @@ const DietDescription = ({
         <div className={dietDescriptionStyles.menuContainer}>
           <div className={dietDescriptionStyles.menuDate}>
             <span
-              style={disableMenuDateChange('down') ?  {
-              color: 'grey'
-            } : null}
+            //   style={disableMenuDateChange('down') ?  {
+            //   color: 'grey'
+            // } : null}
               onClick={() => !disableMenuDateChange('down') && changeDayOffset(dayOffset - 1)}>
               <FontAwesomeIcon icon={faAngleLeft} />
             </span>
             <p>{parsedDay}</p>
             <span
-              style={disableMenuDateChange('up') ?  {
-                color: 'grey'
-              } : null}
+              // style={disableMenuDateChange('up') ?  {
+              //   color: 'grey'
+              // } : null}
               onClick={() => !disableMenuDateChange('up') && changeDayOffset(dayOffset + 1)}>
               <FontAwesomeIcon icon={faAngleRight} />
             </span>
