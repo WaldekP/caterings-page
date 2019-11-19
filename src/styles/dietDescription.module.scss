@@ -34,15 +34,16 @@
     .menu-date {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       font-weight: 600;
       p {
-        min-width: 300px;
+        min-width: 200px;
         text-align: center;
       }
       span {
-        font-size: 1.5rem;
+        font-size: 2rem;
         cursor: pointer;
+        padding: 0 20px;
       }
     }
     display: flex;

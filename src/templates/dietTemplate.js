@@ -32,7 +32,6 @@ const DietTemplate = ({ pageContext }) => {
         url: getMenusObject()
       })
     }).then(results => {
-      console.log('results', results)
       if (results.status === 200) {
         dispatch({
           type: 'STORE_MENUS', menus: results.data
@@ -42,7 +41,7 @@ const DietTemplate = ({ pageContext }) => {
   }, [])
 
   const disableMenuDateChange = direction => {
-    if (direction === 'up' && dayOffset >= 3) {
+    if (direction === 'up' && dayOffset >= 5) {
       return true
     }
     if (direction === 'down' && dayOffset <= -7) {
@@ -66,7 +65,7 @@ const DietTemplate = ({ pageContext }) => {
       days.push(DateTime.local().minus({days: j + 1 }).toISODate())
     }
 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 5; i++) {
       days.push(DateTime.local().plus({days: i + 1 }).toISODate())
     }
     return days
@@ -88,7 +87,9 @@ const DietTemplate = ({ pageContext }) => {
 
   const getParsedDay = () => {
     const date = getDateObject().setLocale('pl').toFormat("DDDD")
-    return date.charAt(0).toUpperCase() + date.slice(1)
+    // const spreadedDataLength = [...data].length
+    // const data1 = date.splice(0, spreadedDataLength - 4)
+    return date.charAt(0).toUpperCase() + date.slice(1, date.length - 4)
   }
 
 
