@@ -4,7 +4,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 const Question = ({question, otherCityFirstFaq }) => {
 
-  const [status, changeStatus] = useState(false)
+  const [status, changeStatus] = useState(question.node.category === 'general' && parseFloat(question.node.order) === 1)
 
   useEffect(() => {
     const { node: {category, order} } = question
@@ -12,7 +12,7 @@ const Question = ({question, otherCityFirstFaq }) => {
       changeStatus(true)
     }
   }, [])
-  const richTextNode = otherCityFirstFaq() ? 'childContentfulFirstFaqForOtherCitiesAnswerRichTextNode' : 'childContentfulFaqLodzAnswerRichTextNode'
+  const richTextNode = otherCityFirstFaq() && question.node.category === 'general' && parseFloat(question.node.order) === 1 ? 'childContentfulFirstFaqForOtherCitiesAnswerRichTextNode' : 'childContentfulFaqLodzAnswerRichTextNode'
   return (
     <div className={faqStyles.questionBox}>
       <div
