@@ -23,7 +23,7 @@ const DietDescription = ({
       </h1>
       <div className={dietDescriptionStyles.container}>
         <div className={dietDescriptionStyles.descriptionContainer}>
-          {getDietData() && getDietData().length > 0 ? documentToReactComponents(getDietData()[0].node.childContentfulDietDataDietDescriptionRichTextNode.json) : dietDescription &&
+          {getDietData().length > 0 && typeof getDietData === 'function' ? documentToReactComponents(getDietData()[0].node.childContentfulDietDataDietDescriptionRichTextNode.json) : dietDescription &&
             dietDescription.length > 0 &&
             dietDescription.map((description, i) => (
               <p key={i}>{description}</p>
