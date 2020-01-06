@@ -12,6 +12,7 @@ const IndexPage = ({ pageContext }) => {
             slug
             question
             category
+              order
             childContentfulFaqLodzAnswerRichTextNode {
               json
             }

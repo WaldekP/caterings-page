@@ -11,8 +11,25 @@ import CallToAction from "../components/callToAction"
 import SEO from "../components/seo"
 import axios from "axios"
 import { DateTime } from 'luxon'
+import { graphql } from "gatsby"
 
-const DietTemplate = ({ pageContext }) => {
+export const query = graphql`
+    query MyDietDataQuery($diet: String!) {
+        allContentfulDietData(filter: {diet: {eq: $diet}}) {
+            edges {
+                node {
+                    childContentfulDietDataDietDescriptionRichTextNode {
+                        json
+                    }
+                    city
+                    diet
+                }
+            }
+        }
+    }
+`
+
+const DietTemplate = ({ pageContext, data }) => {
 
   const [dayOffset, changeDayOffset] = useState(0)
 
@@ -39,6 +56,7 @@ const DietTemplate = ({ pageContext }) => {
       }
     })
   }, [])
+
 
   const disableMenuDateChange = direction => {
     if (direction === 'up' && dayOffset >= 5) {
@@ -95,6 +113,12 @@ const DietTemplate = ({ pageContext }) => {
 
   const getCitySlug = () => {
     return pageContext.city ? pageContext.city : "lodz"
+  }
+
+  const getDietData = () => {
+    const citySlug = getCitySlug()
+    const dietData = data.allContentfulDietData.edges.filter(node => node.node.city === citySlug)
+    return dietData
   }
 
   const checkIfIndexingShouldBeOn = () => {
@@ -225,6 +249,7 @@ const DietTemplate = ({ pageContext }) => {
         dayOffset={dayOffset}
         parsedDay={getParsedDay(dayOffset)}
         disableMenuDateChange={disableMenuDateChange}
+        getDietData={getDietData}
       />
       <DietGallery
         getDietAltTag={getDietAltTag}

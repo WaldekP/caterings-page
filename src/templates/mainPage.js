@@ -1,4 +1,4 @@
-import React, { useState, useRef, useContext, useEffect } from "react"
+import React, { useRef, useContext, useEffect } from "react"
 import Layout from "../components/layout"
 import Chatbot from "../components/chatbot"
 import Offer from "../components/offer"
@@ -17,30 +17,32 @@ import { graphql } from "gatsby"
 
 export const query = graphql`
     query MyFaqQuery($city: String!) {
-        allContentfulOtherCityFaq(filter: {slug: {eq: $city}}) {
+        allContentfulFirstFaqForOtherCities(filter: {slug: {eq: $city}}) {
             edges {
                 node {
                     category
                     slug
-                    childContentfulOtherCityFaqAnswerRichTextNode {
+                    childContentfulFirstFaqForOtherCitiesAnswerRichTextNode {
                         json
                     }
                     question
+                    order
                 }
             }
         }
-        allContentfulFaqLodz(filter: {slug: {eq: "lodz"}}) {
-            edges {
-                node {
+       allContentfulFaqLodz(filter: {slug: {eq: "lodz"}}) {
+           edges {
+               node {
                     category
                     slug
                     childContentfulFaqLodzAnswerRichTextNode {
                         json
-                    }
-                    question
-                }
-            }
-        }
+                   }
+                   question
+                   order
+               }
+           }
+       }
     }
 `
 
@@ -89,19 +91,24 @@ const MainPage = ({ data, pageContext, faqLodzData }) => {
     return cityObject.indexing
   }
 
-  const areCityFaqQuestionsUpdated = () => {
+  const otherCityFirstFaq = () => {
     if (pageContext.city) {
-      return !!(data.allContentfulOtherCityFaq.edges.length > 0)
+      return data.allContentfulFirstFaqForOtherCities.edges.length === 1 && data.allContentfulFirstFaqForOtherCities.edges[0]
     }
-    return false
   }
 
   const getFaqNodes = () => {
-    if (areCityFaqQuestionsUpdated()) {
-      return data.allContentfulOtherCityFaq.edges
-    }
     const lodzData = data ? data : faqLodzData
     return lodzData.allContentfulFaqLodz.edges
+  }
+
+  const getUpdatedFaqNodes = () => {
+    return getFaqNodes().map(node => {
+      if (node.node.category === 'general' && parseFloat(node.node.order) === 1) {
+        return otherCityFirstFaq() ? otherCityFirstFaq() : node
+      }
+      return node
+    })
   }
 
   const findCity = () => {
@@ -144,8 +151,8 @@ const MainPage = ({ data, pageContext, faqLodzData }) => {
         <Faq
           ref={contactRef}
           pageContext={pageContext}
-          faqNodes={getFaqNodes()}
-          areCityFaqQuestionsUpdated={areCityFaqQuestionsUpdated}
+          faqNodes={getUpdatedFaqNodes()}
+          otherCityFirstFaq={otherCityFirstFaq}
         />
         <Contact ref={contactRef} />
       </div>

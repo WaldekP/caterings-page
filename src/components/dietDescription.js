@@ -2,12 +2,14 @@ import React from "react"
 import dietDescriptionStyles from "../styles/dietDescription.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons"
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 const DietDescription = ({
   diet,
   city,
   dietDescription,
   menu,
+  getDietData,
   changeDayOffset,
   dayOffset,
   parsedDay,
@@ -21,7 +23,7 @@ const DietDescription = ({
       </h1>
       <div className={dietDescriptionStyles.container}>
         <div className={dietDescriptionStyles.descriptionContainer}>
-          {dietDescription &&
+          {getDietData().length > 0 ? documentToReactComponents(getDietData()[0].node.childContentfulDietDataDietDescriptionRichTextNode.json) : dietDescription &&
             dietDescription.length > 0 &&
             dietDescription.map((description, i) => (
               <p key={i}>{description}</p>
@@ -30,10 +32,13 @@ const DietDescription = ({
         <div className={dietDescriptionStyles.menuContainer}>
           <div className={dietDescriptionStyles.menuDate}>
             <span
-            //   style={disableMenuDateChange('down') ?  {
-            //   color: 'grey'
-            // } : null}
-              onClick={() => !disableMenuDateChange('down') && changeDayOffset(dayOffset - 1)}>
+              //   style={disableMenuDateChange('down') ?  {
+              //   color: 'grey'
+              // } : null}
+              onClick={() =>
+                !disableMenuDateChange("down") && changeDayOffset(dayOffset - 1)
+              }
+            >
               <FontAwesomeIcon icon={faAngleLeft} />
             </span>
             <p>{parsedDay}</p>
@@ -41,7 +46,10 @@ const DietDescription = ({
               // style={disableMenuDateChange('up') ?  {
               //   color: 'grey'
               // } : null}
-              onClick={() => !disableMenuDateChange('up') && changeDayOffset(dayOffset + 1)}>
+              onClick={() =>
+                !disableMenuDateChange("up") && changeDayOffset(dayOffset + 1)
+              }
+            >
               <FontAwesomeIcon icon={faAngleRight} />
             </span>
           </div>
