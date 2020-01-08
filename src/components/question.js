@@ -22,9 +22,6 @@ const Question = ({question, otherCityFirstFaq }) => {
         <p>{question.node.question}</p>
         <p className={faqStyles.sign}>{status ? "-" : "+"}</p>
       </div>
-      {/*{question.order === 1 && (*/}
-      {/*  <div className={faqStyles.answer}>{documentToReactComponents(question.node[richTextNode].json)}</div>*/}
-      {/*)}*/}
       {status && (
         <div className={faqStyles.answer}>{documentToReactComponents(question.node[richTextNode].json)}</div>
       )}
