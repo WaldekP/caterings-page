@@ -33,9 +33,6 @@ const DietDescription = ({
         <div className={dietDescriptionStyles.menuContainer}>
           <div className={dietDescriptionStyles.menuDate}>
             <span
-              //   style={disableMenuDateChange('down') ?  {
-              //   color: 'grey'
-              // } : null}
               onClick={() =>
                 !disableMenuDateChange("down") && changeDayOffset(dayOffset - 1)
               }
