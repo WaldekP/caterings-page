@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import faqStyles from "../styles/faq.module.scss"
-import { faq } from "../data/mainPage/faq"
 import Question from "./question"
 
 const Faq = React.forwardRef (({ pageContext, faqNodes, areCityFaqQuestionsUpdated, otherCityFirstFaq }, ref) => {
@@ -11,7 +10,6 @@ const Faq = React.forwardRef (({ pageContext, faqNodes, areCityFaqQuestionsUpdat
     return [...faqNodes.filter(faqNode => faqNode.node.category === section)]
       .sort((prev, next) => parseFloat(prev.node.order) - parseFloat(next.node.order))
   }
-
   return (
     <div className={faqStyles.wrapper} ref={ref}>
       <h2>Masz pytania odnośnie naszego cateringu? Zajrzyj tutaj.</h2>
