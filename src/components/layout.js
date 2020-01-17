@@ -27,7 +27,6 @@ const Layout = ({ title, children, pageContext }) => {
     typeof window !== "undefined" && window.location.href.includes("temp-blog")
 
   // redirect from main page when the cookie is set
-
   useEffect(() => {
     if (!citySlug && cityCookie2 && !checkIfBlog()) {
       if (cityCookie2 === "lodz") {
