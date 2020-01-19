@@ -12,6 +12,7 @@ import SEO from "../components/seo"
 import axios from "axios"
 import { DateTime } from 'luxon'
 import { graphql } from "gatsby"
+import DietLongDescription from '../components/dietLongDescription'
 
 export const query = graphql`
     query MyDietDataQuery($diet: String!) {
@@ -23,6 +24,16 @@ export const query = graphql`
                     }
                     city
                     diet
+                }
+            }
+        }
+        allContentfulLongDietDescription(filter: {diet: {eq: $diet}}) {
+            edges {
+                node {
+                    diet
+                    childContentfulLongDietDescriptionContentRichTextNode {
+                        json
+                    }
                 }
             }
         }
@@ -119,6 +130,16 @@ const DietTemplate = ({ pageContext, data }) => {
     const citySlug = getCitySlug()
     const dietData = data.allContentfulDietData.edges.filter(node => node.node.city === citySlug)
     return dietData
+  }
+
+  const getLongDescription = () => {
+    const longDescription = data.allContentfulLongDietDescription.edges
+
+    if (getCitySlug() === 'lodz' && longDescription.length > 0) {
+      return longDescription
+    }
+
+    return null
   }
 
   const checkIfIndexingShouldBeOn = () => {
@@ -230,6 +251,7 @@ const DietTemplate = ({ pageContext, data }) => {
     }, {})
   }
 
+  console.log('getLongDescription', getLongDescription())
   return (
     <Layout pageContext={pageContext}>
       <SEO
@@ -268,6 +290,7 @@ const DietTemplate = ({ pageContext, data }) => {
         diet={findDiet() && findDiet().fullName}
       />
       <CallToAction cta="diet" />
+      {getLongDescription() && <DietLongDescription longDescription={getLongDescription()[0].node}/>}
     </Layout>
   )
 }

@@ -1,0 +1,23 @@
+@import "variables";
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  border: 1px solid $border-grey;
+  padding: 10px;
+  p {
+    font-size: 16px;
+    line-height: 2;
+    a {
+      text-decoration: none;
+      color: $main-color;
+    }
+  }
+}
+
+@media (max-width: 799px) {
+  .container {
+    width: 80%;
+    max-width: unset;
+  }
+}
