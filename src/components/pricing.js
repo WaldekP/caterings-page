@@ -255,7 +255,7 @@ const Pricing = React.forwardRef((props, ref) => {
 
   const calculatePrice = () => {
     const { activeMeals, days } = state
-    const price = activeMeals && activeMeals.sectorPriceSettings[0].fullPrice
+    const price = activeMeals && activeMeals.sectorPriceSettings[0].fullPrice + 2;
     const deductedPrice = parseFloat(price - calculatePriceOfUnCheckedMeals())
     if (days > 13 && days < 30) {
       return (deductedPrice * 0.95).toFixed(1)
