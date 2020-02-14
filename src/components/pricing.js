@@ -10,8 +10,8 @@ const { default: mealsPricingWarsaw } = warsawMeals
 
 const Pricing = React.forwardRef((props, ref) => {
   const discounts = [
-    { minimumDays: 14, discount: 5, discountType: "PERCENTAGE" },
-    { minimumDays: 30, discount: 10, discountType: "PERCENTAGE" },
+    { minimumDays: 14, discount: 10, discountType: "PERCENTAGE" },
+    { minimumDays: 30, discount: 15, discountType: "PERCENTAGE" },
   ]
   const initialState = {
     activeDiet: "",
@@ -258,10 +258,10 @@ const Pricing = React.forwardRef((props, ref) => {
     const price = activeMeals && activeMeals.sectorPriceSettings[0].fullPrice + 2;
     const deductedPrice = parseFloat(price - calculatePriceOfUnCheckedMeals())
     if (days > 13 && days < 30) {
-      return (deductedPrice * 0.95).toFixed(1)
+      return (deductedPrice * 0.9).toFixed(1)
     }
     if (days >= 30) {
-      return (deductedPrice * 0.9).toFixed(1)
+      return (deductedPrice * 0.85).toFixed(1)
     }
     return deductedPrice.toFixed(1)
   }
@@ -270,10 +270,10 @@ const Pricing = React.forwardRef((props, ref) => {
     const { days } = state
 
     if (days > 13 && days < 30) {
-      return "5%"
+      return "10%"
     }
     if (days >= 30) {
-      return "10%"
+      return "15%"
     }
   }
 
