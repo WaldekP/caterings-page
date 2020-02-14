@@ -1,11 +1,11 @@
 import React, { Fragment, useEffect, useRef, useState, useContext } from "react"
 import { Link } from "gatsby"
-import * as dietDetails from "../data/companyDetails/dietDetails"
-import chatbotStyles from "../styles/chatbot.module.scss"
-import chatIcon from "../images/chat/ico_chat1.svg"
-import personIcon from "../images/chat/ico_chat2.svg"
-import PageContext from "../context/pageContext"
-import ChatbotSpinner from "../components/chatSpinner"
+import * as dietDetails from "../../data/companyDetails/dietDetails"
+import chatbotStyles from "../../styles/chatbot.module.scss"
+import chatIcon from "../../images/chat/ico_chat1.svg"
+import personIcon from "../../images/chat/ico_chat2.svg"
+import PageContext from "../../context/pageContext"
+import ChatbotSpinner from "./chatSpinner"
 import scrollIntoView from "scroll-into-view-if-needed"
 
 const { default: diets } = dietDetails

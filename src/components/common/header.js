@@ -1,12 +1,12 @@
 import React, { Fragment, useEffect, useState, useContext } from "react"
 import { Link, navigate } from "gatsby"
-import headerStyles from "../styles/header.module.scss"
-import commonStyles from "../styles/common.module.scss"
-import { cities } from "../data/cities"
-import logo from "../images/logo/afterfit_img_logo.svg"
+import headerStyles from "../../styles/header.module.scss"
+import commonStyles from "../../styles/common.module.scss"
+import { cities } from "../../data/cities"
+import logo from "../../images/logo/afterfit_img_logo.svg"
 import { useSpring, animated} from "react-spring"
 
-import PageContext from "../context/pageContext"
+import PageContext from "../../context/pageContext"
 
 const Header = ({ pageContext }) => {
   const citySlug = pageContext && pageContext.city

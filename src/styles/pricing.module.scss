@@ -62,6 +62,9 @@
   width: 100%;
   color: $main-color;
   flex-wrap: wrap;
+  .selectWrapper {
+    margin-bottom: 20px;
+  }
 }
 
 .section {

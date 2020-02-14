@@ -1,7 +1,7 @@
 import React from "react"
-import emailIcon from "../images/contact/ico_mail.svg"
-import phoneIcon from "../images/contact/ico_phone.svg"
-import contactStyles from "../styles/contact.module.scss"
+import emailIcon from "../../images/contact/ico_mail.svg"
+import phoneIcon from "../../images/contact/ico_phone.svg"
+import contactStyles from "../../styles/contact.module.scss"
 
 const Contact = React.forwardRef((props, ref) => {
   return (

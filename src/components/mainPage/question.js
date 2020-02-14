@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import faqStyles from "../styles/faq.module.scss"
+import faqStyles from "../../styles/faq.module.scss"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 const Question = ({question, otherCityFirstFaq }) => {

@@ -1,8 +1,8 @@
 import React, { Fragment, useEffect, useContext } from "react"
 import Header from "./header"
 import Footer from "./footer"
-import layoutStyles from "../styles/layout.module.scss"
-import { cities } from "../data/cities"
+import layoutStyles from "../../styles/layout.module.scss"
+import { cities } from "../../data/cities"
 import { Link, navigate } from "gatsby"
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
@@ -11,7 +11,7 @@ import {
   faCircle,
   faWindowClose,
 } from "@fortawesome/free-solid-svg-icons"
-import PageContext from "../context/pageContext"
+import PageContext from "../../context/pageContext"
 import CookieConsent from "react-cookie-consent"
 
 library.add(fab, faCheckSquare, faCircle, fab, faWindowClose)

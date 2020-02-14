@@ -1,5 +1,5 @@
 import React from "react"
-import dietGalleryStyles from "../styles/dietGallery.module.scss"
+import dietGalleryStyles from "../../styles/dietGallery.module.scss"
 
 const DietGallery = ({getDietAltTag, dietGallery}) => {
 

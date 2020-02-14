@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react"
-import testimonialsStyles from "../styles/testimonials.module.scss"
-import examplePhoto from "../images/chat/ico_chat2.svg"
+import testimonialsStyles from "../../styles/testimonials.module.scss"
+import examplePhoto from "../../images/chat/ico_chat2.svg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { testimonials } from "../data/mainPage/testimonials"
+import { testimonials } from "../../data/mainPage/testimonials"
 
 const Testimonials = React.forwardRef((props, ref) => {
   const [testimonialNumber, changeTestimonial] = useState(1)

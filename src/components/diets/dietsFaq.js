@@ -1,6 +1,6 @@
 import React, { useState } from "react"
-import faqStyles from "../styles/faq.module.scss"
-import { dietsFaq } from "../data/generalnformationFaq"
+import faqStyles from "../../styles/faq.module.scss"
+import { dietsFaq } from "../../data/generalnformationFaq"
 import DietQuestion from "./dietQuestion"
 
 const DietsFaq = ({ dietQuestions }) => {

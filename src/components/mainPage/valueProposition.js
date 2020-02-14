@@ -1,9 +1,9 @@
 import React from "react"
-import valuePropositionStyles from "../styles/valueProposition.module.scss"
-import firstValueProposition from "../images/valueProposition/img_elastycznosc.svg"
-import secondValueProposition from "../images/valueProposition/img_roznorodnosc.svg"
-import thirdValueProposition from "../images/valueProposition/img_jakosc.svg"
-import { valuePropositionData } from "../data/mainPage/valueProposition"
+import valuePropositionStyles from "../../styles/valueProposition.module.scss"
+import firstValueProposition from "../../images/valueProposition/img_elastycznosc.svg"
+import secondValueProposition from "../../images/valueProposition/img_roznorodnosc.svg"
+import thirdValueProposition from "../../images/valueProposition/img_jakosc.svg"
+import { valuePropositionData } from "../../data/mainPage/valueProposition"
 
 
 const ValueProposition = React.forwardRef((props, ref) => {

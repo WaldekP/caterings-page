@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import faqStyles from "../styles/faq.module.scss"
+import faqStyles from "../../styles/faq.module.scss"
 
 const DietQuestion = ({question }) => {
   const [status, changeStatus] = useState(false)

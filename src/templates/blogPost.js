@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react"
-import Layout from "../components/layout"
+import Layout from "../components/common/layout"
 import { graphql, Link } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import PageContext from "../context/pageContext"

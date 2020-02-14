@@ -1,5 +1,5 @@
 import React from "react"
-import heroStyles from "../styles/dietHero.module.scss"
+import heroStyles from "../../styles/dietHero.module.scss"
 
 const DietHero = ({diet}) => {
   const getDietClass = () => {

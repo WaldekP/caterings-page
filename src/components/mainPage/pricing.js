@@ -1,9 +1,11 @@
 import React, { useEffect, useReducer } from "react"
-import pricingStyles from "../styles/pricing.module.scss"
-import cateringDetails from "../data/companyDetails/cateringDetails"
-import * as lodzMeals from "../data/companyDetails/citiesPricing/lodzPricing"
-import * as restCitiesMealsMeals from '../data/companyDetails/citiesPricing/restCitiesPricing'
-import * as warsawMeals from '../data/companyDetails/citiesPricing/warsawPricing'
+import pricingStyles from "../../styles/pricing.module.scss"
+import cateringDetails from "../../data/companyDetails/cateringDetails"
+import * as lodzMeals from "../../data/companyDetails/citiesPricing/lodzPricing"
+import * as restCitiesMealsMeals from '../../data/companyDetails/citiesPricing/restCitiesPricing'
+import * as warsawMeals from '../../data/companyDetails/citiesPricing/warsawPricing'
+import { Select } from "../common/select"
+
 const { default: mealsPricingRestCities } = restCitiesMealsMeals
 const { default: mealsPricingLodz } = lodzMeals
 const { default: mealsPricingWarsaw } = warsawMeals
@@ -352,6 +354,7 @@ const Pricing = React.forwardRef((props, ref) => {
   }
 
   const { diet } = props;
+  const { activeDiet } = state;
   return (
     <div ref={ref}>
       <h2>{ diet ? `Cennik cateringu Afterfit - ${diet}` : "Cennik naszych diet pudełkowych"}</h2>
@@ -360,21 +363,14 @@ const Pricing = React.forwardRef((props, ref) => {
           <div className={pricingStyles.leftSideWrapper}>
             {!handleDietPageDietId() && <div className={pricingStyles.section}>
               <p>Dieta</p>
-              {getDiets().map(dietItem => (
-                <div
-                  onClick={() =>
-                    dispatch({ type: "STORE_DIET", activeDiet: dietItem })
-                  }
-                  key={dietItem.dietId}
-                  className={
-                    dietItem.dietId === state.activeDiet.dietId
-                      ? pricingStyles.activeItem
-                      : pricingStyles.item
-                  }
-                >
-                  {dietItem.diet}
-                </div>
-              ))}
+              <div className={pricingStyles.selectWrapper}>
+                <Select
+                  items={getDiets()}
+                  selectedItem={activeDiet}
+                  selectedItemKey="diet"
+                  selectItem={(selectedDiet) => dispatch({ type: "STORE_DIET", activeDiet: selectedDiet })}
+                />
+              </div>
             </div>}
             <div className={pricingStyles.section}>
               <p>Kaloryczność</p>

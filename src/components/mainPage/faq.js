@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import faqStyles from "../styles/faq.module.scss"
+import faqStyles from "../../styles/faq.module.scss"
 import Question from "./question"
 
 const Faq = React.forwardRef (({ pageContext, faqNodes, areCityFaqQuestionsUpdated, otherCityFirstFaq }, ref) => {

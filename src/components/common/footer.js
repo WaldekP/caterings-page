@@ -1,9 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
-import footerStyles from "../styles/footer.module.scss"
-import logo from "../images/logo/afterfit_img_logo.svg"
+import footerStyles from "../../styles/footer.module.scss"
+import logo from "../../images/logo/afterfit_img_logo.svg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { cities } from "../data/cities"
+import { cities } from "../../data/cities"
 
 const Footer = ({ pageContext }) => {
   const city = pageContext && pageContext.city

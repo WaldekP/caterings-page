@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react"
-import Layout from "../components/layout"
+import Layout from "../components/common/layout"
 import { graphql, Link } from "gatsby"
 import PageContext from "../context/pageContext"
 import Img from "gatsby-image"

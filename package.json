@@ -12,6 +12,7 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "axios": "^0.19.0",
     "dotenv": "^8.2.0",
+    "downshift": "^5.0.0",
     "env-cmd": "^9.0.3",
     "express": "^4.17.1",
     "gatsby": "^2.9.11",

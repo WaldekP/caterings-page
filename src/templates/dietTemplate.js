@@ -1,18 +1,18 @@
 import React, { useEffect, useReducer, useState } from "react"
-import Layout from "../components/layout"
-import DietHero from "../components/dietHero"
-import DietDescription from "../components/dietDescription"
+import Layout from "../components/common/layout"
+import DietHero from "../components/diets/dietHero"
+import DietDescription from "../components/diets/dietDescription"
 import { diets } from "../data/diets"
 import { cities } from "../data/cities"
-import DietGallery from "../components/dietGallery"
-import DietsFaq from "../components/dietsFaq"
-import DietPricing from "../components/dietPricing"
-import CallToAction from "../components/callToAction"
-import SEO from "../components/seo"
+import DietGallery from "../components/diets/dietGallery"
+import DietsFaq from "../components/diets/dietsFaq"
+import DietPricing from "../components/diets/dietPricing"
+import CallToAction from "../components/common/callToAction"
+import SEO from "../components/mainPage/seo"
 import axios from "axios"
 import { DateTime } from 'luxon'
 import { graphql } from "gatsby"
-import DietLongDescription from '../components/dietLongDescription'
+import DietLongDescription from '../components/diets/dietLongDescription'
 
 export const query = graphql`
     query MyDietDataQuery($diet: String!) {

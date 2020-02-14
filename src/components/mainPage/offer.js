@@ -1,21 +1,21 @@
 import React from "react"
 import { Link } from "gatsby"
-import offerStyles from "../styles/offer.module.scss"
-import { diets } from "../data/diets"
-import slimDiet from "../images/diets/dieta-odchudzajaca.jpg"
-import paleoDiet from "../images/diets/dieta-paleo.jpg"
-import vegeWithFish from "../images/diets/dieta-wege-z-rybami.jpg"
-import samurajDiet from "../images/diets/dieta-samuraja.jpg"
-import vegeDiet from "../images/diets/dieta-wegetarianska.jpg"
-import vegaDiet from "../images/diets/dieta-weganska.jpg"
-import reductionDiet from "../images/diets/dieta-na-redukcje.jpg"
-import standardDiet from "../images/diets/dieta-standard.jpg"
-import glutennFreeDiet from "../images/diets/dieta-bezglutenowa.jpg"
-import detoxDiet from "../images/diets/dieta-detox.jpg"
-import lowIgDiet from "../images/diets/Dieta-niski-indeks.jpg"
-import lactoseFreeDiet from "../images/diets/dieta-bezlaktozowa.jpg"
-import ketoDiet from '../images/diets/dieta-keto.jpg'
-import dashDiet from '../images/diets/dieta-dash.jpg'
+import offerStyles from "../../styles/offer.module.scss"
+import { diets } from "../../data/diets"
+import slimDiet from "../../images/diets/dieta-odchudzajaca.jpg"
+import paleoDiet from "../../images/diets/dieta-paleo.jpg"
+import vegeWithFish from "../../images/diets/dieta-wege-z-rybami.jpg"
+import samurajDiet from "../../images/diets/dieta-samuraja.jpg"
+import vegeDiet from "../../images/diets/dieta-wegetarianska.jpg"
+import vegaDiet from "../../images/diets/dieta-weganska.jpg"
+import reductionDiet from "../../images/diets/dieta-na-redukcje.jpg"
+import standardDiet from "../../images/diets/dieta-standard.jpg"
+import glutennFreeDiet from "../../images/diets/dieta-bezglutenowa.jpg"
+import detoxDiet from "../../images/diets/dieta-detox.jpg"
+import lowIgDiet from "../../images/diets/Dieta-niski-indeks.jpg"
+import lactoseFreeDiet from "../../images/diets/dieta-bezlaktozowa.jpg"
+import ketoDiet from '../../images/diets/dieta-keto.jpg'
+import dashDiet from '../../images/diets/dieta-dash.jpg'
 
 const Offer = React.forwardRef(({ pageContext }, ref) => {
   const findDiet = diet => {

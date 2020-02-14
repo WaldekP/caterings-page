@@ -1,7 +1,7 @@
 import React, { Fragment } from "react"
-import callToActionStyles from '../styles/callToAction.module.scss'
-import firstPattern from '../images/patterns/img_zacznij-jesc-zdrowo-1.svg'
-import secondPattern from '../images/patterns/img_zacznij-jesc-zdrowo-2.svg'
+import callToActionStyles from '../../styles/callToAction.module.scss'
+import firstPattern from '../../images/patterns/img_zacznij-jesc-zdrowo-1.svg'
+import secondPattern from '../../images/patterns/img_zacznij-jesc-zdrowo-2.svg'
 import { Link } from "gatsby"
 
 const CallToAction = ({cta}) => {

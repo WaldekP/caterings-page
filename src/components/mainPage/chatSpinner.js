@@ -1,4 +1,4 @@
-import chatbotStyles from "../styles/chatbot.module.scss"
+import chatbotStyles from "../../styles/chatbot.module.scss"
 import React from "react"
 
 const ChatSpinner = () => {

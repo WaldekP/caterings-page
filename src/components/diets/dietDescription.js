@@ -1,5 +1,5 @@
 import React from "react"
-import dietDescriptionStyles from "../styles/dietDescription.module.scss"
+import dietDescriptionStyles from "../../styles/dietDescription.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"

@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react"
-import heroStyles from "../styles/hero.module.scss"
+import heroStyles from "../../styles/hero.module.scss"
 import { Link } from "gatsby"
-import commonStyles from "../styles/common.module.scss"
+import commonStyles from "../../styles/common.module.scss"
 
 const Hero = () => {
   const [yPosition, changePosition] = useState(
