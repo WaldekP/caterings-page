@@ -23,12 +23,16 @@ const DietDescription = ({
       </h1>
       <div className={dietDescriptionStyles.container}>
         <div className={dietDescriptionStyles.descriptionContainer}>
-          {typeof getDietData === 'function' && getDietData().length > 0
-            ? documentToReactComponents(getDietData()[0].node.childContentfulDietDataDietDescriptionRichTextNode.json) : dietDescription &&
-            dietDescription.length > 0 &&
-            dietDescription.map((description, i) => (
-              <p key={i}>{description}</p>
-            ))}
+          {typeof getDietData === "function" && getDietData().length > 0
+            ? documentToReactComponents(
+                getDietData()[0].node
+                  .childContentfulDietDataDietDescriptionRichTextNode.json
+              )
+            : dietDescription &&
+              dietDescription.length > 0 &&
+              dietDescription.map((description, i) => (
+                <p key={i}>{description}</p>
+              ))}
         </div>
         <div className={dietDescriptionStyles.menuContainer}>
           <div className={dietDescriptionStyles.menuDate}>
@@ -60,10 +64,12 @@ const DietDescription = ({
             <p className={dietDescriptionStyles.mealName}>Obiad</p>
             <p>{menu ? menu.dinner : null}</p>
           </div>
-          <div>
-            <p className={dietDescriptionStyles.mealName}>Podwieczorek</p>
-            <p>{menu ? menu.tea : null}</p>
-          </div>
+          {menu && menu.tea && (
+            <div>
+              <p className={dietDescriptionStyles.mealName}>Podwieczorek</p>
+              <p>{menu ? menu.tea : null}</p>
+            </div>
+          )}
           <div>
             <p className={dietDescriptionStyles.mealName}>Kolacja</p>
             <p>{menu ? menu.supper : null}</p>

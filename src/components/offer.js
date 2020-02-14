@@ -14,6 +14,8 @@ import glutennFreeDiet from "../images/diets/dieta-bezglutenowa.jpg"
 import detoxDiet from "../images/diets/dieta-detox.jpg"
 import lowIgDiet from "../images/diets/Dieta-niski-indeks.jpg"
 import lactoseFreeDiet from "../images/diets/dieta-bezlaktozowa.jpg"
+import ketoDiet from '../images/diets/dieta-keto.jpg'
+import dashDiet from '../images/diets/dieta-dash.jpg'
 
 const Offer = React.forwardRef(({ pageContext }, ref) => {
   const findDiet = diet => {
@@ -53,13 +55,19 @@ const Offer = React.forwardRef(({ pageContext }, ref) => {
     if (diet === 'dieta-detox') {
       return detoxDiet
     }
+    if (diet === 'dieta-keto') {
+      return ketoDiet
+    }
+    if (diet === 'dieta-dash') {
+      return dashDiet
+    }
   }
 
   return (
     <div>
       <h2>Oferta naszej diety pudełkowej - wybierz jedną z 12 diet z dowozem</h2>
       <div className={offerStyles.container} ref={ref}>
-        {diets.map(diet => (
+        {[...diets].sort((prev, next) => prev['fullName'].localeCompare(next['fullName'])) .map(diet => (
           <Link to={pageContext.city ? `/${pageContext.city}/${diet.dietUrl}` : `/${diet.dietUrl}`} key={diet.dietUrl}>
             <div className={offerStyles.dietItem} key={diet.dietUrl}>
               <img src={findDiet(diet.dietUrl)} alt={`Catering dietetyczny ${pageContext.city ? pageContext.city : 'lodz'} - ${diet.fullName}`}/>

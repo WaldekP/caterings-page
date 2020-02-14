@@ -89,9 +89,19 @@ const Footer = ({ pageContext }) => {
               <p>Dieta bezlaktozowa</p>
             </Link>
             <Link
+              to={city ? `/${city}/dieta-dash` : "/dieta-dash"}
+            >
+              <p>Dieta DASH</p>
+            </Link>
+            <Link
               to={city ? `/${city}/dieta-detox` : "/dieta-detox"}
             >
               <p>Dieta detox</p>
+            </Link>
+            <Link
+              to={city ? `/${city}/dieta-keto` : "/dieta-keto"}
+            >
+              <p>Dieta keto</p>
             </Link>
             <Link
               to={city ? `/${city}/dieta-niski-indeks` : "/dieta-niski-indeks"}

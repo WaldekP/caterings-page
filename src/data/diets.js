@@ -1845,4 +1845,90 @@ export const diets = [
         ]},
     },
   },
+  {
+    dietUrl: "dieta-keto",
+    dietId: 585,
+    metaDescription: 'Dieta dla osób, które chcą się zdrowo odżywiać i pragną ze swojego jadłospisu wyeliminować mięso nie rezygnując przy tym z ryb',
+    dietImg: "../images/diets/dieta-odchudzajaca.jpg",
+    dietGallery: {
+      1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_3.jpg",
+      2: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_9.jpg",
+      3: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_2.jpg",
+    },
+    fullName: "Dieta keto",
+    questions: {
+      1: {
+        question: "Rozkład makroskładników",
+        answer: "Białko: 20-30%\n" +
+          "Węglowodany: 5-10%\n" +
+          "Tłuszcze: 60-75%"
+      },
+      2: {
+        question: "Dla kogo?",
+        answer: <span>1.	Dieta skierowana jest dla osób z nadmierną masą ciała oraz nadmierną tkanką tłuszczową.</span>
+      },
+    },
+    menu: {
+      breakfast: "Naleśniki a la ruskie z twarogiem i wędzonym boczkiem",
+      secondBreakfast: "Jajka faszerowane suszonymi pomidorami",
+      dinner: "Polędwiczki wieprzowe w sosie z zielonym pieprzem i surówką biało-czerwoną",
+      supper: "Sałatka z szarpaną wieprzowiną, pomidorkami koktajlowymi i awokado.",
+    },
+    offerDescription: "Dieta wysokotłuszczowa, przeznaczona dla osób, które chcą w szybkim czasie zrzucić nadmierną tkankę tłuszczową.",
+    cityDescription: {
+      lodz: {
+        description: [
+          "Dieta ketogeniczna to dieta o niskiej zawartości węglowodanów i wysokiej zawartości tłuszczu. Taki sposób odżywiania wprowadza organizm w stan metaboliczny zwany ketozą, w którym głównym źródłem energii stają się tłuszcze i ciała ketonowe.",
+          "Zapewnia to utratę wagi, dlatego taki model diety może się sprawdzić u osób chcących w szybkim tempie zrzucić zbędne kilogramy. Za sprawą większego udziału tłuszczu w diecie ketogenicznej porcje posiłków są mniejsze objętościowo, ale zapewniają uczucie sytości na dłużej.",
+          "Menu jest bogate w mięso, tłuste ryby morskie, masło, oliwę z oliwek, olej kokosowy, awokado, orzechy, pestki i nasiona. Dania bazują również na tłustym nabiale oraz jajkach.",
+          "Ten rodzaj diety nie jest zalecany u osób z chorobami trzustki, wątroby, nerek i pęcherzyka żółciowego. Ze względu na restrykcje związane ze znacznym ograniczeniem węglowodanów zaleca się cykliczne stosowanie tej diety przez okres 2-3 miesięcy. ",
+        ]
+      },
+    }
+  },
+  {
+    dietUrl: "dieta-dash",
+    dietId: 584,
+    metaDescription: 'Dieta dla osób, które chcą się zdrowo odżywiać i pragną ze swojego jadłospisu wyeliminować mięso nie rezygnując przy tym z ryb',
+    dietImg: "../images/diets/dieta-odchudzajaca.jpg",
+    dietGallery: {
+      1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_3.jpg",
+      2: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_9.jpg",
+      3: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_2.jpg",
+    },
+    fullName: "Dieta DASH",
+    questions: {
+      1: {
+        question: "Rozkład makroskładników",
+        answer: "Białko: 15-20%\n" +
+          "Węglowodany: 50-60%\n" +
+          "Tłuszcze: 25-30%"
+      },
+      2: {
+        question: "Dla kogo?",
+        answer: <span>1. Skierowana dla osób chorych na nadciśnienie.<br/> <br/>
+          2. Dla osób z wysokim poziomem cholesterolu lub chorobami sercowo-
+naczyniowymi.<br/> <br/>
+        3. Dla osób, które chcą zrzucić zbędne kilogramy lub które chcą zmienić
+swoje dotychczasowe nawyki żywieniowe i zacząć zdrowo się odżywiać..<br/> <br/></span>
+      },
+    },
+    menu: {
+      breakfast: "Twarogowe placuszki owsiane",
+      secondBreakfast: "Jogurt z sałatką jabłkowo-cynamonową",
+      dinner: "Klopsiki greckie z sosem tzatziki podane z kaszą jaglaną i grillowanymi\n" +
+        "warzywami",
+      tea: "Zupa krem z dyni z imbirem",
+      supper: "Wytrawne rollsy z łososiem i roszponką",
+    },
+    offerDescription: "Dieta dla osób cierpiących na nadciśnienie.",
+    cityDescription: {
+      lodz: {
+        description: [
+          "DASH to skrót od Dietary Approaches to Stop Hypertension, czyli dieta w leczeniu i zapobieganiu nadciśnienia. Jak nazwa wskazuje, jest przeznaczona dla osób, które mają problemy z wysokim ciśnieniem krwi. Głównym założeniem tej diety jest niska zawartość soli w posiłkach. ",
+          "Jadłospis diety DASH jest bogaty w niskotłuszczowe produkty mleczne, owoce, warzywa i produkty pełnoziarniste. W posiłkach przeważają produkty o wysokiej zawartości wapnia, potasu i magnezu, które pomagają obniżać ciśnienie krwi.",
+          "Dieta DASH została szeroko przebadana i ma wiele korzyści zdrowotnych. Przestrzeganie jej założeń pomoże nam kontrolować nie tylko ciśnienie krwi, ale również poziom cholesterolu. Co więcej, zapewnimy sobie wszystkie potrzebne składniki odżywcze.",
+        ]},
+    },
+  },
 ]

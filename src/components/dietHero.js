@@ -1,6 +1,5 @@
 import React from "react"
 import heroStyles from "../styles/dietHero.module.scss"
-import bac from "../images/diets/dietPageMainImages/Dieta odchudzająca catering dietetyczny AfterFit catering.jpg"
 
 const DietHero = ({diet}) => {
   const getDietClass = () => {
@@ -42,6 +41,12 @@ const DietHero = ({diet}) => {
     }
     if (diet === 'dieta-niski-indeks') {
       return heroStyles.dietLowIg
+    }
+    if (diet === 'dieta-keto') {
+      return heroStyles.dietKeto
+    }
+    if (diet === 'dieta-dash') {
+      return heroStyles.dietDash
     }
     return heroStyles.dietWeightLoss
   }
