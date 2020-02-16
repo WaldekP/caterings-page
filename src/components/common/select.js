@@ -37,7 +37,7 @@ export const Select = (
                 if (Object.keys(selectedItem).length > 0) {
                   return selectedItem[selectedItemKey]
                 }
-                return "Wybierz.."
+                return "Wybierz..."
               })()}
             </span>
           </div>
