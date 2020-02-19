@@ -1,6 +1,6 @@
 import React, { useEffect, useReducer } from "react"
 import pricingStyles from "../../styles/pricing.module.scss"
-import cateringDetails from "../../data/companyDetails/cateringDetails"
+import companyDetails from '../../data/companyDetails/companyDetails';
 import * as lodzMeals from "../../data/companyDetails/citiesPricing/lodzPricing"
 import * as restCitiesMealsMeals from '../../data/companyDetails/citiesPricing/restCitiesPricing'
 import * as warsawMeals from '../../data/companyDetails/citiesPricing/warsawPricing'
@@ -137,7 +137,7 @@ const Pricing = React.forwardRef((props, ref) => {
   }, [state.activeCalories])
 
   const getDiets = () => {
-    return cateringDetails.diets
+    return companyDetails.diets
       .reduce((acc, curr) => {
         const dietAlreadyExists = acc.findIndex(
           diet => diet.dietId === curr.dietId
@@ -163,7 +163,7 @@ const Pricing = React.forwardRef((props, ref) => {
   const getDietOptions = () => {
     const { activeDiet } = state
     const selectedDiet = activeDiet.dietId
-    const filteredDiet = cateringDetails.diets.filter(
+    const filteredDiet = companyDetails.diets.filter(
       diet => diet.dietId === selectedDiet
     )
     return (
@@ -188,7 +188,7 @@ const Pricing = React.forwardRef((props, ref) => {
   const getDietOptionCalories = () => {
     const { activeOption } = state
     const selectedOption = activeOption.optionId
-    const filteredDietOption = cateringDetails.diets.filter(
+    const filteredDietOption = companyDetails.diets.filter(
       diet => diet.dietOptionId === selectedOption
     )
 
