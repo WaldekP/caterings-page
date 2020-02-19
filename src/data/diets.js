@@ -1851,9 +1851,9 @@ export const diets = [
     metaDescription: 'Dieta dla osób, które chcą się zdrowo odżywiać i pragną ze swojego jadłospisu wyeliminować mięso nie rezygnując przy tym z ryb',
     dietImg: "../images/diets/dieta-odchudzajaca.jpg",
     dietGallery: {
-      1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_3.jpg",
-      2: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_9.jpg",
-      3: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_2.jpg",
+      1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_keto-1.jpg",
+      2: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_keto-2.jpg",
+      3: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_keto-3.jpg",
     },
     fullName: "Dieta keto",
     questions: {
@@ -1892,9 +1892,9 @@ export const diets = [
     metaDescription: 'Dieta dla osób, które chcą się zdrowo odżywiać i pragną ze swojego jadłospisu wyeliminować mięso nie rezygnując przy tym z ryb',
     dietImg: "../images/diets/dieta-odchudzajaca.jpg",
     dietGallery: {
-      1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_3.jpg",
-      2: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_9.jpg",
-      3: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_2.jpg",
+      1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_dash-1.jpg",
+      2: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_dash-2.jpg",
+      3: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_dash-3.jpg",
     },
     fullName: "Dieta DASH",
     questions: {

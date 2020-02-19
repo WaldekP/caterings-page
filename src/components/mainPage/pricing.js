@@ -124,10 +124,15 @@ const Pricing = React.forwardRef((props, ref) => {
       })
   }, [state.activeOption])
   useEffect(() => {
-    state.activeCalories &&
+    const dietCaloriesId = state.activeCalories.dietCaloriesId
+    const meals = handleCityMeals()[dietCaloriesId]
+    console.log('meals', meals, 'dietCaloriesId', dietCaloriesId, 'handleCityMeals()', handleCityMeals())
+    // console.log('handleCityMeals', handleCityMeals())
+    // console.log('state.activeCalories.dietCaloriesId', state.activeCalories.dietCaloriesId)
+    dietCaloriesId && state.activeCalories &&
       dispatch({
         type: "STORE_MEALS",
-        activeMeals: handleCityMeals()[state.activeCalories.dietCaloriesId],
+        activeMeals: handleCityMeals()[dietCaloriesId],
       })
   }, [state.activeCalories])
 
@@ -355,6 +360,8 @@ const Pricing = React.forwardRef((props, ref) => {
 
   const { diet } = props;
   const { activeDiet } = state;
+
+  console.log('diets', getDiets())
   return (
     <div ref={ref}>
       <h2>{ diet ? `Cennik cateringu Afterfit - ${diet}` : "Cennik naszych diet pudełkowych"}</h2>
