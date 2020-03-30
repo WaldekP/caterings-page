@@ -56,10 +56,10 @@ const DietDescription = ({
             <p className={dietDescriptionStyles.mealName}>Śniadanie</p>
             <p>{menu ? menu.breakfast : null}</p>
           </div>
-          <div>
+          {menu && menu.secondBreakfast && <div>
             <p className={dietDescriptionStyles.mealName}>II Śniadanie</p>
             <p>{menu ? menu.secondBreakfast : null}</p>
-          </div>
+          </div>}
           <div>
             <p className={dietDescriptionStyles.mealName}>Obiad</p>
             <p>{menu ? menu.dinner : null}</p>

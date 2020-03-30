@@ -1931,4 +1931,46 @@ swoje dotychczasowe nawyki żywieniowe i zacząć zdrowo się odżywiać..<br/> 
         ]},
     },
   },
+  {
+    dietUrl: "dieta-domowa",
+    dietId: 587,
+    metaDescription: 'Dieta domowa dla osób, które chcą smacznie i dobrze zjeść',
+    dietImg: "../images/diets/dieta-odchudzajaca.jpg",
+    dietGallery: {
+      1: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/aftefit_home-1.jpg",
+      2: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_home-2.jpg",
+      3: "https://miscellaneous-images.s3.eu-central-1.amazonaws.com/afterfit_home-3.jpg",
+    },
+    fullName: "Dieta domowa",
+    questions: {
+      1: {
+        question: "Rozkład makroskładników",
+        answer: "Białko: 15-20%\n" +
+          "Węglowodany: 50-60%\n" +
+          "Tłuszcze: 25-30%"
+      },
+      2: {
+        question: "Dla kogo?",
+        answer: <span>1. Skierowana dla osób chorych na nadciśnienie.<br/> <br/>
+          2. Dla osób z wysokim poziomem cholesterolu lub chorobami sercowo-
+naczyniowymi.<br/> <br/>
+        3. Dla osób, które chcą zrzucić zbędne kilogramy lub które chcą zmienić
+swoje dotychczasowe nawyki żywieniowe i zacząć zdrowo się odżywiać..<br/> <br/></span>
+      },
+    },
+    menu: {
+      breakfast: "Jajka gotowane podane z sosem tatarskim i chlebem",
+      dinner: "Kotlet schabowy z ziemnikami i marchewką z groszkiem",
+      supper: "Makaron w sosie śmietanowo-grzybowym",
+    },
+    offerDescription: "Dieta domowa dla osób, które chcą smacznie i dobrze zjeść",
+    cityDescription: {
+      lodz: {
+        description: [
+          "Dieta domowa to coś pomiędzy naszą tradycyjną kuchnią a klasycznym cateringiem dietetycznym. Skierowana jest dla osób zabieganych, które na co dzień nie zawsze mają czas na gotowanie a nie koniecznie chcą być na przysłowiowej diecie.",
+          "W diecie domowej skupiamy się przede wszystkim na tym, aby posiłki były smaczne, przypominające te jakie jedliśmy u swojej mamy czy babci. Dlatego też nie liczymy w niej mikro czy makroskładników. Menu jednak jest na tyle zbilansowane i urozmaicone, aby dostarczało wszystkich składników odżywczych, niezbędnych w celu utrzymania zdrowia i dobrej kondycji naszego organizmu.",
+          "Dieta domowa bogata jest w różnego rodzaju mięsa, sery, ryby, jaja, produkty zbożowe oraz owoce i warzywa. Znajdziemy w niej bardziej tradycyjne dania takie jak chociażby mięsa smażone w panierce czy zupy, przypominające nam smaki z dzieciństwa. Nie zabraknie w niej posiłków pożywnych i sycących. Dodatkowo, dieta obfituje w różnorodne sałatki, dania wegetariańskie z różnych stron świata oraz słodkości, a więc z pewnością każdy znajdzie w tej diecie coś dla siebie. ",
+        ]},
+    },
+  },
 ]

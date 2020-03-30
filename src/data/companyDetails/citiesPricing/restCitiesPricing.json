@@ -599,104 +599,6 @@
       }
     ]
   },
-  "266": {
-    "dietCaloriesId": 266,
-    "deleted": false,
-    "calories": 2200,
-    "minimumPrice": 0.0,
-    "publiclyAvailable": false,
-    "dietCaloriesMeals": [
-      {
-        "dietCaloriesMealId": 1193,
-        "dietMeal": {
-          "dietMealId": 21,
-          "priority": 1,
-          "meal": {
-            "mealId": 1,
-            "priority": 1,
-            "name": "Śniadanie",
-            "deleted": false,
-            "abbreviation": "Ś"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 1194,
-        "dietMeal": {
-          "dietMealId": 22,
-          "priority": 2,
-          "meal": {
-            "mealId": 2,
-            "priority": 2,
-            "name": "II Śniadanie",
-            "deleted": false,
-            "abbreviation": "IIŚ"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 1195,
-        "dietMeal": {
-          "dietMealId": 23,
-          "priority": 3,
-          "meal": {
-            "mealId": 3,
-            "priority": 3,
-            "name": "Obiad",
-            "deleted": false,
-            "abbreviation": "O"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 1196,
-        "dietMeal": {
-          "dietMealId": 24,
-          "priority": 4,
-          "meal": {
-            "mealId": 4,
-            "priority": 4,
-            "name": "Podwieczorek ",
-            "deleted": false,
-            "abbreviation": "P"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 1197,
-        "dietMeal": {
-          "dietMealId": 25,
-          "priority": 5,
-          "meal": {
-            "mealId": 5,
-            "priority": 5,
-            "name": "Kolacja",
-            "deleted": false,
-            "abbreviation": "K"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      }
-    ],
-    "sectorPriceSettings": [
-      {
-        "sectorPriceSettingId": 7325,
-        "minimumPrice": null,
-        "testPrice": 48.0,
-        "fullPrice": 59.0,
-        "sectorId": 8
-      }
-    ]
-  },
   "12": {
     "dietCaloriesId": 12,
     "deleted": false,
@@ -1053,104 +955,6 @@
       }
     ]
   },
-  "147": {
-    "dietCaloriesId": 147,
-    "deleted": false,
-    "calories": 3000,
-    "minimumPrice": 0.0,
-    "publiclyAvailable": false,
-    "dietCaloriesMeals": [
-      {
-        "dietCaloriesMealId": 210,
-        "dietMeal": {
-          "dietMealId": 6,
-          "priority": 1,
-          "meal": {
-            "mealId": 1,
-            "priority": 1,
-            "name": "Śniadanie",
-            "deleted": false,
-            "abbreviation": "Ś"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 226,
-        "dietMeal": {
-          "dietMealId": 7,
-          "priority": 2,
-          "meal": {
-            "mealId": 2,
-            "priority": 2,
-            "name": "II Śniadanie",
-            "deleted": false,
-            "abbreviation": "IIŚ"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 242,
-        "dietMeal": {
-          "dietMealId": 8,
-          "priority": 3,
-          "meal": {
-            "mealId": 3,
-            "priority": 3,
-            "name": "Obiad",
-            "deleted": false,
-            "abbreviation": "O"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 258,
-        "dietMeal": {
-          "dietMealId": 9,
-          "priority": 4,
-          "meal": {
-            "mealId": 4,
-            "priority": 4,
-            "name": "Podwieczorek ",
-            "deleted": false,
-            "abbreviation": "P"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 274,
-        "dietMeal": {
-          "dietMealId": 10,
-          "priority": 5,
-          "meal": {
-            "mealId": 5,
-            "priority": 5,
-            "name": "Kolacja",
-            "deleted": false,
-            "abbreviation": "K"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      }
-    ],
-    "sectorPriceSettings": [
-      {
-        "sectorPriceSettingId": 7378,
-        "minimumPrice": null,
-        "testPrice": 58.0,
-        "fullPrice": 72.0,
-        "sectorId": 8
-      }
-    ]
-  },
   "278": {
     "dietCaloriesId": 278,
     "deleted": false,
@@ -1383,104 +1187,6 @@
         "minimumPrice": null,
         "testPrice": 44.0,
         "fullPrice": 54.0,
-        "sectorId": 8
-      }
-    ]
-  },
-  "281": {
-    "dietCaloriesId": 281,
-    "deleted": false,
-    "calories": 4000,
-    "minimumPrice": 0.0,
-    "publiclyAvailable": false,
-    "dietCaloriesMeals": [
-      {
-        "dietCaloriesMealId": 1264,
-        "dietMeal": {
-          "dietMealId": 25,
-          "priority": 5,
-          "meal": {
-            "mealId": 5,
-            "priority": 5,
-            "name": "Kolacja",
-            "deleted": false,
-            "abbreviation": "K"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 1260,
-        "dietMeal": {
-          "dietMealId": 21,
-          "priority": 1,
-          "meal": {
-            "mealId": 1,
-            "priority": 1,
-            "name": "Śniadanie",
-            "deleted": false,
-            "abbreviation": "Ś"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 1261,
-        "dietMeal": {
-          "dietMealId": 22,
-          "priority": 2,
-          "meal": {
-            "mealId": 2,
-            "priority": 2,
-            "name": "II Śniadanie",
-            "deleted": false,
-            "abbreviation": "IIŚ"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 1262,
-        "dietMeal": {
-          "dietMealId": 23,
-          "priority": 3,
-          "meal": {
-            "mealId": 3,
-            "priority": 3,
-            "name": "Obiad",
-            "deleted": false,
-            "abbreviation": "O"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 1263,
-        "dietMeal": {
-          "dietMealId": 24,
-          "priority": 4,
-          "meal": {
-            "mealId": 4,
-            "priority": 4,
-            "name": "Podwieczorek ",
-            "deleted": false,
-            "abbreviation": "P"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      }
-    ],
-    "sectorPriceSettings": [
-      {
-        "sectorPriceSettingId": 7335,
-        "minimumPrice": null,
-        "testPrice": 62.0,
-        "fullPrice": 77.0,
         "sectorId": 8
       }
     ]
@@ -1965,104 +1671,6 @@
       }
     ]
   },
-  "290": {
-    "dietCaloriesId": 290,
-    "deleted": false,
-    "calories": 3000,
-    "minimumPrice": 0.0,
-    "publiclyAvailable": false,
-    "dietCaloriesMeals": [
-      {
-        "dietCaloriesMealId": 1305,
-        "dietMeal": {
-          "dietMealId": 87,
-          "priority": 1,
-          "meal": {
-            "mealId": 1,
-            "priority": 1,
-            "name": "Śniadanie",
-            "deleted": false,
-            "abbreviation": "Ś"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 1306,
-        "dietMeal": {
-          "dietMealId": 88,
-          "priority": 2,
-          "meal": {
-            "mealId": 2,
-            "priority": 2,
-            "name": "II Śniadanie",
-            "deleted": false,
-            "abbreviation": "IIŚ"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 1307,
-        "dietMeal": {
-          "dietMealId": 89,
-          "priority": 3,
-          "meal": {
-            "mealId": 3,
-            "priority": 3,
-            "name": "Obiad",
-            "deleted": false,
-            "abbreviation": "O"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 1308,
-        "dietMeal": {
-          "dietMealId": 90,
-          "priority": 4,
-          "meal": {
-            "mealId": 4,
-            "priority": 4,
-            "name": "Podwieczorek ",
-            "deleted": false,
-            "abbreviation": "P"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 1309,
-        "dietMeal": {
-          "dietMealId": 91,
-          "priority": 5,
-          "meal": {
-            "mealId": 5,
-            "priority": 5,
-            "name": "Kolacja",
-            "deleted": false,
-            "abbreviation": "K"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      }
-    ],
-    "sectorPriceSettings": [
-      {
-        "sectorPriceSettingId": 11430,
-        "minimumPrice": null,
-        "testPrice": 55.0,
-        "fullPrice": 68.0,
-        "sectorId": 8
-      }
-    ]
-  },
   "35": {
     "dietCaloriesId": 35,
     "deleted": false,
@@ -2187,300 +1795,6 @@
       }
     ]
   },
-  "291": {
-    "dietCaloriesId": 291,
-    "deleted": false,
-    "calories": 3000,
-    "minimumPrice": 0.0,
-    "publiclyAvailable": false,
-    "dietCaloriesMeals": [
-      {
-        "dietCaloriesMealId": 1312,
-        "dietMeal": {
-          "dietMealId": 117,
-          "priority": 3,
-          "meal": {
-            "mealId": 3,
-            "priority": 3,
-            "name": "Obiad",
-            "deleted": false,
-            "abbreviation": "O"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 1313,
-        "dietMeal": {
-          "dietMealId": 118,
-          "priority": 4,
-          "meal": {
-            "mealId": 4,
-            "priority": 4,
-            "name": "Podwieczorek ",
-            "deleted": false,
-            "abbreviation": "P"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 1314,
-        "dietMeal": {
-          "dietMealId": 119,
-          "priority": 5,
-          "meal": {
-            "mealId": 5,
-            "priority": 5,
-            "name": "Kolacja",
-            "deleted": false,
-            "abbreviation": "K"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 1310,
-        "dietMeal": {
-          "dietMealId": 115,
-          "priority": 1,
-          "meal": {
-            "mealId": 1,
-            "priority": 1,
-            "name": "Śniadanie",
-            "deleted": false,
-            "abbreviation": "Ś"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 1311,
-        "dietMeal": {
-          "dietMealId": 116,
-          "priority": 2,
-          "meal": {
-            "mealId": 2,
-            "priority": 2,
-            "name": "II Śniadanie",
-            "deleted": false,
-            "abbreviation": "IIŚ"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      }
-    ],
-    "sectorPriceSettings": [
-      {
-        "sectorPriceSettingId": 11426,
-        "minimumPrice": null,
-        "testPrice": 58.0,
-        "fullPrice": 72.0,
-        "sectorId": 8
-      }
-    ]
-  },
-  "36": {
-    "dietCaloriesId": 36,
-    "deleted": false,
-    "calories": 3000,
-    "minimumPrice": 0.0,
-    "publiclyAvailable": false,
-    "dietCaloriesMeals": [
-      {
-        "dietCaloriesMealId": 48,
-        "dietMeal": {
-          "dietMealId": 14,
-          "priority": 4,
-          "meal": {
-            "mealId": 4,
-            "priority": 4,
-            "name": "Podwieczorek ",
-            "deleted": false,
-            "abbreviation": "P"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 37,
-        "dietMeal": {
-          "dietMealId": 13,
-          "priority": 3,
-          "meal": {
-            "mealId": 3,
-            "priority": 3,
-            "name": "Obiad",
-            "deleted": false,
-            "abbreviation": "O"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 26,
-        "dietMeal": {
-          "dietMealId": 12,
-          "priority": 2,
-          "meal": {
-            "mealId": 2,
-            "priority": 2,
-            "name": "II Śniadanie",
-            "deleted": false,
-            "abbreviation": "IIŚ"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 59,
-        "dietMeal": {
-          "dietMealId": 15,
-          "priority": 5,
-          "meal": {
-            "mealId": 5,
-            "priority": 5,
-            "name": "Kolacja",
-            "deleted": false,
-            "abbreviation": "K"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 15,
-        "dietMeal": {
-          "dietMealId": 11,
-          "priority": 1,
-          "meal": {
-            "mealId": 1,
-            "priority": 1,
-            "name": "Śniadanie",
-            "deleted": false,
-            "abbreviation": "Ś"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      }
-    ],
-    "sectorPriceSettings": [
-      {
-        "sectorPriceSettingId": 7307,
-        "minimumPrice": null,
-        "testPrice": 58.0,
-        "fullPrice": 72.0,
-        "sectorId": 8
-      }
-    ]
-  },
-  "292": {
-    "dietCaloriesId": 292,
-    "deleted": false,
-    "calories": 3000,
-    "minimumPrice": 0.0,
-    "publiclyAvailable": false,
-    "dietCaloriesMeals": [
-      {
-        "dietCaloriesMealId": 1315,
-        "dietMeal": {
-          "dietMealId": 115,
-          "priority": 1,
-          "meal": {
-            "mealId": 1,
-            "priority": 1,
-            "name": "Śniadanie",
-            "deleted": false,
-            "abbreviation": "Ś"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 1316,
-        "dietMeal": {
-          "dietMealId": 116,
-          "priority": 2,
-          "meal": {
-            "mealId": 2,
-            "priority": 2,
-            "name": "II Śniadanie",
-            "deleted": false,
-            "abbreviation": "IIŚ"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 1317,
-        "dietMeal": {
-          "dietMealId": 117,
-          "priority": 3,
-          "meal": {
-            "mealId": 3,
-            "priority": 3,
-            "name": "Obiad",
-            "deleted": false,
-            "abbreviation": "O"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 1318,
-        "dietMeal": {
-          "dietMealId": 118,
-          "priority": 4,
-          "meal": {
-            "mealId": 4,
-            "priority": 4,
-            "name": "Podwieczorek ",
-            "deleted": false,
-            "abbreviation": "P"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 1319,
-        "dietMeal": {
-          "dietMealId": 119,
-          "priority": 5,
-          "meal": {
-            "mealId": 5,
-            "priority": 5,
-            "name": "Kolacja",
-            "deleted": false,
-            "abbreviation": "K"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      }
-    ],
-    "sectorPriceSettings": [
-      {
-        "sectorPriceSettingId": 11425,
-        "minimumPrice": null,
-        "testPrice": 58.0,
-        "fullPrice": 72.0,
-        "sectorId": 8
-      }
-    ]
-  },
   "37": {
     "dietCaloriesId": 37,
     "deleted": false,
@@ -2597,104 +1911,6 @@
         "minimumPrice": null,
         "testPrice": 44.0,
         "fullPrice": 54.0,
-        "sectorId": 8
-      }
-    ]
-  },
-  "298": {
-    "dietCaloriesId": 298,
-    "deleted": false,
-    "calories": 3500,
-    "minimumPrice": 0.0,
-    "publiclyAvailable": false,
-    "dietCaloriesMeals": [
-      {
-        "dietCaloriesMealId": 1345,
-        "dietMeal": {
-          "dietMealId": 6,
-          "priority": 1,
-          "meal": {
-            "mealId": 1,
-            "priority": 1,
-            "name": "Śniadanie",
-            "deleted": false,
-            "abbreviation": "Ś"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 1346,
-        "dietMeal": {
-          "dietMealId": 7,
-          "priority": 2,
-          "meal": {
-            "mealId": 2,
-            "priority": 2,
-            "name": "II Śniadanie",
-            "deleted": false,
-            "abbreviation": "IIŚ"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 1347,
-        "dietMeal": {
-          "dietMealId": 8,
-          "priority": 3,
-          "meal": {
-            "mealId": 3,
-            "priority": 3,
-            "name": "Obiad",
-            "deleted": false,
-            "abbreviation": "O"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 1348,
-        "dietMeal": {
-          "dietMealId": 9,
-          "priority": 4,
-          "meal": {
-            "mealId": 4,
-            "priority": 4,
-            "name": "Podwieczorek ",
-            "deleted": false,
-            "abbreviation": "P"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 1349,
-        "dietMeal": {
-          "dietMealId": 10,
-          "priority": 5,
-          "meal": {
-            "mealId": 5,
-            "priority": 5,
-            "name": "Kolacja",
-            "deleted": false,
-            "abbreviation": "K"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      }
-    ],
-    "sectorPriceSettings": [
-      {
-        "sectorPriceSettingId": 11424,
-        "minimumPrice": null,
-        "testPrice": 62.0,
-        "fullPrice": 77.0,
         "sectorId": 8
       }
     ]
@@ -2927,104 +2143,6 @@
         "minimumPrice": null,
         "testPrice": 42.0,
         "fullPrice": 52.0,
-        "sectorId": 8
-      }
-    ]
-  },
-  "300": {
-    "dietCaloriesId": 300,
-    "deleted": false,
-    "calories": 3000,
-    "minimumPrice": 0.0,
-    "publiclyAvailable": false,
-    "dietCaloriesMeals": [
-      {
-        "dietCaloriesMealId": 1355,
-        "dietMeal": {
-          "dietMealId": 96,
-          "priority": 5,
-          "meal": {
-            "mealId": 5,
-            "priority": 5,
-            "name": "Kolacja",
-            "deleted": false,
-            "abbreviation": "K"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 1356,
-        "dietMeal": {
-          "dietMealId": 92,
-          "priority": 1,
-          "meal": {
-            "mealId": 1,
-            "priority": 1,
-            "name": "Śniadanie",
-            "deleted": false,
-            "abbreviation": "Ś"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 1357,
-        "dietMeal": {
-          "dietMealId": 93,
-          "priority": 2,
-          "meal": {
-            "mealId": 2,
-            "priority": 2,
-            "name": "II Śniadanie",
-            "deleted": false,
-            "abbreviation": "IIŚ"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 1358,
-        "dietMeal": {
-          "dietMealId": 94,
-          "priority": 3,
-          "meal": {
-            "mealId": 3,
-            "priority": 3,
-            "name": "Obiad",
-            "deleted": false,
-            "abbreviation": "O"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 1359,
-        "dietMeal": {
-          "dietMealId": 95,
-          "priority": 4,
-          "meal": {
-            "mealId": 4,
-            "priority": 4,
-            "name": "Podwieczorek ",
-            "deleted": false,
-            "abbreviation": "P"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      }
-    ],
-    "sectorPriceSettings": [
-      {
-        "sectorPriceSettingId": 11428,
-        "minimumPrice": null,
-        "testPrice": 56.0,
-        "fullPrice": 70.0,
         "sectorId": 8
       }
     ]
@@ -5187,104 +4305,6 @@
       }
     ]
   },
-  "60": {
-    "dietCaloriesId": 60,
-    "deleted": false,
-    "calories": 1500,
-    "minimumPrice": 0.0,
-    "publiclyAvailable": false,
-    "dietCaloriesMeals": [
-      {
-        "dietCaloriesMealId": 403,
-        "dietMeal": {
-          "dietMealId": 22,
-          "priority": 2,
-          "meal": {
-            "mealId": 2,
-            "priority": 2,
-            "name": "II Śniadanie",
-            "deleted": false,
-            "abbreviation": "IIŚ"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 436,
-        "dietMeal": {
-          "dietMealId": 25,
-          "priority": 5,
-          "meal": {
-            "mealId": 5,
-            "priority": 5,
-            "name": "Kolacja",
-            "deleted": false,
-            "abbreviation": "K"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 392,
-        "dietMeal": {
-          "dietMealId": 21,
-          "priority": 1,
-          "meal": {
-            "mealId": 1,
-            "priority": 1,
-            "name": "Śniadanie",
-            "deleted": false,
-            "abbreviation": "Ś"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 425,
-        "dietMeal": {
-          "dietMealId": 24,
-          "priority": 4,
-          "meal": {
-            "mealId": 4,
-            "priority": 4,
-            "name": "Podwieczorek ",
-            "deleted": false,
-            "abbreviation": "P"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 414,
-        "dietMeal": {
-          "dietMealId": 23,
-          "priority": 3,
-          "meal": {
-            "mealId": 3,
-            "priority": 3,
-            "name": "Obiad",
-            "deleted": false,
-            "abbreviation": "O"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      }
-    ],
-    "sectorPriceSettings": [
-      {
-        "sectorPriceSettingId": 7324,
-        "minimumPrice": null,
-        "testPrice": 42.0,
-        "fullPrice": 52.0,
-        "sectorId": 8
-      }
-    ]
-  },
   "316": {
     "dietCaloriesId": 316,
     "deleted": false,
@@ -5757,104 +4777,6 @@
       }
     ]
   },
-  "65": {
-    "dietCaloriesId": 65,
-    "deleted": false,
-    "calories": 1200,
-    "minimumPrice": 0.0,
-    "publiclyAvailable": false,
-    "dietCaloriesMeals": [
-      {
-        "dietCaloriesMealId": 416,
-        "dietMeal": {
-          "dietMealId": 23,
-          "priority": 3,
-          "meal": {
-            "mealId": 3,
-            "priority": 3,
-            "name": "Obiad",
-            "deleted": false,
-            "abbreviation": "O"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 405,
-        "dietMeal": {
-          "dietMealId": 22,
-          "priority": 2,
-          "meal": {
-            "mealId": 2,
-            "priority": 2,
-            "name": "II Śniadanie",
-            "deleted": false,
-            "abbreviation": "IIŚ"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 438,
-        "dietMeal": {
-          "dietMealId": 25,
-          "priority": 5,
-          "meal": {
-            "mealId": 5,
-            "priority": 5,
-            "name": "Kolacja",
-            "deleted": false,
-            "abbreviation": "K"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 394,
-        "dietMeal": {
-          "dietMealId": 21,
-          "priority": 1,
-          "meal": {
-            "mealId": 1,
-            "priority": 1,
-            "name": "Śniadanie",
-            "deleted": false,
-            "abbreviation": "Ś"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 427,
-        "dietMeal": {
-          "dietMealId": 24,
-          "priority": 4,
-          "meal": {
-            "mealId": 4,
-            "priority": 4,
-            "name": "Podwieczorek ",
-            "deleted": false,
-            "abbreviation": "P"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      }
-    ],
-    "sectorPriceSettings": [
-      {
-        "sectorPriceSettingId": 7327,
-        "minimumPrice": null,
-        "testPrice": 40.0,
-        "fullPrice": 49.0,
-        "sectorId": 8
-      }
-    ]
-  },
   "321": {
     "dietCaloriesId": 321,
     "deleted": false,
@@ -5975,104 +4897,6 @@
         "minimumPrice": null,
         "testPrice": 52.0,
         "fullPrice": 65.0,
-        "sectorId": 8
-      }
-    ]
-  },
-  "194": {
-    "dietCaloriesId": 194,
-    "deleted": false,
-    "calories": 3500,
-    "minimumPrice": 0.0,
-    "publiclyAvailable": false,
-    "dietCaloriesMeals": [
-      {
-        "dietCaloriesMealId": 420,
-        "dietMeal": {
-          "dietMealId": 23,
-          "priority": 3,
-          "meal": {
-            "mealId": 3,
-            "priority": 3,
-            "name": "Obiad",
-            "deleted": false,
-            "abbreviation": "O"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 409,
-        "dietMeal": {
-          "dietMealId": 22,
-          "priority": 2,
-          "meal": {
-            "mealId": 2,
-            "priority": 2,
-            "name": "II Śniadanie",
-            "deleted": false,
-            "abbreviation": "IIŚ"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 442,
-        "dietMeal": {
-          "dietMealId": 25,
-          "priority": 5,
-          "meal": {
-            "mealId": 5,
-            "priority": 5,
-            "name": "Kolacja",
-            "deleted": false,
-            "abbreviation": "K"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 398,
-        "dietMeal": {
-          "dietMealId": 21,
-          "priority": 1,
-          "meal": {
-            "mealId": 1,
-            "priority": 1,
-            "name": "Śniadanie",
-            "deleted": false,
-            "abbreviation": "Ś"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 431,
-        "dietMeal": {
-          "dietMealId": 24,
-          "priority": 4,
-          "meal": {
-            "mealId": 4,
-            "priority": 4,
-            "name": "Podwieczorek ",
-            "deleted": false,
-            "abbreviation": "P"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      }
-    ],
-    "sectorPriceSettings": [
-      {
-        "sectorPriceSettingId": 7323,
-        "minimumPrice": null,
-        "testPrice": 58.0,
-        "fullPrice": 72.0,
         "sectorId": 8
       }
     ]
@@ -7265,202 +6089,6 @@
         "minimumPrice": null,
         "testPrice": 52.0,
         "fullPrice": 65.0,
-        "sectorId": 8
-      }
-    ]
-  },
-  "209": {
-    "dietCaloriesId": 209,
-    "deleted": false,
-    "calories": 3500,
-    "minimumPrice": 0.0,
-    "publiclyAvailable": false,
-    "dietCaloriesMeals": [
-      {
-        "dietCaloriesMealId": 577,
-        "dietMeal": {
-          "dietMealId": 87,
-          "priority": 1,
-          "meal": {
-            "mealId": 1,
-            "priority": 1,
-            "name": "Śniadanie",
-            "deleted": false,
-            "abbreviation": "Ś"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 595,
-        "dietMeal": {
-          "dietMealId": 89,
-          "priority": 3,
-          "meal": {
-            "mealId": 3,
-            "priority": 3,
-            "name": "Obiad",
-            "deleted": false,
-            "abbreviation": "O"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 613,
-        "dietMeal": {
-          "dietMealId": 91,
-          "priority": 5,
-          "meal": {
-            "mealId": 5,
-            "priority": 5,
-            "name": "Kolacja",
-            "deleted": false,
-            "abbreviation": "K"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 586,
-        "dietMeal": {
-          "dietMealId": 88,
-          "priority": 2,
-          "meal": {
-            "mealId": 2,
-            "priority": 2,
-            "name": "II Śniadanie",
-            "deleted": false,
-            "abbreviation": "IIŚ"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 604,
-        "dietMeal": {
-          "dietMealId": 90,
-          "priority": 4,
-          "meal": {
-            "mealId": 4,
-            "priority": 4,
-            "name": "Podwieczorek ",
-            "deleted": false,
-            "abbreviation": "P"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      }
-    ],
-    "sectorPriceSettings": [
-      {
-        "sectorPriceSettingId": 7411,
-        "minimumPrice": null,
-        "testPrice": 59.0,
-        "fullPrice": 73.0,
-        "sectorId": 8
-      }
-    ]
-  },
-  "211": {
-    "dietCaloriesId": 211,
-    "deleted": false,
-    "calories": 3000,
-    "minimumPrice": 0.0,
-    "publiclyAvailable": false,
-    "dietCaloriesMeals": [
-      {
-        "dietCaloriesMealId": 132,
-        "dietMeal": {
-          "dietMealId": 17,
-          "priority": 2,
-          "meal": {
-            "mealId": 2,
-            "priority": 2,
-            "name": "II Śniadanie",
-            "deleted": false,
-            "abbreviation": "IIŚ"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 165,
-        "dietMeal": {
-          "dietMealId": 20,
-          "priority": 5,
-          "meal": {
-            "mealId": 5,
-            "priority": 5,
-            "name": "Kolacja",
-            "deleted": false,
-            "abbreviation": "K"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 121,
-        "dietMeal": {
-          "dietMealId": 16,
-          "priority": 1,
-          "meal": {
-            "mealId": 1,
-            "priority": 1,
-            "name": "Śniadanie",
-            "deleted": false,
-            "abbreviation": "Ś"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 154,
-        "dietMeal": {
-          "dietMealId": 19,
-          "priority": 4,
-          "meal": {
-            "mealId": 4,
-            "priority": 4,
-            "name": "Podwieczorek ",
-            "deleted": false,
-            "abbreviation": "P"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      },
-      {
-        "dietCaloriesMealId": 143,
-        "dietMeal": {
-          "dietMealId": 18,
-          "priority": 3,
-          "meal": {
-            "mealId": 3,
-            "priority": 3,
-            "name": "Obiad",
-            "deleted": false,
-            "abbreviation": "O"
-          },
-          "dietCaloriesMeals": null
-        },
-        "dietPrices": []
-      }
-    ],
-    "sectorPriceSettings": [
-      {
-        "sectorPriceSettingId": 7299,
-        "minimumPrice": null,
-        "testPrice": 54.0,
-        "fullPrice": 67.0,
         "sectorId": 8
       }
     ]
@@ -8943,6 +7571,222 @@
         "minimumPrice": null,
         "testPrice": 52.0,
         "fullPrice": 65.0,
+        "sectorId": 8
+      }
+    ]
+  },
+  "366": {
+    "dietCaloriesId": 366,
+    "deleted": false,
+    "calories": 1000,
+    "minimumPrice": 0.0,
+    "publiclyAvailable": true,
+    "dietCaloriesMeals": [
+      {
+        "dietCaloriesMealId": 1676,
+        "dietMeal": {
+          "dietMealId": 167,
+          "priority": 1,
+          "meal": {
+            "mealId": 1,
+            "priority": 1,
+            "name": "Śniadanie",
+            "deleted": false,
+            "abbreviation": "Ś"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 46953, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      },
+      {
+        "dietCaloriesMealId": 1677,
+        "dietMeal": {
+          "dietMealId": 168,
+          "priority": 3,
+          "meal": {
+            "mealId": 3,
+            "priority": 3,
+            "name": "Obiad",
+            "deleted": false,
+            "abbreviation": "O"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 46954, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      },
+      {
+        "dietCaloriesMealId": 1678,
+        "dietMeal": {
+          "dietMealId": 169,
+          "priority": 5,
+          "meal": {
+            "mealId": 5,
+            "priority": 5,
+            "name": "Kolacja",
+            "deleted": false,
+            "abbreviation": "K"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 46955, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      }
+    ],
+    "sectorPriceSettings": [
+      {
+        "sectorPriceSettingId": 19616,
+        "minimumPrice": 0.0,
+        "testPrice": 28.0,
+        "fullPrice": 35.0,
+        "sectorId": 8
+      }
+    ]
+  },
+  "367": {
+    "dietCaloriesId": 367,
+    "deleted": false,
+    "calories": 1500,
+    "minimumPrice": 0.0,
+    "publiclyAvailable": true,
+    "dietCaloriesMeals": [
+      {
+        "dietCaloriesMealId": 1680,
+        "dietMeal": {
+          "dietMealId": 168,
+          "priority": 3,
+          "meal": {
+            "mealId": 3,
+            "priority": 3,
+            "name": "Obiad",
+            "deleted": false,
+            "abbreviation": "O"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 46957, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      },
+      {
+        "dietCaloriesMealId": 1681,
+        "dietMeal": {
+          "dietMealId": 169,
+          "priority": 5,
+          "meal": {
+            "mealId": 5,
+            "priority": 5,
+            "name": "Kolacja",
+            "deleted": false,
+            "abbreviation": "K"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 46958, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      },
+      {
+        "dietCaloriesMealId": 1679,
+        "dietMeal": {
+          "dietMealId": 167,
+          "priority": 1,
+          "meal": {
+            "mealId": 1,
+            "priority": 1,
+            "name": "Śniadanie",
+            "deleted": false,
+            "abbreviation": "Ś"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 46956, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      }
+    ],
+    "sectorPriceSettings": [
+      {
+        "sectorPriceSettingId": 19615,
+        "minimumPrice": 0.0,
+        "testPrice": 31.0,
+        "fullPrice": 38.0,
+        "sectorId": 8
+      }
+    ]
+  },
+  "368": {
+    "dietCaloriesId": 368,
+    "deleted": false,
+    "calories": 2000,
+    "minimumPrice": 0.0,
+    "publiclyAvailable": true,
+    "dietCaloriesMeals": [
+      {
+        "dietCaloriesMealId": 1682,
+        "dietMeal": {
+          "dietMealId": 167,
+          "priority": 1,
+          "meal": {
+            "mealId": 1,
+            "priority": 1,
+            "name": "Śniadanie",
+            "deleted": false,
+            "abbreviation": "Ś"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 46959, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      },
+      {
+        "dietCaloriesMealId": 1683,
+        "dietMeal": {
+          "dietMealId": 168,
+          "priority": 3,
+          "meal": {
+            "mealId": 3,
+            "priority": 3,
+            "name": "Obiad",
+            "deleted": false,
+            "abbreviation": "O"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 46960, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      },
+      {
+        "dietCaloriesMealId": 1684,
+        "dietMeal": {
+          "dietMealId": 169,
+          "priority": 5,
+          "meal": {
+            "mealId": 5,
+            "priority": 5,
+            "name": "Kolacja",
+            "deleted": false,
+            "abbreviation": "K"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 46961, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      }
+    ],
+    "sectorPriceSettings": [
+      {
+        "sectorPriceSettingId": 19614,
+        "minimumPrice": 0.0,
+        "testPrice": 34.0,
+        "fullPrice": 42.0,
         "sectorId": 8
       }
     ]

@@ -48,6 +48,9 @@ const DietHero = ({diet}) => {
     if (diet === 'dieta-dash') {
       return heroStyles.dietDash
     }
+    if (diet === 'dieta-domowa') {
+      return heroStyles.dietHome
+    }
     return heroStyles.dietWeightLoss
   }
 

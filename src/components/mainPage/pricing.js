@@ -126,9 +126,6 @@ const Pricing = React.forwardRef((props, ref) => {
   useEffect(() => {
     const dietCaloriesId = state.activeCalories.dietCaloriesId
     const meals = handleCityMeals()[dietCaloriesId]
-    console.log('meals', meals, 'dietCaloriesId', dietCaloriesId, 'handleCityMeals()', handleCityMeals())
-    // console.log('handleCityMeals', handleCityMeals())
-    // console.log('state.activeCalories.dietCaloriesId', state.activeCalories.dietCaloriesId)
     dietCaloriesId && state.activeCalories &&
       dispatch({
         type: "STORE_MEALS",
@@ -262,7 +259,7 @@ const Pricing = React.forwardRef((props, ref) => {
 
   const calculatePrice = () => {
     const { activeMeals, days } = state
-    const price = activeMeals && activeMeals.sectorPriceSettings[0].fullPrice + 2;
+    const price = activeMeals && activeMeals.sectorPriceSettings[0].fullPrice;
     const deductedPrice = parseFloat(price - calculatePriceOfUnCheckedMeals())
     if (days > 13 && days < 30) {
       return (deductedPrice * 0.95).toFixed(1)
@@ -355,13 +352,15 @@ const Pricing = React.forwardRef((props, ref) => {
     if (diet === 'dieta-keto') {
       return 585
     }
+    if (diet === 'dieta-domowa') {
+      return 587
+    }
     return null
   }
 
   const { diet } = props;
   const { activeDiet } = state;
 
-  console.log('diets', getDiets())
   return (
     <div ref={ref}>
       <h2>{ diet ? `Cennik cateringu Afterfit - ${diet}` : "Cennik naszych diet pudełkowych"}</h2>

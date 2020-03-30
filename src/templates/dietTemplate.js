@@ -116,8 +116,6 @@ const DietTemplate = ({ pageContext, data }) => {
 
   const getParsedDay = () => {
     const date = getDateObject().setLocale('pl').toFormat("DDDD")
-    // const spreadedDataLength = [...data].length
-    // const data1 = date.splice(0, spreadedDataLength - 4)
     return date.charAt(0).toUpperCase() + date.slice(1, date.length - 4)
   }
 
@@ -182,6 +180,7 @@ const DietTemplate = ({ pageContext, data }) => {
 
   const findDietDescription = () => {
     const diet = findDiet()
+    console.log('diet', diet)
     const city = getCitySlug()
     if (!(diet && city)) {
       return null
@@ -251,7 +250,6 @@ const DietTemplate = ({ pageContext, data }) => {
     }, {})
   }
 
-  console.log('getLongDescription', getLongDescription())
   return (
     <Layout pageContext={pageContext}>
       <SEO
@@ -277,14 +275,14 @@ const DietTemplate = ({ pageContext, data }) => {
         getDietAltTag={getDietAltTag}
         dietGallery={findDiet() && findDiet().dietGallery}
       />
-      <DietsFaq
+      {pageContext.diet !== 'dieta-domowa' && <DietsFaq
         pageContext={pageContext}
         dietQuestions={
           findDiet() &&
           findDiet().questions &&
           Object.values(findDiet().questions)
         }
-      />
+      />}
       <DietPricing
         pageContext={pageContext}
         diet={findDiet() && findDiet().fullName}
