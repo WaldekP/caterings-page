@@ -69,7 +69,7 @@ const Offer = React.forwardRef(({ pageContext }, ref) => {
 
   return (
     <div>
-      <h2>Oferta naszej diety pudełkowej - wybierz jedną z 12 diet z dowozem</h2>
+      <h2>Oferta naszej diety pudełkowej - wybierz jedną z 14 diet z dowozem</h2>
       <div className={offerStyles.container} ref={ref}>
         {[...diets].sort((prev, next) => prev['fullName'].localeCompare(next['fullName'])).map(diet => (
           <Link to={pageContext.city ? `/${pageContext.city}/${diet.dietUrl}` : `/${diet.dietUrl}`} key={diet.dietUrl}>
