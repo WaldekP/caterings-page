@@ -12,8 +12,8 @@ const { default: mealsPricingWarsaw } = warsawMeals
 
 const Pricing = React.forwardRef((props, ref) => {
   const discounts = [
-    { minimumDays: 14, discount: 5, discountType: "PERCENTAGE" },
-    { minimumDays: 30, discount: 10, discountType: "PERCENTAGE" },
+    { minimumDays: 14, discount: 10, discountType: "PERCENTAGE" },
+    { minimumDays: 30, discount: 15, discountType: "PERCENTAGE" },
   ]
   const initialState = {
     activeDiet: "",
@@ -258,14 +258,18 @@ const Pricing = React.forwardRef((props, ref) => {
   }
 
   const calculatePrice = () => {
-    const { activeMeals, days } = state
+    const { activeMeals, days, activeDiet } = state
     const price = activeMeals && activeMeals.sectorPriceSettings[0].fullPrice;
     const deductedPrice = parseFloat(price - calculatePriceOfUnCheckedMeals())
+
+    if (activeDiet?.dietId === 587) {
+      return deductedPrice?.toFixed(1)
+    }
     if (days > 13 && days < 30) {
-      return (deductedPrice * 0.95).toFixed(1)
+      return (deductedPrice * 0.90).toFixed(1)
     }
     if (days >= 30) {
-      return (deductedPrice * 0.9).toFixed(1)
+      return (deductedPrice * 0.85).toFixed(1)
     }
     return deductedPrice.toFixed(1)
   }
@@ -274,10 +278,10 @@ const Pricing = React.forwardRef((props, ref) => {
     const { days } = state
 
     if (days > 13 && days < 30) {
-      return "5%"
+      return "10%"
     }
     if (days >= 30) {
-      return "10%"
+      return "15%"
     }
   }
 
@@ -466,7 +470,7 @@ const Pricing = React.forwardRef((props, ref) => {
               </div>
             </div>
             <div className={pricingStyles.barSection}>
-              {state.days > 0 && getDiscountDetails().minimumDays > state.days && (
+              {state.days > 0 && getDiscountDetails().minimumDays > state.days && activeDiet?.dietId !== 587 && (
                 <div>
                   <p>
                     Dodaj {getDiscountDetails().daysTillDiscount} dni, aby
@@ -474,7 +478,7 @@ const Pricing = React.forwardRef((props, ref) => {
                   </p>
                 </div>
               )}
-              {state.days > 0 && getDiscountDetails().minimumDays > state.days && (
+              {state.days > 0 && getDiscountDetails().minimumDays > state.days && activeDiet?.dietId !== 587 && (
                 <div className={pricingStyles.barItem}>
                   <div
                     style={{
@@ -484,7 +488,7 @@ const Pricing = React.forwardRef((props, ref) => {
                 </div>
               )}
              <div>
-                <p style={!handleDiscount() ? {visibility: "hidden"} : null}>RABAT: {handleDiscount()}</p>
+                <p className={pricingStyles.discountMsg} style={!handleDiscount() ? {visibility: "hidden"} : null}>RABAT: {activeDiet?.dietId === 587 ? 'W diecie domowej nie przysługują zniżki za dlugość zamówienia.' : handleDiscount()}</p>
               </div>
             </div>
           </div>
