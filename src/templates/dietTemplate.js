@@ -245,6 +245,15 @@ const DietTemplate = ({ pageContext, data }) => {
       if(curr.priority === 5) {
         acc['supper'] = curr.menuMealName
       }
+      if(curr.priority === 6) {
+        acc['coctail1'] = curr.menuMealName
+      }
+      if(curr.priority === 8) {
+        acc['coctail2'] = curr.menuMealName
+      }
+      if(curr.priority === 9) {
+        acc['coctail3'] = curr.menuMealName
+      }
       return acc
     }, {})
   }
