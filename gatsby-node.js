@@ -12,7 +12,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
   //   return acc
   // },[])
   const citiesArray = [ 'warszawa', 'poznan', 'wroclaw', 'trojmiasto', 'wroclaw', 'torun', 'bydgoszcz', 'krakow', 'aglomeracja-slaska', 'bialystok', 'bielsko-biala', 'czestochowa', 'gorzow-wielkopolski', 'kielce', 'kutno', 'opole', 'plock', 'radom', 'rzeszow', 'szczecin', 'wloclawek' ]
-  const diets = ['paleo', 'samuraja', 'sportowa-na-redukcje', 'odchudzajaca', 'weganska', 'wegetarianska', 'standard', 'bezlaktozowa', 'bezglutenowa', 'niski-indeks', 'detox', 'wege-z-rybami', 'keto', 'dash', 'domowa']
+  const diets = ['paleo', 'samuraja', 'sportowa-na-redukcje', 'odchudzajaca', 'weganska', 'wegetarianska', 'standard', 'bezlaktozowa', 'bezglutenowa', 'niski-indeks', 'detox', 'wege-z-rybami', 'keto', 'dash', 'domowa', 'sirtfood']
 
   const res = await graphql(`
     query {

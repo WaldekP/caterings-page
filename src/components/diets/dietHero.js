@@ -1,63 +1,63 @@
 import React from "react"
 import heroStyles from "../../styles/dietHero.module.scss"
 
-const DietHero = ({diet}) => {
+const DietHero = ({ diet }) => {
   const getDietClass = () => {
-    if (diet === 'dieta-odchudzajaca') {
+    if (diet === "dieta-odchudzajaca") {
       return heroStyles.dietWeightLoss
     }
-    if (diet === 'dieta-paleo') {
+    if (diet === "dieta-paleo") {
       return heroStyles.dietPaleo
     }
-    if (diet === 'dieta-sportowa-na-redukcje') {
+    if (diet === "dieta-sportowa-na-redukcje") {
       return heroStyles.dietSportReduction
     }
-    if (diet === 'dieta-sportowa-na-mase') {
+    if (diet === "dieta-sportowa-na-mase") {
       return heroStyles.dietSportMass
     }
-    if (diet === 'dieta-standard') {
+    if (diet === "dieta-standard") {
       return heroStyles.dietStandard
     }
-    if (diet === 'dieta-weganska') {
+    if (diet === "dieta-weganska") {
       return heroStyles.dietVegan
     }
-    if (diet === 'dieta-wegetarianska') {
+    if (diet === "dieta-wegetarianska") {
       return heroStyles.dietVege
     }
-    if (diet === 'dieta-samuraja') {
+    if (diet === "dieta-samuraja") {
       return heroStyles.dietSamurai
     }
-    if (diet === 'dieta-bezglutenowa') {
+    if (diet === "dieta-bezglutenowa") {
       return heroStyles.dietGlutenFree
     }
-    if (diet === 'dieta-wege-z-rybami') {
+    if (diet === "dieta-wege-z-rybami") {
       return heroStyles.dietWegeFish
     }
-    if (diet === 'dieta-bezlaktozowa') {
+    if (diet === "dieta-bezlaktozowa") {
       return heroStyles.dietNoLactose
     }
-    if (diet === 'dieta-detox') {
+    if (diet === "dieta-detox") {
       return heroStyles.dietDetox
     }
-    if (diet === 'dieta-niski-indeks') {
+    if (diet === "dieta-niski-indeks") {
       return heroStyles.dietLowIg
     }
-    if (diet === 'dieta-keto') {
+    if (diet === "dieta-keto") {
       return heroStyles.dietKeto
     }
-    if (diet === 'dieta-dash') {
+    if (diet === "dieta-dash") {
       return heroStyles.dietDash
     }
-    if (diet === 'dieta-domowa') {
+    if (diet === "dieta-domowa") {
       return heroStyles.dietHome
+    }
+    if (diet === "dieta-sirtfood") {
+      return heroStyles.dietSirt
     }
     return heroStyles.dietWeightLoss
   }
 
-
-  return (
-      <div className={`${heroStyles.container} ${getDietClass()}`} />
-  )
+  return <div className={`${heroStyles.container} ${getDietClass()}`} />
 }
 
 export default DietHero

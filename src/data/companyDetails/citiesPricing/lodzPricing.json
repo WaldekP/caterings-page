@@ -7915,6 +7915,276 @@
       }
     ]
   },
+  "369": {
+    "dietCaloriesId": 369,
+    "deleted": false,
+    "calories": 1000,
+    "minimumPrice": 0.0,
+    "publiclyAvailable": true,
+    "dietCaloriesMeals": [
+      {
+        "dietCaloriesMealId": 1685,
+        "dietMeal": {
+          "dietMealId": 174,
+          "priority": 3,
+          "meal": {
+            "mealId": 3,
+            "priority": 3,
+            "name": "Obiad",
+            "deleted": false,
+            "abbreviation": "O"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 47433, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      },
+      {
+        "dietCaloriesMealId": 1686,
+        "dietMeal": {
+          "dietMealId": 180,
+          "priority": 6,
+          "meal": {
+            "mealId": 8,
+            "priority": 8,
+            "name": "Koktajl1",
+            "deleted": false,
+            "abbreviation": "ktjl1"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 47434, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      },
+      {
+        "dietCaloriesMealId": 1687,
+        "dietMeal": {
+          "dietMealId": 184,
+          "priority": 8,
+          "meal": {
+            "mealId": 9,
+            "priority": 9,
+            "name": "Koktajl2",
+            "deleted": false,
+            "abbreviation": "ktjl2"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 47435, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      },
+      {
+        "dietCaloriesMealId": 1688,
+        "dietMeal": {
+          "dietMealId": 186,
+          "priority": 9,
+          "meal": {
+            "mealId": 10,
+            "priority": 10,
+            "name": "Koktajl3",
+            "deleted": false,
+            "abbreviation": "ktjl3"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 47436, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      }
+    ],
+    "sectorPriceSettings": [
+      {
+        "sectorPriceSettingId": 20073,
+        "minimumPrice": 0.0,
+        "testPrice": 44.0,
+        "fullPrice": 54.0,
+        "sectorId": 7
+      }
+    ]
+  },
+  "370": {
+    "dietCaloriesId": 370,
+    "deleted": false,
+    "calories": 1200,
+    "minimumPrice": 0.0,
+    "publiclyAvailable": true,
+    "dietCaloriesMeals": [
+      {
+        "dietCaloriesMealId": 1689,
+        "dietMeal": {
+          "dietMealId": 170,
+          "priority": 1,
+          "meal": {
+            "mealId": 1,
+            "priority": 1,
+            "name": "Śniadanie",
+            "deleted": false,
+            "abbreviation": "Ś"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 47437, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      },
+      {
+        "dietCaloriesMealId": 1690,
+        "dietMeal": {
+          "dietMealId": 175,
+          "priority": 3,
+          "meal": {
+            "mealId": 3,
+            "priority": 3,
+            "name": "Obiad",
+            "deleted": false,
+            "abbreviation": "O"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 47438, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      },
+      {
+        "dietCaloriesMealId": 1691,
+        "dietMeal": {
+          "dietMealId": 181,
+          "priority": 6,
+          "meal": {
+            "mealId": 8,
+            "priority": 8,
+            "name": "Koktajl1",
+            "deleted": false,
+            "abbreviation": "ktjl1"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 47439, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      },
+      {
+        "dietCaloriesMealId": 1692,
+        "dietMeal": {
+          "dietMealId": 185,
+          "priority": 8,
+          "meal": {
+            "mealId": 9,
+            "priority": 9,
+            "name": "Koktajl2",
+            "deleted": false,
+            "abbreviation": "ktjl2"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 47440, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      }
+    ],
+    "sectorPriceSettings": [
+      {
+        "sectorPriceSettingId": 20074,
+        "minimumPrice": 0.0,
+        "testPrice": 45.0,
+        "fullPrice": 56.0,
+        "sectorId": 7
+      }
+    ]
+  },
+  "371": {
+    "dietCaloriesId": 371,
+    "deleted": false,
+    "calories": 1500,
+    "minimumPrice": 0.0,
+    "publiclyAvailable": true,
+    "dietCaloriesMeals": [
+      {
+        "dietCaloriesMealId": 1696,
+        "dietMeal": {
+          "dietMealId": 176,
+          "priority": 3,
+          "meal": {
+            "mealId": 3,
+            "priority": 3,
+            "name": "Obiad",
+            "deleted": false,
+            "abbreviation": "O"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 47442, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      },
+      {
+        "dietCaloriesMealId": 1699,
+        "dietMeal": {
+          "dietMealId": 178,
+          "priority": 5,
+          "meal": {
+            "mealId": 5,
+            "priority": 5,
+            "name": "Kolacja",
+            "deleted": false,
+            "abbreviation": "K"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 47443, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      },
+      {
+        "dietCaloriesMealId": 1702,
+        "dietMeal": {
+          "dietMealId": 182,
+          "priority": 6,
+          "meal": {
+            "mealId": 8,
+            "priority": 8,
+            "name": "Koktajl1",
+            "deleted": false,
+            "abbreviation": "ktjl1"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 47444, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      },
+      {
+        "dietCaloriesMealId": 1693,
+        "dietMeal": {
+          "dietMealId": 171,
+          "priority": 1,
+          "meal": {
+            "mealId": 1,
+            "priority": 1,
+            "name": "Śniadanie",
+            "deleted": false,
+            "abbreviation": "Ś"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 47441, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      }
+    ],
+    "sectorPriceSettings": [
+      {
+        "sectorPriceSettingId": 20075,
+        "minimumPrice": 0.0,
+        "testPrice": 47.0,
+        "fullPrice": 58.0,
+        "sectorId": 7
+      }
+    ]
+  },
   "253": {
     "dietCaloriesId": 253,
     "deleted": false,

@@ -1,19 +1,8 @@
-//.try {
-//  height: 100px;
-//  margin-top: -100px;
-//  opacity: 0.5;
-//}
 
 .container {
   width: 100%;
   height:80vh;
   margin-top: -120px;
-}
-
-.diet-sport-mass {
-  background: url('../images/dietHeros/Dieta sportowa na mase - poprawiona.jpg') center center no-repeat;
-  background-size: 85%, cover;
-  background-color: #EDE8C3;
 }
 
 .diet-gluten-free {
@@ -100,6 +89,12 @@
 
 .diet-home {
   background: url('../images/dietHeros/newDiets/homeDiet/homeDiet.jpg') center center no-repeat;
+  background-size: cover;
+  background-color: #DFD6FF;
+}
+
+.diet-sirt {
+  background: url('../images/dietHeros/newDiets/sirt/Sirthero.jpg') center center no-repeat;
   background-size: cover;
   background-color: #DFD6FF;
 }

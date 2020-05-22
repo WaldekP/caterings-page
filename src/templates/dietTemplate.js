@@ -180,7 +180,6 @@ const DietTemplate = ({ pageContext, data }) => {
 
   const findDietDescription = () => {
     const diet = findDiet()
-    console.log('diet', diet)
     const city = getCitySlug()
     if (!(diet && city)) {
       return null

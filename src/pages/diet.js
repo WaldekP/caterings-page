@@ -167,6 +167,15 @@ const Diet = ({ pageContext }) => {
       if(curr.priority === 5) {
         acc['supper'] = curr.menuMealName
       }
+      if(curr.priority === 8) {
+        acc['coctail1'] = curr.menuMealName
+      }
+      if(curr.priority === 9) {
+        acc['coctail2'] = curr.menuMealName
+      }
+      if(curr.priority === 10) {
+        acc['coctail3'] = curr.menuMealName
+      }
       return acc
     }, {})
   }

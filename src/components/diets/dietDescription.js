@@ -52,28 +52,62 @@ const DietDescription = ({
               <FontAwesomeIcon icon={faAngleRight} />
             </span>
           </div>
-          <div>
-            <p className={dietDescriptionStyles.mealName}>Śniadanie</p>
-            <p>{menu ? menu.breakfast : null}</p>
-          </div>
-          {menu && menu.secondBreakfast && <div>
-            <p className={dietDescriptionStyles.mealName}>II Śniadanie</p>
-            <p>{menu ? menu.secondBreakfast : null}</p>
-          </div>}
-          <div>
-            <p className={dietDescriptionStyles.mealName}>Obiad</p>
-            <p>{menu ? menu.dinner : null}</p>
-          </div>
-          {menu && menu.tea && (
-            <div>
-              <p className={dietDescriptionStyles.mealName}>Podwieczorek</p>
-              <p>{menu ? menu.tea : null}</p>
-            </div>
-          )}
-          <div>
-            <p className={dietDescriptionStyles.mealName}>Kolacja</p>
-            <p>{menu ? menu.supper : null}</p>
-          </div>
+          {(() => {
+            if (diet === 'Dieta Sirtfood') {
+              return (
+                <>
+                  <div>
+                    <p className={dietDescriptionStyles.mealName}>Obiad</p>
+                    <p>{menu ? menu.dinner : null}</p>
+                  </div>
+                  <div>
+                    <p className={dietDescriptionStyles.mealName}>Koktajl 1</p>
+                    <p>{menu ? menu.coctail1 : null}</p>
+                  </div>
+                  <div>
+                    <p className={dietDescriptionStyles.mealName}>Kolacja 2</p>
+                    <p>{menu ? menu.coctail2 : null}</p>
+                  </div>
+                  <div>
+                    <p className={dietDescriptionStyles.mealName}>Kolacja 3</p>
+                    <p>{menu ? menu.coctail3 : null}</p>
+                  </div>
+                </>
+              )
+            }
+            return (
+              <>
+                <div>
+                  <p className={dietDescriptionStyles.mealName}>Śniadanie</p>
+                  <p>{menu ? menu.breakfast : null}</p>
+                </div>
+                {menu && menu.secondBreakfast && (
+                  <div>
+                    <p className={dietDescriptionStyles.mealName}>
+                      II Śniadanie
+                    </p>
+                    <p>{menu ? menu.secondBreakfast : null}</p>
+                  </div>
+                )}
+                <div>
+                  <p className={dietDescriptionStyles.mealName}>Obiad</p>
+                  <p>{menu ? menu.dinner : null}</p>
+                </div>
+                {menu && menu.tea && (
+                  <div>
+                    <p className={dietDescriptionStyles.mealName}>
+                      Podwieczorek
+                    </p>
+                    <p>{menu ? menu.tea : null}</p>
+                  </div>
+                )}
+                <div>
+                  <p className={dietDescriptionStyles.mealName}>Kolacja</p>
+                  <p>{menu ? menu.supper : null}</p>
+                </div>
+              </>
+            )
+          })()}
         </div>
       </div>
     </div>

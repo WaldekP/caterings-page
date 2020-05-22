@@ -125,7 +125,6 @@ const Pricing = React.forwardRef((props, ref) => {
   }, [state.activeOption])
   useEffect(() => {
     const dietCaloriesId = state.activeCalories.dietCaloriesId
-    const meals = handleCityMeals()[dietCaloriesId]
     dietCaloriesId && state.activeCalories &&
       dispatch({
         type: "STORE_MEALS",
@@ -359,6 +358,9 @@ const Pricing = React.forwardRef((props, ref) => {
     if (diet === 'dieta-domowa') {
       return 587
     }
+    if (diet === 'dieta-sirtfood') {
+      return 588
+    }
     return null
   }
 
@@ -508,7 +510,7 @@ const Pricing = React.forwardRef((props, ref) => {
               target="_blank"
               rel="noopener"
             >
-              <button>Zamów</button>
+              <button className={pricingStyles.placeOrderBtn}>Zamów</button>
             </a>
           </div>
         </div>

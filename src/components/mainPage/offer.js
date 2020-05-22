@@ -16,6 +16,7 @@ import lowIgDiet from "../../images/diets/Dieta-niski-indeks.jpg"
 import lactoseFreeDiet from "../../images/diets/dieta-bezlaktozowa.jpg"
 import ketoDiet from '../../images/diets/dieta-keto.jpg'
 import dashDiet from '../../images/diets/dieta-dash.jpg'
+import sirtDiet from "../../images/diets/dieta-sirt.jpg"
 import dietHome from '../../images/diets/dieta-domowa.jpg'
 
 const Offer = React.forwardRef(({ pageContext }, ref) => {
@@ -65,11 +66,14 @@ const Offer = React.forwardRef(({ pageContext }, ref) => {
     if (diet === 'dieta-domowa') {
       return dietHome
     }
+    if (diet === 'dieta-sirtfood') {
+      return sirtDiet
+    }
   }
 
   return (
     <div>
-      <h2>Oferta naszej diety pudełkowej - wybierz jedną z 14 diet z dowozem</h2>
+      <h2>Oferta naszej diety pudełkowej - wybierz jedną z 15 diet z dowozem</h2>
       <div className={offerStyles.container} ref={ref}>
         {[...diets].sort((prev, next) => prev['fullName'].localeCompare(next['fullName'])).map(diet => (
           <Link to={pageContext.city ? `/${pageContext.city}/${diet.dietUrl}` : `/${diet.dietUrl}`} key={diet.dietUrl}>
