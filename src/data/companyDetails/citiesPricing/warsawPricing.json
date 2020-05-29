@@ -3,8 +3,9 @@
     "dietCaloriesId": 259,
     "deleted": false,
     "calories": 1200,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1161,
@@ -115,8 +116,9 @@
     "dietCaloriesId": 260,
     "deleted": false,
     "calories": 1500,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1168,
@@ -223,8 +225,9 @@
     "dietCaloriesId": 261,
     "deleted": false,
     "calories": 1800,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1171,
@@ -335,8 +338,9 @@
     "dietCaloriesId": 262,
     "deleted": false,
     "calories": 2000,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1176,
@@ -447,8 +451,9 @@
     "dietCaloriesId": 263,
     "deleted": false,
     "calories": 2500,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1184,
@@ -555,8 +560,9 @@
     "dietCaloriesId": 12,
     "deleted": false,
     "calories": 2500,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 202,
@@ -663,8 +669,9 @@
     "dietCaloriesId": 13,
     "deleted": false,
     "calories": 2000,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 203,
@@ -775,8 +782,9 @@
     "dietCaloriesId": 14,
     "deleted": false,
     "calories": 1500,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 204,
@@ -883,8 +891,9 @@
     "dietCaloriesId": 278,
     "deleted": false,
     "calories": 1800,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1248,
@@ -999,8 +1008,9 @@
     "dietCaloriesId": 24,
     "deleted": false,
     "calories": 1200,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 207,
@@ -1111,8 +1121,9 @@
     "dietCaloriesId": 26,
     "deleted": false,
     "calories": 1800,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 208,
@@ -1223,8 +1234,9 @@
     "dietCaloriesId": 28,
     "deleted": false,
     "calories": 1500,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 32,
@@ -1331,8 +1343,9 @@
     "dietCaloriesId": 29,
     "deleted": false,
     "calories": 2000,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 33,
@@ -1443,8 +1456,9 @@
     "dietCaloriesId": 30,
     "deleted": false,
     "calories": 2500,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 34,
@@ -1551,8 +1565,9 @@
     "dietCaloriesId": 35,
     "deleted": false,
     "calories": 1800,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 36,
@@ -1663,8 +1678,9 @@
     "dietCaloriesId": 37,
     "deleted": false,
     "calories": 1200,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 16,
@@ -1775,8 +1791,9 @@
     "dietCaloriesId": 43,
     "deleted": false,
     "calories": 1200,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 112,
@@ -1877,8 +1894,8 @@
       {
         "sectorPriceSettingId": 7265,
         "minimumPrice": null,
-        "testPrice": 43.0,
-        "fullPrice": 53.0,
+        "testPrice": 45.0,
+        "fullPrice": 55.0,
         "sectorId": 3
       }
     ]
@@ -1887,8 +1904,9 @@
     "dietCaloriesId": 44,
     "deleted": false,
     "calories": 1500,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 113,
@@ -1997,8 +2015,8 @@
       {
         "sectorPriceSettingId": 7268,
         "minimumPrice": null,
-        "testPrice": 45.0,
-        "fullPrice": 56.0,
+        "testPrice": 47.0,
+        "fullPrice": 58.0,
         "sectorId": 3
       }
     ]
@@ -2007,8 +2025,9 @@
     "dietCaloriesId": 47,
     "deleted": false,
     "calories": 1000,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 114,
@@ -2109,8 +2128,8 @@
       {
         "sectorPriceSettingId": 7260,
         "minimumPrice": null,
-        "testPrice": 41.0,
-        "fullPrice": 51.0,
+        "testPrice": 43.0,
+        "fullPrice": 53.0,
         "sectorId": 3
       }
     ]
@@ -2119,8 +2138,9 @@
     "dietCaloriesId": 48,
     "deleted": false,
     "calories": 1800,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 115,
@@ -2225,8 +2245,8 @@
       {
         "sectorPriceSettingId": 7271,
         "minimumPrice": null,
-        "testPrice": 48.0,
-        "fullPrice": 59.0,
+        "testPrice": 50.0,
+        "fullPrice": 61.0,
         "sectorId": 3
       }
     ]
@@ -2235,8 +2255,9 @@
     "dietCaloriesId": 49,
     "deleted": false,
     "calories": 2000,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 160,
@@ -2341,8 +2362,8 @@
       {
         "sectorPriceSettingId": 7262,
         "minimumPrice": null,
-        "testPrice": 49.0,
-        "fullPrice": 61.0,
+        "testPrice": 51.0,
+        "fullPrice": 63.0,
         "sectorId": 3
       }
     ]
@@ -2351,8 +2372,9 @@
     "dietCaloriesId": 178,
     "deleted": false,
     "calories": 1200,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 579,
@@ -2465,6 +2487,7 @@
     "calories": 0,
     "minimumPrice": 0.0,
     "publiclyAvailable": true,
+    "switchable": false,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 195,
@@ -2503,8 +2526,8 @@
       {
         "sectorPriceSettingId": 7261,
         "minimumPrice": null,
-        "testPrice": 48.0,
-        "fullPrice": 59.0,
+        "testPrice": 50.0,
+        "fullPrice": 61.0,
         "sectorId": 3
       }
     ]
@@ -2513,8 +2536,9 @@
     "dietCaloriesId": 179,
     "deleted": false,
     "calories": 1500,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 580,
@@ -2621,8 +2645,9 @@
     "dietCaloriesId": 180,
     "deleted": false,
     "calories": 1800,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 608,
@@ -2733,8 +2758,9 @@
     "dietCaloriesId": 181,
     "deleted": false,
     "calories": 1200,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 643,
@@ -2841,8 +2867,9 @@
     "dietCaloriesId": 54,
     "deleted": false,
     "calories": 2000,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 400,
@@ -2949,8 +2976,9 @@
     "dietCaloriesId": 182,
     "deleted": false,
     "calories": 1500,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 644,
@@ -3057,8 +3085,9 @@
     "dietCaloriesId": 55,
     "deleted": false,
     "calories": 2500,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 401,
@@ -3169,8 +3198,9 @@
     "dietCaloriesId": 311,
     "deleted": false,
     "calories": 1200,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1408,
@@ -3285,8 +3315,9 @@
     "dietCaloriesId": 56,
     "deleted": false,
     "calories": 3000,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 402,
@@ -3395,6 +3426,7 @@
     "calories": 1000,
     "minimumPrice": 0.0,
     "publiclyAvailable": true,
+    "switchable": false,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1411,
@@ -3505,8 +3537,9 @@
     "dietCaloriesId": 185,
     "deleted": false,
     "calories": 2000,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 625,
@@ -3619,6 +3652,7 @@
     "calories": 1200,
     "minimumPrice": 0.0,
     "publiclyAvailable": true,
+    "switchable": false,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1416,
@@ -3733,8 +3767,9 @@
     "dietCaloriesId": 186,
     "deleted": false,
     "calories": 2000,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 609,
@@ -3841,8 +3876,9 @@
     "dietCaloriesId": 314,
     "deleted": false,
     "calories": 1500,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1424,
@@ -3965,8 +4001,9 @@
     "dietCaloriesId": 315,
     "deleted": false,
     "calories": 1800,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1426,
@@ -4081,8 +4118,9 @@
     "dietCaloriesId": 316,
     "deleted": false,
     "calories": 2000,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1431,
@@ -4197,8 +4235,9 @@
     "dietCaloriesId": 317,
     "deleted": false,
     "calories": 2500,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1440,
@@ -4321,8 +4360,9 @@
     "dietCaloriesId": 62,
     "deleted": false,
     "calories": 1800,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 404,
@@ -4429,8 +4469,9 @@
     "dietCaloriesId": 320,
     "deleted": false,
     "calories": 2000,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1451,
@@ -4545,8 +4586,9 @@
     "dietCaloriesId": 321,
     "deleted": false,
     "calories": 2500,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1456,
@@ -4669,8 +4711,9 @@
     "dietCaloriesId": 322,
     "deleted": false,
     "calories": 1200,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1461,
@@ -4785,8 +4828,9 @@
     "dietCaloriesId": 323,
     "deleted": false,
     "calories": 1500,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1466,
@@ -4909,8 +4953,9 @@
     "dietCaloriesId": 324,
     "deleted": false,
     "calories": 1800,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1472,
@@ -5025,8 +5070,9 @@
     "dietCaloriesId": 325,
     "deleted": false,
     "calories": 2000,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1476,
@@ -5141,8 +5187,9 @@
     "dietCaloriesId": 326,
     "deleted": false,
     "calories": 2500,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1481,
@@ -5265,8 +5312,9 @@
     "dietCaloriesId": 327,
     "deleted": false,
     "calories": 1200,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1488,
@@ -5381,8 +5429,9 @@
     "dietCaloriesId": 328,
     "deleted": false,
     "calories": 1500,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1491,
@@ -5505,8 +5554,9 @@
     "dietCaloriesId": 329,
     "deleted": false,
     "calories": 1800,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1496,
@@ -5621,8 +5671,9 @@
     "dietCaloriesId": 330,
     "deleted": false,
     "calories": 2000,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1504,
@@ -5737,8 +5788,9 @@
     "dietCaloriesId": 331,
     "deleted": false,
     "calories": 2500,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1506,
@@ -5861,8 +5913,9 @@
     "dietCaloriesId": 341,
     "deleted": false,
     "calories": 1200,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1556,
@@ -5969,8 +6022,9 @@
     "dietCaloriesId": 342,
     "deleted": false,
     "calories": 1500,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1561,
@@ -6081,8 +6135,9 @@
     "dietCaloriesId": 343,
     "deleted": false,
     "calories": 1800,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1568,
@@ -6189,8 +6244,9 @@
     "dietCaloriesId": 344,
     "deleted": false,
     "calories": 2000,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1571,
@@ -6297,8 +6353,9 @@
     "dietCaloriesId": 345,
     "deleted": false,
     "calories": 2500,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1576,
@@ -6411,6 +6468,7 @@
     "calories": 1200,
     "minimumPrice": 0.0,
     "publiclyAvailable": true,
+    "switchable": false,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1606,
@@ -6505,6 +6563,7 @@
     "calories": 1500,
     "minimumPrice": 0.0,
     "publiclyAvailable": true,
+    "switchable": false,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1610,
@@ -6595,6 +6654,7 @@
     "calories": 1800,
     "minimumPrice": 0.0,
     "publiclyAvailable": true,
+    "switchable": false,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1616,
@@ -6689,6 +6749,7 @@
     "calories": 2000,
     "minimumPrice": 0.0,
     "publiclyAvailable": true,
+    "switchable": false,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1618,
@@ -6783,6 +6844,7 @@
     "calories": 2500,
     "minimumPrice": 0.0,
     "publiclyAvailable": true,
+    "switchable": false,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1622,
@@ -6873,6 +6935,7 @@
     "calories": 2500,
     "minimumPrice": 0.0,
     "publiclyAvailable": true,
+    "switchable": false,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1048,
@@ -6985,8 +7048,8 @@
       {
         "sectorPriceSettingId": 7264,
         "minimumPrice": null,
-        "testPrice": 53.0,
-        "fullPrice": 66.0,
+        "testPrice": 55.0,
+        "fullPrice": 68.0,
         "sectorId": 3
       }
     ]
@@ -6995,8 +7058,9 @@
     "dietCaloriesId": 234,
     "deleted": false,
     "calories": 2500,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1056,
@@ -7103,8 +7167,9 @@
     "dietCaloriesId": 237,
     "deleted": false,
     "calories": 1800,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1064,
@@ -7211,8 +7276,9 @@
     "dietCaloriesId": 238,
     "deleted": false,
     "calories": 2500,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1072,
@@ -7321,6 +7387,7 @@
     "calories": 1000,
     "minimumPrice": 0.0,
     "publiclyAvailable": true,
+    "switchable": false,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1676,
@@ -7393,6 +7460,7 @@
     "calories": 1500,
     "minimumPrice": 0.0,
     "publiclyAvailable": true,
+    "switchable": false,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1680,
@@ -7465,6 +7533,7 @@
     "calories": 2000,
     "minimumPrice": 0.0,
     "publiclyAvailable": true,
+    "switchable": false,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1682,
@@ -7535,8 +7604,9 @@
     "dietCaloriesId": 241,
     "deleted": false,
     "calories": 1500,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1082,
@@ -7661,6 +7731,7 @@
     "calories": 1000,
     "minimumPrice": 0.0,
     "publiclyAvailable": true,
+    "switchable": false,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1685,
@@ -7751,6 +7822,7 @@
     "calories": 1200,
     "minimumPrice": 0.0,
     "publiclyAvailable": true,
+    "switchable": false,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1689,
@@ -7841,6 +7913,7 @@
     "calories": 1500,
     "minimumPrice": 0.0,
     "publiclyAvailable": true,
+    "switchable": false,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1696,
@@ -7925,12 +7998,340 @@
       }
     ]
   },
+  "374": {
+    "dietCaloriesId": 374,
+    "deleted": false,
+    "calories": 1500,
+    "minimumPrice": null,
+    "publiclyAvailable": true,
+    "switchable": false,
+    "dietCaloriesMeals": [
+      {
+        "dietCaloriesMealId": 1714,
+        "dietMeal": {
+          "dietMealId": 179,
+          "priority": 5,
+          "meal": {
+            "mealId": 5,
+            "priority": 5,
+            "name": "Kolacja",
+            "deleted": false,
+            "abbreviation": "K"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 47340, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      },
+      {
+        "dietCaloriesMealId": 1717,
+        "dietMeal": {
+          "dietMealId": 183,
+          "priority": 6,
+          "meal": {
+            "mealId": 8,
+            "priority": 8,
+            "name": "Koktajl1",
+            "deleted": false,
+            "abbreviation": "ktjl1"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 47341, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      },
+      {
+        "dietCaloriesMealId": 1705,
+        "dietMeal": {
+          "dietMealId": 172,
+          "priority": 1,
+          "meal": {
+            "mealId": 1,
+            "priority": 1,
+            "name": "Śniadanie",
+            "deleted": false,
+            "abbreviation": "Ś"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 47337, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      },
+      {
+        "dietCaloriesMealId": 1708,
+        "dietMeal": {
+          "dietMealId": 173,
+          "priority": 2,
+          "meal": {
+            "mealId": 2,
+            "priority": 2,
+            "name": "II Śniadanie",
+            "deleted": false,
+            "abbreviation": "IIŚ"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 47338, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      },
+      {
+        "dietCaloriesMealId": 1711,
+        "dietMeal": {
+          "dietMealId": 177,
+          "priority": 3,
+          "meal": {
+            "mealId": 3,
+            "priority": 3,
+            "name": "Obiad",
+            "deleted": false,
+            "abbreviation": "O"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 47339, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      }
+    ],
+    "sectorPriceSettings": [
+      {
+        "sectorPriceSettingId": 20052,
+        "minimumPrice": 0.0,
+        "testPrice": 48.0,
+        "fullPrice": 60.0,
+        "sectorId": 3
+      }
+    ]
+  },
+  "375": {
+    "dietCaloriesId": 375,
+    "deleted": false,
+    "calories": 1800,
+    "minimumPrice": null,
+    "publiclyAvailable": true,
+    "switchable": false,
+    "dietCaloriesMeals": [
+      {
+        "dietCaloriesMealId": 1712,
+        "dietMeal": {
+          "dietMealId": 177,
+          "priority": 3,
+          "meal": {
+            "mealId": 3,
+            "priority": 3,
+            "name": "Obiad",
+            "deleted": false,
+            "abbreviation": "O"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 47344, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      },
+      {
+        "dietCaloriesMealId": 1715,
+        "dietMeal": {
+          "dietMealId": 179,
+          "priority": 5,
+          "meal": {
+            "mealId": 5,
+            "priority": 5,
+            "name": "Kolacja",
+            "deleted": false,
+            "abbreviation": "K"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 47345, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      },
+      {
+        "dietCaloriesMealId": 1718,
+        "dietMeal": {
+          "dietMealId": 183,
+          "priority": 6,
+          "meal": {
+            "mealId": 8,
+            "priority": 8,
+            "name": "Koktajl1",
+            "deleted": false,
+            "abbreviation": "ktjl1"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 47346, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      },
+      {
+        "dietCaloriesMealId": 1706,
+        "dietMeal": {
+          "dietMealId": 172,
+          "priority": 1,
+          "meal": {
+            "mealId": 1,
+            "priority": 1,
+            "name": "Śniadanie",
+            "deleted": false,
+            "abbreviation": "Ś"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 47342, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      },
+      {
+        "dietCaloriesMealId": 1709,
+        "dietMeal": {
+          "dietMealId": 173,
+          "priority": 2,
+          "meal": {
+            "mealId": 2,
+            "priority": 2,
+            "name": "II Śniadanie",
+            "deleted": false,
+            "abbreviation": "IIŚ"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 47343, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      }
+    ],
+    "sectorPriceSettings": [
+      {
+        "sectorPriceSettingId": 20053,
+        "minimumPrice": 0.0,
+        "testPrice": 51.0,
+        "fullPrice": 63.0,
+        "sectorId": 3
+      }
+    ]
+  },
+  "376": {
+    "dietCaloriesId": 376,
+    "deleted": false,
+    "calories": 2000,
+    "minimumPrice": null,
+    "publiclyAvailable": true,
+    "switchable": false,
+    "dietCaloriesMeals": [
+      {
+        "dietCaloriesMealId": 1713,
+        "dietMeal": {
+          "dietMealId": 177,
+          "priority": 3,
+          "meal": {
+            "mealId": 3,
+            "priority": 3,
+            "name": "Obiad",
+            "deleted": false,
+            "abbreviation": "O"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 47349, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      },
+      {
+        "dietCaloriesMealId": 1716,
+        "dietMeal": {
+          "dietMealId": 179,
+          "priority": 5,
+          "meal": {
+            "mealId": 5,
+            "priority": 5,
+            "name": "Kolacja",
+            "deleted": false,
+            "abbreviation": "K"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 47350, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      },
+      {
+        "dietCaloriesMealId": 1719,
+        "dietMeal": {
+          "dietMealId": 183,
+          "priority": 6,
+          "meal": {
+            "mealId": 8,
+            "priority": 8,
+            "name": "Koktajl1",
+            "deleted": false,
+            "abbreviation": "ktjl1"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 47351, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      },
+      {
+        "dietCaloriesMealId": 1707,
+        "dietMeal": {
+          "dietMealId": 172,
+          "priority": 1,
+          "meal": {
+            "mealId": 1,
+            "priority": 1,
+            "name": "Śniadanie",
+            "deleted": false,
+            "abbreviation": "Ś"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 47347, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      },
+      {
+        "dietCaloriesMealId": 1710,
+        "dietMeal": {
+          "dietMealId": 173,
+          "priority": 2,
+          "meal": {
+            "mealId": 2,
+            "priority": 2,
+            "name": "II Śniadanie",
+            "deleted": false,
+            "abbreviation": "IIŚ"
+          },
+          "dietCaloriesMeals": null
+        },
+        "dietPrices": [
+          { "dietPriceId": 47348, "additionPrice": 0.0, "deductionPrice": 0.0 }
+        ]
+      }
+    ],
+    "sectorPriceSettings": [
+      {
+        "sectorPriceSettingId": 20054,
+        "minimumPrice": 0.0,
+        "testPrice": 52.0,
+        "fullPrice": 65.0,
+        "sectorId": 3
+      }
+    ]
+  },
   "253": {
     "dietCaloriesId": 253,
     "deleted": false,
     "calories": 1200,
-    "minimumPrice": 0.0,
+    "minimumPrice": null,
     "publiclyAvailable": true,
+    "switchable": true,
     "dietCaloriesMeals": [
       {
         "dietCaloriesMealId": 1137,
