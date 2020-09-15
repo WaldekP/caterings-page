@@ -14,39 +14,47 @@ import indexStyles from "../styles/index.module.scss"
 import PageContext from "../context/pageContext"
 import { cities } from "../data/cities"
 import { graphql } from "gatsby"
+import axios from "axios"
 
 export const query = graphql`
-    query MyFaqQuery($city: String!) {
-        allContentfulFirstFaqForOtherCities(filter: {slug: {eq: $city}}) {
-            edges {
-                node {
-                    category
-                    slug
-                    childContentfulFirstFaqForOtherCitiesAnswerRichTextNode {
-                        json
-                    }
-                    question
-                    order
-                }
-            }
+  query MyFaqQuery($city: String!) {
+    allContentfulFirstFaqForOtherCities(filter: { slug: { eq: $city } }) {
+      edges {
+        node {
+          category
+          slug
+          childContentfulFirstFaqForOtherCitiesAnswerRichTextNode {
+            json
+          }
+          question
+          order
         }
-       allContentfulFaqLodz(filter: {slug: {eq: "lodz"}}) {
-           edges {
-               node {
-                    category
-                    slug
-                    childContentfulFaqLodzAnswerRichTextNode {
-                        json
-                   }
-                   question
-                   order
-               }
-           }
-       }
+      }
     }
+    allContentfulFaqLodz(filter: { slug: { eq: "lodz" } }) {
+      edges {
+        node {
+          category
+          slug
+          childContentfulFaqLodzAnswerRichTextNode {
+            json
+          }
+          question
+          order
+        }
+      }
+    }
+  }
 `
 
 const MainPage = ({ data, pageContext, faqLodzData }) => {
+  // useEffect(() => {
+  //   axios("/.netlify/functions/companyDiets", {
+  //     method: "GET",
+  //   }).then(results => {
+  //     return console.log("results", results)
+  //   })
+  // }, [])
 
   const { menuTab } = useContext(PageContext)
   const valuePropositionRef = useRef(null)
@@ -93,7 +101,10 @@ const MainPage = ({ data, pageContext, faqLodzData }) => {
 
   const otherCityFirstFaq = () => {
     if (pageContext.city) {
-      return data.allContentfulFirstFaqForOtherCities.edges.length === 1 && data.allContentfulFirstFaqForOtherCities.edges[0]
+      return (
+        data.allContentfulFirstFaqForOtherCities.edges.length === 1 &&
+        data.allContentfulFirstFaqForOtherCities.edges[0]
+      )
     }
   }
 
@@ -104,7 +115,10 @@ const MainPage = ({ data, pageContext, faqLodzData }) => {
 
   const getUpdatedFaqNodes = () => {
     return getFaqNodes().map(node => {
-      if (node.node.category === 'general' && parseFloat(node.node.order) === 1) {
+      if (
+        node.node.category === "general" &&
+        parseFloat(node.node.order) === 1
+      ) {
         return otherCityFirstFaq() ? otherCityFirstFaq() : node
       }
       return node

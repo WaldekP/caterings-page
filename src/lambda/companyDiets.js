@@ -3,11 +3,7 @@ const axios = require('axios')
 export async function handler(event, context, callback) {
 
   try {
-    const menus = encodeURIComponent(event.queryStringParameters.menus)
-
-    const res = await axios.get(`https://dietlyprod001front.herokuapp.com/api/company-details/afterfit/menus?searchCriteria=${menus}`)
-
-    console.log('AAAA', menus)
+    const res = await axios.get(`https://dietlyprod001front.herokuapp.com/api/company-details/afterfit/dietDetails`)
     callback(null, {
       statusCode: 200, // http status code
       body: JSON.stringify(res.data),

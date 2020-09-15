@@ -5,6 +5,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
   //const blogTemplate = path.resolve("./src/templates/blog.js")
   const cityComponent = path.resolve("./src/templates/mainPage.js")
   const dietComponent = path.resolve("./src/templates/dietTemplate.js")
+  const smallCityComponent = path.resolve("./src/templates/smallCityTemplate.js")
   const blog = path.resolve("./src/templates/blog.js")
   const blogPost = path.resolve("./src/templates/blogPost.js")
   // const citiesArray = cities.reduce((acc, curr) => {
@@ -13,7 +14,29 @@ module.exports.createPages = async ({ graphql, actions }) => {
   // },[])
   const citiesArray = [ 'warszawa', 'poznan', 'wroclaw', 'trojmiasto', 'wroclaw', 'torun', 'bydgoszcz', 'krakow', 'aglomeracja-slaska', 'bialystok', 'bielsko-biala', 'czestochowa', 'gorzow-wielkopolski', 'kielce', 'kutno', 'opole', 'plock', 'radom', 'rzeszow', 'szczecin', 'wloclawek' ]
   const diets = ['paleo', 'samuraja', 'sportowa-na-redukcje', 'odchudzajaca', 'weganska', 'wegetarianska', 'standard', 'bezlaktozowa', 'bezglutenowa', 'niski-indeks', 'detox', 'wege-z-rybami', 'keto', 'dash', 'domowa', 'sirtfood']
-
+  const smallCitiesObject = {
+    lodz: [{
+      urlName: 'pabianice',
+      fullName: 'Pabienice',
+    }, {
+      urlName: 'zgierz',
+      fullName: 'Zgierz',
+    }],
+    warszawa: [{
+      urlName: 'piaseczno',
+      fullName: 'Piaseczno',
+    }, {
+      urlName: 'pruszkow',
+      fullName: 'Pruszków',
+    }],
+    trojmiasto: [{
+      urlName: 'gdansk',
+      fullName: 'Gdańsk',
+    }, {
+      urlName: 'gdynia',
+      fullName: 'Gdnia',
+    }]
+  }
   const res = await graphql(`
     query {
       allContentfulPost {
@@ -59,6 +82,25 @@ module.exports.createPages = async ({ graphql, actions }) => {
           city,
         },
       })
+    })
+    smallCitiesObject[city] && smallCitiesObject[city].forEach(smallCity => {
+      createPage({
+        component: smallCityComponent,
+        path: `/${city}/catering-dietetyczny-${smallCity.urlName}`,
+        context: {
+          smallCity,
+          city,
+        },
+      })
+    })
+  })
+  smallCitiesObject['lodz'].forEach(smallCity => {
+    createPage({
+      component: smallCityComponent,
+      path: `/catering-dietetyczny-${smallCity.urlName}`,
+      context: {
+        smallCity,
+      },
     })
   })
   diets.forEach(diet => {
