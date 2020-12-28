@@ -15,7 +15,7 @@ const Footer = ({ pageContext }) => {
             <div>
               <img src={logo} />
             </div>
-            <div>® AFTERFIT-CATERING 2019</div>
+            <div>AFTERFIT Sp. z o.o. </div>
             <div className={footerStyles.socialMediaContainer}>
               <a
                 href="https://www.facebook.com/AfterFitCatering"
@@ -57,6 +57,8 @@ const Footer = ({ pageContext }) => {
             <p>Telefon: +48 42 715-80-85</p>
             <p>Email: zamowienia@afterfit-catering.pl</p>
             <p>Biuro obsługi: pn.- pt.: 9:00-18:00, so.: 10:00-15:00</p>
+            <p>NIP: 7292736288</p>
+            <p>KRS: 0000870267</p>
             <p>
               <a
                 href="https://serwer1526119.home.pl/wp-content/uploads/2019/02/Regulamin-Cateringu-Dietetycznego-AfterFit.pdf"
@@ -88,19 +90,13 @@ const Footer = ({ pageContext }) => {
             >
               <p>Dieta bezlaktozowa</p>
             </Link>
-            <Link
-              to={city ? `/${city}/dieta-dash` : "/dieta-dash"}
-            >
+            <Link to={city ? `/${city}/dieta-dash` : "/dieta-dash"}>
               <p>Dieta DASH</p>
             </Link>
-            <Link
-              to={city ? `/${city}/dieta-detox` : "/dieta-detox"}
-            >
+            <Link to={city ? `/${city}/dieta-detox` : "/dieta-detox"}>
               <p>Dieta detox</p>
             </Link>
-            <Link
-              to={city ? `/${city}/dieta-keto` : "/dieta-keto"}
-            >
+            <Link to={city ? `/${city}/dieta-keto` : "/dieta-keto"}>
               <p>Dieta keto</p>
             </Link>
             <Link
