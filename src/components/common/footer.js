@@ -61,7 +61,7 @@ const Footer = ({ pageContext }) => {
             <p>KRS: 0000870267</p>
             <p>
               <a
-                href="https://serwer1526119.home.pl/wp-content/uploads/2019/02/Regulamin-Cateringu-Dietetycznego-AfterFit.pdf"
+                href="https://afterfit.s3.eu-central-1.amazonaws.com/Regulamin+AFTERFIT+Sp.z+o.o..pdf"
                 target="_blank"
                 rel="nofollow"
               >
@@ -70,7 +70,7 @@ const Footer = ({ pageContext }) => {
             </p>{" "}
             <p>
               <a
-                href="https://serwer1526119.home.pl/wp-content/uploads/2019/02/Polityka-Prywatności-cateringu-dietetycznego-AfterFit.pdf"
+                href="https://afterfit.s3.eu-central-1.amazonaws.com/Polityka+Prywatno%C5%9Bci+cateringu+dietetycznego+AfterFit.pdf"
                 target="_blank"
                 rel="nofollow"
               >
