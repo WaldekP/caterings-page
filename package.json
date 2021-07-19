@@ -32,7 +32,7 @@
     "gatsby-remark-relative-images": "^0.2.2",
     "gatsby-source-contentful": "^2.1.56",
     "gatsby-source-filesystem": "^2.1.0",
-    "gatsby-source-wordpress": "^3.1.0",
+    "gatsby-source-wordpress": "^4.0.8",
     "gatsby-transformer-contentful-richtext": "contentful/gatsby-transformer-contentful-richtext",
     "gatsby-transformer-remark": "^2.5.0",
     "gatsby-transformer-sharp": "^2.1.21",
